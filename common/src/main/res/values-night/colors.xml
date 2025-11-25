@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorDialogBackground">#111111</color>
+    <color name="colorDialogBackground">#242424</color> <!-- Hivebit Dark Surface -->
     <color name="colorDialogMessage">@android:color/white</color>
     <color name="colorDialogTitle">@android:color/white</color>
-    <color name="colorBackground">#1c1c1c</color>
-    <color name="colorOnBackground">#e1e1e1</color>
-    <color name="colorSurface">#121212</color>
-    <color name="colorPrimaryDark">#111111</color>
+    <color name="colorBackground">#1A1A1A</color> <!-- Hivebit Dark Background -->
+    <color name="colorOnBackground">#FFFFFF</color> <!-- Hivebit Dark Text Primary -->
+    <color name="colorSurface">#242424</color> <!-- Hivebit Dark Surface -->
+    <color name="colorPrimaryDark">#232323</color> <!-- Hivebit Accent -->
     <color name="colorWarning">#D32F2F</color>
     <color name="colorHeadline1">@android:color/white</color>
     <color name="colorHeadline2">@android:color/white</color>
-    <color name="colorActionBar">#1c1c1c</color>
+    <color name="colorActionBar">#232323</color> <!-- Hivebit Accent -->
     <color name="colorIcon">@android:color/white</color>
     <color name="colorSensorTopBackground">#212227</color>
     <color name="colorSensorTopEnabled">#192d36</color>
     <color name="colorSwitchUncheckedThumb">#b9b9b9</color>
-    <color name="colorWidgetButtonBackground">#1c1c1c</color>
+    <color name="colorWidgetButtonBackground">#242424</color> <!-- Hivebit Dark Surface -->
     <color name="colorWidgetButtonLabel">@color/colorWidgetButtonLabelWhite</color>
     <color name="colorActionBarPopupBackground">#2B2B2B</color>
-    <color name="colorLaunchScreenBackground">#111111</color>
+    <color name="colorLaunchScreenBackground">#1A1A1A</color> <!-- Hivebit Dark Background -->
     <color name="colorCodeBackground">#282828</color>
     <color name="colorAlertInfo">#182b35</color>
     <color name="colorAlertWarning">#382d18</color>

@@ -3,9 +3,9 @@
     <color name="colorDialogBackground">@android:color/white</color>
     <color name="colorDialogMessage">@android:color/black</color>
     <color name="colorDialogTitle">@android:color/black</color>
-    <color name="colorBackground">@android:color/white</color>
-    <color name="colorOnBackground">#212121</color>
-    <color name="colorSurface">@android:color/white</color>
+    <color name="colorBackground">#F9F7F4</color> <!-- Hivebit Light Background -->
+    <color name="colorOnBackground">#1C1C1C</color> <!-- Hivebit Light Text Primary -->
+    <color name="colorSurface">#FFFFFF</color>
     <!-- Hivebit Brand Colors -->
     <color name="colorPrimary">#C7B19A</color>
     <color name="colorPrimaryDark">#B79D87</color>
