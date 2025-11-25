@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.launch.link
+package io.hivebit.companion.android.launch.link
 
 import android.content.Context
 import android.content.Intent
@@ -19,17 +19,17 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.BaseActivity
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.USE_NEW_LAUNCHER
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.FailFast
-import io.homeassistant.companion.android.launch.LaunchActivity
-import io.homeassistant.companion.android.launch.startLauncherOnboarding
-import io.homeassistant.companion.android.launch.startLauncherWithNavigateTo
-import io.homeassistant.companion.android.settings.server.ServerChooserFragment
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
-import io.homeassistant.companion.android.webview.WebViewActivity
+import io.hivebit.companion.android.BaseActivity
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.USE_NEW_LAUNCHER
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.FailFast
+import io.hivebit.companion.android.launch.LaunchActivity
+import io.hivebit.companion.android.launch.startLauncherOnboarding
+import io.hivebit.companion.android.launch.startLauncherWithNavigateTo
+import io.hivebit.companion.android.settings.server.ServerChooserFragment
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.webview.WebViewActivity
 import javax.inject.Inject
 import kotlinx.coroutines.launch
 

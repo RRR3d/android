@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.compose
+package io.hivebit.companion.android.compose
 
 import android.app.Activity
 import android.content.Intent
@@ -7,19 +7,19 @@ import androidx.activity.compose.LocalActivity
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
-import io.homeassistant.companion.android.HAStartDestinationRoute
-import io.homeassistant.companion.android.automotive.navigation.carAppActivity
-import io.homeassistant.companion.android.automotive.navigation.navigateToCarAppActivity
-import io.homeassistant.companion.android.common.util.isAutomotive
-import io.homeassistant.companion.android.frontend.navigation.frontendScreen
-import io.homeassistant.companion.android.frontend.navigation.navigateToFrontend
-import io.homeassistant.companion.android.loading.LoadingScreen
-import io.homeassistant.companion.android.loading.navigation.LoadingRoute
-import io.homeassistant.companion.android.loading.navigation.loadingScreen
-import io.homeassistant.companion.android.onboarding.OnboardingRoute
-import io.homeassistant.companion.android.onboarding.WearOnboardingRoute
-import io.homeassistant.companion.android.onboarding.onboarding
-import io.homeassistant.companion.android.onboarding.wearOnboarding
+import io.hivebit.companion.android.HAStartDestinationRoute
+import io.hivebit.companion.android.automotive.navigation.carAppActivity
+import io.hivebit.companion.android.automotive.navigation.navigateToCarAppActivity
+import io.hivebit.companion.android.common.util.isAutomotive
+import io.hivebit.companion.android.frontend.navigation.frontendScreen
+import io.hivebit.companion.android.frontend.navigation.navigateToFrontend
+import io.hivebit.companion.android.loading.LoadingScreen
+import io.hivebit.companion.android.loading.navigation.LoadingRoute
+import io.hivebit.companion.android.loading.navigation.loadingScreen
+import io.hivebit.companion.android.onboarding.OnboardingRoute
+import io.hivebit.companion.android.onboarding.WearOnboardingRoute
+import io.hivebit.companion.android.onboarding.onboarding
+import io.hivebit.companion.android.onboarding.wearOnboarding
 
 /**
  * Navigation host for the main application.

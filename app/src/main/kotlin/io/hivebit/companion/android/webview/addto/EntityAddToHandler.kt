@@ -1,25 +1,25 @@
-package io.homeassistant.companion.android.webview.addto
+package io.hivebit.companion.android.webview.addto
 
 import android.content.Context
 import androidx.annotation.VisibleForTesting
-import io.homeassistant.companion.android.BuildConfig
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.CAMERA_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.IMAGE_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.MEDIA_PLAYER_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.TODO_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.domain
-import io.homeassistant.companion.android.common.data.prefs.AutoFavorite
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.FailFast
-import io.homeassistant.companion.android.common.util.isAutomotive
-import io.homeassistant.companion.android.util.QuestUtil
-import io.homeassistant.companion.android.util.vehicle.isVehicleDomain
-import io.homeassistant.companion.android.widgets.camera.CameraWidgetConfigureActivity
-import io.homeassistant.companion.android.widgets.entity.EntityWidgetConfigureActivity
-import io.homeassistant.companion.android.widgets.mediaplayer.MediaPlayerControlsWidgetConfigureActivity
-import io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureActivity
+import io.hivebit.companion.android.BuildConfig
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.CAMERA_DOMAIN
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.IMAGE_DOMAIN
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.MEDIA_PLAYER_DOMAIN
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.TODO_DOMAIN
+import io.hivebit.companion.android.common.data.integration.domain
+import io.hivebit.companion.android.common.data.prefs.AutoFavorite
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.FailFast
+import io.hivebit.companion.android.common.util.isAutomotive
+import io.hivebit.companion.android.util.QuestUtil
+import io.hivebit.companion.android.util.vehicle.isVehicleDomain
+import io.hivebit.companion.android.widgets.camera.CameraWidgetConfigureActivity
+import io.hivebit.companion.android.widgets.entity.EntityWidgetConfigureActivity
+import io.hivebit.companion.android.widgets.mediaplayer.MediaPlayerControlsWidgetConfigureActivity
+import io.hivebit.companion.android.widgets.todo.TodoWidgetConfigureActivity
 import javax.inject.Inject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

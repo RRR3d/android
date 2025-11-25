@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.controls
+package io.hivebit.companion.android.controls
 
 import android.os.Build
 import android.service.controls.Control
@@ -6,18 +6,18 @@ import android.service.controls.ControlsProviderService
 import android.service.controls.actions.ControlAction
 import androidx.annotation.RequiresApi
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.data.integration.ControlsAuthRequiredSetting
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.CAMERA_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.MEDIA_PLAYER_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.applyCompressedStateDiff
-import io.homeassistant.companion.android.common.data.integration.domain
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AreaRegistryResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.DeviceRegistryResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.EntityRegistryResponse
-import io.homeassistant.companion.android.util.RegistriesDataHandler
+import io.hivebit.companion.android.common.data.integration.ControlsAuthRequiredSetting
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.CAMERA_DOMAIN
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.MEDIA_PLAYER_DOMAIN
+import io.hivebit.companion.android.common.data.integration.applyCompressedStateDiff
+import io.hivebit.companion.android.common.data.integration.domain
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AreaRegistryResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.DeviceRegistryResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.EntityRegistryResponse
+import io.hivebit.companion.android.util.RegistriesDataHandler
 import java.time.LocalDateTime
 import java.util.concurrent.Flow
 import java.util.function.Consumer
@@ -307,7 +307,7 @@ class HaControlsProviderService : ControlsProviderService() {
         deviceRegistry[serverId] = getDeviceRegistry.await()
         entityRegistry[serverId] = getEntityRegistry.await()
 
-        if (serverManager.integrationRepository(serverId).isHomeAssistantVersionAtLeast(2022, 4, 0)) {
+        if (serverManager.integrationRepository(serverId).isHivebitVersionAtLeast(2022, 4, 0)) {
             webSocketScope.launch {
                 var sentInitial = false
                 val error404 = HttpException(Response.error<ResponseBody>(404, byteArrayOf().toResponseBody()))

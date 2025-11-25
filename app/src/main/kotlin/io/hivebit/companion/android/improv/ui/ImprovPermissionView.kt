@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.improv.ui
+package io.hivebit.companion.android.improv.ui
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -16,10 +16,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.onboarding.OnboardingHeaderView
-import io.homeassistant.companion.android.onboarding.OnboardingPermissionBullet
-import io.homeassistant.companion.android.util.compose.ModalBottomSheet
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.onboarding.OnboardingHeaderView
+import io.hivebit.companion.android.onboarding.OnboardingPermissionBullet
+import io.hivebit.companion.android.util.compose.ModalBottomSheet
 
 @Composable
 fun ImprovPermissionView(needsBluetooth: Boolean, needsLocation: Boolean, onContinue: () -> Unit, onSkip: () -> Unit) {

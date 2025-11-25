@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets.todo
+package io.hivebit.companion.android.widgets.todo
 
 import android.os.Build
 import android.os.Parcelable
@@ -9,13 +9,13 @@ import androidx.core.graphics.toColorInt
 import androidx.glance.GlanceTheme
 import androidx.glance.color.ColorProviders
 import androidx.glance.material.ColorProviders
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.friendlyName
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.GetTodosResponse.TodoItem.Companion.COMPLETED_STATUS
-import io.homeassistant.companion.android.database.widget.TodoWidgetEntity
-import io.homeassistant.companion.android.database.widget.WidgetBackgroundType
-import io.homeassistant.companion.android.util.compose.HomeAssistantGlanceTheme
-import io.homeassistant.companion.android.util.compose.glanceHaLightColors
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.friendlyName
+import io.hivebit.companion.android.common.data.websocket.impl.entities.GetTodosResponse.TodoItem.Companion.COMPLETED_STATUS
+import io.hivebit.companion.android.database.widget.TodoWidgetEntity
+import io.hivebit.companion.android.database.widget.WidgetBackgroundType
+import io.hivebit.companion.android.util.compose.HivebitGlanceTheme
+import io.hivebit.companion.android.util.compose.glanceHaLightColors
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
@@ -46,7 +46,7 @@ internal sealed interface TodoState {
         fun TodoState.getColors(): ColorProviders {
             return when (backgroundType) {
                 WidgetBackgroundType.DYNAMICCOLOR -> GlanceTheme.colors
-                WidgetBackgroundType.DAYNIGHT -> HomeAssistantGlanceTheme.colors
+                WidgetBackgroundType.DAYNIGHT -> HivebitGlanceTheme.colors
                 WidgetBackgroundType.TRANSPARENT -> ColorProviders(
                     glanceHaLightColors
                         .copy(

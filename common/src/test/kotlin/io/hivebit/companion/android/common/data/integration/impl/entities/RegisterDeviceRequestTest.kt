@@ -1,9 +1,9 @@
-package io.homeassistant.companion.android.common.data.integration.impl.entities
+package io.hivebit.companion.android.common.data.integration.impl.entities
 
-import io.homeassistant.companion.android.common.util.AppVersion
-import io.homeassistant.companion.android.common.util.MessagingToken
-import io.homeassistant.companion.android.common.util.kotlinJsonMapper
-import io.homeassistant.companion.android.testing.unit.ConsoleLogExtension
+import io.hivebit.companion.android.common.util.AppVersion
+import io.hivebit.companion.android.common.util.MessagingToken
+import io.hivebit.companion.android.common.util.kotlinJsonMapper
+import io.hivebit.companion.android.testing.unit.ConsoleLogExtension
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith

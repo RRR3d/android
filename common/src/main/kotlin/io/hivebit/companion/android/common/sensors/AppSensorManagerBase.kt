@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.sensors
+package io.hivebit.companion.android.common.sensors
 
 import android.app.ActivityManager
 import android.app.usage.UsageStatsManager
@@ -8,7 +8,7 @@ import android.os.Build
 import android.os.Process
 import androidx.annotation.RequiresApi
 import androidx.core.content.getSystemService
-import io.homeassistant.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.R as commonR
 import java.math.RoundingMode
 import timber.log.Timber
 

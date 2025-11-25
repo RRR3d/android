@@ -1,10 +1,10 @@
-package io.homeassistant.companion.android.sensors
+package io.hivebit.companion.android.sensors
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.sensors.SensorManager
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.sensors.SensorManager
 
 class ActivitySensorManager :
     BroadcastReceiver(),

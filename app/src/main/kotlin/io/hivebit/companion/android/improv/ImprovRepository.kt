@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.improv
+package io.hivebit.companion.android.improv
 
 import android.content.Context
 import com.wifi.improv.DeviceState

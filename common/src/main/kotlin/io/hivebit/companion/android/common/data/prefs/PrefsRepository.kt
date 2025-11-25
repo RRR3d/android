@@ -1,9 +1,9 @@
-package io.homeassistant.companion.android.common.data.prefs
+package io.hivebit.companion.android.common.data.prefs
 
 import android.os.Parcelable
-import io.homeassistant.companion.android.common.data.integration.ControlsAuthRequiredSetting
-import io.homeassistant.companion.android.common.util.GestureAction
-import io.homeassistant.companion.android.common.util.HAGesture
+import io.hivebit.companion.android.common.data.integration.ControlsAuthRequiredSetting
+import io.hivebit.companion.android.common.util.GestureAction
+import io.hivebit.companion.android.common.util.HAGesture
 import kotlinx.parcelize.Parcelize
 
 enum class NightModeTheme(val storageValue: String) {

@@ -1,10 +1,10 @@
-package io.homeassistant.companion.android.settings.qs
+package io.hivebit.companion.android.settings.qs
 
 import android.content.ComponentName
 import android.content.Context
 import android.content.pm.PackageManager
 import android.content.res.Resources
-import io.homeassistant.companion.android.R as commonR
+import io.hivebit.companion.android.R as commonR
 import kotlin.math.min
 
 data class TileSlot(val id: String, val name: String)

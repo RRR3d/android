@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.util.compose
+package io.hivebit.companion.android.util.compose
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -24,9 +24,9 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.util.safeBottomWindowInsets
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.util.safeBottomWindowInsets
 
 /**
  * A Material 3-style modal bottom sheet with an optional handle, for use with a

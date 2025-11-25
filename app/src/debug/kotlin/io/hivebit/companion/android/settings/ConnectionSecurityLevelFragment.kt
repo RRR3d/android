@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings
+package io.hivebit.companion.android.settings
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -28,16 +28,16 @@ import androidx.fragment.app.setFragmentResult
 import androidx.lifecycle.DEFAULT_ARGS_KEY
 import androidx.lifecycle.viewmodel.MutableCreationExtras
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.compose.theme.HATheme
-import io.homeassistant.companion.android.onboarding.locationforsecureconnection.LocationForSecureConnectionScreen
-import io.homeassistant.companion.android.onboarding.locationforsecureconnection.LocationForSecureConnectionViewModel
+import io.hivebit.companion.android.common.compose.theme.HATheme
+import io.hivebit.companion.android.onboarding.locationforsecureconnection.LocationForSecureConnectionScreen
+import io.hivebit.companion.android.onboarding.locationforsecureconnection.LocationForSecureConnectionViewModel
 
 /**
- * Fragment wrapper for [io.homeassistant.companion.android.onboarding.locationforsecureconnection.LocationForSecureConnectionScreen] to enable usage in Fragment-based navigation.
+ * Fragment wrapper for [io.hivebit.companion.android.onboarding.locationforsecureconnection.LocationForSecureConnectionScreen] to enable usage in Fragment-based navigation.
  *
  * The fragment bridges Fragment-based navigation with Compose Navigation's type-safe routing by
  * manually configuring the [androidx.lifecycle.SavedStateHandle] to match the expected
- * [io.homeassistant.companion.android.onboarding.locationforsecureconnection.navigation.LocationForSecureConnectionRoute].
+ * [io.hivebit.companion.android.onboarding.locationforsecureconnection.navigation.LocationForSecureConnectionRoute].
  *
  * ## Arguments
  * Pass `serverId` (Int) in the Fragment arguments Bundle to specify which server to configure.

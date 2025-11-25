@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding
+package io.hivebit.companion.android.onboarding
 
 import android.os.Build
 import android.os.Bundle
@@ -8,13 +8,13 @@ import androidx.activity.viewModels
 import androidx.core.app.NotificationManagerCompat
 import androidx.fragment.app.commit
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.BaseActivity
-import io.homeassistant.companion.android.BuildConfig
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.onboarding.authentication.AuthenticationFragment
-import io.homeassistant.companion.android.onboarding.discovery.DiscoveryFragment
-import io.homeassistant.companion.android.onboarding.manual.ManualSetupFragment
-import io.homeassistant.companion.android.onboarding.welcome.WelcomeFragment
+import io.hivebit.companion.android.BaseActivity
+import io.hivebit.companion.android.BuildConfig
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.onboarding.authentication.AuthenticationFragment
+import io.hivebit.companion.android.onboarding.discovery.DiscoveryFragment
+import io.hivebit.companion.android.onboarding.manual.ManualSetupFragment
+import io.hivebit.companion.android.onboarding.welcome.WelcomeFragment
 
 @AndroidEntryPoint
 class OnboardingActivity : BaseActivity() {

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.matter.views
+package io.hivebit.companion.android.matter.views
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -34,16 +34,16 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.database.server.ServerConnectionInfo
-import io.homeassistant.companion.android.database.server.ServerSessionInfo
-import io.homeassistant.companion.android.database.server.ServerUserInfo
-import io.homeassistant.companion.android.matter.MatterCommissioningViewModel.CommissioningFlowStep
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
-import io.homeassistant.companion.android.util.compose.STEP_SCREEN_MAX_WIDTH_DP
-import io.homeassistant.companion.android.util.compose.screenWidth
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.database.server.ServerConnectionInfo
+import io.hivebit.companion.android.database.server.ServerSessionInfo
+import io.hivebit.companion.android.database.server.ServerUserInfo
+import io.hivebit.companion.android.matter.MatterCommissioningViewModel.CommissioningFlowStep
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.util.compose.STEP_SCREEN_MAX_WIDTH_DP
+import io.hivebit.companion.android.util.compose.screenWidth
 import kotlin.math.min
 
 @Composable

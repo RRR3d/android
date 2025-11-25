@@ -1,10 +1,10 @@
-package io.homeassistant.companion.android.sensors
+package io.hivebit.companion.android.sensors
 
 import android.content.Context
 import android.os.Build
 import android.provider.Settings
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.sensors.SensorManager
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.sensors.SensorManager
 import timber.log.Timber
 
 class BedtimeModeSensorManager : SensorManager {

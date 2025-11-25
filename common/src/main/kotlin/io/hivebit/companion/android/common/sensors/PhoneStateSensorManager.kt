@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.sensors
+package io.hivebit.companion.android.common.sensors
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -11,9 +11,9 @@ import android.telephony.SubscriptionManager
 import android.telephony.TelephonyManager
 import androidx.annotation.RequiresApi
 import androidx.core.content.getSystemService
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.util.STATE_UNAVAILABLE
-import io.homeassistant.companion.android.common.util.STATE_UNKNOWN
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.util.STATE_UNAVAILABLE
+import io.hivebit.companion.android.common.util.STATE_UNKNOWN
 import timber.log.Timber
 
 class PhoneStateSensorManager : SensorManager {

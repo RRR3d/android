@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.gestures.views
+package io.hivebit.companion.android.settings.gestures.views
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
@@ -10,13 +10,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.util.GestureAction
-import io.homeassistant.companion.android.common.util.HAGesture
-import io.homeassistant.companion.android.settings.views.SettingsRow
-import io.homeassistant.companion.android.settings.views.SettingsSubheader
-import io.homeassistant.companion.android.util.plus
-import io.homeassistant.companion.android.util.safeBottomPaddingValues
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.util.GestureAction
+import io.hivebit.companion.android.common.util.HAGesture
+import io.hivebit.companion.android.settings.views.SettingsRow
+import io.hivebit.companion.android.settings.views.SettingsSubheader
+import io.hivebit.companion.android.util.plus
+import io.hivebit.companion.android.util.safeBottomPaddingValues
 
 /**
  * Shows all gestures with the configured action for it. Clicking on a

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.ssid
+package io.hivebit.companion.android.settings.ssid
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -16,12 +16,12 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.util.DisabledLocationHandler
-import io.homeassistant.companion.android.common.util.LocationPermissionInfoHandler
-import io.homeassistant.companion.android.settings.addHelpMenuProvider
-import io.homeassistant.companion.android.settings.ssid.views.SsidView
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.util.DisabledLocationHandler
+import io.hivebit.companion.android.common.util.LocationPermissionInfoHandler
+import io.hivebit.companion.android.settings.addHelpMenuProvider
+import io.hivebit.companion.android.settings.ssid.views.SsidView
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
 
 @AndroidEntryPoint
 class SsidFragment : Fragment() {

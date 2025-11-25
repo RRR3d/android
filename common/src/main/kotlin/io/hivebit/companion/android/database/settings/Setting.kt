@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.database.settings
+package io.hivebit.companion.android.database.settings
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

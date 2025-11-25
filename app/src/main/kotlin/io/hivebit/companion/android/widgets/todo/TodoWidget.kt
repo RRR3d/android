@@ -1,12 +1,12 @@
-package io.homeassistant.companion.android.widgets.todo
+package io.hivebit.companion.android.widgets.todo
 
 import android.content.Context
 import androidx.glance.appwidget.GlanceAppWidget
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.database.widget.TodoWidgetDao
-import io.homeassistant.companion.android.database.widget.TodoWidgetEntity
-import io.homeassistant.companion.android.widgets.BaseGlanceEntityWidgetReceiver
-import io.homeassistant.companion.android.widgets.EntitiesPerServer
+import io.hivebit.companion.android.database.widget.TodoWidgetDao
+import io.hivebit.companion.android.database.widget.TodoWidgetEntity
+import io.hivebit.companion.android.widgets.BaseGlanceEntityWidgetReceiver
+import io.hivebit.companion.android.widgets.EntitiesPerServer
 
 /**
  * Receiver for the Todo Glance Widget.

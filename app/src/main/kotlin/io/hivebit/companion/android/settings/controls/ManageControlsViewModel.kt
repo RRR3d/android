@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.controls
+package io.hivebit.companion.android.settings.controls
 
 import android.app.Application
 import android.content.ComponentName
@@ -14,13 +14,13 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.common.data.integration.ControlsAuthRequiredSetting
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.domain
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.controls.HaControlsPanelActivity
-import io.homeassistant.companion.android.controls.HaControlsProviderService
+import io.hivebit.companion.android.common.data.integration.ControlsAuthRequiredSetting
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.domain
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.controls.HaControlsPanelActivity
+import io.hivebit.companion.android.controls.HaControlsProviderService
 import javax.inject.Inject
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll

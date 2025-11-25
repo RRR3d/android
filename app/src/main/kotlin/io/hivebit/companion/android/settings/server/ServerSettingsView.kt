@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.server
+package io.hivebit.companion.android.settings.server
 
 interface ServerSettingsView {
     fun updateServerName(name: String)

@@ -1,11 +1,11 @@
-package io.homeassistant.companion.android.settings.language
+package io.hivebit.companion.android.settings.language
 
 import android.content.Context
 import android.os.Build
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.os.LocaleListCompat
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
 import javax.inject.Inject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

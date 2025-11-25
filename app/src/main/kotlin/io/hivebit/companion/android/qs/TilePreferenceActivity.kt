@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.qs
+package io.hivebit.companion.android.qs
 
 import android.content.ComponentName
 import android.content.Intent
@@ -7,14 +7,14 @@ import android.os.Bundle
 import androidx.core.os.BundleCompat
 import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.BaseActivity
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.database.qs.TileDao
-import io.homeassistant.companion.android.database.qs.isSetup
-import io.homeassistant.companion.android.launch.LaunchActivity
-import io.homeassistant.companion.android.settings.SettingsActivity
-import io.homeassistant.companion.android.settings.qs.ManageTilesViewModel
-import io.homeassistant.companion.android.webview.WebViewActivity
+import io.hivebit.companion.android.BaseActivity
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.database.qs.TileDao
+import io.hivebit.companion.android.database.qs.isSetup
+import io.hivebit.companion.android.launch.LaunchActivity
+import io.hivebit.companion.android.settings.SettingsActivity
+import io.hivebit.companion.android.settings.qs.ManageTilesViewModel
+import io.hivebit.companion.android.webview.WebViewActivity
 import javax.inject.Inject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

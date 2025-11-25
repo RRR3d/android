@@ -1,7 +1,7 @@
-package io.homeassistant.companion.android.common.sensors
+package io.hivebit.companion.android.common.sensors
 
 import android.content.Context
-import io.homeassistant.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.R as commonR
 import java.util.Date
 import java.util.Locale
 import java.util.TimeZone

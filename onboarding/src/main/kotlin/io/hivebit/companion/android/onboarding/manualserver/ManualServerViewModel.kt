@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.manualserver
+package io.hivebit.companion.android.onboarding.manualserver
 
 import android.webkit.URLUtil
 import androidx.lifecycle.ViewModel

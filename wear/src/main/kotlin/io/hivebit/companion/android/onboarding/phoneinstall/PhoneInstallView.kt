@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.phoneinstall
+package io.hivebit.companion.android.onboarding.phoneinstall
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -15,10 +15,10 @@ import androidx.wear.compose.material3.Button
 import androidx.wear.compose.material3.MaterialTheme
 import androidx.wear.compose.material3.Text
 import androidx.wear.tooling.preview.devices.WearDevices
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.theme.getFilledTonalButtonColors
-import io.homeassistant.companion.android.views.ThemeLazyColumn
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.theme.getFilledTonalButtonColors
+import io.hivebit.companion.android.views.ThemeLazyColumn
 
 @Composable
 fun PhoneInstallView(onInstall: () -> Unit, onRefresh: () -> Unit, onAdvanced: () -> Unit) {

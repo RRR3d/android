@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.launcher
+package io.hivebit.companion.android.launcher
 
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import dagger.hilt.android.testing.HiltAndroidRule

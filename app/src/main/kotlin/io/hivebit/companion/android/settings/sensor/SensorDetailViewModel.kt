@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.sensor
+package io.hivebit.companion.android.settings.sensor
 
 import android.Manifest
 import android.app.Application
@@ -16,23 +16,23 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.bluetooth.BluetoothUtils
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.sensors.BluetoothSensorManager
-import io.homeassistant.companion.android.common.sensors.NetworkSensorManager
-import io.homeassistant.companion.android.common.sensors.SensorManager
-import io.homeassistant.companion.android.common.util.DisabledLocationHandler
-import io.homeassistant.companion.android.database.sensor.SensorDao
-import io.homeassistant.companion.android.database.sensor.SensorSetting
-import io.homeassistant.companion.android.database.sensor.SensorSettingType
-import io.homeassistant.companion.android.database.sensor.SensorWithAttributes
-import io.homeassistant.companion.android.database.sensor.toSensorsWithAttributes
-import io.homeassistant.companion.android.database.settings.SensorUpdateFrequencySetting
-import io.homeassistant.companion.android.database.settings.SettingsDao
-import io.homeassistant.companion.android.sensors.LastAppSensorManager
-import io.homeassistant.companion.android.sensors.SensorReceiver
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.bluetooth.BluetoothUtils
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.sensors.BluetoothSensorManager
+import io.hivebit.companion.android.common.sensors.NetworkSensorManager
+import io.hivebit.companion.android.common.sensors.SensorManager
+import io.hivebit.companion.android.common.util.DisabledLocationHandler
+import io.hivebit.companion.android.database.sensor.SensorDao
+import io.hivebit.companion.android.database.sensor.SensorSetting
+import io.hivebit.companion.android.database.sensor.SensorSettingType
+import io.hivebit.companion.android.database.sensor.SensorWithAttributes
+import io.hivebit.companion.android.database.sensor.toSensorsWithAttributes
+import io.hivebit.companion.android.database.settings.SensorUpdateFrequencySetting
+import io.hivebit.companion.android.database.settings.SettingsDao
+import io.hivebit.companion.android.sensors.LastAppSensorManager
+import io.hivebit.companion.android.sensors.SensorReceiver
 import javax.inject.Inject
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll

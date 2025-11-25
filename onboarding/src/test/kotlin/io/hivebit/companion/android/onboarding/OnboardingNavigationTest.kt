@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding
+package io.hivebit.companion.android.onboarding
 
 import android.content.pm.PackageManager
 import androidx.activity.compose.LocalActivityResultRegistryOwner
@@ -33,39 +33,39 @@ import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication
 import dagger.hilt.android.testing.UninstallModules
-import io.homeassistant.companion.android.HiltComponentActivity
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.HomeAssistantVersion
-import io.homeassistant.companion.android.compose.LocationPermissionActivityResultRegistry
-import io.homeassistant.companion.android.compose.navigateToUri
-import io.homeassistant.companion.android.onboarding.connection.CONNECTION_SCREEN_TAG
-import io.homeassistant.companion.android.onboarding.connection.ConnectionNavigationEvent
-import io.homeassistant.companion.android.onboarding.connection.ConnectionViewModel
-import io.homeassistant.companion.android.onboarding.connection.navigation.ConnectionRoute
-import io.homeassistant.companion.android.onboarding.localfirst.navigation.LocalFirstRoute
-import io.homeassistant.companion.android.onboarding.localfirst.navigation.navigateToLocalFirst
-import io.homeassistant.companion.android.onboarding.locationforsecureconnection.navigation.LocationForSecureConnectionRoute
-import io.homeassistant.companion.android.onboarding.locationforsecureconnection.navigation.navigateToLocationForSecureConnection
-import io.homeassistant.companion.android.onboarding.locationsharing.navigation.LocationSharingRoute
-import io.homeassistant.companion.android.onboarding.locationsharing.navigation.navigateToLocationSharing
-import io.homeassistant.companion.android.onboarding.manualserver.navigation.ManualServerRoute
-import io.homeassistant.companion.android.onboarding.nameyourdevice.NameYourDeviceNavigationEvent
-import io.homeassistant.companion.android.onboarding.nameyourdevice.NameYourDeviceViewModel
-import io.homeassistant.companion.android.onboarding.nameyourdevice.navigation.NameYourDeviceRoute
-import io.homeassistant.companion.android.onboarding.nameyourdevice.navigation.navigateToNameYourDevice
-import io.homeassistant.companion.android.onboarding.serverdiscovery.DELAY_BEFORE_DISPLAY_DISCOVERY
-import io.homeassistant.companion.android.onboarding.serverdiscovery.HomeAssistantInstance
-import io.homeassistant.companion.android.onboarding.serverdiscovery.HomeAssistantSearcher
-import io.homeassistant.companion.android.onboarding.serverdiscovery.ONE_SERVER_FOUND_MODAL_TAG
-import io.homeassistant.companion.android.onboarding.serverdiscovery.ServerDiscoveryModule
-import io.homeassistant.companion.android.onboarding.serverdiscovery.navigation.ServerDiscoveryMode
-import io.homeassistant.companion.android.onboarding.serverdiscovery.navigation.ServerDiscoveryRoute
-import io.homeassistant.companion.android.onboarding.serverdiscovery.navigation.navigateToServerDiscovery
-import io.homeassistant.companion.android.onboarding.sethomenetwork.navigation.SetHomeNetworkRoute
-import io.homeassistant.companion.android.onboarding.sethomenetwork.navigation.navigateToSetHomeNetworkRoute
-import io.homeassistant.companion.android.onboarding.welcome.navigation.WelcomeRoute
-import io.homeassistant.companion.android.testing.unit.ConsoleLogRule
-import io.homeassistant.companion.android.testing.unit.stringResource
+import io.hivebit.companion.android.HiltComponentActivity
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.HivebitVersion
+import io.hivebit.companion.android.compose.LocationPermissionActivityResultRegistry
+import io.hivebit.companion.android.compose.navigateToUri
+import io.hivebit.companion.android.onboarding.connection.CONNECTION_SCREEN_TAG
+import io.hivebit.companion.android.onboarding.connection.ConnectionNavigationEvent
+import io.hivebit.companion.android.onboarding.connection.ConnectionViewModel
+import io.hivebit.companion.android.onboarding.connection.navigation.ConnectionRoute
+import io.hivebit.companion.android.onboarding.localfirst.navigation.LocalFirstRoute
+import io.hivebit.companion.android.onboarding.localfirst.navigation.navigateToLocalFirst
+import io.hivebit.companion.android.onboarding.locationforsecureconnection.navigation.LocationForSecureConnectionRoute
+import io.hivebit.companion.android.onboarding.locationforsecureconnection.navigation.navigateToLocationForSecureConnection
+import io.hivebit.companion.android.onboarding.locationsharing.navigation.LocationSharingRoute
+import io.hivebit.companion.android.onboarding.locationsharing.navigation.navigateToLocationSharing
+import io.hivebit.companion.android.onboarding.manualserver.navigation.ManualServerRoute
+import io.hivebit.companion.android.onboarding.nameyourdevice.NameYourDeviceNavigationEvent
+import io.hivebit.companion.android.onboarding.nameyourdevice.NameYourDeviceViewModel
+import io.hivebit.companion.android.onboarding.nameyourdevice.navigation.NameYourDeviceRoute
+import io.hivebit.companion.android.onboarding.nameyourdevice.navigation.navigateToNameYourDevice
+import io.hivebit.companion.android.onboarding.serverdiscovery.DELAY_BEFORE_DISPLAY_DISCOVERY
+import io.hivebit.companion.android.onboarding.serverdiscovery.HivebitInstance
+import io.hivebit.companion.android.onboarding.serverdiscovery.HivebitSearcher
+import io.hivebit.companion.android.onboarding.serverdiscovery.ONE_SERVER_FOUND_MODAL_TAG
+import io.hivebit.companion.android.onboarding.serverdiscovery.ServerDiscoveryModule
+import io.hivebit.companion.android.onboarding.serverdiscovery.navigation.ServerDiscoveryMode
+import io.hivebit.companion.android.onboarding.serverdiscovery.navigation.ServerDiscoveryRoute
+import io.hivebit.companion.android.onboarding.serverdiscovery.navigation.navigateToServerDiscovery
+import io.hivebit.companion.android.onboarding.sethomenetwork.navigation.SetHomeNetworkRoute
+import io.hivebit.companion.android.onboarding.sethomenetwork.navigation.navigateToSetHomeNetworkRoute
+import io.hivebit.companion.android.onboarding.welcome.navigation.WelcomeRoute
+import io.hivebit.companion.android.testing.unit.ConsoleLogRule
+import io.hivebit.companion.android.testing.unit.stringResource
 import io.mockk.Runs
 import io.mockk.every
 import io.mockk.just
@@ -105,8 +105,8 @@ internal class OnboardingNavigationTest {
 
     @BindValue
     @JvmField
-    val searcher: HomeAssistantSearcher = object : HomeAssistantSearcher {
-        override fun discoveredInstanceFlow(): Flow<HomeAssistantInstance> {
+    val searcher: HivebitSearcher = object : HivebitSearcher {
+        override fun discoveredInstanceFlow(): Flow<HivebitInstance> {
             return instanceChannel.consumeAsFlow()
         }
     }
@@ -137,7 +137,7 @@ internal class OnboardingNavigationTest {
         every { isSavingFlow } returns MutableStateFlow(false)
     }
 
-    private val instanceChannel = Channel<HomeAssistantInstance>()
+    private val instanceChannel = Channel<HivebitInstance>()
 
     private lateinit var navController: TestNavHostController
 
@@ -320,7 +320,7 @@ internal class OnboardingNavigationTest {
             assertTrue(navController.currentBackStackEntry?.destination?.hasRoute<ServerDiscoveryRoute>() == true)
             onNodeWithText(stringResource(commonR.string.manual_setup)).performScrollTo().assertIsDisplayed()
 
-            instanceChannel.trySend(HomeAssistantInstance("Test", URL(instanceUrl), HomeAssistantVersion(2025, 9, 1)))
+            instanceChannel.trySend(HivebitInstance("Test", URL(instanceUrl), HivebitVersion(2025, 9, 1)))
 
             onNodeWithContentDescription(stringResource(commonR.string.get_help)).performClick()
             verify { any<NavController>().navigateToUri("https://www.home-assistant.io/installation/") }
@@ -359,7 +359,7 @@ internal class OnboardingNavigationTest {
             assertTrue(navController.currentBackStackEntry?.destination?.hasRoute<ServerDiscoveryRoute>() == true)
             onNodeWithText(stringResource(commonR.string.manual_setup)).performScrollTo().assertIsDisplayed()
 
-            instanceChannel.trySend(HomeAssistantInstance("Test", URL(instanceUrl), HomeAssistantVersion(2025, 9, 1)))
+            instanceChannel.trySend(HivebitInstance("Test", URL(instanceUrl), HivebitVersion(2025, 9, 1)))
 
             // Wait for the screen to update based on the instance given in instanceChannel
             waitUntilAtLeastOneExists(hasText(instanceUrl), timeoutMillis = DELAY_BEFORE_DISPLAY_DISCOVERY.inWholeMilliseconds)

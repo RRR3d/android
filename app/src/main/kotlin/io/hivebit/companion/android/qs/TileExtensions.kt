@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.qs
+package io.hivebit.companion.android.qs
 
 import android.app.PendingIntent
 import android.content.Context
@@ -23,21 +23,21 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.EntryPointAccessors
 import dagger.hilt.components.SingletonComponent
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.EntityExt
-import io.homeassistant.companion.android.common.data.integration.getIcon
-import io.homeassistant.companion.android.common.data.integration.isActive
-import io.homeassistant.companion.android.common.data.integration.onEntityPressedWithoutState
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.database.qs.TileDao
-import io.homeassistant.companion.android.database.qs.TileEntity
-import io.homeassistant.companion.android.database.qs.getHighestInUse
-import io.homeassistant.companion.android.database.qs.isSetup
-import io.homeassistant.companion.android.database.qs.numberedId
-import io.homeassistant.companion.android.settings.SettingsActivity
-import io.homeassistant.companion.android.settings.qs.updateActiveTileServices
-import io.homeassistant.companion.android.util.icondialog.getIconByMdiName
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.EntityExt
+import io.hivebit.companion.android.common.data.integration.getIcon
+import io.hivebit.companion.android.common.data.integration.isActive
+import io.hivebit.companion.android.common.data.integration.onEntityPressedWithoutState
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.database.qs.TileDao
+import io.hivebit.companion.android.database.qs.TileEntity
+import io.hivebit.companion.android.database.qs.getHighestInUse
+import io.hivebit.companion.android.database.qs.isSetup
+import io.hivebit.companion.android.database.qs.numberedId
+import io.hivebit.companion.android.settings.SettingsActivity
+import io.hivebit.companion.android.settings.qs.updateActiveTileServices
+import io.hivebit.companion.android.util.icondialog.getIconByMdiName
 import javax.inject.Inject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job

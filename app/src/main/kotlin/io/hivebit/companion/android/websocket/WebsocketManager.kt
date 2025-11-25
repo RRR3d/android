@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.websocket
+package io.hivebit.companion.android.websocket
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -22,17 +22,17 @@ import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn
 import dagger.hilt.android.EntryPointAccessors
 import dagger.hilt.components.SingletonComponent
-import io.homeassistant.companion.android.BuildConfig
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.CHANNEL_WEBSOCKET
-import io.homeassistant.companion.android.common.util.CHANNEL_WEBSOCKET_ISSUES
-import io.homeassistant.companion.android.database.settings.SettingsDao
-import io.homeassistant.companion.android.database.settings.WebsocketSetting
-import io.homeassistant.companion.android.notifications.MessagingManager
-import io.homeassistant.companion.android.settings.SettingsActivity
-import io.homeassistant.companion.android.util.hasActiveConnection
-import io.homeassistant.companion.android.webview.WebViewActivity
+import io.hivebit.companion.android.BuildConfig
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.CHANNEL_WEBSOCKET
+import io.hivebit.companion.android.common.util.CHANNEL_WEBSOCKET_ISSUES
+import io.hivebit.companion.android.database.settings.SettingsDao
+import io.hivebit.companion.android.database.settings.WebsocketSetting
+import io.hivebit.companion.android.notifications.MessagingManager
+import io.hivebit.companion.android.settings.SettingsActivity
+import io.hivebit.companion.android.util.hasActiveConnection
+import io.hivebit.companion.android.webview.WebViewActivity
 import java.util.concurrent.TimeUnit
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineScope
@@ -259,7 +259,7 @@ class WebsocketManager(appContext: Context, workerParams: WorkerParameters) :
             .setOngoing(true)
             .setGroup(CHANNEL_WEBSOCKET)
             .addAction(
-                io.homeassistant.companion.android.R.drawable.ic_websocket,
+                io.hivebit.companion.android.R.drawable.ic_websocket,
                 applicationContext.getString(R.string.settings),
                 settingPendingIntent,
             )

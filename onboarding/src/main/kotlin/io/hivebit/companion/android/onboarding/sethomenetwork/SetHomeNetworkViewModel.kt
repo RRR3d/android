@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.sethomenetwork
+package io.hivebit.companion.android.onboarding.sethomenetwork
 
 import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.SavedStateHandle
@@ -6,10 +6,10 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.common.data.network.NetworkHelper
-import io.homeassistant.companion.android.common.data.network.WifiHelper
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.onboarding.sethomenetwork.navigation.SetHomeNetworkRoute
+import io.hivebit.companion.android.common.data.network.NetworkHelper
+import io.hivebit.companion.android.common.data.network.WifiHelper
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.onboarding.sethomenetwork.navigation.SetHomeNetworkRoute
 import javax.inject.Inject
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

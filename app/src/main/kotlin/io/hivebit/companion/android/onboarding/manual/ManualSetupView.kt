@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.manual
+package io.hivebit.companion.android.onboarding.manual
 
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -24,9 +24,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.onboarding.OnboardingHeaderView
-import io.homeassistant.companion.android.onboarding.OnboardingScreen
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.onboarding.OnboardingHeaderView
+import io.hivebit.companion.android.onboarding.OnboardingScreen
 
 @Composable
 fun ManualSetupView(

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.loading
+package io.hivebit.companion.android.loading
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -14,11 +14,11 @@ import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.compose.composable.HALoading
-import io.homeassistant.companion.android.common.compose.theme.HAThemeForPreview
-import io.homeassistant.companion.android.compose.HAPreviews
-import io.homeassistant.companion.android.onboarding.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.compose.composable.HALoading
+import io.hivebit.companion.android.common.compose.theme.HAThemeForPreview
+import io.hivebit.companion.android.compose.HAPreviews
+import io.hivebit.companion.android.onboarding.R
 
 private val ICON_SIZE = 64.dp
 

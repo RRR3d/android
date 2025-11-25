@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.manualserver
+package io.hivebit.companion.android.onboarding.manualserver
 
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertIsEnabled
@@ -14,10 +14,10 @@ import androidx.compose.ui.test.performTextInput
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication
-import io.homeassistant.companion.android.HiltComponentActivity
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.testing.unit.ConsoleLogRule
-import io.homeassistant.companion.android.testing.unit.stringResource
+import io.hivebit.companion.android.HiltComponentActivity
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.testing.unit.ConsoleLogRule
+import io.hivebit.companion.android.testing.unit.stringResource
 import org.junit.Rule
 import org.junit.Test
 import org.junit.jupiter.api.Assertions.assertEquals

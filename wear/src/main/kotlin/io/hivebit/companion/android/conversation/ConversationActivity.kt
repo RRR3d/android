@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.conversation
+package io.hivebit.companion.android.conversation
 
 import android.Manifest
 import android.content.Context
@@ -16,8 +16,8 @@ import androidx.core.content.getSystemService
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.conversation.views.LoadAssistView
-import io.homeassistant.companion.android.home.HomeActivity
+import io.hivebit.companion.android.conversation.views.LoadAssistView
+import io.hivebit.companion.android.home.HomeActivity
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint

@@ -108,11 +108,11 @@ ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
 screenshot = { id = "com.android.compose.screenshot", version.ref = "screenshot" }
 
 # Plugins defined by this project in `:build-logic:convention` module.
-homeassistant-android-application = { id = "homeassistant.android.application" }
-homeassistant-android-common = { id = "homeassistant.android.common" }
-homeassistant-android-compose = { id = "homeassistant.android.compose" }
-homeassistant-android-dependencies = { id = "homeassistant.android.dependencies" }
-homeassistant-android-flavor = { id = "homeassistant.android.flavor" }
+hivebit-android-application = { id = "hivebit.android.application" }
+hivebit-android-common = { id = "hivebit.android.common" }
+hivebit-android-compose = { id = "hivebit.android.compose" }
+hivebit-android-dependencies = { id = "hivebit.android.dependencies" }
+hivebit-android-flavor = { id = "hivebit.android.flavor" }
 
 [libraries]
 accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanist" }

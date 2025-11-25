@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.nfc.views
+package io.hivebit.companion.android.nfc.views
 
 import android.content.Intent
 import android.provider.Settings
@@ -15,9 +15,9 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.util.plus
-import io.homeassistant.companion.android.util.safeBottomPaddingValues
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.util.plus
+import io.hivebit.companion.android.util.safeBottomPaddingValues
 
 @Composable
 fun NfcWelcomeView(isNfcEnabled: Boolean, onReadClicked: () -> Unit, onWriteClicked: () -> Unit) {

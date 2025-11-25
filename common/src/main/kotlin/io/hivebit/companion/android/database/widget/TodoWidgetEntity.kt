@@ -1,10 +1,10 @@
-package io.homeassistant.companion.android.database.widget
+package io.hivebit.companion.android.database.widget
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
-import io.homeassistant.companion.android.database.widget.converters.TodoLastUpdateDataConverter
+import io.hivebit.companion.android.database.widget.converters.TodoLastUpdateDataConverter
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonNames

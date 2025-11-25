@@ -1,13 +1,13 @@
-package io.homeassistant.companion.android.widgets.common
+package io.hivebit.companion.android.widgets.common
 
 import android.appwidget.AppWidgetManager
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import io.homeassistant.companion.android.authenticator.Authenticator
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.widgets.button.ButtonWidget
+import io.hivebit.companion.android.authenticator.Authenticator
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.widgets.button.ButtonWidget
 import timber.log.Timber
 
 class WidgetAuthenticationActivity : AppCompatActivity() {

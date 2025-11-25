@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.improv.ui
+package io.hivebit.companion.android.improv.ui
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -14,10 +14,10 @@ import androidx.fragment.app.setFragmentResult
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.improv.ImprovRepository
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
-import io.homeassistant.companion.android.util.setLayoutAndExpandedByDefault
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.improv.ImprovRepository
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.util.setLayoutAndExpandedByDefault
 import javax.inject.Inject
 import kotlinx.coroutines.launch
 

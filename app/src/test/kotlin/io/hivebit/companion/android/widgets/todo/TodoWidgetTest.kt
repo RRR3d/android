@@ -1,9 +1,9 @@
-package io.homeassistant.companion.android.widgets.todo
+package io.hivebit.companion.android.widgets.todo
 
 import android.content.Context
-import io.homeassistant.companion.android.database.widget.TodoWidgetDao
-import io.homeassistant.companion.android.database.widget.TodoWidgetEntity
-import io.homeassistant.companion.android.widgets.EntitiesPerServer
+import io.hivebit.companion.android.database.widget.TodoWidgetDao
+import io.hivebit.companion.android.database.widget.TodoWidgetEntity
+import io.hivebit.companion.android.widgets.EntitiesPerServer
 import io.mockk.coEvery
 import io.mockk.mockk
 import kotlinx.coroutines.test.runTest

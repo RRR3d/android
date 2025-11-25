@@ -1,9 +1,9 @@
-package io.homeassistant.companion.android.viewHolders
+package io.hivebit.companion.android.viewHolders
 
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import io.homeassistant.companion.android.R
+import io.hivebit.companion.android.R
 
 class ManualSetupViewHolder(v: View, val onClick: () -> Unit) : RecyclerView.ViewHolder(v) {
 

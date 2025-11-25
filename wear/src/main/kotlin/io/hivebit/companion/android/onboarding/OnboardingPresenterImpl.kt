@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding
+package io.hivebit.companion.android.onboarding
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -13,14 +13,14 @@ import com.google.android.gms.wearable.DataEventBuffer
 import com.google.android.gms.wearable.DataMap
 import com.google.android.gms.wearable.DataMapItem
 import dagger.hilt.android.qualifiers.ActivityContext
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.database.server.ServerConnectionInfo
-import io.homeassistant.companion.android.database.server.ServerSessionInfo
-import io.homeassistant.companion.android.database.server.ServerType
-import io.homeassistant.companion.android.database.server.ServerUserInfo
-import io.homeassistant.companion.android.util.UrlUtil
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.database.server.ServerConnectionInfo
+import io.hivebit.companion.android.database.server.ServerSessionInfo
+import io.hivebit.companion.android.database.server.ServerType
+import io.hivebit.companion.android.database.server.ServerUserInfo
+import io.hivebit.companion.android.util.UrlUtil
 import java.net.URL
 import java.util.concurrent.Executors
 import javax.inject.Inject
@@ -117,9 +117,9 @@ class OnboardingPresenterImpl @Inject constructor(
         dataEvents.release()
     }
 
-    override fun getInstance(map: DataMap): HomeAssistantInstance {
+    override fun getInstance(map: DataMap): HivebitInstance {
         map.apply {
-            return HomeAssistantInstance(
+            return HivebitInstance(
                 getString("name", ""),
                 URL(getString("url", "")),
                 getString("version", ""),

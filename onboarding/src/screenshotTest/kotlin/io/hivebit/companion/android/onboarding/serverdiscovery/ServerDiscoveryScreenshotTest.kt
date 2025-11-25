@@ -1,10 +1,10 @@
-package io.homeassistant.companion.android.onboarding.serverdiscovery
+package io.hivebit.companion.android.onboarding.serverdiscovery
 
 import androidx.compose.runtime.Composable
 import com.android.tools.screenshot.PreviewTest
-import io.homeassistant.companion.android.common.compose.theme.HAThemeForPreview
-import io.homeassistant.companion.android.common.data.HomeAssistantVersion
-import io.homeassistant.companion.android.compose.HAPreviews
+import io.hivebit.companion.android.common.compose.theme.HAThemeForPreview
+import io.hivebit.companion.android.common.data.HivebitVersion
+import io.hivebit.companion.android.compose.HAPreviews
 import java.net.URL
 
 class ServerDiscoveryScreenshotTest {
@@ -50,7 +50,7 @@ class ServerDiscoveryScreenshotTest {
                 discoveryState = ServerDiscovered(
                     "hello",
                     URL("http://my.homeassistant.io"),
-                    HomeAssistantVersion(2042, 1, 42),
+                    HivebitVersion(2042, 1, 42),
                 ),
                 onConnectClick = {},
                 onManualSetupClick = {},
@@ -72,17 +72,17 @@ class ServerDiscoveryScreenshotTest {
                         ServerDiscovered(
                             "Mr Yellow",
                             URL("http://my.homeassistant.io"),
-                            HomeAssistantVersion(2042, 1, 42),
+                            HivebitVersion(2042, 1, 42),
                         ),
                         ServerDiscovered(
                             "Mr Green",
                             URL("http://ohf.org"),
-                            HomeAssistantVersion(2042, 1, 42),
+                            HivebitVersion(2042, 1, 42),
                         ),
                         ServerDiscovered(
                             "Mr Red",
                             URL("http://my.homeassistant.very.long.url.for.testing.with.many.sub.domains.org"),
-                            HomeAssistantVersion(2042, 1, 42),
+                            HivebitVersion(2042, 1, 42),
                         ),
                     ),
                 ),

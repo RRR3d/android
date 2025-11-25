@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.util.compose.webview
+package io.hivebit.companion.android.util.compose.webview
 
 import android.annotation.SuppressLint
 import android.content.res.Configuration
@@ -13,8 +13,8 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.webkit.WebSettingsCompat
 import androidx.webkit.WebViewFeature
-import io.homeassistant.companion.android.common.data.HomeAssistantApis
-import io.homeassistant.companion.android.common.data.prefs.NightModeTheme
+import io.hivebit.companion.android.common.data.HivebitApis
+import io.hivebit.companion.android.common.data.prefs.NightModeTheme
 import timber.log.Timber
 
 /**
@@ -102,7 +102,7 @@ private fun WebSettings.defaultSettings() {
     domStorageEnabled = true
     // https://github.com/home-assistant/android/pull/2252
     displayZoomControls = false
-    userAgentString += " ${HomeAssistantApis.USER_AGENT_STRING}"
+    userAgentString += " ${HivebitApis.USER_AGENT_STRING}"
 }
 
 @Suppress("DEPRECATION")

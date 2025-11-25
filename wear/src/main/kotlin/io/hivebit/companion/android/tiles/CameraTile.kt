@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.tiles
+package io.hivebit.companion.android.tiles
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -17,14 +17,14 @@ import androidx.wear.tiles.TileBuilders.Tile
 import androidx.wear.tiles.TileService
 import com.google.common.util.concurrent.ListenableFuture
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.prefs.WearPrefsRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.database.AppDatabase
-import io.homeassistant.companion.android.database.wear.CameraTile
-import io.homeassistant.companion.android.home.HomeActivity
-import io.homeassistant.companion.android.util.UrlUtil
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.prefs.WearPrefsRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.database.AppDatabase
+import io.hivebit.companion.android.database.wear.CameraTile
+import io.hivebit.companion.android.home.HomeActivity
+import io.hivebit.companion.android.util.UrlUtil
 import java.io.ByteArrayOutputStream
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
@@ -233,7 +233,7 @@ class CameraTile : TileService() {
                 if (it >= 1) {
                     try {
                         getUpdater(this@CameraTile)
-                            .requestUpdate(io.homeassistant.companion.android.tiles.CameraTile::class.java)
+                            .requestUpdate(io.hivebit.companion.android.tiles.CameraTile::class.java)
                     } catch (e: Exception) {
                         Timber.w(e, "Unable to request tile update on enter")
                     }

@@ -1,14 +1,14 @@
-package io.homeassistant.companion.android.common.sensors
+package io.hivebit.companion.android.common.sensors
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.os.SystemClock
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.util.STATE_UNAVAILABLE
-import io.homeassistant.companion.android.database.AppDatabase
-import io.homeassistant.companion.android.database.sensor.SensorSetting
-import io.homeassistant.companion.android.database.sensor.SensorSettingType
-import io.homeassistant.companion.android.database.sensor.toSensorWithAttributes
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.util.STATE_UNAVAILABLE
+import io.hivebit.companion.android.database.AppDatabase
+import io.hivebit.companion.android.database.sensor.SensorSetting
+import io.hivebit.companion.android.database.sensor.SensorSettingType
+import io.hivebit.companion.android.database.sensor.toSensorWithAttributes
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Date

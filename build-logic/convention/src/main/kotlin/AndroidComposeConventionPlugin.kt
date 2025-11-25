@@ -1,8 +1,8 @@
 
 import com.android.compose.screenshot.gradle.ScreenshotTestOptions
 import com.android.compose.screenshot.tasks.PreviewScreenshotValidationTask
-import io.homeassistant.companion.android.androidConfig
-import io.homeassistant.companion.android.getPluginId
+import io.hivebit.companion.android.androidConfig
+import io.hivebit.companion.android.getPluginId
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.apply

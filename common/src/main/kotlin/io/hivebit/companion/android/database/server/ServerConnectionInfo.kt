@@ -1,11 +1,11 @@
-package io.homeassistant.companion.android.database.server
+package io.hivebit.companion.android.database.server
 
 import androidx.room.ColumnInfo
 import androidx.room.Ignore
 import androidx.room.TypeConverter
-import io.homeassistant.companion.android.common.data.network.NetworkHelper
-import io.homeassistant.companion.android.common.data.network.WifiHelper
-import io.homeassistant.companion.android.common.util.kotlinJsonMapper
+import io.hivebit.companion.android.common.data.network.NetworkHelper
+import io.hivebit.companion.android.common.data.network.WifiHelper
+import io.hivebit.companion.android.common.util.kotlinJsonMapper
 import java.net.URL
 import kotlinx.serialization.SerializationException
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull

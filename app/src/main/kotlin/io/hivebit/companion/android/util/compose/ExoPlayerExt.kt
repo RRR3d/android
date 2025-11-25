@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.util.compose
+package io.hivebit.companion.android.util.compose
 
 import android.content.Context
 import androidx.annotation.OptIn

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.matter
+package io.hivebit.companion.android.matter
 
 import android.content.Intent
 import android.os.Bundle
@@ -14,12 +14,12 @@ import androidx.lifecycle.lifecycleScope
 import com.google.android.gms.home.matter.Matter
 import com.google.android.gms.home.matter.commissioning.SharedDeviceData
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.matter.views.MatterCommissioningView
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
-import io.homeassistant.companion.android.util.enableEdgeToEdgeCompat
-import io.homeassistant.companion.android.webview.WebViewActivity
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.matter.views.MatterCommissioningView
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.util.enableEdgeToEdgeCompat
+import io.hivebit.companion.android.webview.WebViewActivity
 import javax.inject.Inject
 import kotlinx.coroutines.launch
 import timber.log.Timber

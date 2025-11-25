@@ -1,12 +1,12 @@
-package io.homeassistant.companion.android.compose.composable
+package io.hivebit.companion.android.compose.composable
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import com.android.tools.screenshot.PreviewTest
-import io.homeassistant.companion.android.common.compose.composable.HADetails
-import io.homeassistant.companion.android.common.compose.theme.HATextStyle
-import io.homeassistant.companion.android.common.compose.theme.HAThemeForPreview
+import io.hivebit.companion.android.common.compose.composable.HADetails
+import io.hivebit.companion.android.common.compose.theme.HATextStyle
+import io.hivebit.companion.android.common.compose.theme.HAThemeForPreview
 
 class HADetailsScreenshotTest {
 

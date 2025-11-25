@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.locationsharing
+package io.hivebit.companion.android.onboarding.locationsharing
 
 import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.SavedStateHandle
@@ -6,8 +6,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.database.sensor.SensorDao
-import io.homeassistant.companion.android.onboarding.locationsharing.navigation.LocationSharingRoute
+import io.hivebit.companion.android.database.sensor.SensorDao
+import io.hivebit.companion.android.onboarding.locationsharing.navigation.LocationSharingRoute
 import javax.inject.Inject
 import kotlinx.coroutines.launch
 import timber.log.Timber

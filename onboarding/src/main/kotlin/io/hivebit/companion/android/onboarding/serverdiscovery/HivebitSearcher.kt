@@ -1,12 +1,12 @@
-package io.homeassistant.companion.android.onboarding.serverdiscovery
+package io.hivebit.companion.android.onboarding.serverdiscovery
 
 import android.net.nsd.NsdManager
 import android.net.nsd.NsdServiceInfo
 import android.net.wifi.WifiManager
 import android.os.Build
 import androidx.annotation.VisibleForTesting
-import io.homeassistant.companion.android.common.data.HomeAssistantVersion
-import io.homeassistant.companion.android.common.util.FailFast
+import io.hivebit.companion.android.common.data.HivebitVersion
+import io.hivebit.companion.android.common.util.FailFast
 import java.net.MalformedURLException
 import java.net.URL
 import java.util.concurrent.atomic.AtomicBoolean
@@ -23,16 +23,16 @@ import timber.log.Timber
 
 @VisibleForTesting const val SERVICE_TYPE = "_home-assistant._tcp"
 
-@VisibleForTesting const val LOCK_TAG = "HomeAssistantSearcher_lock"
+@VisibleForTesting const val LOCK_TAG = "HivebitSearcher_lock"
 
-internal data class HomeAssistantInstance(val name: String, val url: URL, val version: HomeAssistantVersion)
+internal data class HivebitInstance(val name: String, val url: URL, val version: HivebitVersion)
 
 /**
  * Interface responsible for discovering Home Assistant instances on the local network.
  */
-internal interface HomeAssistantSearcher {
+internal interface HivebitSearcher {
     /**
-     * Returns a [Flow] that emits [HomeAssistantInstance] objects as they are discovered.
+     * Returns a [Flow] that emits [HivebitInstance] objects as they are discovered.
      *
      * This flow is designed for a single collector. Attempting to collect it multiple
      * times concurrently will lead to unpredictable behavior and crashes in debug builds.
@@ -40,22 +40,22 @@ internal interface HomeAssistantSearcher {
      * The discovery process starts when the flow is collected and stops when the collector
      * is cancelled or completes.
      *
-     * @return A [Flow] of [HomeAssistantInstance].
+     * @return A [Flow] of [HivebitInstance].
      * @throws DiscoveryFailedException if the discovery process fails to start.
      */
-    fun discoveredInstanceFlow(): Flow<HomeAssistantInstance>
+    fun discoveredInstanceFlow(): Flow<HivebitInstance>
 }
 
 internal class DiscoveryFailedException(message: String?) : Exception(message)
 
-internal class HomeAssistantSearcherImpl @Inject constructor(
+internal class HivebitSearcherImpl @Inject constructor(
     private val nsdManager: NsdManager,
     private val wifiManager: WifiManager?,
-) : HomeAssistantSearcher {
+) : HivebitSearcher {
 
     companion object {
         /**
-         * Tracks whether there is an active collector for [HomeAssistantSearcher.discoveredInstanceFlow].
+         * Tracks whether there is an active collector for [HivebitSearcher.discoveredInstanceFlow].
          * This class is designed to be a singleton, instantiated once and injected with Hilt.
          * The static [AtomicBoolean] acts as a safeguard against potential Hilt misconfiguration
          * (hence its static nature) or unintended multiple concurrent collections of the flow.
@@ -64,7 +64,7 @@ internal class HomeAssistantSearcherImpl @Inject constructor(
         @VisibleForTesting val hasCollector = AtomicBoolean(false)
     }
 
-    override fun discoveredInstanceFlow(): Flow<HomeAssistantInstance> {
+    override fun discoveredInstanceFlow(): Flow<HivebitInstance> {
         FailFast.failWhen(hasCollector.get()) {
             "Something has already called discoveredInstanceFlow() and didn't close the flow yet."
         }
@@ -126,7 +126,7 @@ internal class HomeAssistantSearcherImpl @Inject constructor(
     }
 
     /**
-     * A [Flow] that resolves discovered [NsdServiceInfo] objects into [HomeAssistantInstance] objects.
+     * A [Flow] that resolves discovered [NsdServiceInfo] objects into [HivebitInstance] objects.
      *
      * This flow processes each [NsdServiceInfo] emitted by [nsdDiscoveryFlow] one at a time
      * to avoid overwhelming the system with simultaneous resolve requests.
@@ -136,7 +136,7 @@ internal class HomeAssistantSearcherImpl @Inject constructor(
      * [NsdManager.resolveService].
      *
      * - On successful resolution, it parses the service attributes to create a
-     *   [HomeAssistantInstance] and emits it.
+     *   [HivebitInstance] and emits it.
      * - If resolution fails or the required attributes (base_url, version) are missing or invalid,
      *   it logs a warning and skips the service.
      *
@@ -144,7 +144,7 @@ internal class HomeAssistantSearcherImpl @Inject constructor(
      * it attempts to stop the service resolution using [NsdManager.stopServiceResolution] (on API 34+).
      */
     @OptIn(ExperimentalCoroutinesApi::class)
-    private val serviceFlow: Flow<HomeAssistantInstance> = nsdDiscoveryFlow.flatMapMerge(
+    private val serviceFlow: Flow<HivebitInstance> = nsdDiscoveryFlow.flatMapMerge(
         concurrency = 1,
     ) { serviceInfo ->
         Timber.d("Got service info $serviceInfo")
@@ -201,7 +201,7 @@ private fun ProducerScope<NsdServiceInfo>.getDiscoveryListener(): NsdManager.Dis
     }
 }
 
-private fun ProducerScope<HomeAssistantInstance>.getResolvedListener(): NsdManager.ResolveListener {
+private fun ProducerScope<HivebitInstance>.getResolvedListener(): NsdManager.ResolveListener {
     return object : NsdManager.ResolveListener {
         override fun onResolveFailed(serviceInfo: NsdServiceInfo?, errorCode: Int) {
             Timber.w("Failed to resolve information for service: $serviceInfo, error code $errorCode skipping")
@@ -210,7 +210,7 @@ private fun ProducerScope<HomeAssistantInstance>.getResolvedListener(): NsdManag
 
         override fun onServiceResolved(serviceInfo: NsdServiceInfo?) {
             Timber.d("Service resolved: $serviceInfo")
-            serviceInfo?.toHomeAssistantInstance()?.let { instance ->
+            serviceInfo?.toHivebitInstance()?.let { instance ->
                 trySend(instance)
             }
             close()
@@ -218,7 +218,7 @@ private fun ProducerScope<HomeAssistantInstance>.getResolvedListener(): NsdManag
     }
 }
 
-private fun NsdServiceInfo.toHomeAssistantInstance(): HomeAssistantInstance? {
+private fun NsdServiceInfo.toHivebitInstance(): HivebitInstance? {
     val baseUrlString = attributes?.get("base_url")?.toString(Charsets.UTF_8)
     if (baseUrlString.isNullOrBlank()) {
         Timber.w("Base URL is missing or empty in NSD attributes for service: $this")
@@ -235,18 +235,18 @@ private fun NsdServiceInfo.toHomeAssistantInstance(): HomeAssistantInstance? {
     val versionAttr = attributes?.get("version")?.toString(Charsets.UTF_8)
     if (versionAttr.isNullOrBlank()) {
         Timber.w(
-            "Version attribute is missing or empty for service: $serviceName. Cannot create HomeAssistantInstance.",
+            "Version attribute is missing or empty for service: $serviceName. Cannot create HivebitInstance.",
         )
         return null
     }
 
-    val haVersion = HomeAssistantVersion.fromString(versionAttr)
+    val haVersion = HivebitVersion.fromString(versionAttr)
     if (haVersion == null) {
         Timber.w("Failed to parse version from '$versionAttr' for service: $serviceName. Skipping.")
         return null
     }
 
-    return HomeAssistantInstance(
+    return HivebitInstance(
         serviceName,
         baseUrl,
         haVersion,

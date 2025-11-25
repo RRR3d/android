@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.integration
+package io.hivebit.companion.android.onboarding.integration
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -19,14 +19,14 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.util.DisabledLocationHandler
-import io.homeassistant.companion.android.common.util.maybeAskForIgnoringBatteryOptimizations
-import io.homeassistant.companion.android.onboarding.OnboardingViewModel
-import io.homeassistant.companion.android.onboarding.notifications.NotificationPermissionFragment
-import io.homeassistant.companion.android.sensors.LocationSensorManager
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.util.DisabledLocationHandler
+import io.hivebit.companion.android.common.util.maybeAskForIgnoringBatteryOptimizations
+import io.hivebit.companion.android.onboarding.OnboardingViewModel
+import io.hivebit.companion.android.onboarding.notifications.NotificationPermissionFragment
+import io.hivebit.companion.android.sensors.LocationSensorManager
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
 import java.io.IOException
 import java.security.KeyStore
 import kotlinx.coroutines.launch

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.tiles
+package io.hivebit.companion.android.tiles
 
 import android.content.Context
 import android.os.Build
@@ -22,10 +22,10 @@ import androidx.wear.protolayout.material.Text
 import androidx.wear.protolayout.material.Typography
 import androidx.wear.protolayout.material.layouts.PrimaryLayout
 import androidx.wear.tiles.RequestBuilders
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.home.HomeActivity
-import io.homeassistant.companion.android.splash.SplashActivity
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.home.HomeActivity
+import io.hivebit.companion.android.splash.SplashActivity
 
 const val RESOURCE_REFRESH = "refresh"
 const val MODIFIER_CLICK_REFRESH = "refresh"

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.util
+package io.hivebit.companion.android.common.util
 
 import java.net.InetAddress
 import okio.ByteString.Companion.decodeHex

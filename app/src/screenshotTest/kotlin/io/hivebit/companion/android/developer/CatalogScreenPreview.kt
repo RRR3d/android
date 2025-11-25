@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.developer
+package io.hivebit.companion.android.developer
 
 import android.content.res.Configuration
 import androidx.compose.ui.tooling.preview.Devices.TABLET

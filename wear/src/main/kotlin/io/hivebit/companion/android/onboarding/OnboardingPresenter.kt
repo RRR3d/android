@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding
+package io.hivebit.companion.android.onboarding
 
 import android.content.Context
 import com.google.android.gms.wearable.DataClient
@@ -10,5 +10,5 @@ interface OnboardingPresenter : DataClient.OnDataChangedListener {
 
     fun onFinish()
 
-    fun getInstance(map: DataMap): HomeAssistantInstance
+    fun getInstance(map: DataMap): HivebitInstance
 }

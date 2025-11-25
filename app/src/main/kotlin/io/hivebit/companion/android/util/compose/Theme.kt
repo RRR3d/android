@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.util.compose
+package io.hivebit.companion.android.util.compose
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.LocalContentColor
@@ -18,9 +18,9 @@ import androidx.glance.color.ColorProviders
 import androidx.glance.material.ColorProviders
 import androidx.glance.text.FontWeight
 import androidx.glance.text.TextStyle
-import io.homeassistant.companion.android.common.compose.theme.DarkHAColorScheme
-import io.homeassistant.companion.android.common.compose.theme.LightHAColorScheme
-import io.homeassistant.companion.android.common.compose.theme.LocalHAColorScheme
+import io.hivebit.companion.android.common.compose.theme.DarkHAColorScheme
+import io.hivebit.companion.android.common.compose.theme.LightHAColorScheme
+import io.hivebit.companion.android.common.compose.theme.LocalHAColorScheme
 
 val colorPrimary = Color(0xFF03A9F4)
 val colorPrimaryDark = Color(0xFF0288D1)
@@ -66,8 +66,8 @@ fun HomeAssistantAppTheme(content: @Composable () -> Unit) {
 }
 
 @Composable
-fun HomeAssistantGlanceTheme(
-    colors: ColorProviders = HomeAssistantGlanceTheme.colors,
+fun HivebitGlanceTheme(
+    colors: ColorProviders = HivebitGlanceTheme.colors,
     content: @Composable () -> Unit,
 ) {
     CompositionLocalProvider(
@@ -77,52 +77,52 @@ fun HomeAssistantGlanceTheme(
     }
 }
 
-object HomeAssistantGlanceTypography {
+object HivebitGlanceTypography {
     val titleLarge: TextStyle
         @Composable
         get() = TextStyle(
             fontSize = 18.sp,
             fontWeight = FontWeight.Bold,
-            color = HomeAssistantGlanceTheme.colors.onSurface,
+            color = HivebitGlanceTheme.colors.onSurface,
         )
     val titleMedium: TextStyle
         @Composable
         get() = TextStyle(
             fontSize = 18.sp,
             fontWeight = FontWeight.Medium,
-            color = HomeAssistantGlanceTheme.colors.onSurface,
+            color = HivebitGlanceTheme.colors.onSurface,
         )
     val titleSmall: TextStyle
         @Composable
         get() = TextStyle(
             fontSize = 18.sp,
             fontWeight = FontWeight.Normal,
-            color = HomeAssistantGlanceTheme.colors.onSurface,
+            color = HivebitGlanceTheme.colors.onSurface,
         )
     val bodyLarge: TextStyle
         @Composable
         get() = TextStyle(
             fontSize = 14.sp,
             fontWeight = FontWeight.Bold,
-            color = HomeAssistantGlanceTheme.colors.onSurface,
+            color = HivebitGlanceTheme.colors.onSurface,
         )
     val bodyMedium: TextStyle
         @Composable
         get() = TextStyle(
             fontSize = 14.sp,
             fontWeight = FontWeight.Medium,
-            color = HomeAssistantGlanceTheme.colors.onSurface,
+            color = HivebitGlanceTheme.colors.onSurface,
         )
     val bodySmall: TextStyle
         @Composable
         get() = TextStyle(
             fontSize = 14.sp,
             fontWeight = FontWeight.Normal,
-            color = HomeAssistantGlanceTheme.colors.onSurface,
+            color = HivebitGlanceTheme.colors.onSurface,
         )
 }
 
-object HomeAssistantGlanceDimensions {
+object HivebitGlanceDimensions {
     val iconSize: Dp
         @Composable
         get() = 48.dp
@@ -153,14 +153,14 @@ internal val LocalGlanceColors: ProvidableCompositionLocal<ColorProviders> = sta
     ColorProviders(glanceHaLightColors, glanceHaDarkColors)
 }
 
-object HomeAssistantGlanceTheme {
+object HivebitGlanceTheme {
     val colors: ColorProviders
         @Composable
         get() = LocalGlanceColors.current
-    val typography: HomeAssistantGlanceTypography
+    val typography: HivebitGlanceTypography
         @Composable
-        get() = HomeAssistantGlanceTypography
-    val dimensions: HomeAssistantGlanceDimensions
+        get() = HivebitGlanceTypography
+    val dimensions: HivebitGlanceDimensions
         @Composable
-        get() = HomeAssistantGlanceDimensions
+        get() = HivebitGlanceDimensions
 }

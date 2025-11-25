@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.bluetooth.ble
+package io.hivebit.companion.android.common.bluetooth.ble
 
 data class IBeaconTransmitter(
     override var uuid: String,

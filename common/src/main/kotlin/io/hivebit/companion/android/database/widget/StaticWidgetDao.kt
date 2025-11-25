@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.database.widget
+package io.hivebit.companion.android.database.widget
 
 import androidx.room.Dao
 import androidx.room.Insert

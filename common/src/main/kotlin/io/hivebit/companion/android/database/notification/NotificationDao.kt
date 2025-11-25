@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.database.notification
+package io.hivebit.companion.android.database.notification
 
 import androidx.room.Dao
 import androidx.room.Insert

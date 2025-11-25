@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.websocket
+package io.hivebit.companion.android.websocket
 
 import android.content.BroadcastReceiver
 import android.content.Context

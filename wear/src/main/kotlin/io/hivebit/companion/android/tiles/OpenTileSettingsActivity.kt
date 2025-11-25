@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.tiles
+package io.hivebit.companion.android.tiles
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,8 +6,8 @@ import androidx.activity.ComponentActivity
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.data.prefs.WearPrefsRepositoryImpl
-import io.homeassistant.companion.android.home.HomeActivity
+import io.hivebit.companion.android.common.data.prefs.WearPrefsRepositoryImpl
+import io.hivebit.companion.android.home.HomeActivity
 import javax.inject.Inject
 import kotlinx.coroutines.launch
 

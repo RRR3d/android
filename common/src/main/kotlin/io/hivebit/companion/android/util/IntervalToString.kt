@@ -1,7 +1,7 @@
-package io.homeassistant.companion.android.util
+package io.hivebit.companion.android.util
 
 import android.content.Context
-import io.homeassistant.companion.android.common.R
+import io.hivebit.companion.android.common.R
 
 fun intervalToString(context: Context, interval: Int): String {
     return when {

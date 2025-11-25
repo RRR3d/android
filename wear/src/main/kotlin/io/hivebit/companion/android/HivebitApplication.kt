@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android
+package io.hivebit.companion.android
 
 import android.app.Application
 import android.app.NotificationManager
@@ -14,13 +14,13 @@ import androidx.compose.runtime.Composer
 import androidx.compose.runtime.ExperimentalComposeRuntimeApi
 import androidx.core.content.ContextCompat
 import dagger.hilt.android.HiltAndroidApp
-import io.homeassistant.companion.android.common.data.keychain.KeyChainRepository
-import io.homeassistant.companion.android.common.data.keychain.KeyStoreRepositoryImpl
-import io.homeassistant.companion.android.common.data.keychain.NamedKeyStore
-import io.homeassistant.companion.android.common.sensors.AudioSensorManager
-import io.homeassistant.companion.android.common.util.HAStrictMode
-import io.homeassistant.companion.android.complications.ComplicationReceiver
-import io.homeassistant.companion.android.sensors.SensorReceiver
+import io.hivebit.companion.android.common.data.keychain.KeyChainRepository
+import io.hivebit.companion.android.common.data.keychain.KeyStoreRepositoryImpl
+import io.hivebit.companion.android.common.data.keychain.NamedKeyStore
+import io.hivebit.companion.android.common.sensors.AudioSensorManager
+import io.hivebit.companion.android.common.util.HAStrictMode
+import io.hivebit.companion.android.complications.ComplicationReceiver
+import io.hivebit.companion.android.sensors.SensorReceiver
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -29,7 +29,7 @@ import kotlinx.coroutines.launch
 import timber.log.Timber
 
 @HiltAndroidApp
-open class HomeAssistantApplication : Application() {
+open class HivebitApplication : Application() {
     private val ioScope: CoroutineScope = CoroutineScope(Dispatchers.IO + Job())
 
     @Inject

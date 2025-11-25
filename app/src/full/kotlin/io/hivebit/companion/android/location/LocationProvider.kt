@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.location
+package io.hivebit.companion.android.location
 
 import android.Manifest
 import android.content.Context

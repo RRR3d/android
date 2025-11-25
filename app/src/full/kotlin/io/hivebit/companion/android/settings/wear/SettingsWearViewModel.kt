@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.wear
+package io.hivebit.companion.android.settings.wear
 
 import android.app.Application
 import androidx.annotation.StringRes
@@ -20,18 +20,18 @@ import com.google.android.gms.wearable.NodeClient
 import com.google.android.gms.wearable.PutDataMapRequest
 import com.google.android.gms.wearable.Wearable
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.HomeAssistantApplication
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.prefs.impl.entities.TemplateTileConfig
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.WearDataMessages
-import io.homeassistant.companion.android.common.util.kotlinJsonMapper
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.database.server.ServerConnectionInfo
-import io.homeassistant.companion.android.database.server.ServerSessionInfo
-import io.homeassistant.companion.android.database.server.ServerType
-import io.homeassistant.companion.android.database.server.ServerUserInfo
+import io.hivebit.companion.android.HivebitApplication
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.prefs.impl.entities.TemplateTileConfig
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.WearDataMessages
+import io.hivebit.companion.android.common.util.kotlinJsonMapper
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.database.server.ServerConnectionInfo
+import io.hivebit.companion.android.database.server.ServerSessionInfo
+import io.hivebit.companion.android.database.server.ServerType
+import io.hivebit.companion.android.database.server.ServerUserInfo
 import java.util.UUID
 import javax.inject.Inject
 import kotlinx.coroutines.CancellationException
@@ -166,7 +166,7 @@ class SettingsWearViewModel @Inject constructor(private val serverManager: Serve
 
     override fun onCleared() {
         try {
-            Wearable.getDataClient(getApplication<HomeAssistantApplication>()).removeListener(this)
+            Wearable.getDataClient(getApplication<HivebitApplication>()).removeListener(this)
         } catch (e: Exception) {
             Timber.e(e, "Unable to remove listener from wearable data client")
         }
@@ -259,7 +259,7 @@ class SettingsWearViewModel @Inject constructor(private val serverManager: Serve
     }
 
     fun sendHomeFavorites(favoritesList: List<String>) = viewModelScope.launch {
-        val application = getApplication<HomeAssistantApplication>()
+        val application = getApplication<HivebitApplication>()
         val putDataRequest = PutDataMapRequest.create("/updateFavorites").run {
             dataMap.putLong(WearDataMessages.KEY_UPDATE_TIME, System.nanoTime())
             dataMap.putString(WearDataMessages.CONFIG_FAVORITES, kotlinJsonMapper.encodeToString(favoritesList))
@@ -278,7 +278,7 @@ class SettingsWearViewModel @Inject constructor(private val serverManager: Serve
 
     private fun readUriData(uri: String): ByteArray {
         if (uri.isEmpty()) return ByteArray(0)
-        return getApplication<HomeAssistantApplication>().contentResolver.openInputStream(
+        return getApplication<HivebitApplication>().contentResolver.openInputStream(
             uri.toUri(),
         )!!.buffered().use {
             it.readBytes()
@@ -309,7 +309,7 @@ class SettingsWearViewModel @Inject constructor(private val serverManager: Serve
             asPutDataRequest()
         }
 
-        val app = getApplication<HomeAssistantApplication>()
+        val app = getApplication<HivebitApplication>()
         try {
             Wearable.getDataClient(app).putDataItem(putDataRequest).apply {
                 addOnSuccessListener { Timber.d("Successfully sent auth to wear") }
@@ -336,7 +336,7 @@ class SettingsWearViewModel @Inject constructor(private val serverManager: Serve
         }
 
         try {
-            Wearable.getDataClient(getApplication<HomeAssistantApplication>())
+            Wearable.getDataClient(getApplication<HivebitApplication>())
                 .putDataItem(putDataRequest).apply {
                     addOnSuccessListener { Timber.d("Successfully sent tile template to wear") }
                     addOnFailureListener { e -> Timber.e(e, "Failed to send tile template to wear") }
@@ -452,7 +452,7 @@ class SettingsWearViewModel @Inject constructor(private val serverManager: Serve
         if (id != authenticateId) return@launch
 
         val success = data.getBoolean(WearDataMessages.KEY_SUCCESS, false)
-        val application = getApplication<HomeAssistantApplication>()
+        val application = getApplication<HivebitApplication>()
         if (success) {
             _resultSnackbar.emit(application.getString(commonR.string.logged_in))
         } else {
@@ -464,7 +464,7 @@ class SettingsWearViewModel @Inject constructor(private val serverManager: Serve
         authenticateId = null
     }
 
-    private fun watchConnectionError(app: HomeAssistantApplication) {
+    private fun watchConnectionError(app: HivebitApplication) {
         viewModelScope.launch {
             _resultSnackbar.emit(app.getString(commonR.string.failed_watch_connection))
         }

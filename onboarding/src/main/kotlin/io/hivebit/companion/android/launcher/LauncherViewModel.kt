@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.launcher
+package io.hivebit.companion.android.launcher
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -7,13 +7,13 @@ import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.common.data.authentication.SessionState
-import io.homeassistant.companion.android.common.data.network.NetworkState
-import io.homeassistant.companion.android.common.data.network.NetworkStatusMonitor
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.ResyncRegistrationWorker.Companion.enqueueResyncRegistration
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.di.qualifiers.LocationTrackingSupport
+import io.hivebit.companion.android.common.data.authentication.SessionState
+import io.hivebit.companion.android.common.data.network.NetworkState
+import io.hivebit.companion.android.common.data.network.NetworkStatusMonitor
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.ResyncRegistrationWorker.Companion.enqueueResyncRegistration
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.di.qualifiers.LocationTrackingSupport
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.collect

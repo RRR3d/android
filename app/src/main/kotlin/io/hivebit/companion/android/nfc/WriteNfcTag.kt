@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.nfc
+package io.hivebit.companion.android.nfc
 
 import android.content.Context
 import android.content.Intent

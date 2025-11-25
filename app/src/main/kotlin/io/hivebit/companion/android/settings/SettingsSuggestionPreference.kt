@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings
+package io.hivebit.companion.android.settings
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.ImageButton
 import androidx.preference.Preference
 import androidx.preference.PreferenceViewHolder
-import io.homeassistant.companion.android.R
+import io.hivebit.companion.android.R
 
 class SettingsSuggestionPreference @JvmOverloads constructor(
     context: Context,

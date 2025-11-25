@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.vehicle
+package io.hivebit.companion.android.settings.vehicle
 
 import android.os.Build
 import android.os.Bundle
@@ -10,11 +10,11 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.util.isAutomotive
-import io.homeassistant.companion.android.settings.addHelpMenuProvider
-import io.homeassistant.companion.android.settings.vehicle.views.AndroidAutoFavoritesSettings
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.util.isAutomotive
+import io.hivebit.companion.android.settings.addHelpMenuProvider
+import io.hivebit.companion.android.settings.vehicle.views.AndroidAutoFavoritesSettings
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
 
 @AndroidEntryPoint
 class ManageAndroidAutoSettingsFragment : Fragment() {

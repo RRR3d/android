@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets.todo
+package io.hivebit.companion.android.widgets.todo
 
 import android.annotation.SuppressLint
 import android.appwidget.AppWidgetManager
@@ -37,25 +37,25 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.lifecycle.withCreationCallback
-import io.homeassistant.companion.android.BaseActivity
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.database.widget.WidgetBackgroundType
-import io.homeassistant.companion.android.settings.widgets.ManageWidgetsViewModel
-import io.homeassistant.companion.android.util.compose.ExposedDropdownMenu
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
-import io.homeassistant.companion.android.util.compose.ServerExposedDropdownMenu
-import io.homeassistant.companion.android.util.compose.SingleEntityPicker
-import io.homeassistant.companion.android.util.compose.WidgetBackgroundTypeExposedDropdownMenu
-import io.homeassistant.companion.android.util.enableEdgeToEdgeCompat
-import io.homeassistant.companion.android.util.getHexForColor
-import io.homeassistant.companion.android.util.previewEntity1
-import io.homeassistant.companion.android.util.previewEntity2
-import io.homeassistant.companion.android.util.previewServer1
-import io.homeassistant.companion.android.util.previewServer2
-import io.homeassistant.companion.android.util.safeBottomWindowInsets
-import io.homeassistant.companion.android.util.safeTopWindowInsets
+import io.hivebit.companion.android.BaseActivity
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.database.widget.WidgetBackgroundType
+import io.hivebit.companion.android.settings.widgets.ManageWidgetsViewModel
+import io.hivebit.companion.android.util.compose.ExposedDropdownMenu
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.util.compose.ServerExposedDropdownMenu
+import io.hivebit.companion.android.util.compose.SingleEntityPicker
+import io.hivebit.companion.android.util.compose.WidgetBackgroundTypeExposedDropdownMenu
+import io.hivebit.companion.android.util.enableEdgeToEdgeCompat
+import io.hivebit.companion.android.util.getHexForColor
+import io.hivebit.companion.android.util.previewEntity1
+import io.hivebit.companion.android.util.previewEntity2
+import io.hivebit.companion.android.util.previewServer1
+import io.hivebit.companion.android.util.previewServer2
+import io.hivebit.companion.android.util.safeBottomWindowInsets
+import io.hivebit.companion.android.util.safeTopWindowInsets
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint

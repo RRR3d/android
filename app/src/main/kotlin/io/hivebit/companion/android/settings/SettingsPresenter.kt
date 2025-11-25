@@ -1,10 +1,10 @@
-package io.homeassistant.companion.android.settings
+package io.hivebit.companion.android.settings
 
 import android.content.Context
 import androidx.preference.PreferenceDataStore
-import io.homeassistant.companion.android.common.data.integration.impl.entities.RateLimitResponse
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.onboarding.OnboardApp
+import io.hivebit.companion.android.common.data.integration.impl.entities.RateLimitResponse
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.onboarding.OnboardApp
 import kotlinx.coroutines.flow.StateFlow
 
 interface SettingsPresenter {

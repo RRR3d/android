@@ -1,11 +1,11 @@
-package io.homeassistant.companion.android.sensors
+package io.hivebit.companion.android.sensors
 
 import android.content.Context
-import io.homeassistant.companion.android.common.sensors.SensorManager
-import io.homeassistant.companion.android.database.AppDatabase
-import io.homeassistant.companion.android.database.sensor.Attribute
-import io.homeassistant.companion.android.database.sensor.Sensor
-import io.homeassistant.companion.android.database.sensor.SensorDao
+import io.hivebit.companion.android.common.sensors.SensorManager
+import io.hivebit.companion.android.database.AppDatabase
+import io.hivebit.companion.android.database.sensor.Attribute
+import io.hivebit.companion.android.database.sensor.Sensor
+import io.hivebit.companion.android.database.sensor.SensorDao
 import io.mockk.coEvery
 import io.mockk.coJustRun
 import io.mockk.every

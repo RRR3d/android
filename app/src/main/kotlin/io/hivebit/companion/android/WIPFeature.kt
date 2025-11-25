@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android
+package io.hivebit.companion.android
 
 /**
  * Central configuration for work-in-progress features.

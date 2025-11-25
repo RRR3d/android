@@ -1,12 +1,12 @@
-package io.homeassistant.companion.android
+package io.hivebit.companion.android
 
 import com.google.firebase.messaging.FirebaseMessaging
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import io.homeassistant.companion.android.common.util.MessagingToken
-import io.homeassistant.companion.android.common.util.MessagingTokenProvider
+import io.hivebit.companion.android.common.util.MessagingToken
+import io.hivebit.companion.android.common.util.MessagingTokenProvider
 import javax.inject.Singleton
 import kotlinx.coroutines.tasks.await
 import timber.log.Timber

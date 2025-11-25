@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.serverdiscovery
+package io.hivebit.companion.android.onboarding.serverdiscovery
 
 import android.net.nsd.NsdManager
 import android.net.nsd.NsdServiceInfo
@@ -6,9 +6,9 @@ import android.net.wifi.WifiManager
 import app.cash.turbine.TurbineTestContext
 import app.cash.turbine.test
 import app.cash.turbine.turbineScope
-import io.homeassistant.companion.android.common.data.HomeAssistantVersion
-import io.homeassistant.companion.android.common.util.FailFast
-import io.homeassistant.companion.android.testing.unit.ConsoleLogExtension
+import io.hivebit.companion.android.common.data.HivebitVersion
+import io.hivebit.companion.android.common.util.FailFast
+import io.hivebit.companion.android.testing.unit.ConsoleLogExtension
 import io.mockk.CapturingSlot
 import io.mockk.Ordering
 import io.mockk.Runs
@@ -30,19 +30,19 @@ import org.junit.jupiter.params.provider.CsvSource
 import timber.log.Timber
 
 @ExtendWith(ConsoleLogExtension::class)
-class HomeAssistantSearcherImplTest {
+class HivebitSearcherImplTest {
 
     private lateinit var nsdManager: NsdManager
     private lateinit var wifiManager: WifiManager
-    private lateinit var searcher: HomeAssistantSearcherImpl
+    private lateinit var searcher: HivebitSearcherImpl
 
     @BeforeEach
     fun setup() {
         nsdManager = mockk(relaxed = true)
         wifiManager = mockk(relaxed = true)
-        searcher = HomeAssistantSearcherImpl(nsdManager, wifiManager)
+        searcher = HivebitSearcherImpl(nsdManager, wifiManager)
         // Reset the singleton for each test
-        HomeAssistantSearcherImpl.hasCollector.set(false)
+        HivebitSearcherImpl.hasCollector.set(false)
     }
 
     @Test
@@ -60,14 +60,14 @@ class HomeAssistantSearcherImplTest {
             resolveListener.captured.onServiceResolved(serviceInfo)
 
             val item = awaitItem()
-            assertTrue(HomeAssistantSearcherImpl.hasCollector.get())
+            assertTrue(HivebitSearcherImpl.hasCollector.get())
             assertEquals(serviceInfo.serviceName, item.name)
             assertEquals(URL("http://localhost:8123"), item.url)
-            assertEquals(HomeAssistantVersion.fromString("2025.8.0"), item.version)
+            assertEquals(HivebitVersion.fromString("2025.8.0"), item.version)
             expectNoEvents()
         }
 
-        assertFalse(HomeAssistantSearcherImpl.hasCollector.get())
+        assertFalse(HivebitSearcherImpl.hasCollector.get())
 
         verifyDiscoveryStartedAndStopped(discoveryListener.captured, resolveListener.captured)
 
@@ -109,24 +109,24 @@ class HomeAssistantSearcherImplTest {
             resolveListener.captured.onServiceResolved(serviceInfo2)
 
             awaitItem().apply {
-                assertTrue(HomeAssistantSearcherImpl.hasCollector.get())
+                assertTrue(HivebitSearcherImpl.hasCollector.get())
                 assertEquals(serviceInfo.serviceName, name)
                 assertEquals(URL("http://localhost:8123"), url)
-                assertEquals(HomeAssistantVersion.fromString("2025.8.0"), version)
+                assertEquals(HivebitVersion.fromString("2025.8.0"), version)
             }
             resolveListener.captured.onServiceResolved(serviceInfo2)
 
             awaitItem().apply {
-                assertTrue(HomeAssistantSearcherImpl.hasCollector.get())
+                assertTrue(HivebitSearcherImpl.hasCollector.get())
                 assertEquals(serviceInfo.serviceName, name)
                 assertEquals(URL("https://helloworld.org"), url)
-                assertEquals(HomeAssistantVersion.fromString("2025.8.0"), version)
+                assertEquals(HivebitVersion.fromString("2025.8.0"), version)
             }
 
             expectNoEvents()
         }
 
-        assertFalse(HomeAssistantSearcherImpl.hasCollector.get())
+        assertFalse(HivebitSearcherImpl.hasCollector.get())
 
         verifyDiscoveryStartedAndStopped(discoveryListener.captured, resolveListener.captured)
 
@@ -231,7 +231,7 @@ class HomeAssistantSearcherImplTest {
             searcher.discoveredInstanceFlow().testIn(backgroundScope, name = "1")
             searcher.discoveredInstanceFlow().testIn(backgroundScope, name = "2")
         }
-        assertTrue(HomeAssistantSearcherImpl.hasCollector.get())
+        assertTrue(HivebitSearcherImpl.hasCollector.get())
 
         assertEquals("Something already started to collect, this flow is designed to only be collected by one collector at the time.", caughtException?.message)
     }
@@ -251,7 +251,7 @@ class HomeAssistantSearcherImplTest {
         // Getting a flow that is currently being collected should throw an exception
         val ignored = searcher.discoveredInstanceFlow()
 
-        assertTrue(HomeAssistantSearcherImpl.hasCollector.get())
+        assertTrue(HivebitSearcherImpl.hasCollector.get())
 
         assertEquals("Something has already called discoveredInstanceFlow() and didn't close the flow yet.", caughtException?.message)
     }
@@ -261,13 +261,13 @@ class HomeAssistantSearcherImplTest {
         every { nsdManager.resolveService(any(), capture(resolveListener)) } just Runs
     }
 
-    private suspend fun discoveredInstanceFlow(block: suspend TurbineTestContext<HomeAssistantInstance>.() -> Unit) {
-        assertFalse(HomeAssistantSearcherImpl.hasCollector.get())
+    private suspend fun discoveredInstanceFlow(block: suspend TurbineTestContext<HivebitInstance>.() -> Unit) {
+        assertFalse(HivebitSearcherImpl.hasCollector.get())
         searcher.discoveredInstanceFlow().test {
-            assertTrue(HomeAssistantSearcherImpl.hasCollector.get())
+            assertTrue(HivebitSearcherImpl.hasCollector.get())
             block()
         }
-        assertFalse(HomeAssistantSearcherImpl.hasCollector.get())
+        assertFalse(HivebitSearcherImpl.hasCollector.get())
     }
 
     private fun verifyDiscoveryStartedAndStopped(discoveryListener: NsdManager.DiscoveryListener, resolveListener: NsdManager.ResolveListener? = null) {

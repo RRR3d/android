@@ -1,9 +1,9 @@
 @file:OptIn(ExperimentalSerializationApi::class)
 
-package io.homeassistant.companion.android.common.data.websocket.impl.entities
+package io.hivebit.companion.android.common.data.websocket.impl.entities
 
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.util.MapAnySerializer
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.util.MapAnySerializer
 import java.time.LocalDateTime
 import java.time.ZoneOffset
 import kotlin.math.round

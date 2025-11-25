@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.controls.views
+package io.hivebit.companion.android.settings.controls.views
 
 import android.os.Build
 import androidx.compose.foundation.clickable
@@ -53,18 +53,18 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.mikepenz.iconics.compose.Image
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.ControlsAuthRequiredSetting
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.domain
-import io.homeassistant.companion.android.common.data.integration.friendlyName
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.util.compose.HaAlertWarning
-import io.homeassistant.companion.android.util.compose.ServerExposedDropdownMenu
-import io.homeassistant.companion.android.util.compose.getEntityDomainString
-import io.homeassistant.companion.android.util.plus
-import io.homeassistant.companion.android.util.safeBottomPaddingValues
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.ControlsAuthRequiredSetting
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.domain
+import io.hivebit.companion.android.common.data.integration.friendlyName
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.util.compose.HaAlertWarning
+import io.hivebit.companion.android.util.compose.ServerExposedDropdownMenu
+import io.hivebit.companion.android.util.compose.getEntityDomainString
+import io.hivebit.companion.android.util.plus
+import io.hivebit.companion.android.util.safeBottomPaddingValues
 
 @Composable
 fun ManageControlsView(

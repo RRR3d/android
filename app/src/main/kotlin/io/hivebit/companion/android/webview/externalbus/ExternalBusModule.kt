@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.webview.externalbus
+package io.hivebit.companion.android.webview.externalbus
 
 import dagger.Binds
 import dagger.Module

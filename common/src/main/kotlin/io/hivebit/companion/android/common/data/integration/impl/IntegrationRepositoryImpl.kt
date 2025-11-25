@@ -1,54 +1,54 @@
-package io.homeassistant.companion.android.common.data.integration.impl
+package io.hivebit.companion.android.common.data.integration.impl
 
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
-import io.homeassistant.companion.android.common.BuildConfig
-import io.homeassistant.companion.android.common.data.HomeAssistantVersion
-import io.homeassistant.companion.android.common.data.LocalStorage
-import io.homeassistant.companion.android.common.data.integration.Action
-import io.homeassistant.companion.android.common.data.integration.DeviceRegistration
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.IntegrationException
-import io.homeassistant.companion.android.common.data.integration.IntegrationRepository
-import io.homeassistant.companion.android.common.data.integration.SensorRegistration
-import io.homeassistant.companion.android.common.data.integration.UpdateLocation
-import io.homeassistant.companion.android.common.data.integration.impl.entities.ActionRequest
-import io.homeassistant.companion.android.common.data.integration.impl.entities.CallServiceIntegrationRequest
-import io.homeassistant.companion.android.common.data.integration.impl.entities.EntityResponse
-import io.homeassistant.companion.android.common.data.integration.impl.entities.FireEventIntegrationRequest
-import io.homeassistant.companion.android.common.data.integration.impl.entities.FireEventRequest
-import io.homeassistant.companion.android.common.data.integration.impl.entities.GetConfigIntegrationRequest
-import io.homeassistant.companion.android.common.data.integration.impl.entities.GetZonesIntegrationRequest
-import io.homeassistant.companion.android.common.data.integration.impl.entities.IntegrationRequest
-import io.homeassistant.companion.android.common.data.integration.impl.entities.RateLimitRequest
-import io.homeassistant.companion.android.common.data.integration.impl.entities.RateLimitResponse
-import io.homeassistant.companion.android.common.data.integration.impl.entities.RegisterDeviceIntegrationRequest
-import io.homeassistant.companion.android.common.data.integration.impl.entities.RegisterDeviceRequest
-import io.homeassistant.companion.android.common.data.integration.impl.entities.RegisterSensorIntegrationRequest
-import io.homeassistant.companion.android.common.data.integration.impl.entities.RenderTemplateIntegrationRequest
-import io.homeassistant.companion.android.common.data.integration.impl.entities.ScanTagIntegrationRequest
-import io.homeassistant.companion.android.common.data.integration.impl.entities.SensorRegistrationRequest
-import io.homeassistant.companion.android.common.data.integration.impl.entities.SensorUpdateRequest
-import io.homeassistant.companion.android.common.data.integration.impl.entities.Template
-import io.homeassistant.companion.android.common.data.integration.impl.entities.UpdateLocationIntegrationRequest
-import io.homeassistant.companion.android.common.data.integration.impl.entities.UpdateLocationRequest
-import io.homeassistant.companion.android.common.data.integration.impl.entities.UpdateSensorStatesIntegrationRequest
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.data.websocket.WebSocketRepository
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AssistPipelineEvent
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AssistPipelineEventType
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AssistPipelineIntentEnd
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.GetConfigResponse
-import io.homeassistant.companion.android.common.util.AppVersion
-import io.homeassistant.companion.android.common.util.FailFast
-import io.homeassistant.companion.android.common.util.MessagingToken
-import io.homeassistant.companion.android.common.util.isNullOrBlank
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.di.qualifiers.NamedDeviceId
-import io.homeassistant.companion.android.di.qualifiers.NamedIntegrationStorage
-import io.homeassistant.companion.android.di.qualifiers.NamedManufacturer
-import io.homeassistant.companion.android.di.qualifiers.NamedModel
-import io.homeassistant.companion.android.di.qualifiers.NamedOsVersion
+import io.hivebit.companion.android.common.BuildConfig
+import io.hivebit.companion.android.common.data.HivebitVersion
+import io.hivebit.companion.android.common.data.LocalStorage
+import io.hivebit.companion.android.common.data.integration.Action
+import io.hivebit.companion.android.common.data.integration.DeviceRegistration
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.IntegrationException
+import io.hivebit.companion.android.common.data.integration.IntegrationRepository
+import io.hivebit.companion.android.common.data.integration.SensorRegistration
+import io.hivebit.companion.android.common.data.integration.UpdateLocation
+import io.hivebit.companion.android.common.data.integration.impl.entities.ActionRequest
+import io.hivebit.companion.android.common.data.integration.impl.entities.CallServiceIntegrationRequest
+import io.hivebit.companion.android.common.data.integration.impl.entities.EntityResponse
+import io.hivebit.companion.android.common.data.integration.impl.entities.FireEventIntegrationRequest
+import io.hivebit.companion.android.common.data.integration.impl.entities.FireEventRequest
+import io.hivebit.companion.android.common.data.integration.impl.entities.GetConfigIntegrationRequest
+import io.hivebit.companion.android.common.data.integration.impl.entities.GetZonesIntegrationRequest
+import io.hivebit.companion.android.common.data.integration.impl.entities.IntegrationRequest
+import io.hivebit.companion.android.common.data.integration.impl.entities.RateLimitRequest
+import io.hivebit.companion.android.common.data.integration.impl.entities.RateLimitResponse
+import io.hivebit.companion.android.common.data.integration.impl.entities.RegisterDeviceIntegrationRequest
+import io.hivebit.companion.android.common.data.integration.impl.entities.RegisterDeviceRequest
+import io.hivebit.companion.android.common.data.integration.impl.entities.RegisterSensorIntegrationRequest
+import io.hivebit.companion.android.common.data.integration.impl.entities.RenderTemplateIntegrationRequest
+import io.hivebit.companion.android.common.data.integration.impl.entities.ScanTagIntegrationRequest
+import io.hivebit.companion.android.common.data.integration.impl.entities.SensorRegistrationRequest
+import io.hivebit.companion.android.common.data.integration.impl.entities.SensorUpdateRequest
+import io.hivebit.companion.android.common.data.integration.impl.entities.Template
+import io.hivebit.companion.android.common.data.integration.impl.entities.UpdateLocationIntegrationRequest
+import io.hivebit.companion.android.common.data.integration.impl.entities.UpdateLocationRequest
+import io.hivebit.companion.android.common.data.integration.impl.entities.UpdateSensorStatesIntegrationRequest
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.websocket.WebSocketRepository
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AssistPipelineEvent
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AssistPipelineEventType
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AssistPipelineIntentEnd
+import io.hivebit.companion.android.common.data.websocket.impl.entities.GetConfigResponse
+import io.hivebit.companion.android.common.util.AppVersion
+import io.hivebit.companion.android.common.util.FailFast
+import io.hivebit.companion.android.common.util.MessagingToken
+import io.hivebit.companion.android.common.util.isNullOrBlank
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.di.qualifiers.NamedDeviceId
+import io.hivebit.companion.android.di.qualifiers.NamedIntegrationStorage
+import io.hivebit.companion.android.di.qualifiers.NamedManufacturer
+import io.hivebit.companion.android.di.qualifiers.NamedModel
+import io.hivebit.companion.android.di.qualifiers.NamedOsVersion
 import java.util.concurrent.TimeUnit
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.filter
@@ -76,7 +76,7 @@ class IntegrationRepositoryImpl @AssistedInject constructor(
 ) : IntegrationRepository {
 
     companion object {
-        private const val APP_ID = "io.homeassistant.companion.android"
+        private const val APP_ID = "io.hivebit.companion.android"
         private const val APP_NAME = "Home Assistant"
         private const val OS_NAME = "Android"
 
@@ -369,7 +369,7 @@ class IntegrationRepositoryImpl @AssistedInject constructor(
         }
     }
 
-    override suspend fun getHomeAssistantVersion(): String {
+    override suspend fun getHivebitVersion(): String {
         val current = System.currentTimeMillis()
         val next = localStorage.getLong("${serverId}_$PREF_CHECK_SENSOR_REGISTRATION_NEXT") ?: 0
         if (current <= next) {
@@ -392,10 +392,10 @@ class IntegrationRepositoryImpl @AssistedInject constructor(
         }
     }
 
-    override suspend fun isHomeAssistantVersionAtLeast(year: Int, month: Int, release: Int): Boolean {
+    override suspend fun isHivebitVersionAtLeast(year: Int, month: Int, release: Int): Boolean {
         if (!isRegistered()) return false
 
-        val version = HomeAssistantVersion.fromString(getHomeAssistantVersion())
+        val version = HivebitVersion.fromString(getHivebitVersion())
         return version?.isAtLeast(year, month, release) ?: false
     }
 

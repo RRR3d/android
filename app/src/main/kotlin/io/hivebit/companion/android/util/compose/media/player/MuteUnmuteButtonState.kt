@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.util.compose.media.player
+package io.hivebit.companion.android.util.compose.media.player
 
 import androidx.annotation.OptIn
 import androidx.compose.runtime.Composable

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.connection.navigation
+package io.hivebit.companion.android.onboarding.connection.navigation
 
 import android.net.Uri
 import androidx.annotation.VisibleForTesting
@@ -9,10 +9,10 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavOptions
 import androidx.navigation.compose.composable
-import io.homeassistant.companion.android.onboarding.connection.ConnectionErrorScreen
-import io.homeassistant.companion.android.onboarding.connection.ConnectionNavigationEvent
-import io.homeassistant.companion.android.onboarding.connection.ConnectionScreen
-import io.homeassistant.companion.android.onboarding.connection.ConnectionViewModel
+import io.hivebit.companion.android.onboarding.connection.ConnectionErrorScreen
+import io.hivebit.companion.android.onboarding.connection.ConnectionNavigationEvent
+import io.hivebit.companion.android.onboarding.connection.ConnectionScreen
+import io.hivebit.companion.android.onboarding.connection.ConnectionViewModel
 import kotlinx.serialization.Serializable
 
 @Serializable

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets.button
+package io.hivebit.companion.android.widgets.button
 
 import android.annotation.SuppressLint
 import android.appwidget.AppWidgetManager
@@ -26,26 +26,26 @@ import com.mikepenz.iconics.IconicsDrawable
 import com.mikepenz.iconics.typeface.IIcon
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Action
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.util.MapAnySerializer
-import io.homeassistant.companion.android.common.util.kotlinJsonMapper
-import io.homeassistant.companion.android.database.widget.ButtonWidgetDao
-import io.homeassistant.companion.android.database.widget.ButtonWidgetEntity
-import io.homeassistant.companion.android.database.widget.WidgetBackgroundType
-import io.homeassistant.companion.android.databinding.WidgetButtonConfigureBinding
-import io.homeassistant.companion.android.settings.widgets.ManageWidgetsViewModel
-import io.homeassistant.companion.android.util.applySafeDrawingInsets
-import io.homeassistant.companion.android.util.getHexForColor
-import io.homeassistant.companion.android.util.icondialog.IconDialogFragment
-import io.homeassistant.companion.android.util.icondialog.getIconByMdiName
-import io.homeassistant.companion.android.util.icondialog.mdiName
-import io.homeassistant.companion.android.widgets.BaseWidgetConfigureActivity
-import io.homeassistant.companion.android.widgets.common.ActionFieldBinder
-import io.homeassistant.companion.android.widgets.common.SingleItemArrayAdapter
-import io.homeassistant.companion.android.widgets.common.WidgetDynamicFieldAdapter
-import io.homeassistant.companion.android.widgets.common.WidgetUtils
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Action
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.util.MapAnySerializer
+import io.hivebit.companion.android.common.util.kotlinJsonMapper
+import io.hivebit.companion.android.database.widget.ButtonWidgetDao
+import io.hivebit.companion.android.database.widget.ButtonWidgetEntity
+import io.hivebit.companion.android.database.widget.WidgetBackgroundType
+import io.hivebit.companion.android.databinding.WidgetButtonConfigureBinding
+import io.hivebit.companion.android.settings.widgets.ManageWidgetsViewModel
+import io.hivebit.companion.android.util.applySafeDrawingInsets
+import io.hivebit.companion.android.util.getHexForColor
+import io.hivebit.companion.android.util.icondialog.IconDialogFragment
+import io.hivebit.companion.android.util.icondialog.getIconByMdiName
+import io.hivebit.companion.android.util.icondialog.mdiName
+import io.hivebit.companion.android.widgets.BaseWidgetConfigureActivity
+import io.hivebit.companion.android.widgets.common.ActionFieldBinder
+import io.hivebit.companion.android.widgets.common.SingleItemArrayAdapter
+import io.hivebit.companion.android.widgets.common.WidgetDynamicFieldAdapter
+import io.hivebit.companion.android.widgets.common.WidgetUtils
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import timber.log.Timber

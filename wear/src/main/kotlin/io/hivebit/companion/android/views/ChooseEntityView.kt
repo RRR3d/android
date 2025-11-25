@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.views
+package io.hivebit.companion.android.views
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -28,16 +28,16 @@ import androidx.wear.compose.material3.Text
 import androidx.wear.tooling.preview.devices.WearDevices
 import com.mikepenz.iconics.compose.Image
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.getIcon
-import io.homeassistant.companion.android.common.util.capitalize
-import io.homeassistant.companion.android.data.SimplifiedEntity
-import io.homeassistant.companion.android.theme.WearAppTheme
-import io.homeassistant.companion.android.theme.getFilledTonalButtonColors
-import io.homeassistant.companion.android.util.playPreviewEntityScene1
-import io.homeassistant.companion.android.util.playPreviewEntityScene2
-import io.homeassistant.companion.android.util.stringForDomain
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.getIcon
+import io.hivebit.companion.android.common.util.capitalize
+import io.hivebit.companion.android.data.SimplifiedEntity
+import io.hivebit.companion.android.theme.WearAppTheme
+import io.hivebit.companion.android.theme.getFilledTonalButtonColors
+import io.hivebit.companion.android.util.playPreviewEntityScene1
+import io.hivebit.companion.android.util.playPreviewEntityScene2
+import io.hivebit.companion.android.util.stringForDomain
 import java.util.Locale
 
 @Composable

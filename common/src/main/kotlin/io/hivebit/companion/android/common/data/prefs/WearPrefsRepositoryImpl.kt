@@ -1,15 +1,15 @@
-package io.homeassistant.companion.android.common.data.prefs
+package io.hivebit.companion.android.common.data.prefs
 
 import androidx.annotation.VisibleForTesting
-import io.homeassistant.companion.android.common.data.LocalStorage
-import io.homeassistant.companion.android.common.data.prefs.impl.entities.TemplateTileConfig
-import io.homeassistant.companion.android.common.util.jsonArrayOrNull
-import io.homeassistant.companion.android.common.util.kotlinJsonMapper
-import io.homeassistant.companion.android.common.util.toJsonObject
-import io.homeassistant.companion.android.common.util.toJsonObjectOrNull
-import io.homeassistant.companion.android.common.util.toStringList
-import io.homeassistant.companion.android.di.qualifiers.NamedIntegrationStorage
-import io.homeassistant.companion.android.di.qualifiers.NamedWearStorage
+import io.hivebit.companion.android.common.data.LocalStorage
+import io.hivebit.companion.android.common.data.prefs.impl.entities.TemplateTileConfig
+import io.hivebit.companion.android.common.util.jsonArrayOrNull
+import io.hivebit.companion.android.common.util.kotlinJsonMapper
+import io.hivebit.companion.android.common.util.toJsonObject
+import io.hivebit.companion.android.common.util.toJsonObjectOrNull
+import io.hivebit.companion.android.common.util.toStringList
+import io.hivebit.companion.android.di.qualifiers.NamedIntegrationStorage
+import io.hivebit.companion.android.di.qualifiers.NamedWearStorage
 import javax.inject.Inject
 import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.json.Json

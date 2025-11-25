@@ -1,9 +1,9 @@
-package io.homeassistant.companion.android.onboarding.wearmtls
+package io.hivebit.companion.android.onboarding.wearmtls
 
 import androidx.compose.runtime.Composable
 import com.android.tools.screenshot.PreviewTest
-import io.homeassistant.companion.android.common.compose.theme.HAThemeForPreview
-import io.homeassistant.companion.android.compose.HAPreviews
+import io.hivebit.companion.android.common.compose.theme.HAThemeForPreview
+import io.hivebit.companion.android.compose.HAPreviews
 
 class WearMTLSScreenshotTest {
     @PreviewTest

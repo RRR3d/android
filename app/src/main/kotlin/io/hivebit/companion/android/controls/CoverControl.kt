@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.controls
+package io.hivebit.companion.android.controls
 
 import android.content.Context
 import android.os.Build
@@ -12,11 +12,11 @@ import android.service.controls.templates.RangeTemplate
 import android.service.controls.templates.ToggleRangeTemplate
 import android.service.controls.templates.ToggleTemplate
 import androidx.annotation.RequiresApi
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.IntegrationRepository
-import io.homeassistant.companion.android.common.data.integration.getCoverPosition
-import io.homeassistant.companion.android.common.data.integration.isActive
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.IntegrationRepository
+import io.hivebit.companion.android.common.data.integration.getCoverPosition
+import io.hivebit.companion.android.common.data.integration.isActive
 
 @RequiresApi(Build.VERSION_CODES.R)
 object CoverControl : HaControl {

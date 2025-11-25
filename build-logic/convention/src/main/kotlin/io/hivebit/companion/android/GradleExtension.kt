@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android
+package io.hivebit.companion.android
 
 import com.android.build.api.dsl.ApplicationExtension
 import com.android.build.api.dsl.CommonExtension

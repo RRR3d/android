@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.developer.catalog
+package io.hivebit.companion.android.developer.catalog
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.FlowRow
@@ -7,8 +7,8 @@ import androidx.compose.foundation.lazy.LazyListScope
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import io.homeassistant.companion.android.common.compose.theme.HADimens
-import io.homeassistant.companion.android.common.compose.theme.HATextStyle
+import io.hivebit.companion.android.common.compose.theme.HADimens
+import io.hivebit.companion.android.common.compose.theme.HATextStyle
 
 @Composable
 fun CatalogRow(content: @Composable () -> Unit) {

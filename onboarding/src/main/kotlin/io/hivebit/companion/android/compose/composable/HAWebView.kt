@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.compose.composable
+package io.hivebit.companion.android.compose.composable
 
 import android.annotation.SuppressLint
 import android.graphics.Color
@@ -15,7 +15,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.viewinterop.AndroidView
-import io.homeassistant.companion.android.common.data.HomeAssistantApis
+import io.hivebit.companion.android.common.data.HivebitApis
 import timber.log.Timber
 
 // TODO remove this in favor of the one in the :app (or move WebView in common but it means having webview library on the wear module)
@@ -77,7 +77,7 @@ private fun WebView.defaultSettings() {
         domStorageEnabled = true
         // https://github.com/home-assistant/android/pull/2252
         displayZoomControls = false
-        userAgentString += " ${HomeAssistantApis.USER_AGENT_STRING}"
+        userAgentString += " ${HivebitApis.USER_AGENT_STRING}"
     }
     setBackgroundColor(Color.TRANSPARENT)
 }

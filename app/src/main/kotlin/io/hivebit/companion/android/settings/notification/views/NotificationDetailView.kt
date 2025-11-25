@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.notification.views
+package io.hivebit.companion.android.settings.notification.views
 
 import android.widget.TextView
 import androidx.annotation.StringRes
@@ -16,10 +16,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.text.HtmlCompat
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.database.notification.NotificationItem
-import io.homeassistant.companion.android.util.notificationItem
-import io.homeassistant.companion.android.util.safeBottomPaddingValues
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.database.notification.NotificationItem
+import io.hivebit.companion.android.util.notificationItem
+import io.hivebit.companion.android.util.safeBottomPaddingValues
 import java.util.Calendar
 import java.util.GregorianCalendar
 import kotlinx.serialization.json.Json

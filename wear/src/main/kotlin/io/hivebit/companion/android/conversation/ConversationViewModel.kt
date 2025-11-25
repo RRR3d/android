@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.conversation
+package io.hivebit.companion.android.conversation
 
 import android.app.Application
 import android.content.Intent
@@ -8,15 +8,15 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.assist.AssistEvent
-import io.homeassistant.companion.android.common.assist.AssistViewModelBase
-import io.homeassistant.companion.android.common.data.prefs.WearPrefsRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AssistPipelineResponse
-import io.homeassistant.companion.android.common.util.AudioRecorder
-import io.homeassistant.companion.android.common.util.AudioUrlPlayer
-import io.homeassistant.companion.android.conversation.views.AssistMessage
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.assist.AssistEvent
+import io.hivebit.companion.android.common.assist.AssistViewModelBase
+import io.hivebit.companion.android.common.data.prefs.WearPrefsRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AssistPipelineResponse
+import io.hivebit.companion.android.common.util.AudioRecorder
+import io.hivebit.companion.android.common.util.AudioUrlPlayer
+import io.hivebit.companion.android.conversation.views.AssistMessage
 import javax.inject.Inject
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -146,8 +146,8 @@ class ConversationViewModel @Inject constructor(
         if (!serverManager.isRegistered()) return false
 
         val config = serverManager.webSocketRepository().getConfig()
-        val onConversationVersion = serverManager.integrationRepository().isHomeAssistantVersionAtLeast(2023, 1, 0)
-        val onPipelineVersion = serverManager.integrationRepository().isHomeAssistantVersionAtLeast(2023, 5, 0)
+        val onConversationVersion = serverManager.integrationRepository().isHivebitVersionAtLeast(2023, 1, 0)
+        val onPipelineVersion = serverManager.integrationRepository().isHivebitVersionAtLeast(2023, 5, 0)
 
         useAssistPipeline = onPipelineVersion
         return if ((onConversationVersion && !onPipelineVersion && config == null) ||

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.home.views
+package io.hivebit.companion.android.home.views
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -31,19 +31,19 @@ import androidx.wear.compose.material3.MaterialTheme
 import androidx.wear.compose.material3.Text
 import com.mikepenz.iconics.compose.Image
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.util.STATE_UNKNOWN
-import io.homeassistant.companion.android.home.MainViewModel
-import io.homeassistant.companion.android.theme.WearAppTheme
-import io.homeassistant.companion.android.theme.getFilledTonalButtonColors
-import io.homeassistant.companion.android.theme.getPrimaryButtonColors
-import io.homeassistant.companion.android.theme.wearColorScheme
-import io.homeassistant.companion.android.util.getIcon
-import io.homeassistant.companion.android.util.onEntityClickedFeedback
-import io.homeassistant.companion.android.views.ExpandableListHeader
-import io.homeassistant.companion.android.views.ListHeader
-import io.homeassistant.companion.android.views.ThemeLazyColumn
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.util.STATE_UNKNOWN
+import io.hivebit.companion.android.home.MainViewModel
+import io.hivebit.companion.android.theme.WearAppTheme
+import io.hivebit.companion.android.theme.getFilledTonalButtonColors
+import io.hivebit.companion.android.theme.getPrimaryButtonColors
+import io.hivebit.companion.android.theme.wearColorScheme
+import io.hivebit.companion.android.util.getIcon
+import io.hivebit.companion.android.util.onEntityClickedFeedback
+import io.hivebit.companion.android.views.ExpandableListHeader
+import io.hivebit.companion.android.views.ListHeader
+import io.hivebit.companion.android.views.ThemeLazyColumn
 
 @Composable
 fun MainView(

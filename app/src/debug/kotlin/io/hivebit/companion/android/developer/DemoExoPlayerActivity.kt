@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.developer
+package io.hivebit.companion.android.developer
 
 import android.app.PictureInPictureParams
 import android.os.Build
@@ -27,9 +27,9 @@ import androidx.lifecycle.compose.LifecycleResumeEffect
 import androidx.lifecycle.compose.LifecycleStartEffect
 import androidx.media3.common.MediaItem
 import androidx.media3.common.Player
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
-import io.homeassistant.companion.android.util.compose.initializePlayer
-import io.homeassistant.companion.android.util.compose.media.player.HAMediaPlayer
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.util.compose.initializePlayer
+import io.hivebit.companion.android.util.compose.media.player.HAMediaPlayer
 
 /**
  * Very basic demo of the ExoPlayer usage and the PlayerView.

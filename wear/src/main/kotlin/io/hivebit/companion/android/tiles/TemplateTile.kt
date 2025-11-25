@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.tiles
+package io.hivebit.companion.android.tiles
 
 import android.graphics.Typeface
 import android.text.style.AbsoluteSizeSpan
@@ -25,11 +25,11 @@ import androidx.wear.tiles.TileBuilders.Tile
 import androidx.wear.tiles.TileService
 import com.google.common.util.concurrent.ListenableFuture
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.prefs.WearPrefsRepository
-import io.homeassistant.companion.android.common.data.prefs.impl.entities.TemplateTileConfig
-import io.homeassistant.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.prefs.WearPrefsRepository
+import io.hivebit.companion.android.common.data.prefs.impl.entities.TemplateTileConfig
+import io.hivebit.companion.android.common.data.servers.ServerManager
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

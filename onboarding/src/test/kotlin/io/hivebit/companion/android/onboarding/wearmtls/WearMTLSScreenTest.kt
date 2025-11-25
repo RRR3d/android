@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.wearmtls
+package io.hivebit.companion.android.onboarding.wearmtls
 
 import android.net.Uri
 import androidx.activity.compose.LocalActivityResultRegistryOwner
@@ -21,10 +21,10 @@ import androidx.core.app.ActivityOptionsCompat
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication
-import io.homeassistant.companion.android.HiltComponentActivity
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.testing.unit.ConsoleLogRule
-import io.homeassistant.companion.android.testing.unit.stringResource
+import io.hivebit.companion.android.HiltComponentActivity
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.testing.unit.ConsoleLogRule
+import io.hivebit.companion.android.testing.unit.stringResource
 import io.mockk.mockk
 import org.junit.Rule
 import org.junit.Test

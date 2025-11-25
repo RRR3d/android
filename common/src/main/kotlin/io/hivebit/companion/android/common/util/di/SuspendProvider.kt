@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.util.di
+package io.hivebit.companion.android.common.util.di
 
 /**
  * A class similar to [javax.inject.Provider] but where [invoke] is a suspend function. This is useful

@@ -1,22 +1,22 @@
-package io.homeassistant.companion.android.home
+package io.hivebit.companion.android.home
 
 import androidx.work.WorkManager
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.authentication.SessionState
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.EntityExt
-import io.homeassistant.companion.android.common.data.prefs.WearPrefsRepository
-import io.homeassistant.companion.android.common.data.prefs.impl.entities.TemplateTileConfig
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.data.websocket.WebSocketState
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AreaRegistryResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AreaRegistryUpdatedEvent
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.DeviceRegistryResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.DeviceRegistryUpdatedEvent
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.EntityRegistryResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.EntityRegistryUpdatedEvent
-import io.homeassistant.companion.android.common.util.ResyncRegistrationWorker.Companion.enqueueResyncRegistration
-import io.homeassistant.companion.android.data.SimplifiedEntity
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.authentication.SessionState
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.EntityExt
+import io.hivebit.companion.android.common.data.prefs.WearPrefsRepository
+import io.hivebit.companion.android.common.data.prefs.impl.entities.TemplateTileConfig
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.websocket.WebSocketState
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AreaRegistryResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AreaRegistryUpdatedEvent
+import io.hivebit.companion.android.common.data.websocket.impl.entities.DeviceRegistryResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.DeviceRegistryUpdatedEvent
+import io.hivebit.companion.android.common.data.websocket.impl.entities.EntityRegistryResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.EntityRegistryUpdatedEvent
+import io.hivebit.companion.android.common.util.ResyncRegistrationWorker.Companion.enqueueResyncRegistration
+import io.hivebit.companion.android.data.SimplifiedEntity
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

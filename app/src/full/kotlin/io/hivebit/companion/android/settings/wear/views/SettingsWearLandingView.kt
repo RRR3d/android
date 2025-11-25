@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.wear.views
+package io.hivebit.companion.android.settings.wear.views
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -24,11 +24,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.settings.views.SettingsRow
-import io.homeassistant.companion.android.util.safeBottomPaddingValues
-import io.homeassistant.companion.android.util.safeBottomWindowInsets
-import io.homeassistant.companion.android.util.wearDeviceName
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.settings.views.SettingsRow
+import io.hivebit.companion.android.util.safeBottomPaddingValues
+import io.hivebit.companion.android.util.safeBottomWindowInsets
+import io.hivebit.companion.android.util.wearDeviceName
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.emptyFlow
 import kotlinx.coroutines.flow.launchIn

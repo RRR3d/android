@@ -1,8 +1,8 @@
-package io.homeassistant.companion.android.launch
+package io.hivebit.companion.android.launch
 
 import android.content.Context
 import android.content.Intent
-import io.homeassistant.companion.android.launcher.LauncherActivity
+import io.hivebit.companion.android.launcher.LauncherActivity
 
 /**
  * This file is temporary and will be removed once the new launcher is available.

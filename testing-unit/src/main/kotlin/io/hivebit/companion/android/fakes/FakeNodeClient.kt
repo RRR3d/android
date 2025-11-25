@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.fakes
+package io.hivebit.companion.android.fakes
 
 import android.content.Context
 import com.google.android.gms.tasks.Task

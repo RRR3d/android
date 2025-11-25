@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.compose
+package io.hivebit.companion.android.compose
 
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.content.res.Configuration.UI_MODE_TYPE_NORMAL

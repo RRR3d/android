@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.nfc
+package io.hivebit.companion.android.nfc
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -12,11 +12,11 @@ import androidx.activity.viewModels
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.BaseActivity
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.nfc.views.LoadNfcView
-import io.homeassistant.companion.android.util.UrlUtil
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.BaseActivity
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.nfc.views.LoadNfcView
+import io.hivebit.companion.android.util.UrlUtil
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
 import kotlinx.coroutines.launch
 import timber.log.Timber
 

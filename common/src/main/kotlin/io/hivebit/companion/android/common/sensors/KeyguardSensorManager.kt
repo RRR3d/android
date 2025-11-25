@@ -1,9 +1,9 @@
-package io.homeassistant.companion.android.common.sensors
+package io.hivebit.companion.android.common.sensors
 
 import android.app.KeyguardManager
 import android.content.Context
 import androidx.core.content.getSystemService
-import io.homeassistant.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.R as commonR
 
 class KeyguardSensorManager : SensorManager {
     companion object {

@@ -1,20 +1,20 @@
-package io.homeassistant.companion.android.onboarding
+package io.hivebit.companion.android.onboarding
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.viewHolders.HeaderViewHolder
-import io.homeassistant.companion.android.viewHolders.InstanceViewHolder
-import io.homeassistant.companion.android.viewHolders.LoadingViewHolder
-import io.homeassistant.companion.android.viewHolders.ManualSetupViewHolder
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.viewHolders.HeaderViewHolder
+import io.hivebit.companion.android.viewHolders.InstanceViewHolder
+import io.hivebit.companion.android.viewHolders.LoadingViewHolder
+import io.hivebit.companion.android.viewHolders.ManualSetupViewHolder
 import kotlin.math.min
 
-class ServerListAdapter(val servers: ArrayList<HomeAssistantInstance>) : RecyclerView.Adapter<ViewHolder>() {
+class ServerListAdapter(val servers: ArrayList<HivebitInstance>) : RecyclerView.Adapter<ViewHolder>() {
 
-    lateinit var onInstanceClicked: (HomeAssistantInstance) -> Unit
+    lateinit var onInstanceClicked: (HivebitInstance) -> Unit
     lateinit var onManualSetupClicked: () -> Unit
 
     companion object {

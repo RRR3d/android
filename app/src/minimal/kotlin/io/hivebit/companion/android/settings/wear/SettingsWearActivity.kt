@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.wear
+package io.hivebit.companion.android.settings.wear
 
 import android.content.Context
 import android.content.Intent

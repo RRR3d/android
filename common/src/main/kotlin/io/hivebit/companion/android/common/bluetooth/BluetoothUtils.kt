@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.bluetooth
+package io.hivebit.companion.android.common.bluetooth
 
 import android.annotation.SuppressLint
 import android.bluetooth.BluetoothManager

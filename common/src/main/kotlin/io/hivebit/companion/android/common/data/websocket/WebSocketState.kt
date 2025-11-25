@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.data.websocket
+package io.hivebit.companion.android.common.data.websocket
 
 enum class WebSocketState {
     AUTHENTICATING,

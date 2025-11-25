@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.launch
+package io.hivebit.companion.android.launch
 
 interface LaunchPresenter {
 

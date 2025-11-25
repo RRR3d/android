@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.database.settings
+package io.hivebit.companion.android.database.settings
 
 import androidx.room.Dao
 import androidx.room.Insert

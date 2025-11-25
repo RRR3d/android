@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.launch
+package io.hivebit.companion.android.launch
 
 import android.content.Context
 import android.content.Intent
@@ -15,28 +15,28 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.BuildConfig
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.DeviceRegistration
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.AppVersion
-import io.homeassistant.companion.android.common.util.MessagingToken
-import io.homeassistant.companion.android.common.util.MessagingTokenProvider
-import io.homeassistant.companion.android.common.util.isAutomotive
-import io.homeassistant.companion.android.database.sensor.SensorDao
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.database.server.ServerConnectionInfo
-import io.homeassistant.companion.android.database.server.ServerSessionInfo
-import io.homeassistant.companion.android.database.server.ServerType
-import io.homeassistant.companion.android.database.server.ServerUserInfo
-import io.homeassistant.companion.android.database.settings.WebsocketSetting
-import io.homeassistant.companion.android.onboarding.OnboardApp
-import io.homeassistant.companion.android.sensors.LocationSensorManager
-import io.homeassistant.companion.android.settings.SettingViewModel
-import io.homeassistant.companion.android.settings.server.ServerChooserFragment
-import io.homeassistant.companion.android.util.UrlUtil
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
-import io.homeassistant.companion.android.webview.WebViewActivity
+import io.hivebit.companion.android.BuildConfig
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.DeviceRegistration
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.AppVersion
+import io.hivebit.companion.android.common.util.MessagingToken
+import io.hivebit.companion.android.common.util.MessagingTokenProvider
+import io.hivebit.companion.android.common.util.isAutomotive
+import io.hivebit.companion.android.database.sensor.SensorDao
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.database.server.ServerConnectionInfo
+import io.hivebit.companion.android.database.server.ServerSessionInfo
+import io.hivebit.companion.android.database.server.ServerType
+import io.hivebit.companion.android.database.server.ServerUserInfo
+import io.hivebit.companion.android.database.settings.WebsocketSetting
+import io.hivebit.companion.android.onboarding.OnboardApp
+import io.hivebit.companion.android.sensors.LocationSensorManager
+import io.hivebit.companion.android.settings.SettingViewModel
+import io.hivebit.companion.android.settings.server.ServerChooserFragment
+import io.hivebit.companion.android.util.UrlUtil
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.webview.WebViewActivity
 import javax.inject.Inject
 import javax.net.ssl.SSLException
 import javax.net.ssl.SSLHandshakeException

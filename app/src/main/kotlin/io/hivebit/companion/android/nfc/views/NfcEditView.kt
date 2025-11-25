@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.nfc.views
+package io.hivebit.companion.android.nfc.views
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -27,9 +27,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.util.plus
-import io.homeassistant.companion.android.util.safeBottomPaddingValues
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.util.plus
+import io.hivebit.companion.android.util.safeBottomPaddingValues
 
 @SuppressLint("HardwareIds")
 @Composable

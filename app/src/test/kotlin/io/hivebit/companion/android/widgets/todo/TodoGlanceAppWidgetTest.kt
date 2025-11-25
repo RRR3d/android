@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets.todo
+package io.hivebit.companion.android.widgets.todo
 
 import androidx.glance.appwidget.testing.unit.GlanceAppWidgetUnitTest
 import androidx.glance.appwidget.testing.unit.assertIsChecked
@@ -10,8 +10,8 @@ import androidx.glance.testing.unit.assertHasNoClickAction
 import androidx.glance.testing.unit.hasContentDescriptionEqualTo
 import androidx.glance.testing.unit.hasTestTag
 import androidx.glance.testing.unit.hasTextEqualTo
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.database.widget.WidgetBackgroundType
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.database.widget.WidgetBackgroundType
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.authentication
+package io.hivebit.companion.android.onboarding.authentication
 
 import android.annotation.SuppressLint
 import android.net.http.SslError
@@ -34,19 +34,19 @@ import androidx.core.net.toUri
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.authentication.impl.AuthenticationService
-import io.homeassistant.companion.android.common.data.keychain.KeyChainRepository
-import io.homeassistant.companion.android.common.data.keychain.NamedKeyChain
-import io.homeassistant.companion.android.common.data.prefs.NightModeTheme
-import io.homeassistant.companion.android.onboarding.OnboardingViewModel
-import io.homeassistant.companion.android.onboarding.integration.MobileAppIntegrationFragment
-import io.homeassistant.companion.android.themes.NightModeManager
-import io.homeassistant.companion.android.util.TLSWebViewClient
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
-import io.homeassistant.companion.android.util.compose.webview.HAWebView
-import io.homeassistant.companion.android.util.isStarted
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.authentication.impl.AuthenticationService
+import io.hivebit.companion.android.common.data.keychain.KeyChainRepository
+import io.hivebit.companion.android.common.data.keychain.NamedKeyChain
+import io.hivebit.companion.android.common.data.prefs.NightModeTheme
+import io.hivebit.companion.android.onboarding.OnboardingViewModel
+import io.hivebit.companion.android.onboarding.integration.MobileAppIntegrationFragment
+import io.hivebit.companion.android.themes.NightModeManager
+import io.hivebit.companion.android.util.TLSWebViewClient
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.util.compose.webview.HAWebView
+import io.hivebit.companion.android.util.isStarted
 import javax.inject.Inject
 import okhttp3.HttpUrl
 import okhttp3.HttpUrl.Companion.toHttpUrl

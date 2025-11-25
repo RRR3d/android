@@ -1,19 +1,19 @@
-package io.homeassistant.companion.android.common.data.authentication.impl
+package io.hivebit.companion.android.common.data.authentication.impl
 
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
-import io.homeassistant.companion.android.common.data.LocalStorage
-import io.homeassistant.companion.android.common.data.authentication.AuthenticationRepository
-import io.homeassistant.companion.android.common.data.authentication.AuthorizationException
-import io.homeassistant.companion.android.common.data.authentication.SessionState
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.MapAnySerializer
-import io.homeassistant.companion.android.common.util.di.SuspendProvider
-import io.homeassistant.companion.android.common.util.kotlinJsonMapper
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.database.server.ServerSessionInfo
-import io.homeassistant.companion.android.di.qualifiers.NamedInstallId
-import io.homeassistant.companion.android.di.qualifiers.NamedSessionStorage
+import io.hivebit.companion.android.common.data.LocalStorage
+import io.hivebit.companion.android.common.data.authentication.AuthenticationRepository
+import io.hivebit.companion.android.common.data.authentication.AuthorizationException
+import io.hivebit.companion.android.common.data.authentication.SessionState
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.MapAnySerializer
+import io.hivebit.companion.android.common.util.di.SuspendProvider
+import io.hivebit.companion.android.common.util.kotlinJsonMapper
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.database.server.ServerSessionInfo
+import io.hivebit.companion.android.di.qualifiers.NamedInstallId
+import io.hivebit.companion.android.di.qualifiers.NamedSessionStorage
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import timber.log.Timber
 

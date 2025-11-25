@@ -1,15 +1,15 @@
-package io.homeassistant.companion.android.common.util
+package io.hivebit.companion.android.common.util
 
 import android.content.Context
 import androidx.work.ListenableWorker
 import dagger.hilt.EntryPoints
-import io.homeassistant.companion.android.common.data.integration.DeviceRegistration
-import io.homeassistant.companion.android.common.data.integration.IntegrationRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.data.websocket.WebSocketRepository
-import io.homeassistant.companion.android.common.util.ResyncRegistrationWorker.Companion.ResyncRegistrationWorkerEntryPoint
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.testing.unit.ConsoleLogExtension
+import io.hivebit.companion.android.common.data.integration.DeviceRegistration
+import io.hivebit.companion.android.common.data.integration.IntegrationRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.websocket.WebSocketRepository
+import io.hivebit.companion.android.common.util.ResyncRegistrationWorker.Companion.ResyncRegistrationWorkerEntryPoint
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.testing.unit.ConsoleLogExtension
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.every

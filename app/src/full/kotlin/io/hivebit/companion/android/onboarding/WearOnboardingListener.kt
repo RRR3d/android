@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding
+package io.hivebit.companion.android.onboarding
 
 import android.annotation.SuppressLint
 import com.google.android.gms.wearable.MessageEvent
@@ -7,7 +7,7 @@ import com.google.android.gms.wearable.PutDataRequest
 import com.google.android.gms.wearable.Wearable
 import com.google.android.gms.wearable.WearableListenerService
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.servers.ServerManager
 import javax.inject.Inject
 import kotlinx.coroutines.runBlocking
 import timber.log.Timber
@@ -24,12 +24,12 @@ class WearOnboardingListener : WearableListenerService() {
 
         if (event.path == "/request_home_assistant_instance") {
             val nodeId = event.sourceNodeId
-            sendHomeAssistantInstance(nodeId)
+            sendHivebitInstance(nodeId)
         }
     }
 
-    private fun sendHomeAssistantInstance(nodeId: String) = runBlocking {
-        Timber.d("sendHomeAssistantInstance: $nodeId")
+    private fun sendHivebitInstance(nodeId: String) = runBlocking {
+        Timber.d("sendHivebitInstance: $nodeId")
         // Retrieve current instance
         val url = serverManager.getServer()?.connection?.getUrl(false)
 
@@ -45,7 +45,7 @@ class WearOnboardingListener : WearableListenerService() {
                 Wearable.getDataClient(this@WearOnboardingListener).putDataItem(putDataReq)
                     .addOnCompleteListener {
                         Timber.d(
-                            "sendHomeAssistantInstance: ${if (it.isSuccessful) "success" else "failed"}",
+                            "sendHivebitInstance: ${if (it.isSuccessful) "success" else "failed"}",
                         )
                     }
             } catch (e: Exception) {

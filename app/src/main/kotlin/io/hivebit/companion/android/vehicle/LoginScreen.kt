@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.vehicle
+package io.hivebit.companion.android.vehicle
 
 import android.content.Intent
 import androidx.car.app.CarContext
@@ -11,11 +11,11 @@ import androidx.car.app.model.Template
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.data.authentication.SessionState
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.isAutomotive
-import io.homeassistant.companion.android.launch.LaunchActivity
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.data.authentication.SessionState
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.isAutomotive
+import io.hivebit.companion.android.launch.LaunchActivity
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

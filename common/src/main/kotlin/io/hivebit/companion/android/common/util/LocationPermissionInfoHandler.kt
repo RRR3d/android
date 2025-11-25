@@ -1,9 +1,9 @@
-package io.homeassistant.companion.android.common.util
+package io.hivebit.companion.android.common.util
 
 import android.Manifest
 import android.content.Context
 import androidx.appcompat.app.AlertDialog
-import io.homeassistant.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.R as commonR
 
 object LocationPermissionInfoHandler {
 

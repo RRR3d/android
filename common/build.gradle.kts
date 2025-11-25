@@ -1,8 +1,8 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.parcelize)
-    alias(libs.plugins.homeassistant.android.common)
-    alias(libs.plugins.homeassistant.android.compose)
+    alias(libs.plugins.hivebit.android.common)
+    alias(libs.plugins.hivebit.android.compose)
 }
 
 val homeAssistantAndroidPushUrl: String by project
@@ -12,7 +12,7 @@ val versionName = project.version.toString()
 val versionCode = System.getenv("VERSION_CODE")?.toIntOrNull() ?: 1
 
 android {
-    namespace = "io.homeassistant.companion.android.common"
+    namespace = "io.hivebit.companion.android.common"
 
     defaultConfig {
         buildConfigField("String", "PUSH_URL", "\"$homeAssistantAndroidPushUrl\"")

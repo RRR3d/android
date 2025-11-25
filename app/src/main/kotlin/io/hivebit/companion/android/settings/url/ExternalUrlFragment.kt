@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.url
+package io.hivebit.companion.android.settings.url
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,9 +8,9 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.settings.url.views.ExternalUrlView
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.settings.url.views.ExternalUrlView
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
 
 @AndroidEntryPoint
 class ExternalUrlFragment : Fragment() {

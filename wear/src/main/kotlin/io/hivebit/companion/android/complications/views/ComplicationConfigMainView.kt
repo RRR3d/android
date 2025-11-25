@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.complications.views
+package io.hivebit.companion.android.complications.views
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -24,18 +24,18 @@ import androidx.wear.compose.navigation.composable
 import androidx.wear.compose.navigation.rememberSwipeDismissableNavController
 import androidx.wear.tooling.preview.devices.WearDevices
 import com.mikepenz.iconics.compose.Image
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.complications.ComplicationConfigViewModel
-import io.homeassistant.companion.android.data.SimplifiedEntity
-import io.homeassistant.companion.android.theme.WearAppTheme
-import io.homeassistant.companion.android.theme.getFilledTonalButtonColors
-import io.homeassistant.companion.android.theme.getSwitchButtonColors
-import io.homeassistant.companion.android.theme.wearColorScheme
-import io.homeassistant.companion.android.util.getIcon
-import io.homeassistant.companion.android.util.simplifiedEntity
-import io.homeassistant.companion.android.views.ChooseEntityView
-import io.homeassistant.companion.android.views.ListHeader
-import io.homeassistant.companion.android.views.ThemeLazyColumn
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.complications.ComplicationConfigViewModel
+import io.hivebit.companion.android.data.SimplifiedEntity
+import io.hivebit.companion.android.theme.WearAppTheme
+import io.hivebit.companion.android.theme.getFilledTonalButtonColors
+import io.hivebit.companion.android.theme.getSwitchButtonColors
+import io.hivebit.companion.android.theme.wearColorScheme
+import io.hivebit.companion.android.util.getIcon
+import io.hivebit.companion.android.util.simplifiedEntity
+import io.hivebit.companion.android.views.ChooseEntityView
+import io.hivebit.companion.android.views.ListHeader
+import io.hivebit.companion.android.views.ThemeLazyColumn
 
 private const val SCREEN_MAIN = "main"
 private const val SCREEN_CHOOSE_ENTITY = "choose_entity"

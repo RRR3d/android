@@ -1,8 +1,8 @@
-package io.homeassistant.companion.android.util
+package io.hivebit.companion.android.util
 
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.sensors.BatterySensorManager
-import io.homeassistant.companion.android.data.SimplifiedEntity
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.sensors.BatterySensorManager
+import io.hivebit.companion.android.data.SimplifiedEntity
 import java.time.LocalDateTime
 
 val attributes: Map<String, Any> = mapOf(

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.developer.location.views
+package io.hivebit.companion.android.settings.developer.location.views
 
 import android.content.Intent
 import androidx.compose.animation.AnimatedVisibility
@@ -53,13 +53,13 @@ import androidx.paging.compose.collectAsLazyPagingItems
 import androidx.paging.compose.itemKey
 import com.mikepenz.iconics.compose.Image
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.database.location.LocationHistoryItem
-import io.homeassistant.companion.android.database.location.LocationHistoryItemResult
-import io.homeassistant.companion.android.database.location.LocationHistoryItemTrigger
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.settings.views.EmptyState
-import io.homeassistant.companion.android.util.safeBottomPaddingValues
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.database.location.LocationHistoryItem
+import io.hivebit.companion.android.database.location.LocationHistoryItemResult
+import io.hivebit.companion.android.database.location.LocationHistoryItemTrigger
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.settings.views.EmptyState
+import io.hivebit.companion.android.util.safeBottomPaddingValues
 import java.text.DateFormat
 import java.util.TimeZone
 import kotlinx.coroutines.flow.Flow

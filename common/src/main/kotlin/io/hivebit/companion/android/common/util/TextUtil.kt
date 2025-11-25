@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.util
+package io.hivebit.companion.android.common.util
 
 import java.util.Locale
 import okio.ByteString.Companion.toByteString

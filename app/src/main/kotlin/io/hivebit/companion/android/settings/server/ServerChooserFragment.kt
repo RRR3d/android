@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.server
+package io.hivebit.companion.android.settings.server
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,9 +9,9 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResult
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
-import io.homeassistant.companion.android.util.setLayoutAndExpandedByDefault
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.util.setLayoutAndExpandedByDefault
 import javax.inject.Inject
 
 @AndroidEntryPoint

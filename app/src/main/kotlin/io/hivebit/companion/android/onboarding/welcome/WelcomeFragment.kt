@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.welcome
+package io.hivebit.companion.android.onboarding.welcome
 
 import android.os.Build
 import android.os.Bundle
@@ -7,10 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.onboarding.discovery.DiscoveryFragment
-import io.homeassistant.companion.android.onboarding.manual.ManualSetupFragment
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.onboarding.discovery.DiscoveryFragment
+import io.hivebit.companion.android.onboarding.manual.ManualSetupFragment
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
 
 class WelcomeFragment : Fragment() {
 

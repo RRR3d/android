@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.complications
+package io.hivebit.companion.android.complications
 
 import android.app.Application
 import androidx.compose.runtime.State
@@ -11,17 +11,17 @@ import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.HomeAssistantApplication
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.domain
-import io.homeassistant.companion.android.common.data.integration.friendlyName
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.data.websocket.WebSocketState
-import io.homeassistant.companion.android.data.SimplifiedEntity
-import io.homeassistant.companion.android.database.wear.EntityStateComplications
-import io.homeassistant.companion.android.database.wear.EntityStateComplicationsDao
-import io.homeassistant.companion.android.database.wear.FavoritesDao
-import io.homeassistant.companion.android.database.wear.getAllFlow
+import io.hivebit.companion.android.HivebitApplication
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.domain
+import io.hivebit.companion.android.common.data.integration.friendlyName
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.websocket.WebSocketState
+import io.hivebit.companion.android.data.SimplifiedEntity
+import io.hivebit.companion.android.database.wear.EntityStateComplications
+import io.hivebit.companion.android.database.wear.EntityStateComplicationsDao
+import io.hivebit.companion.android.database.wear.FavoritesDao
+import io.hivebit.companion.android.database.wear.getAllFlow
 import javax.inject.Inject
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
@@ -41,7 +41,7 @@ class ComplicationConfigViewModel @Inject constructor(
         ERROR,
     }
 
-    val app = getApplication<HomeAssistantApplication>()
+    val app = getApplication<HivebitApplication>()
 
     var entities = mutableStateMapOf<String, Entity>()
         private set

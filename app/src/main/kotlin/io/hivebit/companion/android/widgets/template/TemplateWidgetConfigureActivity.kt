@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets.template
+package io.hivebit.companion.android.widgets.template
 
 import android.appwidget.AppWidgetManager
 import android.os.Build
@@ -14,16 +14,16 @@ import androidx.core.view.isVisible
 import androidx.core.widget.doAfterTextChanged
 import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.database.widget.TemplateWidgetDao
-import io.homeassistant.companion.android.database.widget.TemplateWidgetEntity
-import io.homeassistant.companion.android.database.widget.WidgetBackgroundType
-import io.homeassistant.companion.android.databinding.WidgetTemplateConfigureBinding
-import io.homeassistant.companion.android.settings.widgets.ManageWidgetsViewModel
-import io.homeassistant.companion.android.util.applySafeDrawingInsets
-import io.homeassistant.companion.android.util.getHexForColor
-import io.homeassistant.companion.android.widgets.BaseWidgetConfigureActivity
-import io.homeassistant.companion.android.widgets.common.WidgetUtils
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.database.widget.TemplateWidgetDao
+import io.hivebit.companion.android.database.widget.TemplateWidgetEntity
+import io.hivebit.companion.android.database.widget.WidgetBackgroundType
+import io.hivebit.companion.android.databinding.WidgetTemplateConfigureBinding
+import io.hivebit.companion.android.settings.widgets.ManageWidgetsViewModel
+import io.hivebit.companion.android.util.applySafeDrawingInsets
+import io.hivebit.companion.android.util.getHexForColor
+import io.hivebit.companion.android.widgets.BaseWidgetConfigureActivity
+import io.hivebit.companion.android.widgets.common.WidgetUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

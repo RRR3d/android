@@ -1,13 +1,13 @@
-package io.homeassistant.companion.android.common.sensors
+package io.hivebit.companion.android.common.sensors
 
 import android.content.Context
 import android.os.PowerManager
 import androidx.core.content.getSystemService
-import io.homeassistant.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.R as commonR
 
 class PowerSensorManager : SensorManager {
     companion object {
-        private const val PACKAGE_NAME = "io.homeassistant.companion.android"
+        private const val PACKAGE_NAME = "io.hivebit.companion.android"
 
         val interactiveDevice = SensorManager.BasicSensor(
             "is_interactive",

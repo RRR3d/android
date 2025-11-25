@@ -1,8 +1,8 @@
-package io.homeassistant.companion.android.onboarding.manualserver
+package io.hivebit.companion.android.onboarding.manualserver
 
 import android.webkit.URLUtil
 import app.cash.turbine.turbineScope
-import io.homeassistant.companion.android.testing.unit.MainDispatcherJUnit5Extension
+import io.hivebit.companion.android.testing.unit.MainDispatcherJUnit5Extension
 import io.mockk.every
 import io.mockk.mockkStatic
 import kotlinx.coroutines.ExperimentalCoroutinesApi

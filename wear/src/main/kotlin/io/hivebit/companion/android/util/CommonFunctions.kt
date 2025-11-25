@@ -1,15 +1,15 @@
-package io.homeassistant.companion.android.util
+package io.hivebit.companion.android.util
 
 import android.content.Context
 import android.widget.Toast
 import androidx.compose.ui.hapticfeedback.HapticFeedback
 import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import com.mikepenz.iconics.typeface.IIcon
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.MEDIA_PLAYER_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.getIcon
-import io.homeassistant.companion.android.home.HomePresenterImpl
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.MEDIA_PLAYER_DOMAIN
+import io.hivebit.companion.android.common.data.integration.getIcon
+import io.hivebit.companion.android.home.HomePresenterImpl
 import java.time.LocalDateTime
 
 fun stringForDomain(domain: String, context: Context): String? = (

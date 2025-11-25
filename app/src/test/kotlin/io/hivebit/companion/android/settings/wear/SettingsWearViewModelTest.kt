@@ -1,13 +1,13 @@
-package io.homeassistant.companion.android.settings.wear
+package io.hivebit.companion.android.settings.wear
 
 import android.app.Application
 import app.cash.turbine.turbineScope
 import com.google.android.gms.wearable.Node
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.fakes.FakeCapabilityClient
-import io.homeassistant.companion.android.fakes.FakeNodeClient
-import io.homeassistant.companion.android.testing.unit.ConsoleLogExtension
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.fakes.FakeCapabilityClient
+import io.hivebit.companion.android.fakes.FakeNodeClient
+import io.hivebit.companion.android.testing.unit.ConsoleLogExtension
 import io.mockk.every
 import io.mockk.mockk
 import kotlinx.coroutines.ExperimentalCoroutinesApi

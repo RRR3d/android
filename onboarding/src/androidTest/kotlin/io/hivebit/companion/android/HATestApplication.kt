@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android
+package io.hivebit.companion.android
 
 import android.app.Application
 import dagger.hilt.android.testing.CustomTestApplication

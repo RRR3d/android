@@ -7,7 +7,7 @@
         errorLine1="            actReg.removeActivityUpdates(pendingIntent)"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/full/kotlin/io/homeassistant/companion/android/sensors/ActivitySensorManager.kt"
+            file="src/full/kotlin/io.hivebit.companion.android/sensors/ActivitySensorManager.kt"
             line="232"
             column="13"/>
     </issue>
@@ -18,7 +18,7 @@
         errorLine1="                actReg.requestActivityUpdates(TimeUnit.MINUTES.toMillis(if (fastUpdate) 1 else 2), pendingIntent)"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/full/kotlin/io/homeassistant/companion/android/sensors/ActivitySensorManager.kt"
+            file="src/full/kotlin/io.hivebit.companion.android/sensors/ActivitySensorManager.kt"
             line="237"
             column="17"/>
     </issue>
@@ -29,7 +29,7 @@
         errorLine1="                        ActivityRecognition.getClient(context).requestSleepSegmentUpdates("
         errorLine2="                        ^">
         <location
-            file="src/full/kotlin/io/homeassistant/companion/android/sensors/ActivitySensorManager.kt"
+            file="src/full/kotlin/io.hivebit.companion.android/sensors/ActivitySensorManager.kt"
             line="257"
             column="25"/>
     </issue>
@@ -40,7 +40,7 @@
         errorLine1="                        ActivityRecognition.getClient(context).requestSleepSegmentUpdates("
         errorLine2="                        ^">
         <location
-            file="src/full/kotlin/io/homeassistant/companion/android/sensors/ActivitySensorManager.kt"
+            file="src/full/kotlin/io.hivebit.companion.android/sensors/ActivitySensorManager.kt"
             line="265"
             column="25"/>
     </issue>
@@ -51,7 +51,7 @@
         errorLine1="                        ActivityRecognition.getClient(context).requestSleepSegmentUpdates("
         errorLine2="                        ^">
         <location
-            file="src/full/kotlin/io/homeassistant/companion/android/sensors/ActivitySensorManager.kt"
+            file="src/full/kotlin/io.hivebit.companion.android/sensors/ActivitySensorManager.kt"
             line="273"
             column="25"/>
     </issue>
@@ -62,7 +62,7 @@
         errorLine1="        NotificationManagerCompat.from(context)"
         errorLine2="        ^">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/util/DataUriDownloadManager.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/util/DataUriDownloadManager.kt"
             line="64"
             column="9"/>
     </issue>
@@ -73,7 +73,7 @@
         errorLine1="                notificationManager.notify(notificationId, notificationBuilder.build())"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/full/kotlin/io/homeassistant/companion/android/location/HighAccuracyLocationService.kt"
+            file="src/full/kotlin/io.hivebit.companion.android/location/HighAccuracyLocationService.kt"
             line="109"
             column="17"/>
     </issue>
@@ -84,7 +84,7 @@
         errorLine1="                notify(tag, messageId, notificationBuilder.build())"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/notifications/MessagingManager.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/notifications/MessagingManager.kt"
             line="1053"
             column="17"/>
     </issue>
@@ -117,7 +117,7 @@
         errorLine1="                    &quot;&quot; + String.format(&quot;%8.5f&quot;, latitude) + &quot;  &quot; +"
         errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/full/kotlin/io/homeassistant/companion/android/location/HighAccuracyLocationService.kt"
+            file="src/full/kotlin/io.hivebit.companion.android/location/HighAccuracyLocationService.kt"
             line="96"
             column="26"/>
     </issue>
@@ -128,7 +128,7 @@
         errorLine1="                        String.format(&quot;%8.5f&quot;, longitude)"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/full/kotlin/io/homeassistant/companion/android/location/HighAccuracyLocationService.kt"
+            file="src/full/kotlin/io.hivebit.companion.android/location/HighAccuracyLocationService.kt"
             line="97"
             column="25"/>
     </issue>
@@ -139,7 +139,7 @@
         errorLine1="            CAMERA_DOMAIN to CameraControl,"
         errorLine2="                             ~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/controls/HaControlsProviderService.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/controls/HaControlsProviderService.kt"
             line="46"
             column="30"/>
     </issue>
@@ -381,7 +381,7 @@
         errorLine1="                                    Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS,"
         errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/settings/websocket/WebsocketSettingFragment.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/settings/websocket/WebsocketSettingFragment.kt"
             line="72"
             column="46"/>
     </issue>
@@ -392,7 +392,7 @@
         errorLine1="class LaunchActivity :"
         errorLine2="      ~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/launch/LaunchActivity.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/launch/LaunchActivity.kt"
             line="53"
             column="7"/>
     </issue>
@@ -425,7 +425,7 @@
         errorLine1="        val stringId = app.resources.getIdentifier(identifierString, &quot;string&quot;, app.packageName)"
         errorLine2="                                     ~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/settings/sensor/SensorDetailViewModel.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/settings/sensor/SensorDetailViewModel.kt"
             line="355"
             column="38"/>
     </issue>
@@ -458,7 +458,7 @@
         errorLine1="    override fun onReceive(context: Context, intent: Intent) {"
         errorLine2="                 ~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/websocket/WebsocketBroadcastReceiver.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/websocket/WebsocketBroadcastReceiver.kt"
             line="14"
             column="18"/>
     </issue>
@@ -491,7 +491,7 @@
         errorLine1="                Build.VERSION.SDK_INT >= Build.VERSION_CODES.O &amp;&amp;"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/settings/SettingsFragment.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/settings/SettingsFragment.kt"
             line="542"
             column="17"/>
     </issue>
@@ -502,7 +502,7 @@
         errorLine1="                Build.VERSION.SDK_INT >= Build.VERSION_CODES.O &amp;&amp;"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/settings/SettingsFragment.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/settings/SettingsFragment.kt"
             line="542"
             column="17"/>
     </issue>
@@ -513,7 +513,7 @@
         errorLine1="        private lateinit var notificationBuilder: NotificationCompat.Builder"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/full/kotlin/io/homeassistant/companion/android/location/HighAccuracyLocationService.kt"
+            file="src/full/kotlin/io.hivebit.companion.android/location/HighAccuracyLocationService.kt"
             line="34"
             column="9"/>
     </issue>
@@ -524,7 +524,7 @@
         errorLine1="        private lateinit var notificationManagerCompat: NotificationManagerCompat"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/full/kotlin/io/homeassistant/companion/android/location/HighAccuracyLocationService.kt"
+            file="src/full/kotlin/io.hivebit.companion.android/location/HighAccuracyLocationService.kt"
             line="36"
             column="9"/>
     </issue>
@@ -845,7 +845,7 @@
         errorLine1="                        MapAnySerializer,"
         errorLine2="                        ~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/widgets/button/ButtonWidget.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/widgets/button/ButtonWidget.kt"
             line="317"
             column="25"/>
     </issue>
@@ -856,7 +856,7 @@
         errorLine1="                                MapAnySerializer,"
         errorLine2="                                ~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/widgets/button/ButtonWidgetConfigureActivity.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/widgets/button/ButtonWidgetConfigureActivity.kt"
             line="150"
             column="33"/>
     </issue>
@@ -867,7 +867,7 @@
         errorLine1="            serviceData = kotlinJsonMapper.encodeToString(MapAnySerializer, actionDataMap),"
         errorLine2="                                                          ~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/widgets/button/ButtonWidgetConfigureActivity.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/widgets/button/ButtonWidgetConfigureActivity.kt"
             line="415"
             column="59"/>
     </issue>
@@ -878,7 +878,7 @@
         errorLine1="            ShortcutManagerCompat.addDynamicShortcuts(app, listOf(shortcut))"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/settings/shortcuts/ManageShortcutsViewModel.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/settings/shortcuts/ManageShortcutsViewModel.kt"
             line="171"
             column="13"/>
     </issue>
@@ -911,7 +911,7 @@
         errorLine1="                binding.textSize.setText(staticWidget.textSize.toInt().toString())"
         errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/widgets/entity/EntityWidgetConfigureActivity.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/widgets/entity/EntityWidgetConfigureActivity.kt"
             line="134"
             column="42"/>
     </issue>
@@ -922,7 +922,7 @@
         errorLine1="                binding.textSize.setText(templateWidget.textSize.toInt().toString())"
         errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/widgets/template/TemplateWidgetConfigureActivity.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/widgets/template/TemplateWidgetConfigureActivity.kt"
             line="95"
             column="42"/>
     </issue>

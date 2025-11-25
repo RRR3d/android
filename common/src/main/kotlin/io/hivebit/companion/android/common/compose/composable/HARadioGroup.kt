@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.compose.composable
+package io.hivebit.companion.android.common.compose.composable
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.background
@@ -28,11 +28,11 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import io.homeassistant.companion.android.common.compose.theme.HADimens
-import io.homeassistant.companion.android.common.compose.theme.HARadius
-import io.homeassistant.companion.android.common.compose.theme.HATextStyle
-import io.homeassistant.companion.android.common.compose.theme.LocalHAColorScheme
-import io.homeassistant.companion.android.common.compose.theme.MaxButtonWidth
+import io.hivebit.companion.android.common.compose.theme.HADimens
+import io.hivebit.companion.android.common.compose.theme.HARadius
+import io.hivebit.companion.android.common.compose.theme.HATextStyle
+import io.hivebit.companion.android.common.compose.theme.LocalHAColorScheme
+import io.hivebit.companion.android.common.compose.theme.MaxButtonWidth
 
 /**
  * Represents a single option within a radio button group.

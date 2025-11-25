@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.controls
+package io.hivebit.companion.android.controls
 
 import android.content.Context
 import android.os.Build
@@ -8,10 +8,10 @@ import android.service.controls.actions.ControlAction
 import android.service.controls.actions.FloatAction
 import android.service.controls.templates.RangeTemplate
 import androidx.annotation.RequiresApi
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.IntegrationRepository
-import io.homeassistant.companion.android.common.data.integration.domain
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.IntegrationRepository
+import io.hivebit.companion.android.common.data.integration.domain
 
 @RequiresApi(Build.VERSION_CODES.R)
 object DefaultSliderControl : HaControl {

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.home
+package io.hivebit.companion.android.home
 
 import android.app.Application
 import android.content.ComponentName
@@ -15,31 +15,31 @@ import androidx.core.app.NotificationManagerCompat
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.BuildConfig
-import io.homeassistant.companion.android.HomeAssistantApplication
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.CAMERA_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.domain
-import io.homeassistant.companion.android.common.data.prefs.impl.entities.TemplateTileConfig
-import io.homeassistant.companion.android.common.data.websocket.WebSocketState
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AreaRegistryResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.DeviceRegistryResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.EntityRegistryResponse
-import io.homeassistant.companion.android.common.sensors.SensorManager
-import io.homeassistant.companion.android.data.SimplifiedEntity
-import io.homeassistant.companion.android.database.sensor.SensorDao
-import io.homeassistant.companion.android.database.wear.CameraTile
-import io.homeassistant.companion.android.database.wear.CameraTileDao
-import io.homeassistant.companion.android.database.wear.FavoriteCaches
-import io.homeassistant.companion.android.database.wear.FavoriteCachesDao
-import io.homeassistant.companion.android.database.wear.FavoritesDao
-import io.homeassistant.companion.android.database.wear.ThermostatTile
-import io.homeassistant.companion.android.database.wear.ThermostatTileDao
-import io.homeassistant.companion.android.database.wear.getAll
-import io.homeassistant.companion.android.database.wear.getAllFlow
-import io.homeassistant.companion.android.sensors.SensorReceiver
-import io.homeassistant.companion.android.util.RegistriesDataHandler
-import io.homeassistant.companion.android.util.throttleLatest
+import io.hivebit.companion.android.BuildConfig
+import io.hivebit.companion.android.HivebitApplication
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.CAMERA_DOMAIN
+import io.hivebit.companion.android.common.data.integration.domain
+import io.hivebit.companion.android.common.data.prefs.impl.entities.TemplateTileConfig
+import io.hivebit.companion.android.common.data.websocket.WebSocketState
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AreaRegistryResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.DeviceRegistryResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.EntityRegistryResponse
+import io.hivebit.companion.android.common.sensors.SensorManager
+import io.hivebit.companion.android.data.SimplifiedEntity
+import io.hivebit.companion.android.database.sensor.SensorDao
+import io.hivebit.companion.android.database.wear.CameraTile
+import io.hivebit.companion.android.database.wear.CameraTileDao
+import io.hivebit.companion.android.database.wear.FavoriteCaches
+import io.hivebit.companion.android.database.wear.FavoriteCachesDao
+import io.hivebit.companion.android.database.wear.FavoritesDao
+import io.hivebit.companion.android.database.wear.ThermostatTile
+import io.hivebit.companion.android.database.wear.ThermostatTileDao
+import io.hivebit.companion.android.database.wear.getAll
+import io.hivebit.companion.android.database.wear.getAllFlow
+import io.hivebit.companion.android.sensors.SensorReceiver
+import io.hivebit.companion.android.util.RegistriesDataHandler
+import io.hivebit.companion.android.util.throttleLatest
 import javax.inject.Inject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
@@ -169,7 +169,7 @@ class MainViewModel @Inject constructor(
 
             val assistantAppComponent = ComponentName(
                 BuildConfig.APPLICATION_ID,
-                "io.homeassistant.companion.android.conversation.AssistantActivity",
+                "io.hivebit.companion.android.conversation.AssistantActivity",
             )
             isAssistantAppAllowed =
                 app.packageManager.getComponentEnabledSetting(assistantAppComponent) !=
@@ -415,7 +415,7 @@ class MainViewModel @Inject constructor(
     fun updateAllSensors(sensorManager: SensorManager) {
         availableSensors = emptyList()
         viewModelScope.launch {
-            val context = getApplication<HomeAssistantApplication>().applicationContext
+            val context = getApplication<HivebitApplication>().applicationContext
             availableSensors = sensorManager
                 .getAvailableSensors(context)
                 .sortedBy { context.getString(it.name) }.distinct()
@@ -572,7 +572,7 @@ class MainViewModel @Inject constructor(
     fun setAssistantApp(allowed: Boolean) {
         val assistantAppComponent = ComponentName(
             BuildConfig.APPLICATION_ID,
-            "io.homeassistant.companion.android.conversation.AssistantActivity",
+            "io.hivebit.companion.android.conversation.AssistantActivity",
         )
         app.packageManager.setComponentEnabledSetting(
             assistantAppComponent,

@@ -1,7 +1,7 @@
-package io.homeassistant.companion.android.webview
+package io.hivebit.companion.android.webview
 
 import android.net.http.SslError
-import io.homeassistant.companion.android.webview.externalbus.ExternalBusMessage
+import io.hivebit.companion.android.webview.externalbus.ExternalBusMessage
 
 interface WebView {
     enum class ErrorType {

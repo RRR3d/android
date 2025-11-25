@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.location
+package io.hivebit.companion.android.location
 
 import android.annotation.SuppressLint
 import android.app.Notification
@@ -19,11 +19,11 @@ import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.location.Priority
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.util.CHANNEL_HIGH_ACCURACY
-import io.homeassistant.companion.android.common.util.FailFast
-import io.homeassistant.companion.android.sensors.LocationSensorManager
-import io.homeassistant.companion.android.util.ForegroundServiceLauncher
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.util.CHANNEL_HIGH_ACCURACY
+import io.hivebit.companion.android.common.util.FailFast
+import io.hivebit.companion.android.sensors.LocationSensorManager
+import io.hivebit.companion.android.util.ForegroundServiceLauncher
 import kotlin.math.abs
 import kotlin.math.roundToInt
 import timber.log.Timber

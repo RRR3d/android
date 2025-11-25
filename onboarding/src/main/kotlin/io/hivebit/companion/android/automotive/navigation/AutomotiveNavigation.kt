@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.automotive.navigation
+package io.hivebit.companion.android.automotive.navigation
 
 import android.content.ComponentName
 import android.content.Intent
@@ -8,7 +8,7 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavOptions
 import androidx.navigation.get
-import io.homeassistant.companion.android.HAStartDestinationRoute
+import io.hivebit.companion.android.HAStartDestinationRoute
 import kotlinx.serialization.Serializable
 
 @Serializable

@@ -1,6 +1,6 @@
-package io.homeassistant.companion.android.common.data.prefs
+package io.hivebit.companion.android.common.data.prefs
 
-import io.homeassistant.companion.android.common.data.prefs.impl.entities.TemplateTileConfig
+import io.hivebit.companion.android.common.data.prefs.impl.entities.TemplateTileConfig
 
 interface WearPrefsRepository {
     suspend fun getAllTileShortcuts(): Map<Int?, List<String>>

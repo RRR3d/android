@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.developer
+package io.hivebit.companion.android.settings.developer
 
 import android.content.IntentSender
 

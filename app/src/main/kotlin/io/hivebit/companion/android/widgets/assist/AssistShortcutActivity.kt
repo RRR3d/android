@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets.assist
+package io.hivebit.companion.android.widgets.assist
 
 import android.app.Activity
 import android.content.Intent
@@ -9,10 +9,10 @@ import androidx.core.content.pm.ShortcutInfoCompat
 import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.core.graphics.drawable.IconCompat
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.BaseActivity
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.assist.AssistActivity
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.BaseActivity
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.assist.AssistActivity
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
 import java.util.UUID
 
 @AndroidEntryPoint

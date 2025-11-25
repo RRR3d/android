@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.sensors
+package io.hivebit.companion.android.sensors
 
 import android.content.Context
 import androidx.work.Constraints
@@ -11,9 +11,9 @@ import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn
 import dagger.hilt.android.EntryPointAccessors
 import dagger.hilt.components.SingletonComponent
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.sensors.SensorReceiverBase
-import io.homeassistant.companion.android.common.sensors.SensorWorkerBase
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.sensors.SensorReceiverBase
+import io.hivebit.companion.android.common.sensors.SensorWorkerBase
 import java.util.concurrent.TimeUnit
 
 class SensorWorker(appContext: Context, workerParams: WorkerParameters) : SensorWorkerBase(appContext, workerParams) {

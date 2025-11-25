@@ -1,10 +1,10 @@
-package io.homeassistant.companion.android.common.data.integration.impl
+package io.hivebit.companion.android.common.data.integration.impl
 
-import io.homeassistant.companion.android.common.data.LocalStorage
-import io.homeassistant.companion.android.common.data.integration.IntegrationRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.database.server.ServerConnectionInfo
+import io.hivebit.companion.android.common.data.LocalStorage
+import io.hivebit.companion.android.common.data.integration.IntegrationRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.database.server.ServerConnectionInfo
 import io.mockk.coEvery
 import io.mockk.every
 import io.mockk.mockk

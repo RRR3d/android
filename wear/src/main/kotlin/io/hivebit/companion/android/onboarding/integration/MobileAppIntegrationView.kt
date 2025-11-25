@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.integration
+package io.hivebit.companion.android.onboarding.integration
 
 interface MobileAppIntegrationView {
 

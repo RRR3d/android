@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets.camera
+package io.hivebit.companion.android.widgets.camera
 
 import android.R.layout
 import android.appwidget.AppWidgetManager
@@ -14,19 +14,19 @@ import android.widget.Spinner
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.CAMERA_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.IMAGE_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.domain
-import io.homeassistant.companion.android.database.widget.CameraWidgetDao
-import io.homeassistant.companion.android.database.widget.CameraWidgetEntity
-import io.homeassistant.companion.android.database.widget.WidgetTapAction
-import io.homeassistant.companion.android.databinding.WidgetCameraConfigureBinding
-import io.homeassistant.companion.android.settings.widgets.ManageWidgetsViewModel
-import io.homeassistant.companion.android.util.applySafeDrawingInsets
-import io.homeassistant.companion.android.widgets.BaseWidgetConfigureActivity
-import io.homeassistant.companion.android.widgets.common.SingleItemArrayAdapter
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.CAMERA_DOMAIN
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.IMAGE_DOMAIN
+import io.hivebit.companion.android.common.data.integration.domain
+import io.hivebit.companion.android.database.widget.CameraWidgetDao
+import io.hivebit.companion.android.database.widget.CameraWidgetEntity
+import io.hivebit.companion.android.database.widget.WidgetTapAction
+import io.hivebit.companion.android.databinding.WidgetCameraConfigureBinding
+import io.hivebit.companion.android.settings.widgets.ManageWidgetsViewModel
+import io.hivebit.companion.android.util.applySafeDrawingInsets
+import io.hivebit.companion.android.widgets.BaseWidgetConfigureActivity
+import io.hivebit.companion.android.widgets.common.SingleItemArrayAdapter
 import kotlinx.coroutines.launch
 import timber.log.Timber
 

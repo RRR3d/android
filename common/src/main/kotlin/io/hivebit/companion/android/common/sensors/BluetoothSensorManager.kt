@@ -1,24 +1,24 @@
-package io.homeassistant.companion.android.common.sensors
+package io.hivebit.companion.android.common.sensors
 
 import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Build
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.bluetooth.BluetoothDevice
-import io.homeassistant.companion.android.common.bluetooth.BluetoothUtils
-import io.homeassistant.companion.android.common.bluetooth.BluetoothUtils.supportsTransmitter
-import io.homeassistant.companion.android.common.bluetooth.ble.IBeacon
-import io.homeassistant.companion.android.common.bluetooth.ble.IBeaconMonitor
-import io.homeassistant.companion.android.common.bluetooth.ble.IBeaconTransmitter
-import io.homeassistant.companion.android.common.bluetooth.ble.KalmanFilter
-import io.homeassistant.companion.android.common.bluetooth.ble.MonitoringManager
-import io.homeassistant.companion.android.common.bluetooth.ble.TransmitterManager
-import io.homeassistant.companion.android.common.bluetooth.ble.name
-import io.homeassistant.companion.android.common.util.STATE_UNKNOWN
-import io.homeassistant.companion.android.database.AppDatabase
-import io.homeassistant.companion.android.database.sensor.SensorSetting
-import io.homeassistant.companion.android.database.sensor.SensorSettingType
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.bluetooth.BluetoothDevice
+import io.hivebit.companion.android.common.bluetooth.BluetoothUtils
+import io.hivebit.companion.android.common.bluetooth.BluetoothUtils.supportsTransmitter
+import io.hivebit.companion.android.common.bluetooth.ble.IBeacon
+import io.hivebit.companion.android.common.bluetooth.ble.IBeaconMonitor
+import io.hivebit.companion.android.common.bluetooth.ble.IBeaconTransmitter
+import io.hivebit.companion.android.common.bluetooth.ble.KalmanFilter
+import io.hivebit.companion.android.common.bluetooth.ble.MonitoringManager
+import io.hivebit.companion.android.common.bluetooth.ble.TransmitterManager
+import io.hivebit.companion.android.common.bluetooth.ble.name
+import io.hivebit.companion.android.common.util.STATE_UNKNOWN
+import io.hivebit.companion.android.database.AppDatabase
+import io.hivebit.companion.android.database.sensor.SensorSetting
+import io.hivebit.companion.android.database.sensor.SensorSettingType
 import java.util.UUID
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

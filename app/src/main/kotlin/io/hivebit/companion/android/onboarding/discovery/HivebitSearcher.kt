@@ -1,22 +1,22 @@
-package io.homeassistant.companion.android.onboarding.discovery
+package io.hivebit.companion.android.onboarding.discovery
 
 import android.net.nsd.NsdManager
 import android.net.nsd.NsdServiceInfo
 import android.net.wifi.WifiManager
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
-import io.homeassistant.companion.android.common.data.HomeAssistantVersion
+import io.hivebit.companion.android.common.data.HivebitVersion
 import java.net.MalformedURLException
 import java.net.URL
 import java.util.concurrent.locks.ReentrantLock
 import okio.internal.commonToUtf8String
 import timber.log.Timber
 
-class HomeAssistantSearcher constructor(
+class HivebitSearcher constructor(
     private val nsdManager: NsdManager,
     private val wifiManager: WifiManager?,
     private val onStart: () -> Unit,
-    private val onInstanceFound: (instance: HomeAssistantInstance) -> Unit,
+    private val onInstanceFound: (instance: HivebitInstance) -> Unit,
     private val onError: () -> Unit,
 ) : NsdManager.DiscoveryListener,
     DefaultLifecycleObserver {
@@ -24,7 +24,7 @@ class HomeAssistantSearcher constructor(
     companion object {
         private const val SERVICE_TYPE = "_home-assistant._tcp"
 
-        private const val TAG = "HomeAssistantSearcher"
+        private const val TAG = "HivebitSearcher"
 
         private val lock = ReentrantLock()
     }
@@ -102,13 +102,13 @@ class HomeAssistantSearcher constructor(
                         val version = if (versionAttr?.isNotEmpty() ==
                             true
                         ) {
-                            HomeAssistantVersion.fromString(versionAttr.commonToUtf8String())
+                            HivebitVersion.fromString(versionAttr.commonToUtf8String())
                         } else {
                             null
                         }
                         if (baseUrl?.isNotEmpty() == true && version != null) {
                             try {
-                                val instance = HomeAssistantInstance(
+                                val instance = HivebitInstance(
                                     it.serviceName,
                                     URL(baseUrl.commonToUtf8String()),
                                     version,

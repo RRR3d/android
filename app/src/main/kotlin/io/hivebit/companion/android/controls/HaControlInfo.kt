@@ -1,6 +1,6 @@
-package io.homeassistant.companion.android.controls
+package io.hivebit.companion.android.controls
 
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AreaRegistryResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AreaRegistryResponse
 
 data class HaControlInfo(
     val systemId: String,

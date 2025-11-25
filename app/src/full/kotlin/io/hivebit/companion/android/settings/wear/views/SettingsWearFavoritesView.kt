@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.wear.views
+package io.hivebit.companion.android.settings.wear.views
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
@@ -20,15 +20,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.friendlyName
-import io.homeassistant.companion.android.settings.wear.SettingsWearViewModel
-import io.homeassistant.companion.android.util.compose.FavoriteEntityRow
-import io.homeassistant.companion.android.util.compose.SingleEntityPicker
-import io.homeassistant.companion.android.util.plus
-import io.homeassistant.companion.android.util.safeBottomPaddingValues
-import io.homeassistant.companion.android.util.safeBottomWindowInsets
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.friendlyName
+import io.hivebit.companion.android.settings.wear.SettingsWearViewModel
+import io.hivebit.companion.android.util.compose.FavoriteEntityRow
+import io.hivebit.companion.android.util.compose.SingleEntityPicker
+import io.hivebit.companion.android.util.plus
+import io.hivebit.companion.android.util.safeBottomPaddingValues
+import io.hivebit.companion.android.util.safeBottomWindowInsets
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.launchIn

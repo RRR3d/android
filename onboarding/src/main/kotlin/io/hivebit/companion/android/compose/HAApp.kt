@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.compose
+package io.hivebit.companion.android.compose
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.WindowInsets
@@ -18,9 +18,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
-import io.homeassistant.companion.android.HAStartDestinationRoute
-import io.homeassistant.companion.android.common.compose.theme.LocalHAColorScheme
-import io.homeassistant.companion.android.loading.LoadingScreen
+import io.hivebit.companion.android.HAStartDestinationRoute
+import io.hivebit.companion.android.common.compose.theme.LocalHAColorScheme
+import io.hivebit.companion.android.loading.LoadingScreen
 
 /**
  * Main composable for the Home Assistant app.

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.controls
+package io.hivebit.companion.android.controls
 
 import android.annotation.SuppressLint
 import android.app.PendingIntent
@@ -12,16 +12,16 @@ import androidx.core.content.ContextCompat
 import com.mikepenz.iconics.IconicsDrawable
 import com.mikepenz.iconics.utils.sizeDp
 import com.mikepenz.iconics.utils.toAndroidIconCompat
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.CAMERA_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.MEDIA_PLAYER_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.IntegrationRepository
-import io.homeassistant.companion.android.common.data.integration.domain
-import io.homeassistant.companion.android.common.data.integration.friendlyState
-import io.homeassistant.companion.android.common.data.integration.getIcon
-import io.homeassistant.companion.android.common.data.integration.isActive
-import io.homeassistant.companion.android.webview.WebViewActivity
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.CAMERA_DOMAIN
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.MEDIA_PLAYER_DOMAIN
+import io.hivebit.companion.android.common.data.integration.IntegrationRepository
+import io.hivebit.companion.android.common.data.integration.domain
+import io.hivebit.companion.android.common.data.integration.friendlyState
+import io.hivebit.companion.android.common.data.integration.getIcon
+import io.hivebit.companion.android.common.data.integration.isActive
+import io.hivebit.companion.android.webview.WebViewActivity
 
 @RequiresApi(Build.VERSION_CODES.R)
 interface HaControl {

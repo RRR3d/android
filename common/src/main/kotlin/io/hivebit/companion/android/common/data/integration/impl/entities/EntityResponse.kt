@@ -1,7 +1,7 @@
-package io.homeassistant.companion.android.common.data.integration.impl.entities
+package io.hivebit.companion.android.common.data.integration.impl.entities
 
-import io.homeassistant.companion.android.common.util.LocalDateTimeSerializer
-import io.homeassistant.companion.android.common.util.MapAnySerializer
+import io.hivebit.companion.android.common.util.LocalDateTimeSerializer
+import io.hivebit.companion.android.common.util.MapAnySerializer
 import java.time.LocalDateTime
 import kotlinx.serialization.Polymorphic
 import kotlinx.serialization.Serializable

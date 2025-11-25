@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets
+package io.hivebit.companion.android.widgets
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -14,11 +14,11 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.core.content.getSystemService
 import androidx.lifecycle.lifecycleScope
-import io.homeassistant.companion.android.BaseActivity
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.database.widget.WidgetDao
-import io.homeassistant.companion.android.database.widget.WidgetEntity
+import io.hivebit.companion.android.BaseActivity
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.database.widget.WidgetDao
+import io.hivebit.companion.android.database.widget.WidgetEntity
 import javax.inject.Inject
 import kotlinx.coroutines.flow.drop
 import kotlinx.coroutines.flow.first

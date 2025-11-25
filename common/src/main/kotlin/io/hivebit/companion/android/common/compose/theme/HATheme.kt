@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.compose.theme
+package io.hivebit.companion.android.common.compose.theme
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.background

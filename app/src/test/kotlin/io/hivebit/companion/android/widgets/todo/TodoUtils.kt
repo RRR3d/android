@@ -1,6 +1,6 @@
-package io.homeassistant.companion.android.widgets.todo
+package io.hivebit.companion.android.widgets.todo
 
-import io.homeassistant.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.Entity
 import java.time.LocalDateTime
 
 internal fun fakeServerEntity(entityId: String, friendlyName: String? = null): Entity {

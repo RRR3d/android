@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.viewHolders
+package io.hivebit.companion.android.viewHolders
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.welcome
+package io.hivebit.companion.android.onboarding.welcome
 
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import androidx.compose.foundation.Image
@@ -25,10 +25,10 @@ import androidx.compose.ui.text.withLink
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.onboarding.OnboardingScreen
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.onboarding.OnboardingScreen
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
 
 @Composable
 fun WelcomeView(onContinue: () -> Unit) {

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.util
+package io.hivebit.companion.android.util
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
@@ -15,14 +15,14 @@ import androidx.compose.ui.unit.LayoutDirection
 import androidx.wear.compose.material.ToggleChipColors
 import androidx.wear.compose.material.ToggleChipDefaults
 import androidx.wear.compose.material3.contentColorFor
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.EntityPosition
-import io.homeassistant.companion.android.common.data.integration.domain
-import io.homeassistant.companion.android.common.data.integration.getCoverPosition
-import io.homeassistant.companion.android.common.data.integration.getFanSpeed
-import io.homeassistant.companion.android.common.data.integration.getLightBrightness
-import io.homeassistant.companion.android.common.data.integration.getLightColor
-import io.homeassistant.companion.android.theme.wearColorScheme
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.EntityPosition
+import io.hivebit.companion.android.common.data.integration.domain
+import io.hivebit.companion.android.common.data.integration.getCoverPosition
+import io.hivebit.companion.android.common.data.integration.getFanSpeed
+import io.hivebit.companion.android.common.data.integration.getLightBrightness
+import io.hivebit.companion.android.common.data.integration.getLightColor
+import io.hivebit.companion.android.theme.wearColorScheme
 
 object WearToggleChip {
     /**

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.compose.composable
+package io.hivebit.companion.android.common.compose.composable
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.animateFloatAsState
@@ -27,12 +27,12 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.PreviewLightDark
-import io.homeassistant.companion.android.common.compose.theme.HABorderWidth
-import io.homeassistant.companion.android.common.compose.theme.HADimens
-import io.homeassistant.companion.android.common.compose.theme.HARadius
-import io.homeassistant.companion.android.common.compose.theme.HATextStyle
-import io.homeassistant.companion.android.common.compose.theme.HAThemeForPreview
-import io.homeassistant.companion.android.common.compose.theme.LocalHAColorScheme
+import io.hivebit.companion.android.common.compose.theme.HABorderWidth
+import io.hivebit.companion.android.common.compose.theme.HADimens
+import io.hivebit.companion.android.common.compose.theme.HARadius
+import io.hivebit.companion.android.common.compose.theme.HATextStyle
+import io.hivebit.companion.android.common.compose.theme.HAThemeForPreview
+import io.hivebit.companion.android.common.compose.theme.LocalHAColorScheme
 
 /**
  * Displays an expandable details section with an animated arrow indicator.

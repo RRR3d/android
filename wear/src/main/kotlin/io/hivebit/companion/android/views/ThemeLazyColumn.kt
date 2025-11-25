@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.views
+package io.hivebit.companion.android.views
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
@@ -13,7 +13,7 @@ import androidx.wear.compose.foundation.lazy.ScalingLazyListState
 import androidx.wear.compose.foundation.lazy.rememberScalingLazyListState
 import androidx.wear.compose.material.PositionIndicator
 import androidx.wear.compose.material.Scaffold
-import io.homeassistant.companion.android.home.views.TimeText
+import io.hivebit.companion.android.home.views.TimeText
 
 @Composable
 fun ThemeLazyColumn(

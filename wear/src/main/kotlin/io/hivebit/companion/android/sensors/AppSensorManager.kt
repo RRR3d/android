@@ -1,7 +1,7 @@
-package io.homeassistant.companion.android.sensors
+package io.hivebit.companion.android.sensors
 
-import io.homeassistant.companion.android.BuildConfig
-import io.homeassistant.companion.android.common.sensors.AppSensorManagerBase
+import io.hivebit.companion.android.BuildConfig
+import io.hivebit.companion.android.common.sensors.AppSensorManagerBase
 
 class AppSensorManager : AppSensorManagerBase() {
 

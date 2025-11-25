@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.notification
+package io.hivebit.companion.android.settings.notification
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -15,11 +15,11 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceCategory
 import androidx.preference.PreferenceFragmentCompat
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.database.notification.NotificationDao
-import io.homeassistant.companion.android.database.notification.NotificationItem
-import io.homeassistant.companion.android.util.applyBottomSafeDrawingInsets
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.database.notification.NotificationDao
+import io.hivebit.companion.android.database.notification.NotificationItem
+import io.hivebit.companion.android.util.applyBottomSafeDrawingInsets
 import java.util.Calendar
 import java.util.GregorianCalendar
 import javax.inject.Inject

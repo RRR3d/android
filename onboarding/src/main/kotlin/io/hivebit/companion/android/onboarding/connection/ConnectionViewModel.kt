@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.connection
+package io.hivebit.companion.android.onboarding.connection
 
 import android.content.Context
 import android.net.Uri
@@ -16,12 +16,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.authentication.impl.AuthenticationService
-import io.homeassistant.companion.android.common.data.keychain.KeyChainRepository
-import io.homeassistant.companion.android.common.data.keychain.NamedKeyChain
-import io.homeassistant.companion.android.onboarding.connection.navigation.ConnectionRoute
-import io.homeassistant.companion.android.util.TLSWebViewClient
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.authentication.impl.AuthenticationService
+import io.hivebit.companion.android.common.data.keychain.KeyChainRepository
+import io.hivebit.companion.android.common.data.keychain.NamedKeyChain
+import io.hivebit.companion.android.onboarding.connection.navigation.ConnectionRoute
+import io.hivebit.companion.android.util.TLSWebViewClient
 import javax.inject.Inject
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow

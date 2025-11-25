@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.webview
+package io.hivebit.companion.android.webview
 
 import android.annotation.SuppressLint
 import android.view.View
@@ -40,11 +40,11 @@ import androidx.media3.common.Player
 import dev.chrisbanes.haze.hazeEffect
 import dev.chrisbanes.haze.materials.ExperimentalHazeMaterialsApi
 import dev.chrisbanes.haze.materials.HazeMaterials
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.prefs.NightModeTheme
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
-import io.homeassistant.companion.android.util.compose.media.player.HAMediaPlayer
-import io.homeassistant.companion.android.util.compose.webview.HAWebView
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.prefs.NightModeTheme
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.util.compose.media.player.HAMediaPlayer
+import io.hivebit.companion.android.util.compose.webview.HAWebView
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalHazeMaterialsApi::class)

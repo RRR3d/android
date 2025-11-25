@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.controls
+package io.hivebit.companion.android.controls
 
 import android.annotation.SuppressLint
 import android.app.KeyguardManager
@@ -23,11 +23,11 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.getSystemService
 import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
-import io.homeassistant.companion.android.webview.WebViewActivity
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.webview.WebViewActivity
 import javax.inject.Inject
 import kotlinx.coroutines.launch
 import timber.log.Timber

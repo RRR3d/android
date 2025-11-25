@@ -1,8 +1,8 @@
-package io.homeassistant.companion.android.common.util
+package io.hivebit.companion.android.common.util
 
 import androidx.annotation.Keep
 import androidx.annotation.StringRes
-import io.homeassistant.companion.android.common.R
+import io.hivebit.companion.android.common.R
 import kotlin.math.abs
 
 enum class GestureAction(@StringRes val description: Int, val category: GestureActionCategory) {

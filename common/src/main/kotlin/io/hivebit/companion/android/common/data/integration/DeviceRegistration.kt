@@ -1,7 +1,7 @@
-package io.homeassistant.companion.android.common.data.integration
+package io.hivebit.companion.android.common.data.integration
 
-import io.homeassistant.companion.android.common.util.AppVersion
-import io.homeassistant.companion.android.common.util.MessagingToken
+import io.hivebit.companion.android.common.util.AppVersion
+import io.hivebit.companion.android.common.util.MessagingToken
 import javax.inject.Qualifier
 
 data class DeviceRegistration(

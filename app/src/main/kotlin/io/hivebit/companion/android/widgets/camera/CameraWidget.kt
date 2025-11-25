@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets.camera
+package io.hivebit.companion.android.widgets.camera
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -20,19 +20,19 @@ import coil3.size.Dimension
 import coil3.size.Precision
 import coil3.size.Size
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.FailFast
-import io.homeassistant.companion.android.database.widget.CameraWidgetDao
-import io.homeassistant.companion.android.database.widget.CameraWidgetEntity
-import io.homeassistant.companion.android.database.widget.WidgetTapAction
-import io.homeassistant.companion.android.util.hasActiveConnection
-import io.homeassistant.companion.android.webview.WebViewActivity
-import io.homeassistant.companion.android.widgets.ACTION_APPWIDGET_CREATED
-import io.homeassistant.companion.android.widgets.BaseWidgetProvider.Companion.UPDATE_WIDGETS
-import io.homeassistant.companion.android.widgets.BaseWidgetProvider.Companion.widgetScope
-import io.homeassistant.companion.android.widgets.EXTRA_WIDGET_ENTITY
-import io.homeassistant.companion.android.widgets.common.RemoteViewsTarget
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.FailFast
+import io.hivebit.companion.android.database.widget.CameraWidgetDao
+import io.hivebit.companion.android.database.widget.CameraWidgetEntity
+import io.hivebit.companion.android.database.widget.WidgetTapAction
+import io.hivebit.companion.android.util.hasActiveConnection
+import io.hivebit.companion.android.webview.WebViewActivity
+import io.hivebit.companion.android.widgets.ACTION_APPWIDGET_CREATED
+import io.hivebit.companion.android.widgets.BaseWidgetProvider.Companion.UPDATE_WIDGETS
+import io.hivebit.companion.android.widgets.BaseWidgetProvider.Companion.widgetScope
+import io.hivebit.companion.android.widgets.EXTRA_WIDGET_ENTITY
+import io.hivebit.companion.android.widgets.common.RemoteViewsTarget
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -46,7 +46,7 @@ class CameraWidget : AppWidgetProvider() {
 
     companion object {
         internal const val UPDATE_IMAGE =
-            "io.homeassistant.companion.android.widgets.camera.CameraWidget.UPDATE_IMAGE"
+            "io.hivebit.companion.android.widgets.camera.CameraWidget.UPDATE_IMAGE"
 
         internal const val EXTRA_SERVER_ID = "EXTRA_SERVER_ID"
         internal const val EXTRA_ENTITY_ID = "EXTRA_ENTITY_ID"

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.util.compose
+package io.hivebit.companion.android.util.compose
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -17,10 +17,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.stringResource
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.database.widget.WidgetBackgroundType
-import io.homeassistant.companion.android.widgets.common.WidgetUtils
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.database.widget.WidgetBackgroundType
+import io.hivebit.companion.android.widgets.common.WidgetUtils
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable

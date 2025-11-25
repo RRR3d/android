@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.wearmtls.navigation
+package io.hivebit.companion.android.onboarding.wearmtls.navigation
 
 import android.net.Uri
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -7,7 +7,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavOptions
 import androidx.navigation.compose.composable
 import androidx.navigation.toRoute
-import io.homeassistant.companion.android.onboarding.wearmtls.WearMTLSScreen
+import io.hivebit.companion.android.onboarding.wearmtls.WearMTLSScreen
 import kotlinx.serialization.Serializable
 
 @Serializable

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.notification.views
+package io.hivebit.companion.android.settings.notification.views
 
 import android.os.Build
 import androidx.annotation.RequiresApi
@@ -27,12 +27,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.util.appCreatedChannels
-import io.homeassistant.companion.android.settings.notification.NotificationViewModel
-import io.homeassistant.companion.android.util.plus
-import io.homeassistant.companion.android.util.safeBottomPaddingValues
-import io.homeassistant.companion.android.util.safeBottomWindowInsets
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.util.appCreatedChannels
+import io.hivebit.companion.android.settings.notification.NotificationViewModel
+import io.hivebit.companion.android.util.plus
+import io.hivebit.companion.android.util.safeBottomPaddingValues
+import io.hivebit.companion.android.util.safeBottomWindowInsets
 import kotlinx.coroutines.launch
 
 @RequiresApi(Build.VERSION_CODES.O)

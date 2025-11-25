@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.database.sensor
+package io.hivebit.companion.android.database.sensor
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

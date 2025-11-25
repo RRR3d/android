@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.compose.composable
+package io.hivebit.companion.android.compose.composable
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
@@ -15,9 +15,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.compose.theme.HADimens
-import io.homeassistant.companion.android.common.compose.theme.LocalHAColorScheme
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.compose.theme.HADimens
+import io.hivebit.companion.android.common.compose.theme.LocalHAColorScheme
 
 /**
  * Generic top bar for Home Assistant screens with optional buttons

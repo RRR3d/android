@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.bluetooth.ble
+package io.hivebit.companion.android.common.bluetooth.ble
 
 import kotlin.math.pow
 import org.altbeacon.beacon.service.RssiFilter

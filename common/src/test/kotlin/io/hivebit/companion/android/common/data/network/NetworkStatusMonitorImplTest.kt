@@ -1,9 +1,9 @@
-package io.homeassistant.companion.android.common.data.network
+package io.hivebit.companion.android.common.data.network
 
 import android.net.ConnectivityManager
 import android.net.Network
 import android.net.NetworkRequest
-import io.homeassistant.companion.android.database.server.ServerConnectionInfo
+import io.hivebit.companion.android.database.server.ServerConnectionInfo
 import io.mockk.CapturingSlot
 import io.mockk.Runs
 import io.mockk.every

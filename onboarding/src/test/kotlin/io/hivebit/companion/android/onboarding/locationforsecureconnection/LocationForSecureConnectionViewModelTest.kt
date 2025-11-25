@@ -1,10 +1,10 @@
-package io.homeassistant.companion.android.onboarding.locationforsecureconnection
+package io.hivebit.companion.android.onboarding.locationforsecureconnection
 
 import app.cash.turbine.test
-import io.homeassistant.companion.android.common.data.integration.IntegrationRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.testing.unit.ConsoleLogExtension
-import io.homeassistant.companion.android.testing.unit.MainDispatcherJUnit5Extension
+import io.hivebit.companion.android.common.data.integration.IntegrationRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.testing.unit.ConsoleLogExtension
+import io.hivebit.companion.android.testing.unit.MainDispatcherJUnit5Extension
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk

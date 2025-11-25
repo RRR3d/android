@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.sensor.views
+package io.hivebit.companion.android.settings.sensor.views
 
 import android.content.Intent
 import android.provider.Settings
@@ -70,21 +70,21 @@ import androidx.core.net.toUri
 import com.mikepenz.iconics.IconicsDrawable
 import com.mikepenz.iconics.compose.Image
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.compose.composable.HAHint
-import io.homeassistant.companion.android.common.sensors.SensorManager
-import io.homeassistant.companion.android.common.util.kotlinJsonMapper
-import io.homeassistant.companion.android.database.sensor.SensorSetting
-import io.homeassistant.companion.android.database.sensor.SensorSettingType
-import io.homeassistant.companion.android.database.sensor.SensorWithAttributes
-import io.homeassistant.companion.android.database.settings.SensorUpdateFrequencySetting
-import io.homeassistant.companion.android.sensors.HealthConnectSensorManager
-import io.homeassistant.companion.android.settings.sensor.SensorDetailViewModel
-import io.homeassistant.companion.android.settings.views.SettingsSubheader
-import io.homeassistant.companion.android.util.compose.MdcAlertDialog
-import io.homeassistant.companion.android.util.compose.TransparentChip
-import io.homeassistant.companion.android.util.safeBottomPaddingValues
-import io.homeassistant.companion.android.util.safeBottomWindowInsets
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.compose.composable.HAHint
+import io.hivebit.companion.android.common.sensors.SensorManager
+import io.hivebit.companion.android.common.util.kotlinJsonMapper
+import io.hivebit.companion.android.database.sensor.SensorSetting
+import io.hivebit.companion.android.database.sensor.SensorSettingType
+import io.hivebit.companion.android.database.sensor.SensorWithAttributes
+import io.hivebit.companion.android.database.settings.SensorUpdateFrequencySetting
+import io.hivebit.companion.android.sensors.HealthConnectSensorManager
+import io.hivebit.companion.android.settings.sensor.SensorDetailViewModel
+import io.hivebit.companion.android.settings.views.SettingsSubheader
+import io.hivebit.companion.android.util.compose.MdcAlertDialog
+import io.hivebit.companion.android.util.compose.TransparentChip
+import io.hivebit.companion.android.util.safeBottomPaddingValues
+import io.hivebit.companion.android.util.safeBottomWindowInsets
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 

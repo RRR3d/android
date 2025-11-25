@@ -1,11 +1,11 @@
-package io.homeassistant.companion.android.onboarding.connection
+package io.hivebit.companion.android.onboarding.connection
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import com.android.tools.screenshot.PreviewTest
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.compose.theme.HAThemeForPreview
-import io.homeassistant.companion.android.compose.HAPreviews
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.compose.theme.HAThemeForPreview
+import io.hivebit.companion.android.compose.HAPreviews
 
 class ConnectionErrorScreenshotTest {
 

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.util
+package io.hivebit.companion.android.util
 
 import android.content.Context
 import android.content.ContextWrapper

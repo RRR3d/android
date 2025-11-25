@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.serverdiscovery
+package io.hivebit.companion.android.onboarding.serverdiscovery
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -17,12 +17,12 @@ import androidx.compose.ui.test.swipeUp
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication
-import io.homeassistant.companion.android.HiltComponentActivity
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.HomeAssistantVersion
-import io.homeassistant.companion.android.compose.assertAlpha
-import io.homeassistant.companion.android.testing.unit.ConsoleLogRule
-import io.homeassistant.companion.android.testing.unit.stringResource
+import io.hivebit.companion.android.HiltComponentActivity
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.HivebitVersion
+import io.hivebit.companion.android.compose.assertAlpha
+import io.hivebit.companion.android.testing.unit.ConsoleLogRule
+import io.hivebit.companion.android.testing.unit.stringResource
 import java.net.URL
 import org.junit.Rule
 import org.junit.Test
@@ -32,7 +32,7 @@ import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
 
-private val haVersion = HomeAssistantVersion(2025, 1, 1)
+private val haVersion = HivebitVersion(2025, 1, 1)
 
 @RunWith(RobolectricTestRunner::class)
 @Config(application = HiltTestApplication::class)

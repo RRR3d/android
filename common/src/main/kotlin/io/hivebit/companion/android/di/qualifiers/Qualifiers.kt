@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.di.qualifiers
+package io.hivebit.companion.android.di.qualifiers
 
 import javax.inject.Qualifier
 

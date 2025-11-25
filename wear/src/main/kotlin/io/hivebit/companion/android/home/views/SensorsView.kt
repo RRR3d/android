@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.home.views
+package io.hivebit.companion.android.home.views
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -11,13 +11,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.wear.compose.material3.Button
 import androidx.wear.compose.material3.Text
 import androidx.wear.tooling.preview.devices.WearDevices
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.sensors.SensorManager
-import io.homeassistant.companion.android.sensors.SensorReceiver
-import io.homeassistant.companion.android.theme.WearAppTheme
-import io.homeassistant.companion.android.theme.getFilledTonalButtonColors
-import io.homeassistant.companion.android.views.ListHeader
-import io.homeassistant.companion.android.views.ThemeLazyColumn
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.sensors.SensorManager
+import io.hivebit.companion.android.sensors.SensorReceiver
+import io.hivebit.companion.android.theme.WearAppTheme
+import io.hivebit.companion.android.theme.getFilledTonalButtonColors
+import io.hivebit.companion.android.views.ListHeader
+import io.hivebit.companion.android.views.ThemeLazyColumn
 
 @Composable
 fun SensorsView(onClickSensorManager: (SensorManager) -> Unit) {

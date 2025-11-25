@@ -1,11 +1,11 @@
-package io.homeassistant.companion.android.onboarding.wearmtls
+package io.hivebit.companion.android.onboarding.wearmtls
 
 import android.content.ContentResolver
 import android.content.Context
 import android.net.Uri
 import android.provider.OpenableColumns
 import app.cash.turbine.test
-import io.homeassistant.companion.android.testing.unit.MainDispatcherJUnit5Extension
+import io.hivebit.companion.android.testing.unit.MainDispatcherJUnit5Extension
 import io.mockk.Runs
 import io.mockk.every
 import io.mockk.just

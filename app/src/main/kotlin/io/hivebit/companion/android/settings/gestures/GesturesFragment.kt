@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.gestures
+package io.hivebit.companion.android.settings.gestures
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,9 +8,9 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.settings.addHelpMenuProvider
-import io.homeassistant.companion.android.settings.gestures.views.GesturesScreen
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.settings.addHelpMenuProvider
+import io.hivebit.companion.android.settings.gestures.views.GesturesScreen
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
 import kotlin.getValue
 
 @AndroidEntryPoint

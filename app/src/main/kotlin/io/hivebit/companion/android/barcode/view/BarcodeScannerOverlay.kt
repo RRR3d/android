@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.barcode.view
+package io.hivebit.companion.android.barcode.view
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.runtime.Composable

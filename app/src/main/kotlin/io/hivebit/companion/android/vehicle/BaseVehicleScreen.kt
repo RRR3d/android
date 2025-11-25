@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.vehicle
+package io.hivebit.companion.android.vehicle
 
 import android.car.Car
 import android.car.drivingstate.CarUxRestrictionsManager
@@ -6,7 +6,7 @@ import androidx.car.app.CarContext
 import androidx.car.app.Screen
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
-import io.homeassistant.companion.android.common.util.isAutomotive
+import io.hivebit.companion.android.common.util.isAutomotive
 import timber.log.Timber
 
 abstract class BaseVehicleScreen(carContext: CarContext) : Screen(carContext) {

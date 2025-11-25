@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.serverdiscovery
+package io.hivebit.companion.android.onboarding.serverdiscovery
 
 import androidx.annotation.VisibleForTesting
 import androidx.compose.animation.core.FastOutSlowInEasing
@@ -66,25 +66,25 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.compose.composable.HAAccentButton
-import io.homeassistant.companion.android.common.compose.composable.HALoading
-import io.homeassistant.companion.android.common.compose.composable.HAModalBottomSheet
-import io.homeassistant.companion.android.common.compose.composable.HAPlainButton
-import io.homeassistant.companion.android.common.compose.theme.HABorderWidth
-import io.homeassistant.companion.android.common.compose.theme.HABrandColors
-import io.homeassistant.companion.android.common.compose.theme.HADimens
-import io.homeassistant.companion.android.common.compose.theme.HARadius
-import io.homeassistant.companion.android.common.compose.theme.HASize
-import io.homeassistant.companion.android.common.compose.theme.HATextStyle
-import io.homeassistant.companion.android.common.compose.theme.HAThemeForPreview
-import io.homeassistant.companion.android.common.compose.theme.LocalHAColorScheme
-import io.homeassistant.companion.android.common.compose.theme.MaxButtonWidth
-import io.homeassistant.companion.android.common.data.HomeAssistantVersion
-import io.homeassistant.companion.android.compose.HAPreviews
-import io.homeassistant.companion.android.compose.alpha
-import io.homeassistant.companion.android.compose.composable.HATopBar
-import io.homeassistant.companion.android.onboarding.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.compose.composable.HAAccentButton
+import io.hivebit.companion.android.common.compose.composable.HALoading
+import io.hivebit.companion.android.common.compose.composable.HAModalBottomSheet
+import io.hivebit.companion.android.common.compose.composable.HAPlainButton
+import io.hivebit.companion.android.common.compose.theme.HABorderWidth
+import io.hivebit.companion.android.common.compose.theme.HABrandColors
+import io.hivebit.companion.android.common.compose.theme.HADimens
+import io.hivebit.companion.android.common.compose.theme.HARadius
+import io.hivebit.companion.android.common.compose.theme.HASize
+import io.hivebit.companion.android.common.compose.theme.HATextStyle
+import io.hivebit.companion.android.common.compose.theme.HAThemeForPreview
+import io.hivebit.companion.android.common.compose.theme.LocalHAColorScheme
+import io.hivebit.companion.android.common.compose.theme.MaxButtonWidth
+import io.hivebit.companion.android.common.data.HivebitVersion
+import io.hivebit.companion.android.compose.HAPreviews
+import io.hivebit.companion.android.compose.alpha
+import io.hivebit.companion.android.compose.composable.HATopBar
+import io.hivebit.companion.android.onboarding.R
 import java.net.URL
 import kotlinx.coroutines.launch
 
@@ -437,7 +437,7 @@ private fun ServerDiscoveryScreenPreview_with_one_server() {
             discoveryState = ServerDiscovered(
                 "hello",
                 URL("http://my.homeassistant.io"),
-                HomeAssistantVersion(2042, 1, 42),
+                HivebitVersion(2042, 1, 42),
             ),
             onConnectClick = {},
             onManualSetupClick = {},
@@ -458,12 +458,12 @@ private fun ServerDiscoveryScreenPreview_with_multiple_servers() {
                     ServerDiscovered(
                         "hello",
                         URL("http://my.homeassistant.io"),
-                        HomeAssistantVersion(2042, 1, 42),
+                        HivebitVersion(2042, 1, 42),
                     ),
                     ServerDiscovered(
                         "world",
                         URL("http://my.homeassistant.very.long.url.for.testing.with.many.sub.domains.org"),
-                        HomeAssistantVersion(2042, 1, 42),
+                        HivebitVersion(2042, 1, 42),
                     ),
                 ),
             ),

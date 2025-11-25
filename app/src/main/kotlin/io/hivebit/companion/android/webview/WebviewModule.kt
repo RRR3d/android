@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.webview
+package io.hivebit.companion.android.webview
 
 import dagger.Binds
 import dagger.Module

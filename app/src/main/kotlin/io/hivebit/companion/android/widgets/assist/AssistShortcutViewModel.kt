@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets.assist
+package io.hivebit.companion.android.widgets.assist
 
 import android.app.Application
 import androidx.compose.runtime.getValue
@@ -8,8 +8,8 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AssistPipelineListResponse
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AssistPipelineListResponse
 import javax.inject.Inject
 import kotlinx.coroutines.launch
 

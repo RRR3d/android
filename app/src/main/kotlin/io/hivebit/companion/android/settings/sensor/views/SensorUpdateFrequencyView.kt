@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.sensor.views
+package io.hivebit.companion.android.settings.sensor.views
 
 import android.os.Build
 import androidx.compose.foundation.layout.Box
@@ -12,12 +12,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.util.CHANNEL_SENSOR_WORKER
-import io.homeassistant.companion.android.database.settings.SensorUpdateFrequencySetting
-import io.homeassistant.companion.android.util.compose.InfoNotification
-import io.homeassistant.companion.android.util.compose.RadioButtonRow
-import io.homeassistant.companion.android.util.safeBottomPaddingValues
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.util.CHANNEL_SENSOR_WORKER
+import io.hivebit.companion.android.database.settings.SensorUpdateFrequencySetting
+import io.hivebit.companion.android.util.compose.InfoNotification
+import io.hivebit.companion.android.util.compose.RadioButtonRow
+import io.hivebit.companion.android.util.safeBottomPaddingValues
 
 @Composable
 fun SensorUpdateFrequencyView(

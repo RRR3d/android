@@ -1,10 +1,10 @@
-package io.homeassistant.companion.android.webview
+package io.hivebit.companion.android.webview
 
 import android.content.Context
 import android.content.IntentSender
 import androidx.activity.result.ActivityResult
-import io.homeassistant.companion.android.common.util.GestureAction
-import io.homeassistant.companion.android.common.util.GestureDirection
+import io.hivebit.companion.android.common.util.GestureAction
+import io.hivebit.companion.android.common.util.GestureDirection
 import kotlinx.coroutines.flow.Flow
 import kotlinx.serialization.json.JsonObject
 

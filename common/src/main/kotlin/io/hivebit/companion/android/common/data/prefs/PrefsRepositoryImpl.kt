@@ -1,12 +1,12 @@
-package io.homeassistant.companion.android.common.data.prefs
+package io.hivebit.companion.android.common.data.prefs
 
 import androidx.annotation.VisibleForTesting
-import io.homeassistant.companion.android.common.data.LocalStorage
-import io.homeassistant.companion.android.common.data.integration.ControlsAuthRequiredSetting
-import io.homeassistant.companion.android.common.util.GestureAction
-import io.homeassistant.companion.android.common.util.HAGesture
-import io.homeassistant.companion.android.di.qualifiers.NamedIntegrationStorage
-import io.homeassistant.companion.android.di.qualifiers.NamedThemesStorage
+import io.hivebit.companion.android.common.data.LocalStorage
+import io.hivebit.companion.android.common.data.integration.ControlsAuthRequiredSetting
+import io.hivebit.companion.android.common.util.GestureAction
+import io.hivebit.companion.android.common.util.HAGesture
+import io.hivebit.companion.android.di.qualifiers.NamedIntegrationStorage
+import io.hivebit.companion.android.di.qualifiers.NamedThemesStorage
 import java.util.concurrent.atomic.AtomicBoolean
 import javax.inject.Inject
 import kotlinx.coroutines.sync.Mutex

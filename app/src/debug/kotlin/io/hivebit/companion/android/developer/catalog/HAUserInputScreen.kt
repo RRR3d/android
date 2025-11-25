@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.developer.catalog
+package io.hivebit.companion.android.developer.catalog
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -20,13 +20,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.tooling.preview.Devices.TABLET
 import androidx.compose.ui.tooling.preview.Preview
-import io.homeassistant.companion.android.common.compose.composable.HARadioGroup
-import io.homeassistant.companion.android.common.compose.composable.HASwitch
-import io.homeassistant.companion.android.common.compose.composable.HATextField
-import io.homeassistant.companion.android.common.compose.composable.RadioOption
-import io.homeassistant.companion.android.common.compose.composable.rememberSelectedOption
-import io.homeassistant.companion.android.common.compose.theme.HATextStyle
-import io.homeassistant.companion.android.common.compose.theme.HAThemeForPreview
+import io.hivebit.companion.android.common.compose.composable.HARadioGroup
+import io.hivebit.companion.android.common.compose.composable.HASwitch
+import io.hivebit.companion.android.common.compose.composable.HATextField
+import io.hivebit.companion.android.common.compose.composable.RadioOption
+import io.hivebit.companion.android.common.compose.composable.rememberSelectedOption
+import io.hivebit.companion.android.common.compose.theme.HATextStyle
+import io.hivebit.companion.android.common.compose.theme.HAThemeForPreview
 
 fun LazyListScope.catalogUserInputSection() {
     input()

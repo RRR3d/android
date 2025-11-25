@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.util
+package io.hivebit.companion.android.util
 
 import android.os.Build
 import android.os.strictmode.DiskReadViolation
@@ -6,7 +6,7 @@ import android.os.strictmode.DiskWriteViolation
 import android.os.strictmode.IncorrectContextUseViolation
 import android.os.strictmode.Violation
 import androidx.annotation.RequiresApi
-import io.homeassistant.companion.android.common.util.IgnoreViolationRule
+import io.hivebit.companion.android.common.util.IgnoreViolationRule
 
 val vmPolicyIgnoredViolationRules = listOf(
     IgnoreChromiumTrichomeWrongContextUsage,
@@ -90,7 +90,7 @@ private data object IgnoreNotificationHistoryFragmentLoadSharedPrefDiskRead : Ig
     override fun shouldIgnore(violation: Violation): Boolean {
         if (violation !is DiskReadViolation) return false
         return violation.stackTrace.any {
-            it.className == "io.homeassistant.companion.android.settings.notification.NotificationHistoryFragment" &&
+            it.className == "io.hivebit.companion.android.settings.notification.NotificationHistoryFragment" &&
                 it.methodName == "onCreatePreferences"
         }
     }

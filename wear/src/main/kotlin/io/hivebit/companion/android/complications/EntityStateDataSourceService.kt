@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.complications
+package io.hivebit.companion.android.complications
 
 import android.graphics.Color
 import android.graphics.drawable.Icon
@@ -14,13 +14,13 @@ import androidx.wear.watchface.complications.datasource.SuspendingComplicationDa
 import com.mikepenz.iconics.IconicsDrawable
 import com.mikepenz.iconics.utils.colorInt
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.data.integration.canSupportPrecision
-import io.homeassistant.companion.android.common.data.integration.friendlyName
-import io.homeassistant.companion.android.common.data.integration.friendlyState
-import io.homeassistant.companion.android.common.data.integration.getIcon
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.database.wear.EntityStateComplicationsDao
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.data.integration.canSupportPrecision
+import io.hivebit.companion.android.common.data.integration.friendlyName
+import io.hivebit.companion.android.common.data.integration.friendlyState
+import io.hivebit.companion.android.common.data.integration.getIcon
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.database.wear.EntityStateComplicationsDao
 import javax.inject.Inject
 import retrofit2.HttpException
 import timber.log.Timber
@@ -125,7 +125,7 @@ class EntityStateDataSourceService : SuspendingComplicationDataSourceService() {
         val monochromaticImage = MonochromaticImage.Builder(
             Icon.createWithResource(
                 this,
-                io.homeassistant.companion.android.R.drawable.ic_lightbulb,
+                io.hivebit.companion.android.R.drawable.ic_lightbulb,
             ),
         ).build()
         return when (type) {

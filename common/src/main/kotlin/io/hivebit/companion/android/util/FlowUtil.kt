@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.util
+package io.hivebit.companion.android.util
 
 import androidx.annotation.VisibleForTesting
 import kotlin.time.Clock

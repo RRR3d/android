@@ -1,13 +1,13 @@
-package io.homeassistant.companion.android.onboarding
+package io.hivebit.companion.android.onboarding
 
 import android.content.Context
 import android.content.Intent
 import android.os.Build
 import androidx.activity.result.contract.ActivityResultContract
-import io.homeassistant.companion.android.BuildConfig
-import io.homeassistant.companion.android.USE_NEW_LAUNCHER
-import io.homeassistant.companion.android.launch.intentLauncherOnboarding
-import io.homeassistant.companion.android.launch.intentLauncherWearOnboarding
+import io.hivebit.companion.android.BuildConfig
+import io.hivebit.companion.android.USE_NEW_LAUNCHER
+import io.hivebit.companion.android.launch.intentLauncherOnboarding
+import io.hivebit.companion.android.launch.intentLauncherWearOnboarding
 
 class OnboardApp : ActivityResultContract<OnboardApp.Input, OnboardApp.Output?>() {
 

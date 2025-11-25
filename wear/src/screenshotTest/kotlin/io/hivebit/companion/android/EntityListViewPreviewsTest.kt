@@ -1,14 +1,14 @@
-package io.homeassistant.companion.android
+package io.hivebit.companion.android
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.wear.tooling.preview.devices.WearDevices
 import com.android.tools.screenshot.PreviewTest
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.home.views.EntityViewList
-import io.homeassistant.companion.android.util.previewEntity1
-import io.homeassistant.companion.android.util.previewEntity2
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.home.views.EntityViewList
+import io.hivebit.companion.android.util.previewEntity1
+import io.hivebit.companion.android.util.previewEntity2
 
 class EntityListViewPreviewsTest {
 

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.shortcuts
+package io.hivebit.companion.android.settings.shortcuts
 
 import android.app.Application
 import android.content.Intent
@@ -33,15 +33,15 @@ import com.mikepenz.iconics.typeface.library.community.material.CommunityMateria
 import com.mikepenz.iconics.utils.backgroundColor
 import com.mikepenz.iconics.utils.size
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.database.IconDialogCompat
-import io.homeassistant.companion.android.util.icondialog.getIconByMdiName
-import io.homeassistant.companion.android.util.icondialog.mdiName
-import io.homeassistant.companion.android.webview.WebViewActivity
-import io.homeassistant.companion.android.widgets.assist.AssistShortcutActivity
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.database.IconDialogCompat
+import io.hivebit.companion.android.util.icondialog.getIconByMdiName
+import io.hivebit.companion.android.util.icondialog.mdiName
+import io.hivebit.companion.android.webview.WebViewActivity
+import io.hivebit.companion.android.widgets.assist.AssistShortcutActivity
 import javax.inject.Inject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

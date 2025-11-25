@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.sensors
+package io.hivebit.companion.android.sensors
 
 import android.location.Location
 import io.mockk.every

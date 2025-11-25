@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.di
+package io.hivebit.companion.android.di
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -11,35 +11,35 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import dagger.multibindings.Multibinds
-import io.homeassistant.companion.android.common.LocalStorageImpl
-import io.homeassistant.companion.android.common.data.HomeAssistantApis
-import io.homeassistant.companion.android.common.data.LocalStorage
-import io.homeassistant.companion.android.common.data.authentication.impl.AuthenticationService
-import io.homeassistant.companion.android.common.data.integration.impl.IntegrationService
-import io.homeassistant.companion.android.common.data.keychain.KeyChainRepository
-import io.homeassistant.companion.android.common.data.keychain.KeyChainRepositoryImpl
-import io.homeassistant.companion.android.common.data.keychain.KeyStoreRepositoryImpl
-import io.homeassistant.companion.android.common.data.keychain.NamedKeyChain
-import io.homeassistant.companion.android.common.data.keychain.NamedKeyStore
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepositoryImpl
-import io.homeassistant.companion.android.common.data.prefs.WearPrefsRepository
-import io.homeassistant.companion.android.common.data.prefs.WearPrefsRepositoryImpl
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.data.servers.ServerManagerImpl
-import io.homeassistant.companion.android.common.util.di.SuspendProvider
-import io.homeassistant.companion.android.common.util.getSharedPreferencesSuspend
-import io.homeassistant.companion.android.common.util.tts.AndroidTextToSpeechEngine
-import io.homeassistant.companion.android.common.util.tts.TextToSpeechClient
-import io.homeassistant.companion.android.di.qualifiers.NamedDeviceId
-import io.homeassistant.companion.android.di.qualifiers.NamedInstallId
-import io.homeassistant.companion.android.di.qualifiers.NamedIntegrationStorage
-import io.homeassistant.companion.android.di.qualifiers.NamedManufacturer
-import io.homeassistant.companion.android.di.qualifiers.NamedModel
-import io.homeassistant.companion.android.di.qualifiers.NamedOsVersion
-import io.homeassistant.companion.android.di.qualifiers.NamedSessionStorage
-import io.homeassistant.companion.android.di.qualifiers.NamedThemesStorage
-import io.homeassistant.companion.android.di.qualifiers.NamedWearStorage
+import io.hivebit.companion.android.common.LocalStorageImpl
+import io.hivebit.companion.android.common.data.HivebitApis
+import io.hivebit.companion.android.common.data.LocalStorage
+import io.hivebit.companion.android.common.data.authentication.impl.AuthenticationService
+import io.hivebit.companion.android.common.data.integration.impl.IntegrationService
+import io.hivebit.companion.android.common.data.keychain.KeyChainRepository
+import io.hivebit.companion.android.common.data.keychain.KeyChainRepositoryImpl
+import io.hivebit.companion.android.common.data.keychain.KeyStoreRepositoryImpl
+import io.hivebit.companion.android.common.data.keychain.NamedKeyChain
+import io.hivebit.companion.android.common.data.keychain.NamedKeyStore
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.common.data.prefs.PrefsRepositoryImpl
+import io.hivebit.companion.android.common.data.prefs.WearPrefsRepository
+import io.hivebit.companion.android.common.data.prefs.WearPrefsRepositoryImpl
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.servers.ServerManagerImpl
+import io.hivebit.companion.android.common.util.di.SuspendProvider
+import io.hivebit.companion.android.common.util.getSharedPreferencesSuspend
+import io.hivebit.companion.android.common.util.tts.AndroidTextToSpeechEngine
+import io.hivebit.companion.android.common.util.tts.TextToSpeechClient
+import io.hivebit.companion.android.di.qualifiers.NamedDeviceId
+import io.hivebit.companion.android.di.qualifiers.NamedInstallId
+import io.hivebit.companion.android.di.qualifiers.NamedIntegrationStorage
+import io.hivebit.companion.android.di.qualifiers.NamedManufacturer
+import io.hivebit.companion.android.di.qualifiers.NamedModel
+import io.hivebit.companion.android.di.qualifiers.NamedOsVersion
+import io.hivebit.companion.android.di.qualifiers.NamedSessionStorage
+import io.hivebit.companion.android.di.qualifiers.NamedThemesStorage
+import io.hivebit.companion.android.di.qualifiers.NamedWearStorage
 import java.util.UUID
 import javax.inject.Singleton
 import okhttp3.OkHttpClient
@@ -51,17 +51,17 @@ abstract class DataModule {
     companion object {
         @Provides
         @Singleton
-        fun provideAuthenticationService(homeAssistantApis: HomeAssistantApis): AuthenticationService =
+        fun provideAuthenticationService(homeAssistantApis: HivebitApis): AuthenticationService =
             homeAssistantApis.retrofit.create(AuthenticationService::class.java)
 
         @Provides
         @Singleton
-        fun providesIntegrationService(homeAssistantApis: HomeAssistantApis): IntegrationService =
+        fun providesIntegrationService(homeAssistantApis: HivebitApis): IntegrationService =
             homeAssistantApis.retrofit.create(IntegrationService::class.java)
 
         @Provides
         @Singleton
-        fun providesOkHttpClient(homeAssistantApis: HomeAssistantApis): OkHttpClient = homeAssistantApis.okHttpClient
+        fun providesOkHttpClient(homeAssistantApis: HivebitApis): OkHttpClient = homeAssistantApis.okHttpClient
 
         @Provides
         @NamedSessionStorage

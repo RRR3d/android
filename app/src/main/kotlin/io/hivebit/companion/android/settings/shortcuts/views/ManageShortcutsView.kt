@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.shortcuts.views
+package io.hivebit.companion.android.settings.shortcuts.views
 
 import android.os.Build
 import android.widget.Toast
@@ -37,13 +37,13 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.mikepenz.iconics.compose.IconicsPainter
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.settings.shortcuts.ManageShortcutsSettingsFragment
-import io.homeassistant.companion.android.settings.shortcuts.ManageShortcutsViewModel
-import io.homeassistant.companion.android.util.compose.ServerExposedDropdownMenu
-import io.homeassistant.companion.android.util.compose.SingleEntityPicker
-import io.homeassistant.companion.android.util.plus
-import io.homeassistant.companion.android.util.safeBottomPaddingValues
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.settings.shortcuts.ManageShortcutsSettingsFragment
+import io.hivebit.companion.android.settings.shortcuts.ManageShortcutsViewModel
+import io.hivebit.companion.android.util.compose.ServerExposedDropdownMenu
+import io.hivebit.companion.android.util.compose.SingleEntityPicker
+import io.hivebit.companion.android.util.plus
+import io.hivebit.companion.android.util.safeBottomPaddingValues
 
 @RequiresApi(Build.VERSION_CODES.N_MR1)
 @Composable

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.database.authentication
+package io.hivebit.companion.android.database.authentication
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

@@ -1,7 +1,7 @@
-package io.homeassistant.companion.android.util
+package io.hivebit.companion.android.util
 
 import app.cash.turbine.test
-import io.homeassistant.companion.android.testing.unit.FakeClock
+import io.hivebit.companion.android.testing.unit.FakeClock
 import kotlin.time.Duration.Companion.milliseconds
 import kotlin.time.Duration.Companion.seconds
 import kotlin.time.ExperimentalTime

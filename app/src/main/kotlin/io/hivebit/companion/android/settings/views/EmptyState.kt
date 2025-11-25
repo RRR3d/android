@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.views
+package io.hivebit.companion.android.settings.views
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

@@ -1,9 +1,9 @@
-package io.homeassistant.companion.android.widgets.common
+package io.hivebit.companion.android.widgets.common
 
 import android.content.Context
 import com.google.android.material.color.DynamicColors
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.database.widget.WidgetBackgroundType
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.database.widget.WidgetBackgroundType
 
 /**
  * Shared helpers for working with widgets.

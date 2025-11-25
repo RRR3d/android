@@ -1,18 +1,18 @@
-package io.homeassistant.companion.android.utils
+package io.hivebit.companion.android.utils
 
-import io.homeassistant.companion.android.common.data.HomeAssistantVersion
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.database.server.ServerConnectionInfo
+import io.hivebit.companion.android.common.data.HivebitVersion
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.database.server.ServerConnectionInfo
 import io.mockk.every
 import io.mockk.mockk
 import java.net.URL
 
-internal val testHAVersion = HomeAssistantVersion(2025, 1, 1)
+internal val testHAVersion = HivebitVersion(2025, 1, 1)
 
 internal fun mockServer(
     url: String?,
     name: String,
-    haVersion: HomeAssistantVersion? = testHAVersion,
+    haVersion: HivebitVersion? = testHAVersion,
     externalUrl: String = url ?: "",
     internalUrl: String? = null,
     cloudUrl: String? = null,

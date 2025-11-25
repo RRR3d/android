@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.vehicle.views
+package io.hivebit.companion.android.settings.vehicle.views
 
 import android.os.Build
 import androidx.annotation.RequiresApi
@@ -19,18 +19,18 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.friendlyName
-import io.homeassistant.companion.android.common.data.prefs.AutoFavorite
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.settings.vehicle.ManageAndroidAutoViewModel
-import io.homeassistant.companion.android.util.compose.FavoriteEntityRow
-import io.homeassistant.companion.android.util.compose.ServerExposedDropdownMenu
-import io.homeassistant.companion.android.util.compose.SingleEntityPicker
-import io.homeassistant.companion.android.util.plus
-import io.homeassistant.companion.android.util.safeBottomPaddingValues
-import io.homeassistant.companion.android.util.vehicle.isVehicleDomain
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.friendlyName
+import io.hivebit.companion.android.common.data.prefs.AutoFavorite
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.settings.vehicle.ManageAndroidAutoViewModel
+import io.hivebit.companion.android.util.compose.FavoriteEntityRow
+import io.hivebit.companion.android.util.compose.ServerExposedDropdownMenu
+import io.hivebit.companion.android.util.compose.SingleEntityPicker
+import io.hivebit.companion.android.util.plus
+import io.hivebit.companion.android.util.safeBottomPaddingValues
+import io.hivebit.companion.android.util.vehicle.isVehicleDomain
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import sh.calvin.reorderable.ReorderableItem

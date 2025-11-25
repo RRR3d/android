@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings
+package io.hivebit.companion.android.settings
 
 import android.content.pm.PackageManager
 

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.manual
+package io.hivebit.companion.android.onboarding.manual
 
 import android.content.Context
 import android.content.Intent
@@ -9,11 +9,11 @@ import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.wear.activity.ConfirmationActivity
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.databinding.ActivityManualSetupBinding
-import io.homeassistant.companion.android.onboarding.integration.MobileAppIntegrationActivity
-import io.homeassistant.companion.android.util.adjustInset
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.databinding.ActivityManualSetupBinding
+import io.hivebit.companion.android.onboarding.integration.MobileAppIntegrationActivity
+import io.hivebit.companion.android.util.adjustInset
 import javax.inject.Inject
 
 @AndroidEntryPoint

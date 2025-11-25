@@ -1,6 +1,6 @@
-package io.homeassistant.companion.android.common.data.websocket.impl.entities
+package io.hivebit.companion.android.common.data.websocket.impl.entities
 
-import io.homeassistant.companion.android.common.util.kotlinJsonMapper
+import io.hivebit.companion.android.common.util.kotlinJsonMapper
 import kotlinx.serialization.json.JsonNull
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.JsonPrimitive

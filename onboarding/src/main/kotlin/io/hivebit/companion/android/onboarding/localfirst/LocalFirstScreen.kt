@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.localfirst
+package io.hivebit.companion.android.onboarding.localfirst
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -19,15 +19,15 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.compose.composable.HAAccentButton
-import io.homeassistant.companion.android.common.compose.theme.HADimens
-import io.homeassistant.companion.android.common.compose.theme.HATextStyle
-import io.homeassistant.companion.android.common.compose.theme.HAThemeForPreview
-import io.homeassistant.companion.android.common.compose.theme.MaxButtonWidth
-import io.homeassistant.companion.android.compose.HAPreviews
-import io.homeassistant.companion.android.compose.composable.HATopBarPlaceholder
-import io.homeassistant.companion.android.onboarding.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.compose.composable.HAAccentButton
+import io.hivebit.companion.android.common.compose.theme.HADimens
+import io.hivebit.companion.android.common.compose.theme.HATextStyle
+import io.hivebit.companion.android.common.compose.theme.HAThemeForPreview
+import io.hivebit.companion.android.common.compose.theme.MaxButtonWidth
+import io.hivebit.companion.android.compose.HAPreviews
+import io.hivebit.companion.android.compose.composable.HATopBarPlaceholder
+import io.hivebit.companion.android.onboarding.R
 
 private val MaxContentWidth = MaxButtonWidth
 

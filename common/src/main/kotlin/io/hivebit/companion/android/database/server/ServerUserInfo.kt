@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.database.server
+package io.hivebit.companion.android.database.server
 
 import androidx.room.ColumnInfo
 

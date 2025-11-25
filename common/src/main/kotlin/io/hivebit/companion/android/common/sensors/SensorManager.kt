@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.sensors
+package io.hivebit.companion.android.common.sensors
 
 import android.app.AppOpsManager
 import android.content.Context
@@ -12,14 +12,14 @@ import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn
 import dagger.hilt.android.EntryPointAccessors
 import dagger.hilt.components.SingletonComponent
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.AnySerializer
-import io.homeassistant.companion.android.common.util.kotlinJsonMapper
-import io.homeassistant.companion.android.database.AppDatabase
-import io.homeassistant.companion.android.database.sensor.Attribute
-import io.homeassistant.companion.android.database.sensor.SensorSetting
-import io.homeassistant.companion.android.database.sensor.SensorSettingType
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.AnySerializer
+import io.hivebit.companion.android.common.util.kotlinJsonMapper
+import io.hivebit.companion.android.database.AppDatabase
+import io.hivebit.companion.android.database.sensor.Attribute
+import io.hivebit.companion.android.database.sensor.SensorSetting
+import io.hivebit.companion.android.database.sensor.SensorSettingType
 import java.util.Locale
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

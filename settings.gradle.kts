@@ -1,6 +1,6 @@
 include(":common", ":app", ":wear", ":automotive", ":testing-unit", ":lint", ":onboarding")
 
-rootProject.name = "home-assistant-android"
+rootProject.name = "hivebit-android"
 
 includeBuild("build-logic")
 

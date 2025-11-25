@@ -1,8 +1,8 @@
-package io.homeassistant.companion.android.onboarding.locationsharing
+package io.hivebit.companion.android.onboarding.locationsharing
 
-import io.homeassistant.companion.android.database.sensor.SensorDao
-import io.homeassistant.companion.android.testing.unit.ConsoleLogExtension
-import io.homeassistant.companion.android.testing.unit.MainDispatcherJUnit5Extension
+import io.hivebit.companion.android.database.sensor.SensorDao
+import io.hivebit.companion.android.testing.unit.ConsoleLogExtension
+import io.hivebit.companion.android.testing.unit.MainDispatcherJUnit5Extension
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk

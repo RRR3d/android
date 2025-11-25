@@ -1,12 +1,12 @@
-package io.homeassistant.companion.android.tiles
+package io.hivebit.companion.android.tiles
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.data.integration.onEntityPressedWithoutState
-import io.homeassistant.companion.android.common.data.prefs.WearPrefsRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.integration.onEntityPressedWithoutState
+import io.hivebit.companion.android.common.data.prefs.WearPrefsRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
 import javax.inject.Inject
 import kotlinx.coroutines.runBlocking
 import timber.log.Timber

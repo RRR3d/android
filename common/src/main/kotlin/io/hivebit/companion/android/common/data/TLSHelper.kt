@@ -1,8 +1,8 @@
-package io.homeassistant.companion.android.common.data
+package io.hivebit.companion.android.common.data
 
-import io.homeassistant.companion.android.common.data.keychain.KeyChainRepository
-import io.homeassistant.companion.android.common.data.keychain.NamedKeyChain
-import io.homeassistant.companion.android.common.data.keychain.NamedKeyStore
+import io.hivebit.companion.android.common.data.keychain.KeyChainRepository
+import io.hivebit.companion.android.common.data.keychain.NamedKeyChain
+import io.hivebit.companion.android.common.data.keychain.NamedKeyStore
 import java.net.Socket
 import java.security.KeyStore
 import java.security.Principal

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.serverdiscovery
+package io.hivebit.companion.android.onboarding.serverdiscovery
 
 import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.SavedStateHandle
@@ -6,11 +6,11 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.common.data.HomeAssistantVersion
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.onboarding.serverdiscovery.navigation.ServerDiscoveryMode
-import io.homeassistant.companion.android.onboarding.serverdiscovery.navigation.ServerDiscoveryRoute
-import io.homeassistant.companion.android.util.delayFirstThrottle
+import io.hivebit.companion.android.common.data.HivebitVersion
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.onboarding.serverdiscovery.navigation.ServerDiscoveryMode
+import io.hivebit.companion.android.onboarding.serverdiscovery.navigation.ServerDiscoveryRoute
+import io.hivebit.companion.android.util.delayFirstThrottle
 import java.net.URL
 import javax.inject.Inject
 import kotlin.time.Duration.Companion.seconds
@@ -52,7 +52,7 @@ data object NoServerFound : DiscoveryState
 /**
  * The first server has been fully discovered.
  */
-data class ServerDiscovered(val name: String, val url: URL, val version: HomeAssistantVersion) : DiscoveryState
+data class ServerDiscovered(val name: String, val url: URL, val version: HivebitVersion) : DiscoveryState
 
 /**
  * Multiple server have been fully discovered.
@@ -61,21 +61,21 @@ data class ServersDiscovered(val servers: List<ServerDiscovered>) : DiscoverySta
 
 /**
  * ViewModel responsible for managing the Home Assistant server discovery process.
- * It uses [HomeAssistantSearcher] to find instances on the local network
+ * It uses [HivebitSearcher] to find instances on the local network
  * and emits the [DiscoveryState] through [discoveryFlow] state flow.
  */
 @OptIn(FlowPreview::class)
 @HiltViewModel
 internal class ServerDiscoveryViewModel @VisibleForTesting constructor(
     discoveryMode: ServerDiscoveryMode,
-    private val searcher: HomeAssistantSearcher,
+    private val searcher: HivebitSearcher,
     serverManager: ServerManager,
 ) : ViewModel() {
 
     @Inject
     constructor(
         savedStateHandle: SavedStateHandle,
-        searcher: HomeAssistantSearcher,
+        searcher: HivebitSearcher,
         serverManager: ServerManager,
     ) : this(savedStateHandle.toRoute<ServerDiscoveryRoute>().discoveryMode, searcher, serverManager)
 

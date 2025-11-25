@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.integration
+package io.hivebit.companion.android.onboarding.integration
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -35,11 +35,11 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.onboarding.OnboardingHeaderView
-import io.homeassistant.companion.android.onboarding.OnboardingScreen
-import io.homeassistant.companion.android.onboarding.OnboardingViewModel
-import io.homeassistant.companion.android.util.compose.screenWidth
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.onboarding.OnboardingHeaderView
+import io.hivebit.companion.android.onboarding.OnboardingScreen
+import io.hivebit.companion.android.onboarding.OnboardingViewModel
+import io.hivebit.companion.android.util.compose.screenWidth
 
 @OptIn(ExperimentalComposeUiApi::class)
 @Composable

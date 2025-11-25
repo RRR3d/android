@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.compose
+package io.hivebit.companion.android.compose
 
 import androidx.compose.ui.platform.AndroidUriHandler
 import androidx.navigation.NavController

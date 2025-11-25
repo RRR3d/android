@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.wear.views
+package io.hivebit.companion.android.settings.wear.views
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -20,10 +20,10 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.settings.wear.SettingsWearViewModel
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
-import io.homeassistant.companion.android.util.safeBottomPaddingValues
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.settings.wear.SettingsWearViewModel
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.util.safeBottomPaddingValues
 
 @Composable
 internal fun SettingsWearOnboardingView(

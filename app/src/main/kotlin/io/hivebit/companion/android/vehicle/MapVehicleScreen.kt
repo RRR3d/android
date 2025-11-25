@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.vehicle
+package io.hivebit.companion.android.vehicle
 
 import android.content.Intent
 import android.os.Build
@@ -19,17 +19,17 @@ import androidx.lifecycle.repeatOnLifecycle
 import com.mikepenz.iconics.IconicsDrawable
 import com.mikepenz.iconics.utils.sizeDp
 import com.mikepenz.iconics.utils.toAndroidIconCompat
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.EntityExt
-import io.homeassistant.companion.android.common.data.integration.IntegrationRepository
-import io.homeassistant.companion.android.common.data.integration.domain
-import io.homeassistant.companion.android.common.data.integration.friendlyName
-import io.homeassistant.companion.android.common.data.integration.friendlyState
-import io.homeassistant.companion.android.common.data.integration.getIcon
-import io.homeassistant.companion.android.common.data.integration.isActive
-import io.homeassistant.companion.android.util.vehicle.getHeaderBuilder
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.EntityExt
+import io.hivebit.companion.android.common.data.integration.IntegrationRepository
+import io.hivebit.companion.android.common.data.integration.domain
+import io.hivebit.companion.android.common.data.integration.friendlyName
+import io.hivebit.companion.android.common.data.integration.friendlyState
+import io.hivebit.companion.android.common.data.integration.getIcon
+import io.hivebit.companion.android.common.data.integration.isActive
+import io.hivebit.companion.android.util.vehicle.getHeaderBuilder
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
 import timber.log.Timber

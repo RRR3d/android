@@ -1,8 +1,8 @@
-package io.homeassistant.companion.android.webview.addto
+package io.hivebit.companion.android.webview.addto
 
 import android.content.Context
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.util.isAutomotive
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.util.isAutomotive
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.Transient
 

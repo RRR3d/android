@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.database
+package io.hivebit.companion.android.database
 
 import android.content.Context
 import dagger.Module
@@ -6,24 +6,24 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import io.homeassistant.companion.android.database.authentication.AuthenticationDao
-import io.homeassistant.companion.android.database.location.LocationHistoryDao
-import io.homeassistant.companion.android.database.notification.NotificationDao
-import io.homeassistant.companion.android.database.qs.TileDao
-import io.homeassistant.companion.android.database.sensor.SensorDao
-import io.homeassistant.companion.android.database.server.ServerDao
-import io.homeassistant.companion.android.database.settings.SettingsDao
-import io.homeassistant.companion.android.database.wear.CameraTileDao
-import io.homeassistant.companion.android.database.wear.EntityStateComplicationsDao
-import io.homeassistant.companion.android.database.wear.FavoriteCachesDao
-import io.homeassistant.companion.android.database.wear.FavoritesDao
-import io.homeassistant.companion.android.database.wear.ThermostatTileDao
-import io.homeassistant.companion.android.database.widget.ButtonWidgetDao
-import io.homeassistant.companion.android.database.widget.CameraWidgetDao
-import io.homeassistant.companion.android.database.widget.MediaPlayerControlsWidgetDao
-import io.homeassistant.companion.android.database.widget.StaticWidgetDao
-import io.homeassistant.companion.android.database.widget.TemplateWidgetDao
-import io.homeassistant.companion.android.database.widget.TodoWidgetDao
+import io.hivebit.companion.android.database.authentication.AuthenticationDao
+import io.hivebit.companion.android.database.location.LocationHistoryDao
+import io.hivebit.companion.android.database.notification.NotificationDao
+import io.hivebit.companion.android.database.qs.TileDao
+import io.hivebit.companion.android.database.sensor.SensorDao
+import io.hivebit.companion.android.database.server.ServerDao
+import io.hivebit.companion.android.database.settings.SettingsDao
+import io.hivebit.companion.android.database.wear.CameraTileDao
+import io.hivebit.companion.android.database.wear.EntityStateComplicationsDao
+import io.hivebit.companion.android.database.wear.FavoriteCachesDao
+import io.hivebit.companion.android.database.wear.FavoritesDao
+import io.hivebit.companion.android.database.wear.ThermostatTileDao
+import io.hivebit.companion.android.database.widget.ButtonWidgetDao
+import io.hivebit.companion.android.database.widget.CameraWidgetDao
+import io.hivebit.companion.android.database.widget.MediaPlayerControlsWidgetDao
+import io.hivebit.companion.android.database.widget.StaticWidgetDao
+import io.hivebit.companion.android.database.widget.TemplateWidgetDao
+import io.hivebit.companion.android.database.widget.TodoWidgetDao
 import javax.inject.Singleton
 
 @Module

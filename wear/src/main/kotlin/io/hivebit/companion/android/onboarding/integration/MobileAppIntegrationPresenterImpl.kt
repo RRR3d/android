@@ -1,16 +1,16 @@
-package io.homeassistant.companion.android.onboarding.integration
+package io.hivebit.companion.android.onboarding.integration
 
 import android.content.Context
 import androidx.wear.tiles.TileService
 import dagger.hilt.android.qualifiers.ActivityContext
-import io.homeassistant.companion.android.common.data.integration.DeviceRegistration
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.AppVersionProvider
-import io.homeassistant.companion.android.common.util.MessagingTokenProvider
-import io.homeassistant.companion.android.tiles.CameraTile
-import io.homeassistant.companion.android.tiles.ConversationTile
-import io.homeassistant.companion.android.tiles.ShortcutsTile
-import io.homeassistant.companion.android.tiles.TemplateTile
+import io.hivebit.companion.android.common.data.integration.DeviceRegistration
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.AppVersionProvider
+import io.hivebit.companion.android.common.util.MessagingTokenProvider
+import io.hivebit.companion.android.tiles.CameraTile
+import io.hivebit.companion.android.tiles.ConversationTile
+import io.hivebit.companion.android.tiles.ShortcutsTile
+import io.hivebit.companion.android.tiles.TemplateTile
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

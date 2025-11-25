@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.qs
+package io.hivebit.companion.android.qs
 
 import android.os.Build
 import android.service.quicksettings.Tile

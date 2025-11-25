@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets.common
+package io.hivebit.companion.android.widgets.common
 
 import android.appwidget.AppWidgetManager
 import android.content.Context

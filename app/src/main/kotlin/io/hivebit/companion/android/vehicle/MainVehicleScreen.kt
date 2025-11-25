@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.vehicle
+package io.hivebit.companion.android.vehicle
 
 import android.os.Build
 import androidx.annotation.RequiresApi
@@ -16,23 +16,23 @@ import com.mikepenz.iconics.IconicsDrawable
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial
 import com.mikepenz.iconics.utils.sizeDp
 import com.mikepenz.iconics.utils.toAndroidIconCompat
-import io.homeassistant.companion.android.BuildConfig
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.authentication.SessionState
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.domain
-import io.homeassistant.companion.android.common.data.prefs.AutoFavorite
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.EntityRegistryResponse
-import io.homeassistant.companion.android.common.util.isAutomotive
-import io.homeassistant.companion.android.sensors.SensorReceiver
-import io.homeassistant.companion.android.util.vehicle.SUPPORTED_DOMAINS
-import io.homeassistant.companion.android.util.vehicle.getChangeServerGridItem
-import io.homeassistant.companion.android.util.vehicle.getDomainList
-import io.homeassistant.companion.android.util.vehicle.getHeaderBuilder
-import io.homeassistant.companion.android.util.vehicle.getNavigationGridItem
-import io.homeassistant.companion.android.util.vehicle.nativeModeAction
+import io.hivebit.companion.android.BuildConfig
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.authentication.SessionState
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.domain
+import io.hivebit.companion.android.common.data.prefs.AutoFavorite
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.websocket.impl.entities.EntityRegistryResponse
+import io.hivebit.companion.android.common.util.isAutomotive
+import io.hivebit.companion.android.sensors.SensorReceiver
+import io.hivebit.companion.android.util.vehicle.SUPPORTED_DOMAINS
+import io.hivebit.companion.android.util.vehicle.getChangeServerGridItem
+import io.hivebit.companion.android.util.vehicle.getDomainList
+import io.hivebit.companion.android.util.vehicle.getHeaderBuilder
+import io.hivebit.companion.android.util.vehicle.getNavigationGridItem
+import io.hivebit.companion.android.util.vehicle.nativeModeAction
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow

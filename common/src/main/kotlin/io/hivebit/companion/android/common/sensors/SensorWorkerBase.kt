@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.sensors
+package io.hivebit.companion.android.common.sensors
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -10,10 +10,10 @@ import androidx.core.content.getSystemService
 import androidx.work.CoroutineWorker
 import androidx.work.ForegroundInfo
 import androidx.work.WorkerParameters
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.CHANNEL_SENSOR_WORKER
-import io.homeassistant.companion.android.database.AppDatabase
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.CHANNEL_SENSOR_WORKER
+import io.hivebit.companion.android.database.AppDatabase
 import java.lang.IllegalStateException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -38,7 +38,7 @@ abstract class SensorWorkerBase(val appContext: Context, workerParams: WorkerPar
         if (
             enabledSensorCount > 0 ||
             serverManager.defaultServers.any {
-                serverManager.integrationRepository(it.id).isHomeAssistantVersionAtLeast(2022, 6, 0)
+                serverManager.integrationRepository(it.id).isHivebitVersionAtLeast(2022, 6, 0)
             }
         ) {
             createNotificationChannel()

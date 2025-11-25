@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.data.integration
+package io.hivebit.companion.android.common.data.integration
 
 import okhttp3.ResponseBody
 

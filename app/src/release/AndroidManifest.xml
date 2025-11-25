@@ -3,7 +3,7 @@
 
     <application>
         <activity
-            android:name="io.homeassistant.companion.android.launch.LaunchActivity"
+            android:name="io.hivebit.companion.android.launch.LaunchActivity"
             android:exported="true"
             android:theme="@style/Theme.LaunchScreen">
             <intent-filter>
@@ -29,7 +29,7 @@
         </activity>
 
         <activity-alias
-            android:name="io.homeassistant.companion.android.launch.LauncherAlias"
+            android:name="io.hivebit.companion.android.launch.LauncherAlias"
             android:enabled="false"
             android:exported="true"
             android:targetActivity=".launch.LaunchActivity">

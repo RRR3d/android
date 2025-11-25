@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets
+package io.hivebit.companion.android.widgets
 
 import android.appwidget.AppWidgetManager
 import android.content.Context
@@ -9,11 +9,11 @@ import androidx.core.content.ContextCompat
 import androidx.glance.appwidget.GlanceAppWidgetManager
 import androidx.glance.appwidget.GlanceAppWidgetReceiver
 import androidx.glance.appwidget.updateAll
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.FailFast
-import io.homeassistant.companion.android.database.widget.WidgetDao
-import io.homeassistant.companion.android.database.widget.WidgetEntity
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.FailFast
+import io.hivebit.companion.android.database.widget.WidgetDao
+import io.hivebit.companion.android.database.widget.WidgetEntity
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope
@@ -71,9 +71,9 @@ data class EntitiesPerServer(val serverId: Int, val entityIds: List<String>)
  * }
  * ```
  *
- * Register the widget in the [io.homeassistant.companion.android.HomeAssistantApplication]:
+ * Register the widget in the [io.hivebit.companion.android.HivebitApplication]:
  * ```kotlin
- * // In io.homeassistant.companion.android.HomeAssistantApplication
+ * // In io.hivebit.companion.android.HivebitApplication
  * override fun onCreate() {
  *     super.onCreate()
  *     ...

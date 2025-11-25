@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets.mediaplayer
+package io.hivebit.companion.android.widgets.mediaplayer
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -17,16 +17,16 @@ import com.google.android.material.color.DynamicColors
 import com.mikepenz.iconics.IconicsDrawable
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.MEDIA_PLAYER_DOMAIN
-import io.homeassistant.companion.android.database.widget.MediaPlayerControlsWidgetDao
-import io.homeassistant.companion.android.database.widget.MediaPlayerControlsWidgetEntity
-import io.homeassistant.companion.android.database.widget.WidgetBackgroundType
-import io.homeassistant.companion.android.util.hasActiveConnection
-import io.homeassistant.companion.android.widgets.BaseWidgetProvider
-import io.homeassistant.companion.android.widgets.common.RemoteViewsTarget
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.MEDIA_PLAYER_DOMAIN
+import io.hivebit.companion.android.database.widget.MediaPlayerControlsWidgetDao
+import io.hivebit.companion.android.database.widget.MediaPlayerControlsWidgetEntity
+import io.hivebit.companion.android.database.widget.WidgetBackgroundType
+import io.hivebit.companion.android.util.hasActiveConnection
+import io.hivebit.companion.android.widgets.BaseWidgetProvider
+import io.hivebit.companion.android.widgets.common.RemoteViewsTarget
 import java.util.LinkedList
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -36,21 +36,21 @@ class MediaPlayerControlsWidget : BaseWidgetProvider<MediaPlayerControlsWidgetEn
 
     companion object {
         internal const val UPDATE_MEDIA_IMAGE =
-            "io.homeassistant.companion.android.widgets.media_player_controls.MediaPlayerControlsWidget.UPDATE_MEDIA_IMAGE"
+            "io.hivebit.companion.android.widgets.media_player_controls.MediaPlayerControlsWidget.UPDATE_MEDIA_IMAGE"
         internal const val CALL_PREV_TRACK =
-            "io.homeassistant.companion.android.widgets.media_player_controls.MediaPlayerControlsWidget.CALL_PREV_TRACK"
+            "io.hivebit.companion.android.widgets.media_player_controls.MediaPlayerControlsWidget.CALL_PREV_TRACK"
         internal const val CALL_REWIND =
-            "io.homeassistant.companion.android.widgets.media_player_controls.MediaPlayerControlsWidget.CALL_REWIND"
+            "io.hivebit.companion.android.widgets.media_player_controls.MediaPlayerControlsWidget.CALL_REWIND"
         internal const val CALL_PLAYPAUSE =
-            "io.homeassistant.companion.android.widgets.media_player_controls.MediaPlayerControlsWidget.CALL_PLAYPAUSE"
+            "io.hivebit.companion.android.widgets.media_player_controls.MediaPlayerControlsWidget.CALL_PLAYPAUSE"
         internal const val CALL_FASTFORWARD =
-            "io.homeassistant.companion.android.widgets.media_player_controls.MediaPlayerControlsWidget.CALL_FASTFORWARD"
+            "io.hivebit.companion.android.widgets.media_player_controls.MediaPlayerControlsWidget.CALL_FASTFORWARD"
         internal const val CALL_NEXT_TRACK =
-            "io.homeassistant.companion.android.widgets.media_player_controls.MediaPlayerControlsWidget.CALL_NEXT_TRACK"
+            "io.hivebit.companion.android.widgets.media_player_controls.MediaPlayerControlsWidget.CALL_NEXT_TRACK"
         internal const val CALL_VOLUME_DOWN =
-            "io.homeassistant.companion.android.widgets.media_player_controls.MediaPlayerControlsWidget.CALL_VOLUME_DOWN"
+            "io.hivebit.companion.android.widgets.media_player_controls.MediaPlayerControlsWidget.CALL_VOLUME_DOWN"
         internal const val CALL_VOLUME_UP =
-            "io.homeassistant.companion.android.widgets.media_player_controls.MediaPlayerControlsWidget.CALL_VOLUME_UP"
+            "io.hivebit.companion.android.widgets.media_player_controls.MediaPlayerControlsWidget.CALL_VOLUME_UP"
     }
 
     override fun getWidgetProvider(context: Context): ComponentName =

@@ -1,8 +1,8 @@
-package io.homeassistant.companion.android.common.data.websocket.impl.entities
+package io.hivebit.companion.android.common.data.websocket.impl.entities
 
-import io.homeassistant.companion.android.common.util.UnknownJsonContent
-import io.homeassistant.companion.android.common.util.UnknownJsonContentBuilder
-import io.homeassistant.companion.android.common.util.UnknownJsonContentDeserializer
+import io.hivebit.companion.android.common.util.UnknownJsonContent
+import io.hivebit.companion.android.common.util.UnknownJsonContentBuilder
+import io.hivebit.companion.android.common.util.UnknownJsonContentDeserializer
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonElement

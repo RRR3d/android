@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets.button
+package io.hivebit.companion.android.widgets.button
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -24,22 +24,22 @@ import com.mikepenz.iconics.typeface.library.community.material.CommunityMateria
 import com.mikepenz.iconics.utils.padding
 import com.mikepenz.iconics.utils.size
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.FailFast
-import io.homeassistant.companion.android.common.util.MapAnySerializer
-import io.homeassistant.companion.android.common.util.kotlinJsonMapper
-import io.homeassistant.companion.android.database.widget.ButtonWidgetDao
-import io.homeassistant.companion.android.database.widget.ButtonWidgetEntity
-import io.homeassistant.companion.android.database.widget.WidgetBackgroundType
-import io.homeassistant.companion.android.util.getAttribute
-import io.homeassistant.companion.android.util.icondialog.getIconByMdiName
-import io.homeassistant.companion.android.widgets.ACTION_APPWIDGET_CREATED
-import io.homeassistant.companion.android.widgets.BaseWidgetProvider
-import io.homeassistant.companion.android.widgets.BaseWidgetProvider.Companion.widgetScope
-import io.homeassistant.companion.android.widgets.EXTRA_WIDGET_ENTITY
-import io.homeassistant.companion.android.widgets.common.WidgetAuthenticationActivity
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.FailFast
+import io.hivebit.companion.android.common.util.MapAnySerializer
+import io.hivebit.companion.android.common.util.kotlinJsonMapper
+import io.hivebit.companion.android.database.widget.ButtonWidgetDao
+import io.hivebit.companion.android.database.widget.ButtonWidgetEntity
+import io.hivebit.companion.android.database.widget.WidgetBackgroundType
+import io.hivebit.companion.android.util.getAttribute
+import io.hivebit.companion.android.util.icondialog.getIconByMdiName
+import io.hivebit.companion.android.widgets.ACTION_APPWIDGET_CREATED
+import io.hivebit.companion.android.widgets.BaseWidgetProvider
+import io.hivebit.companion.android.widgets.BaseWidgetProvider.Companion.widgetScope
+import io.hivebit.companion.android.widgets.EXTRA_WIDGET_ENTITY
+import io.hivebit.companion.android.widgets.common.WidgetAuthenticationActivity
 import java.util.regex.Pattern
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope
@@ -52,9 +52,9 @@ import timber.log.Timber
 class ButtonWidget : AppWidgetProvider() {
     companion object {
         const val CALL_SERVICE =
-            "io.homeassistant.companion.android.widgets.button.ButtonWidget.CALL_SERVICE"
+            "io.hivebit.companion.android.widgets.button.ButtonWidget.CALL_SERVICE"
         private const val CALL_SERVICE_AUTH =
-            "io.homeassistant.companion.android.widgets.button.ButtonWidget.CALL_SERVICE_AUTH"
+            "io.hivebit.companion.android.widgets.button.ButtonWidget.CALL_SERVICE_AUTH"
 
         // Vector icon rendering resolution fallback (if we can't infer via AppWidgetManager for some reason)
         private const val DEFAULT_MAX_ICON_SIZE = 512

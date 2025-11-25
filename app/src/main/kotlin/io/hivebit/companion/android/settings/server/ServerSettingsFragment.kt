@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.server
+package io.hivebit.companion.android.settings.server
 
 import android.content.Intent
 import android.graphics.Color
@@ -27,19 +27,19 @@ import androidx.preference.PreferenceCategory
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreference
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.USE_NEW_LAUNCHER
-import io.homeassistant.companion.android.authenticator.Authenticator
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.launch.LaunchActivity
-import io.homeassistant.companion.android.settings.ConnectionSecurityLevelFragment
-import io.homeassistant.companion.android.settings.SettingsActivity
-import io.homeassistant.companion.android.settings.ssid.SsidFragment
-import io.homeassistant.companion.android.settings.url.ExternalUrlFragment
-import io.homeassistant.companion.android.settings.websocket.WebsocketSettingFragment
-import io.homeassistant.companion.android.util.QuestUtil
-import io.homeassistant.companion.android.util.applyBottomSafeDrawingInsets
-import io.homeassistant.companion.android.webview.WebViewActivity
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.USE_NEW_LAUNCHER
+import io.hivebit.companion.android.authenticator.Authenticator
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.launch.LaunchActivity
+import io.hivebit.companion.android.settings.ConnectionSecurityLevelFragment
+import io.hivebit.companion.android.settings.SettingsActivity
+import io.hivebit.companion.android.settings.ssid.SsidFragment
+import io.hivebit.companion.android.settings.url.ExternalUrlFragment
+import io.hivebit.companion.android.settings.websocket.WebsocketSettingFragment
+import io.hivebit.companion.android.util.QuestUtil
+import io.hivebit.companion.android.util.applyBottomSafeDrawingInsets
+import io.hivebit.companion.android.webview.WebViewActivity
 import java.net.URLEncoder
 import javax.inject.Inject
 import kotlinx.coroutines.launch

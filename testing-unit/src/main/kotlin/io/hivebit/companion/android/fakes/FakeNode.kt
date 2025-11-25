@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.fakes
+package io.hivebit.companion.android.fakes
 
 import com.google.android.gms.wearable.Node
 

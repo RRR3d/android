@@ -1,13 +1,13 @@
-package io.homeassistant.companion.android.common.data
+package io.hivebit.companion.android.common.data
 
 import android.content.Context
 import android.content.pm.PackageManager
 import android.os.Build
 import android.webkit.CookieManager
 import dagger.hilt.android.qualifiers.ApplicationContext
-import io.homeassistant.companion.android.common.BuildConfig
-import io.homeassistant.companion.android.common.util.kotlinJsonMapper
-import io.homeassistant.companion.android.di.OkHttpConfigurator
+import io.hivebit.companion.android.common.BuildConfig
+import io.hivebit.companion.android.common.util.kotlinJsonMapper
+import io.hivebit.companion.android.di.OkHttpConfigurator
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 import okhttp3.MediaType.Companion.toMediaType
@@ -16,7 +16,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.kotlinx.serialization.asConverterFactory
 
-class HomeAssistantApis @Inject constructor(
+class HivebitApis @Inject constructor(
     private val tlsHelper: TLSHelper,
     @ApplicationContext private val appContext: Context,
     private val configurators: Set<@JvmSuppressWildcards OkHttpConfigurator>,

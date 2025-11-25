@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.sensors
+package io.hivebit.companion.android.sensors
 
 import android.Manifest
 import android.content.Context
@@ -17,10 +17,10 @@ import androidx.health.services.client.data.PassiveListenerConfig
 import androidx.health.services.client.data.PassiveMonitoringCapabilities
 import androidx.health.services.client.data.UserActivityInfo
 import androidx.health.services.client.data.UserActivityState
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.sensors.SensorManager
-import io.homeassistant.companion.android.common.util.STATE_UNKNOWN
-import io.homeassistant.companion.android.database.AppDatabase
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.sensors.SensorManager
+import io.hivebit.companion.android.common.util.STATE_UNKNOWN
+import io.hivebit.companion.android.database.AppDatabase
 import java.time.Instant
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.assist
+package io.hivebit.companion.android.assist
 
 import android.app.Application
 import android.content.Intent
@@ -8,15 +8,15 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.assist.ui.AssistMessage
-import io.homeassistant.companion.android.assist.ui.AssistUiPipeline
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.assist.AssistEvent
-import io.homeassistant.companion.android.common.assist.AssistViewModelBase
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AssistPipelineResponse
-import io.homeassistant.companion.android.common.util.AudioRecorder
-import io.homeassistant.companion.android.common.util.AudioUrlPlayer
+import io.hivebit.companion.android.assist.ui.AssistMessage
+import io.hivebit.companion.android.assist.ui.AssistUiPipeline
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.assist.AssistEvent
+import io.hivebit.companion.android.common.assist.AssistViewModelBase
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AssistPipelineResponse
+import io.hivebit.companion.android.common.util.AudioRecorder
+import io.hivebit.companion.android.common.util.AudioUrlPlayer
 import javax.inject.Inject
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -156,7 +156,7 @@ class AssistViewModel @Inject constructor(
         if (!serverManager.isRegistered()) return false
         if (!serverManager.integrationRepository(
                 selectedServerId,
-            ).isHomeAssistantVersionAtLeast(2023, 5, 0)
+            ).isHivebitVersionAtLeast(2023, 5, 0)
         ) {
             return false
         }

@@ -1,19 +1,19 @@
-package io.homeassistant.companion.android.onboarding.nameyourdevice
+package io.hivebit.companion.android.onboarding.nameyourdevice
 
 import app.cash.turbine.test
 import app.cash.turbine.turbineScope
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.authentication.AuthenticationRepository
-import io.homeassistant.companion.android.common.data.integration.DeviceRegistration
-import io.homeassistant.companion.android.common.data.integration.IntegrationRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.AppVersion
-import io.homeassistant.companion.android.common.util.AppVersionProvider
-import io.homeassistant.companion.android.common.util.MessagingToken
-import io.homeassistant.companion.android.common.util.MessagingTokenProvider
-import io.homeassistant.companion.android.onboarding.nameyourdevice.navigation.NameYourDeviceRoute
-import io.homeassistant.companion.android.testing.unit.ConsoleLogExtension
-import io.homeassistant.companion.android.testing.unit.MainDispatcherJUnit5Extension
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.authentication.AuthenticationRepository
+import io.hivebit.companion.android.common.data.integration.DeviceRegistration
+import io.hivebit.companion.android.common.data.integration.IntegrationRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.AppVersion
+import io.hivebit.companion.android.common.util.AppVersionProvider
+import io.hivebit.companion.android.common.util.MessagingToken
+import io.hivebit.companion.android.common.util.MessagingTokenProvider
+import io.hivebit.companion.android.onboarding.nameyourdevice.navigation.NameYourDeviceRoute
+import io.hivebit.companion.android.testing.unit.ConsoleLogExtension
+import io.hivebit.companion.android.testing.unit.MainDispatcherJUnit5Extension
 import io.mockk.Runs
 import io.mockk.coEvery
 import io.mockk.coVerify

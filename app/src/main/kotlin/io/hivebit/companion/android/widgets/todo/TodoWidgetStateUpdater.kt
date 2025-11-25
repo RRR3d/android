@@ -1,11 +1,11 @@
-package io.homeassistant.companion.android.widgets.todo
+package io.hivebit.companion.android.widgets.todo
 
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.friendlyName
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.data.websocket.WebSocketRepository
-import io.homeassistant.companion.android.database.widget.TodoWidgetDao
-import io.homeassistant.companion.android.database.widget.TodoWidgetEntity
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.friendlyName
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.websocket.WebSocketRepository
+import io.hivebit.companion.android.database.widget.TodoWidgetDao
+import io.hivebit.companion.android.database.widget.TodoWidgetEntity
 import javax.inject.Inject
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow

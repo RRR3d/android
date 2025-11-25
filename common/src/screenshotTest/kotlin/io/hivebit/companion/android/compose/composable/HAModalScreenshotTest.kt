@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
 
-package io.homeassistant.companion.android.compose.composable
+package io.hivebit.companion.android.compose.composable
 
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.SheetState
@@ -13,9 +13,9 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.android.tools.screenshot.PreviewTest
-import io.homeassistant.companion.android.common.compose.composable.HAModalBottomSheet
-import io.homeassistant.companion.android.common.compose.theme.HATextStyle
-import io.homeassistant.companion.android.common.compose.theme.HAThemeForPreview
+import io.hivebit.companion.android.common.compose.composable.HAModalBottomSheet
+import io.hivebit.companion.android.common.compose.theme.HATextStyle
+import io.hivebit.companion.android.common.compose.theme.HAThemeForPreview
 
 class HAModalScreenshotTest {
 

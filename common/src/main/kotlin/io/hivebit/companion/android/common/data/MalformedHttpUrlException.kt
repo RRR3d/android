@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.data
+package io.hivebit.companion.android.common.data
 
 import java.net.MalformedURLException
 

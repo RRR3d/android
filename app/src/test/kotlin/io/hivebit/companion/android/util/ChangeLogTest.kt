@@ -1,11 +1,11 @@
-package io.homeassistant.companion.android.util
+package io.hivebit.companion.android.util
 
 import android.app.AlertDialog
 import android.content.Context
-import io.homeassistant.companion.android.common.data.prefs.NightModeTheme
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.testing.unit.MainDispatcherJUnit5Extension
-import io.homeassistant.companion.android.themes.NightModeManager
+import io.hivebit.companion.android.common.data.prefs.NightModeTheme
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.testing.unit.MainDispatcherJUnit5Extension
+import io.hivebit.companion.android.themes.NightModeManager
 import io.mockk.coEvery
 import io.mockk.every
 import io.mockk.mockk

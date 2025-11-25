@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets
+package io.hivebit.companion.android.widgets
 
 import android.appwidget.AppWidgetManager
 import android.content.Context
@@ -7,13 +7,13 @@ import androidx.glance.GlanceId
 import androidx.glance.appwidget.GlanceAppWidget
 import androidx.glance.appwidget.GlanceAppWidgetManager
 import androidx.glance.appwidget.updateAll
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.IntegrationRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.FailFast
-import io.homeassistant.companion.android.database.widget.TodoWidgetDao
-import io.homeassistant.companion.android.database.widget.TodoWidgetEntity
-import io.homeassistant.companion.android.testing.unit.ConsoleLogExtension
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.IntegrationRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.FailFast
+import io.hivebit.companion.android.database.widget.TodoWidgetDao
+import io.hivebit.companion.android.database.widget.TodoWidgetEntity
+import io.hivebit.companion.android.testing.unit.ConsoleLogExtension
 import io.mockk.Called
 import io.mockk.coEvery
 import io.mockk.coJustRun

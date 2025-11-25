@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.connection
+package io.hivebit.companion.android.onboarding.connection
 
 import android.webkit.WebViewClient
 import androidx.annotation.VisibleForTesting
@@ -23,12 +23,12 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.unit.dp
-import io.homeassistant.companion.android.common.compose.theme.HAThemeForPreview
-import io.homeassistant.companion.android.common.compose.theme.LocalHAColorScheme
-import io.homeassistant.companion.android.compose.HAPreviews
-import io.homeassistant.companion.android.compose.composable.HAWebView
-import io.homeassistant.companion.android.loading.LoadingScreen
-import io.homeassistant.companion.android.onboarding.R
+import io.hivebit.companion.android.common.compose.theme.HAThemeForPreview
+import io.hivebit.companion.android.common.compose.theme.LocalHAColorScheme
+import io.hivebit.companion.android.compose.HAPreviews
+import io.hivebit.companion.android.compose.composable.HAWebView
+import io.hivebit.companion.android.loading.LoadingScreen
+import io.hivebit.companion.android.onboarding.R
 import timber.log.Timber
 
 @VisibleForTesting

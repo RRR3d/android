@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android
+package io.hivebit.companion.android
 
 import androidx.activity.ComponentActivity
 import dagger.hilt.android.AndroidEntryPoint

@@ -1,6 +1,6 @@
-package io.homeassistant.companion.android.common.util
+package io.hivebit.companion.android.common.util
 
-import io.homeassistant.companion.android.common.util.FailFast.setHandler
+import io.hivebit.companion.android.common.util.FailFast.setHandler
 import kotlin.coroutines.cancellation.CancellationException
 
 /**

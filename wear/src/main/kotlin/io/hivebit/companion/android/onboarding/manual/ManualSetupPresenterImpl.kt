@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.manual
+package io.hivebit.companion.android.onboarding.manual
 
 import android.content.Context
 import androidx.core.net.toUri
@@ -8,14 +8,14 @@ import androidx.wear.phone.interactions.authentication.OAuthRequest
 import androidx.wear.phone.interactions.authentication.OAuthResponse
 import androidx.wear.phone.interactions.authentication.RemoteAuthClient
 import dagger.hilt.android.qualifiers.ActivityContext
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.database.server.ServerConnectionInfo
-import io.homeassistant.companion.android.database.server.ServerSessionInfo
-import io.homeassistant.companion.android.database.server.ServerType
-import io.homeassistant.companion.android.database.server.ServerUserInfo
-import io.homeassistant.companion.android.util.UrlUtil
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.database.server.ServerConnectionInfo
+import io.hivebit.companion.android.database.server.ServerSessionInfo
+import io.hivebit.companion.android.database.server.ServerType
+import io.hivebit.companion.android.database.server.ServerUserInfo
+import io.hivebit.companion.android.util.UrlUtil
 import java.util.concurrent.Executors
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope

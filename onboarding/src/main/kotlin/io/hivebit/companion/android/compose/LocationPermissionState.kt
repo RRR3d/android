@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.compose
+package io.hivebit.companion.android.compose
 
 import android.Manifest
 import android.os.Build

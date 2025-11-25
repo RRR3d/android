@@ -1,13 +1,13 @@
-package io.homeassistant.companion.android.util
+package io.hivebit.companion.android.util
 
-import io.homeassistant.companion.android.common.data.HomeAssistantVersion
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.database.notification.NotificationItem
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.database.server.ServerConnectionInfo
-import io.homeassistant.companion.android.database.server.ServerSessionInfo
-import io.homeassistant.companion.android.database.server.ServerUserInfo
-import io.homeassistant.companion.android.onboarding.discovery.HomeAssistantInstance
+import io.hivebit.companion.android.common.data.HivebitVersion
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.database.notification.NotificationItem
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.database.server.ServerConnectionInfo
+import io.hivebit.companion.android.database.server.ServerSessionInfo
+import io.hivebit.companion.android.database.server.ServerUserInfo
+import io.hivebit.companion.android.onboarding.discovery.HivebitInstance
 import java.net.URL
 import java.time.LocalDateTime
 
@@ -35,16 +35,16 @@ val previewEntityList = mapOf(
 val previewFavoritesList = listOf("light.test")
 
 val homeAssistantInstance1 =
-    HomeAssistantInstance(
+    HivebitInstance(
         name = "Home",
         url = URL("https://google.com"),
-        version = HomeAssistantVersion(year = 2024, month = 1, release = 1),
+        version = HivebitVersion(year = 2024, month = 1, release = 1),
     )
 val homeAssistantInstance2 =
-    HomeAssistantInstance(
+    HivebitInstance(
         name = "Vacation Home",
         url = URL("http://localhost"),
-        version = HomeAssistantVersion(year = 2024, month = 1, release = 1),
+        version = HivebitVersion(year = 2024, month = 1, release = 1),
     )
 
 val previewServer1 =

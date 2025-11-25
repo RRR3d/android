@@ -1,52 +1,52 @@
-package io.homeassistant.companion.android.common.data.websocket.impl
+package io.hivebit.companion.android.common.data.websocket.impl
 
 import androidx.annotation.VisibleForTesting
-import io.homeassistant.companion.android.common.BuildConfig
-import io.homeassistant.companion.android.common.data.HomeAssistantApis.Companion.USER_AGENT
-import io.homeassistant.companion.android.common.data.HomeAssistantApis.Companion.USER_AGENT_STRING
-import io.homeassistant.companion.android.common.data.HomeAssistantVersion
-import io.homeassistant.companion.android.common.data.authentication.AuthorizationException
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.data.websocket.WebSocketCore
-import io.homeassistant.companion.android.common.data.websocket.WebSocketRequest
-import io.homeassistant.companion.android.common.data.websocket.WebSocketState
-import io.homeassistant.companion.android.common.data.websocket.impl.WebSocketConstants.EVENT_AREA_REGISTRY_UPDATED
-import io.homeassistant.companion.android.common.data.websocket.impl.WebSocketConstants.EVENT_DEVICE_REGISTRY_UPDATED
-import io.homeassistant.companion.android.common.data.websocket.impl.WebSocketConstants.EVENT_ENTITY_REGISTRY_UPDATED
-import io.homeassistant.companion.android.common.data.websocket.impl.WebSocketConstants.EVENT_STATE_CHANGED
-import io.homeassistant.companion.android.common.data.websocket.impl.WebSocketConstants.SUBSCRIBE_TYPE_ASSIST_PIPELINE_RUN
-import io.homeassistant.companion.android.common.data.websocket.impl.WebSocketConstants.SUBSCRIBE_TYPE_RENDER_TEMPLATE
-import io.homeassistant.companion.android.common.data.websocket.impl.WebSocketConstants.SUBSCRIBE_TYPE_SUBSCRIBE_ENTITIES
-import io.homeassistant.companion.android.common.data.websocket.impl.WebSocketConstants.SUBSCRIBE_TYPE_SUBSCRIBE_TRIGGER
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AreaRegistryUpdatedEvent
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AssistPipelineError
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AssistPipelineEvent
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AssistPipelineEventType
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AssistPipelineIntentEnd
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AssistPipelineIntentProgress
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AssistPipelineIntentStart
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AssistPipelineRunStart
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AssistPipelineSttEnd
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AssistPipelineTtsEnd
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AuthInvalidSocketResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AuthOkSocketResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AuthRequiredSocketResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.CompressedStateChangedEvent
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.DeviceRegistryUpdatedEvent
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.EntityRegistryUpdatedEvent
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.EventResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.EventSocketResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.MessageSocketResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.PongSocketResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.RawMessageSocketResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.SocketResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.StateChangedEvent
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.TemplateUpdatedEvent
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.TriggerEvent
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.UnknownTypeSocketResponse
-import io.homeassistant.companion.android.common.util.FailFast
-import io.homeassistant.companion.android.common.util.MapAnySerializer
-import io.homeassistant.companion.android.common.util.kotlinJsonMapper
+import io.hivebit.companion.android.common.BuildConfig
+import io.hivebit.companion.android.common.data.HivebitApis.Companion.USER_AGENT
+import io.hivebit.companion.android.common.data.HivebitApis.Companion.USER_AGENT_STRING
+import io.hivebit.companion.android.common.data.HivebitVersion
+import io.hivebit.companion.android.common.data.authentication.AuthorizationException
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.websocket.WebSocketCore
+import io.hivebit.companion.android.common.data.websocket.WebSocketRequest
+import io.hivebit.companion.android.common.data.websocket.WebSocketState
+import io.hivebit.companion.android.common.data.websocket.impl.WebSocketConstants.EVENT_AREA_REGISTRY_UPDATED
+import io.hivebit.companion.android.common.data.websocket.impl.WebSocketConstants.EVENT_DEVICE_REGISTRY_UPDATED
+import io.hivebit.companion.android.common.data.websocket.impl.WebSocketConstants.EVENT_ENTITY_REGISTRY_UPDATED
+import io.hivebit.companion.android.common.data.websocket.impl.WebSocketConstants.EVENT_STATE_CHANGED
+import io.hivebit.companion.android.common.data.websocket.impl.WebSocketConstants.SUBSCRIBE_TYPE_ASSIST_PIPELINE_RUN
+import io.hivebit.companion.android.common.data.websocket.impl.WebSocketConstants.SUBSCRIBE_TYPE_RENDER_TEMPLATE
+import io.hivebit.companion.android.common.data.websocket.impl.WebSocketConstants.SUBSCRIBE_TYPE_SUBSCRIBE_ENTITIES
+import io.hivebit.companion.android.common.data.websocket.impl.WebSocketConstants.SUBSCRIBE_TYPE_SUBSCRIBE_TRIGGER
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AreaRegistryUpdatedEvent
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AssistPipelineError
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AssistPipelineEvent
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AssistPipelineEventType
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AssistPipelineIntentEnd
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AssistPipelineIntentProgress
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AssistPipelineIntentStart
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AssistPipelineRunStart
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AssistPipelineSttEnd
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AssistPipelineTtsEnd
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AuthInvalidSocketResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AuthOkSocketResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AuthRequiredSocketResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.CompressedStateChangedEvent
+import io.hivebit.companion.android.common.data.websocket.impl.entities.DeviceRegistryUpdatedEvent
+import io.hivebit.companion.android.common.data.websocket.impl.entities.EntityRegistryUpdatedEvent
+import io.hivebit.companion.android.common.data.websocket.impl.entities.EventResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.EventSocketResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.MessageSocketResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.PongSocketResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.RawMessageSocketResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.SocketResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.StateChangedEvent
+import io.hivebit.companion.android.common.data.websocket.impl.entities.TemplateUpdatedEvent
+import io.hivebit.companion.android.common.data.websocket.impl.entities.TriggerEvent
+import io.hivebit.companion.android.common.data.websocket.impl.entities.UnknownTypeSocketResponse
+import io.hivebit.companion.android.common.util.FailFast
+import io.hivebit.companion.android.common.util.MapAnySerializer
+import io.hivebit.companion.android.common.util.kotlinJsonMapper
 import java.io.IOException
 import java.net.URL
 import java.util.concurrent.ConcurrentHashMap
@@ -151,7 +151,7 @@ internal class WebSocketCoreImpl(
     private val id = AtomicLong(1)
     private var connection: WebSocket? = null
     private var connectionState: WebSocketState? = null
-    private var connectionHaVersion: HomeAssistantVersion? = null
+    private var connectionHaVersion: HivebitVersion? = null
     private val connectedMutex = Mutex()
 
     /**
@@ -453,7 +453,7 @@ internal class WebSocketCoreImpl(
     }
 
     private fun handleAuthComplete(successful: Boolean, haVersion: String?) {
-        connectionHaVersion = haVersion?.let { HomeAssistantVersion.fromString(it) }
+        connectionHaVersion = haVersion?.let { HivebitVersion.fromString(it) }
         if (successful) {
             connectionState = WebSocketState.ACTIVE
             connected.complete(true)

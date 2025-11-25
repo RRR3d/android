@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.vehicle
+package io.hivebit.companion.android.vehicle
 
 import android.os.Build
 import androidx.annotation.RequiresApi
@@ -6,18 +6,18 @@ import androidx.car.app.CarContext
 import androidx.car.app.model.GridTemplate
 import androidx.car.app.model.Template
 import androidx.lifecycle.lifecycleScope
-import io.homeassistant.companion.android.BuildConfig
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.domain
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.EntityRegistryResponse
-import io.homeassistant.companion.android.common.util.isAutomotive
-import io.homeassistant.companion.android.util.vehicle.SUPPORTED_DOMAINS
-import io.homeassistant.companion.android.util.vehicle.getDomainList
-import io.homeassistant.companion.android.util.vehicle.getHeaderBuilder
-import io.homeassistant.companion.android.util.vehicle.nativeModeAction
+import io.hivebit.companion.android.BuildConfig
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.domain
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.websocket.impl.entities.EntityRegistryResponse
+import io.hivebit.companion.android.common.util.isAutomotive
+import io.hivebit.companion.android.util.vehicle.SUPPORTED_DOMAINS
+import io.hivebit.companion.android.util.vehicle.getDomainList
+import io.hivebit.companion.android.util.vehicle.getHeaderBuilder
+import io.hivebit.companion.android.util.vehicle.nativeModeAction
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch

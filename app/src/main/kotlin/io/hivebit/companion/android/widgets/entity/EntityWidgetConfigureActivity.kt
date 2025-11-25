@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets.entity
+package io.hivebit.companion.android.widgets.entity
 
 import android.appwidget.AppWidgetManager
 import android.content.Context
@@ -20,22 +20,22 @@ import androidx.core.graphics.toColorInt
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.EntityExt
-import io.homeassistant.companion.android.common.data.integration.domain
-import io.homeassistant.companion.android.common.data.integration.friendlyName
-import io.homeassistant.companion.android.database.widget.StaticWidgetDao
-import io.homeassistant.companion.android.database.widget.StaticWidgetEntity
-import io.homeassistant.companion.android.database.widget.WidgetBackgroundType
-import io.homeassistant.companion.android.database.widget.WidgetTapAction
-import io.homeassistant.companion.android.databinding.WidgetStaticConfigureBinding
-import io.homeassistant.companion.android.settings.widgets.ManageWidgetsViewModel
-import io.homeassistant.companion.android.util.applySafeDrawingInsets
-import io.homeassistant.companion.android.util.getHexForColor
-import io.homeassistant.companion.android.widgets.BaseWidgetConfigureActivity
-import io.homeassistant.companion.android.widgets.common.SingleItemArrayAdapter
-import io.homeassistant.companion.android.widgets.common.WidgetUtils
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.EntityExt
+import io.hivebit.companion.android.common.data.integration.domain
+import io.hivebit.companion.android.common.data.integration.friendlyName
+import io.hivebit.companion.android.database.widget.StaticWidgetDao
+import io.hivebit.companion.android.database.widget.StaticWidgetEntity
+import io.hivebit.companion.android.database.widget.WidgetBackgroundType
+import io.hivebit.companion.android.database.widget.WidgetTapAction
+import io.hivebit.companion.android.databinding.WidgetStaticConfigureBinding
+import io.hivebit.companion.android.settings.widgets.ManageWidgetsViewModel
+import io.hivebit.companion.android.util.applySafeDrawingInsets
+import io.hivebit.companion.android.util.getHexForColor
+import io.hivebit.companion.android.widgets.BaseWidgetConfigureActivity
+import io.hivebit.companion.android.widgets.common.SingleItemArrayAdapter
+import io.hivebit.companion.android.widgets.common.WidgetUtils
 import kotlinx.coroutines.launch
 import timber.log.Timber
 

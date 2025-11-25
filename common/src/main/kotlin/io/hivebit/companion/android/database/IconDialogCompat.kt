@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.database
+package io.hivebit.companion.android.database
 
 import android.content.res.AssetManager
 import android.util.JsonReader

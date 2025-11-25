@@ -1,9 +1,9 @@
-package io.homeassistant.companion.android.compose
+package io.hivebit.companion.android.compose
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.rememberNavController
 import com.android.tools.screenshot.PreviewTest
-import io.homeassistant.companion.android.common.compose.theme.HAThemeForPreview
+import io.hivebit.companion.android.common.compose.theme.HAThemeForPreview
 
 class HAAppScreenshotTest {
 

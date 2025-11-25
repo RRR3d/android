@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.data.authentication.impl.entities
+package io.hivebit.companion.android.common.data.authentication.impl.entities
 
 import kotlinx.serialization.Serializable
 

@@ -1,7 +1,7 @@
-package io.homeassistant.companion.android.common.util
+package io.hivebit.companion.android.common.util
 
-import io.homeassistant.companion.android.common.BuildConfig
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.SocketResponse
+import io.hivebit.companion.android.common.BuildConfig
+import io.hivebit.companion.android.common.data.websocket.impl.entities.SocketResponse
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import kotlinx.serialization.DeserializationStrategy

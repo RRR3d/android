@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.thread
+package io.hivebit.companion.android.thread
 
 import android.app.Activity
 import android.content.Context
@@ -12,10 +12,10 @@ import com.google.android.gms.threadnetwork.ThreadBorderAgent
 import com.google.android.gms.threadnetwork.ThreadNetwork
 import com.google.android.gms.threadnetwork.ThreadNetworkCredentials
 import com.google.android.gms.threadnetwork.ThreadNetworkStatusCodes
-import io.homeassistant.companion.android.common.data.HomeAssistantVersion
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.ThreadDatasetResponse
-import io.homeassistant.companion.android.common.util.isAutomotive
+import io.hivebit.companion.android.common.data.HivebitVersion
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.websocket.impl.entities.ThreadDatasetResponse
+import io.hivebit.companion.android.common.util.isAutomotive
 import javax.inject.Inject
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
@@ -41,7 +41,7 @@ class ThreadManagerImpl @Inject constructor(
         val config = serverManager.webSocketRepository(serverId).getConfig()
         return config != null &&
             config.components.contains("thread") &&
-            HomeAssistantVersion.fromString(config.version)?.isAtLeast(2023, 3, 0) == true
+            HivebitVersion.fromString(config.version)?.isAtLeast(2023, 3, 0) == true
     }
 
     private suspend fun getDatasetsFromServer(serverId: Int): List<ThreadDatasetResponse>? =

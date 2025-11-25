@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.launcher
+package io.hivebit.companion.android.launcher
 
 import android.content.Context
 import android.content.Intent
@@ -13,15 +13,15 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.compose.rememberNavController
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.lifecycle.withCreationCallback
-import io.homeassistant.companion.android.HAStartDestinationRoute
-import io.homeassistant.companion.android.automotive.navigation.AutomotiveRoute
-import io.homeassistant.companion.android.common.compose.theme.HATheme
-import io.homeassistant.companion.android.common.util.isAutomotive
-import io.homeassistant.companion.android.compose.HAApp
-import io.homeassistant.companion.android.frontend.navigation.FrontendRoute
-import io.homeassistant.companion.android.onboarding.OnboardingRoute
-import io.homeassistant.companion.android.onboarding.WearOnboardingRoute
-import io.homeassistant.companion.android.util.enableEdgeToEdgeCompat
+import io.hivebit.companion.android.HAStartDestinationRoute
+import io.hivebit.companion.android.automotive.navigation.AutomotiveRoute
+import io.hivebit.companion.android.common.compose.theme.HATheme
+import io.hivebit.companion.android.common.util.isAutomotive
+import io.hivebit.companion.android.compose.HAApp
+import io.hivebit.companion.android.frontend.navigation.FrontendRoute
+import io.hivebit.companion.android.onboarding.OnboardingRoute
+import io.hivebit.companion.android.onboarding.WearOnboardingRoute
+import io.hivebit.companion.android.util.enableEdgeToEdgeCompat
 import kotlinx.coroutines.flow.first
 import kotlinx.parcelize.Parcelize
 

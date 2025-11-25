@@ -1,9 +1,9 @@
 plugins {
-    alias(libs.plugins.homeassistant.android.application)
-    alias(libs.plugins.homeassistant.android.flavor)
+    alias(libs.plugins.hivebit.android.application)
+    alias(libs.plugins.hivebit.android.flavor)
     alias(libs.plugins.firebase.appdistribution)
     alias(libs.plugins.google.services)
-    alias(libs.plugins.homeassistant.android.dependencies)
+    alias(libs.plugins.hivebit.android.dependencies)
     alias(libs.plugins.kotlin.parcelize)
 }
 

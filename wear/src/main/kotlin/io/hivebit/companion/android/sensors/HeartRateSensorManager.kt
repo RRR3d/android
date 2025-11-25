@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.sensors
+package io.hivebit.companion.android.sensors
 
 import android.Manifest
 import android.content.Context
@@ -14,9 +14,9 @@ import android.hardware.SensorManager.SENSOR_STATUS_NO_CONTACT
 import android.hardware.SensorManager.SENSOR_STATUS_UNRELIABLE
 import android.os.Build
 import androidx.core.content.getSystemService
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.sensors.SensorManager
-import io.homeassistant.companion.android.common.util.STATE_UNKNOWN
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.sensors.SensorManager
+import io.hivebit.companion.android.common.util.STATE_UNKNOWN
 import kotlin.math.roundToInt
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

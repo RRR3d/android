@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.locationforsecureconnection
+package io.hivebit.companion.android.onboarding.locationforsecureconnection
 
 import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.SavedStateHandle
@@ -6,8 +6,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.onboarding.locationforsecureconnection.navigation.LocationForSecureConnectionRoute
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.onboarding.locationforsecureconnection.navigation.LocationForSecureConnectionRoute
 import javax.inject.Inject
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

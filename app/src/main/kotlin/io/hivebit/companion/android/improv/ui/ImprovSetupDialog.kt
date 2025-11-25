@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.improv.ui
+package io.hivebit.companion.android.improv.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,12 +14,12 @@ import androidx.lifecycle.repeatOnLifecycle
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.wifi.improv.DeviceState
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.data.network.WifiHelper
-import io.homeassistant.companion.android.improv.ImprovRepository
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
-import io.homeassistant.companion.android.util.setLayoutAndExpandedByDefault
-import io.homeassistant.companion.android.webview.externalbus.ExternalBusMessage
-import io.homeassistant.companion.android.webview.externalbus.ExternalBusRepository
+import io.hivebit.companion.android.common.data.network.WifiHelper
+import io.hivebit.companion.android.improv.ImprovRepository
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.util.setLayoutAndExpandedByDefault
+import io.hivebit.companion.android.webview.externalbus.ExternalBusMessage
+import io.hivebit.companion.android.webview.externalbus.ExternalBusRepository
 import javax.inject.Inject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow

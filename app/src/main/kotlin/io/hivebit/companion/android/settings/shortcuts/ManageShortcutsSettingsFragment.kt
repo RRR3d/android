@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.shortcuts
+package io.hivebit.companion.android.settings.shortcuts
 
 import android.os.Build
 import android.os.Bundle
@@ -15,11 +15,11 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.mikepenz.iconics.typeface.IIcon
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.settings.addHelpMenuProvider
-import io.homeassistant.companion.android.settings.shortcuts.views.ManageShortcutsView
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
-import io.homeassistant.companion.android.util.icondialog.IconDialog
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.settings.addHelpMenuProvider
+import io.hivebit.companion.android.settings.shortcuts.views.ManageShortcutsView
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.util.icondialog.IconDialog
 import timber.log.Timber
 
 @RequiresApi(Build.VERSION_CODES.N_MR1)

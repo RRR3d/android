@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.notification
+package io.hivebit.companion.android.settings.notification
 
 import android.app.Application
 import android.app.NotificationChannel

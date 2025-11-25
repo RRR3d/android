@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.sensors
+package io.hivebit.companion.android.sensors
 
 import android.annotation.SuppressLint
 import android.app.NotificationManager
@@ -13,33 +13,33 @@ import android.os.PowerManager
 import androidx.core.app.TaskStackBuilder
 import androidx.core.net.toUri
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.BuildConfig
-import io.homeassistant.companion.android.common.sensors.AndroidOsSensorManager
-import io.homeassistant.companion.android.common.sensors.AudioSensorManager
-import io.homeassistant.companion.android.common.sensors.BatterySensorManager
-import io.homeassistant.companion.android.common.sensors.BluetoothSensorManager
-import io.homeassistant.companion.android.common.sensors.DNDSensorManager
-import io.homeassistant.companion.android.common.sensors.DisplaySensorManager
-import io.homeassistant.companion.android.common.sensors.KeyguardSensorManager
-import io.homeassistant.companion.android.common.sensors.LastRebootSensorManager
-import io.homeassistant.companion.android.common.sensors.LastUpdateManager
-import io.homeassistant.companion.android.common.sensors.LightSensorManager
-import io.homeassistant.companion.android.common.sensors.MobileDataManager
-import io.homeassistant.companion.android.common.sensors.NetworkSensorManager
-import io.homeassistant.companion.android.common.sensors.NextAlarmManager
-import io.homeassistant.companion.android.common.sensors.NfcSensorManager
-import io.homeassistant.companion.android.common.sensors.PhoneStateSensorManager
-import io.homeassistant.companion.android.common.sensors.PowerSensorManager
-import io.homeassistant.companion.android.common.sensors.PressureSensorManager
-import io.homeassistant.companion.android.common.sensors.ProximitySensorManager
-import io.homeassistant.companion.android.common.sensors.SensorManager
-import io.homeassistant.companion.android.common.sensors.SensorReceiverBase
-import io.homeassistant.companion.android.common.sensors.StepsSensorManager
-import io.homeassistant.companion.android.common.sensors.StorageSensorManager
-import io.homeassistant.companion.android.common.sensors.TimeZoneManager
-import io.homeassistant.companion.android.common.sensors.TrafficStatsManager
-import io.homeassistant.companion.android.home.HomeActivity
-import io.homeassistant.companion.android.home.views.DEEPLINK_SENSOR_MANAGER
+import io.hivebit.companion.android.BuildConfig
+import io.hivebit.companion.android.common.sensors.AndroidOsSensorManager
+import io.hivebit.companion.android.common.sensors.AudioSensorManager
+import io.hivebit.companion.android.common.sensors.BatterySensorManager
+import io.hivebit.companion.android.common.sensors.BluetoothSensorManager
+import io.hivebit.companion.android.common.sensors.DNDSensorManager
+import io.hivebit.companion.android.common.sensors.DisplaySensorManager
+import io.hivebit.companion.android.common.sensors.KeyguardSensorManager
+import io.hivebit.companion.android.common.sensors.LastRebootSensorManager
+import io.hivebit.companion.android.common.sensors.LastUpdateManager
+import io.hivebit.companion.android.common.sensors.LightSensorManager
+import io.hivebit.companion.android.common.sensors.MobileDataManager
+import io.hivebit.companion.android.common.sensors.NetworkSensorManager
+import io.hivebit.companion.android.common.sensors.NextAlarmManager
+import io.hivebit.companion.android.common.sensors.NfcSensorManager
+import io.hivebit.companion.android.common.sensors.PhoneStateSensorManager
+import io.hivebit.companion.android.common.sensors.PowerSensorManager
+import io.hivebit.companion.android.common.sensors.PressureSensorManager
+import io.hivebit.companion.android.common.sensors.ProximitySensorManager
+import io.hivebit.companion.android.common.sensors.SensorManager
+import io.hivebit.companion.android.common.sensors.SensorReceiverBase
+import io.hivebit.companion.android.common.sensors.StepsSensorManager
+import io.hivebit.companion.android.common.sensors.StorageSensorManager
+import io.hivebit.companion.android.common.sensors.TimeZoneManager
+import io.hivebit.companion.android.common.sensors.TrafficStatsManager
+import io.hivebit.companion.android.home.HomeActivity
+import io.hivebit.companion.android.home.views.DEEPLINK_SENSOR_MANAGER
 
 @AndroidEntryPoint
 class SensorReceiver : SensorReceiverBase() {
@@ -84,7 +84,7 @@ class SensorReceiver : SensorReceiverBase() {
         )
 
         const val ACTION_REQUEST_SENSORS_UPDATE =
-            "io.homeassistant.companion.android.background.REQUEST_SENSORS_UPDATE"
+            "io.hivebit.companion.android.background.REQUEST_SENSORS_UPDATE"
 
         fun updateAllSensors(context: Context) {
             val intent = Intent(context, SensorReceiver::class.java)

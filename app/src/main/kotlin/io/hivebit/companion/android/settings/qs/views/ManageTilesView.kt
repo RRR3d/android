@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.qs.views
+package io.hivebit.companion.android.settings.qs.views
 
 import android.os.Build
 import androidx.compose.foundation.layout.Box
@@ -37,12 +37,12 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.settings.qs.ManageTilesViewModel
-import io.homeassistant.companion.android.util.compose.ServerExposedDropdownMenu
-import io.homeassistant.companion.android.util.compose.SingleEntityPicker
-import io.homeassistant.companion.android.util.safeBottomPaddingValues
-import io.homeassistant.companion.android.util.safeBottomWindowInsets
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.settings.qs.ManageTilesViewModel
+import io.hivebit.companion.android.util.compose.ServerExposedDropdownMenu
+import io.hivebit.companion.android.util.compose.SingleEntityPicker
+import io.hivebit.companion.android.util.safeBottomPaddingValues
+import io.hivebit.companion.android.util.safeBottomWindowInsets
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 

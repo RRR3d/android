@@ -1,10 +1,10 @@
-package io.homeassistant.companion.android.common.data.integration
+package io.hivebit.companion.android.common.data.integration
 
 import dagger.assisted.AssistedFactory
-import io.homeassistant.companion.android.common.data.integration.impl.IntegrationRepositoryImpl
-import io.homeassistant.companion.android.common.data.integration.impl.entities.RateLimitResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AssistPipelineEvent
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.GetConfigResponse
+import io.hivebit.companion.android.common.data.integration.impl.IntegrationRepositoryImpl
+import io.hivebit.companion.android.common.data.integration.impl.entities.RateLimitResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AssistPipelineEvent
+import io.hivebit.companion.android.common.data.websocket.impl.entities.GetConfigResponse
 import kotlinx.coroutines.flow.Flow
 
 interface IntegrationRepository {
@@ -31,8 +31,8 @@ interface IntegrationRepository {
 
     suspend fun setSessionExpireMillis(value: Long)
 
-    suspend fun getHomeAssistantVersion(): String
-    suspend fun isHomeAssistantVersionAtLeast(year: Int, month: Int, release: Int): Boolean
+    suspend fun getHivebitVersion(): String
+    suspend fun isHivebitVersionAtLeast(year: Int, month: Int, release: Int): Boolean
 
     suspend fun getConfig(): GetConfigResponse
     suspend fun getServices(): List<Action>?

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.locationforsecureconnection
+package io.hivebit.companion.android.onboarding.locationforsecureconnection
 
 import androidx.activity.compose.LocalActivityResultRegistryOwner
 import androidx.activity.result.ActivityResultRegistry
@@ -18,11 +18,11 @@ import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication
-import io.homeassistant.companion.android.HiltComponentActivity
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.compose.LocationPermissionActivityResultRegistry
-import io.homeassistant.companion.android.testing.unit.ConsoleLogRule
-import io.homeassistant.companion.android.testing.unit.stringResource
+import io.hivebit.companion.android.HiltComponentActivity
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.compose.LocationPermissionActivityResultRegistry
+import io.hivebit.companion.android.testing.unit.ConsoleLogRule
+import io.hivebit.companion.android.testing.unit.stringResource
 import org.junit.Rule
 import org.junit.Test
 import org.junit.jupiter.api.Assertions.assertEquals

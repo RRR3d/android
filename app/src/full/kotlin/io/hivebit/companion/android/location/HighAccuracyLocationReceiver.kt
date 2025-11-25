@@ -1,9 +1,9 @@
-package io.homeassistant.companion.android.location
+package io.hivebit.companion.android.location
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import io.homeassistant.companion.android.sensors.LocationSensorManager
+import io.hivebit.companion.android.sensors.LocationSensorManager
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job

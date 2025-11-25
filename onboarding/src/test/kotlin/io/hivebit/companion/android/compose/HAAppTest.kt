@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.compose
+package io.hivebit.companion.android.compose
 
 import android.content.pm.PackageManager
 import androidx.activity.compose.LocalActivity
@@ -22,21 +22,21 @@ import androidx.savedstate.SavedState
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication
-import io.homeassistant.companion.android.HAStartDestinationRoute
-import io.homeassistant.companion.android.HiltComponentActivity
-import io.homeassistant.companion.android.automotive.navigation.AutomotiveRoute
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.compose.composable.HA_WEBVIEW_TAG
-import io.homeassistant.companion.android.frontend.navigation.FrontendActivityRoute
-import io.homeassistant.companion.android.frontend.navigation.FrontendRoute
-import io.homeassistant.companion.android.onboarding.OnboardingRoute
-import io.homeassistant.companion.android.onboarding.WearOnboardingRoute
-import io.homeassistant.companion.android.onboarding.connection.navigation.ConnectionRoute
-import io.homeassistant.companion.android.onboarding.locationforsecureconnection.navigation.navigateToLocationForSecureConnection
-import io.homeassistant.companion.android.onboarding.serverdiscovery.navigation.ServerDiscoveryRoute
-import io.homeassistant.companion.android.onboarding.welcome.navigation.WelcomeRoute
-import io.homeassistant.companion.android.testing.unit.ConsoleLogRule
-import io.homeassistant.companion.android.testing.unit.stringResource
+import io.hivebit.companion.android.HAStartDestinationRoute
+import io.hivebit.companion.android.HiltComponentActivity
+import io.hivebit.companion.android.automotive.navigation.AutomotiveRoute
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.compose.composable.HA_WEBVIEW_TAG
+import io.hivebit.companion.android.frontend.navigation.FrontendActivityRoute
+import io.hivebit.companion.android.frontend.navigation.FrontendRoute
+import io.hivebit.companion.android.onboarding.OnboardingRoute
+import io.hivebit.companion.android.onboarding.WearOnboardingRoute
+import io.hivebit.companion.android.onboarding.connection.navigation.ConnectionRoute
+import io.hivebit.companion.android.onboarding.locationforsecureconnection.navigation.navigateToLocationForSecureConnection
+import io.hivebit.companion.android.onboarding.serverdiscovery.navigation.ServerDiscoveryRoute
+import io.hivebit.companion.android.onboarding.welcome.navigation.WelcomeRoute
+import io.hivebit.companion.android.testing.unit.ConsoleLogRule
+import io.hivebit.companion.android.testing.unit.stringResource
 import io.mockk.every
 import io.mockk.spyk
 import io.mockk.verify

@@ -1,6 +1,6 @@
-package io.homeassistant.companion.android.common.util
+package io.hivebit.companion.android.common.util
 
-import io.homeassistant.companion.android.testing.unit.ConsoleLogExtension
+import io.hivebit.companion.android.testing.unit.ConsoleLogExtension
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith

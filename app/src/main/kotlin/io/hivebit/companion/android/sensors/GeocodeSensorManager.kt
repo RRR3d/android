@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.sensors
+package io.hivebit.companion.android.sensors
 
 import android.Manifest
 import android.content.Context
@@ -8,16 +8,16 @@ import android.location.Location
 import android.os.Build
 import android.os.Build.VERSION.SDK_INT
 import androidx.annotation.VisibleForTesting
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.sensors.SensorManager
-import io.homeassistant.companion.android.common.util.STATE_UNKNOWN
-import io.homeassistant.companion.android.common.util.instant
-import io.homeassistant.companion.android.database.AppDatabase
-import io.homeassistant.companion.android.database.sensor.SensorSetting
-import io.homeassistant.companion.android.database.sensor.SensorSettingType
-import io.homeassistant.companion.android.location.HighAccuracyLocationService
-import io.homeassistant.companion.android.location.getLastLocation
-import io.homeassistant.companion.android.sensors.GeocodeSensorManager.Companion.LOCATION_OUTDATED_THRESHOLD
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.sensors.SensorManager
+import io.hivebit.companion.android.common.util.STATE_UNKNOWN
+import io.hivebit.companion.android.common.util.instant
+import io.hivebit.companion.android.database.AppDatabase
+import io.hivebit.companion.android.database.sensor.SensorSetting
+import io.hivebit.companion.android.database.sensor.SensorSettingType
+import io.hivebit.companion.android.location.HighAccuracyLocationService
+import io.hivebit.companion.android.location.getLastLocation
+import io.hivebit.companion.android.sensors.GeocodeSensorManager.Companion.LOCATION_OUTDATED_THRESHOLD
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine

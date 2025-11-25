@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.util.compose.media.player
+package io.hivebit.companion.android.util.compose.media.player
 
 import androidx.annotation.OptIn
 import androidx.compose.animation.core.animateFloatAsState
@@ -48,7 +48,7 @@ import androidx.media3.ui.compose.PlayerSurface
 import androidx.media3.ui.compose.modifiers.resizeWithContentScale
 import androidx.media3.ui.compose.state.rememberPlayPauseButtonState
 import androidx.media3.ui.compose.state.rememberPresentationState
-import io.homeassistant.companion.android.common.R
+import io.hivebit.companion.android.common.R
 import java.util.Locale
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.seconds

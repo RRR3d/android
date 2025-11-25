@@ -1,9 +1,9 @@
-package io.homeassistant.companion.android.developer.catalog
+package io.hivebit.companion.android.developer.catalog
 
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
-import io.homeassistant.companion.android.util.enableEdgeToEdgeCompat
+import io.hivebit.companion.android.util.enableEdgeToEdgeCompat
 
 class HAComposeCatalogActivity : AppCompatActivity() {
 

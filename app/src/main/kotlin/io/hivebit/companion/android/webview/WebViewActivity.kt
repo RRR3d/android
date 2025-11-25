@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.webview
+package io.hivebit.companion.android.webview
 
 import android.annotation.SuppressLint
 import android.app.DownloadManager
@@ -76,60 +76,60 @@ import androidx.media3.exoplayer.ExoPlayer
 import androidx.webkit.WebViewCompat
 import androidx.webkit.WebViewFeature
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.BaseActivity
-import io.homeassistant.companion.android.BuildConfig
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.assist.AssistActivity
-import io.homeassistant.companion.android.authenticator.Authenticator
-import io.homeassistant.companion.android.barcode.BarcodeScannerActivity
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.keychain.KeyChainRepository
-import io.homeassistant.companion.android.common.data.keychain.NamedKeyChain
-import io.homeassistant.companion.android.common.data.prefs.NightModeTheme
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.AppVersionProvider
-import io.homeassistant.companion.android.common.util.DisabledLocationHandler
-import io.homeassistant.companion.android.common.util.FailFast
-import io.homeassistant.companion.android.common.util.GestureAction
-import io.homeassistant.companion.android.common.util.GestureDirection
-import io.homeassistant.companion.android.common.util.getBooleanOrElse
-import io.homeassistant.companion.android.common.util.getBooleanOrNull
-import io.homeassistant.companion.android.common.util.getIntOrElse
-import io.homeassistant.companion.android.common.util.getIntOrNull
-import io.homeassistant.companion.android.common.util.getStringOrElse
-import io.homeassistant.companion.android.common.util.getStringOrNull
-import io.homeassistant.companion.android.common.util.isAutomotive
-import io.homeassistant.companion.android.common.util.jsonObjectOrNull
-import io.homeassistant.companion.android.common.util.toJsonObject
-import io.homeassistant.companion.android.common.util.toJsonObjectOrNull
-import io.homeassistant.companion.android.database.authentication.Authentication
-import io.homeassistant.companion.android.database.authentication.AuthenticationDao
-import io.homeassistant.companion.android.databinding.DialogAuthenticationBinding
-import io.homeassistant.companion.android.improv.ui.ImprovPermissionDialog
-import io.homeassistant.companion.android.improv.ui.ImprovSetupDialog
-import io.homeassistant.companion.android.launch.LaunchActivity
-import io.homeassistant.companion.android.nfc.WriteNfcTag
-import io.homeassistant.companion.android.sensors.SensorReceiver
-import io.homeassistant.companion.android.sensors.SensorWorker
-import io.homeassistant.companion.android.settings.SettingsActivity
-import io.homeassistant.companion.android.settings.server.ServerChooserFragment
-import io.homeassistant.companion.android.themes.NightModeManager
-import io.homeassistant.companion.android.util.ChangeLog
-import io.homeassistant.companion.android.util.DataUriDownloadManager
-import io.homeassistant.companion.android.util.LifecycleHandler
-import io.homeassistant.companion.android.util.OnSwipeListener
-import io.homeassistant.companion.android.util.TLSWebViewClient
-import io.homeassistant.companion.android.util.compose.initializePlayer
-import io.homeassistant.companion.android.util.isStarted
-import io.homeassistant.companion.android.websocket.WebsocketManager
-import io.homeassistant.companion.android.webview.WebView.ErrorType
-import io.homeassistant.companion.android.webview.addto.EntityAddToHandler
-import io.homeassistant.companion.android.webview.externalbus.EntityAddToActionsResponse
-import io.homeassistant.companion.android.webview.externalbus.ExternalBusMessage
-import io.homeassistant.companion.android.webview.externalbus.ExternalConfigResponse
-import io.homeassistant.companion.android.webview.externalbus.ExternalEntityAddToAction
-import io.homeassistant.companion.android.webview.externalbus.NavigateTo
-import io.homeassistant.companion.android.webview.externalbus.ShowSidebar
+import io.hivebit.companion.android.BaseActivity
+import io.hivebit.companion.android.BuildConfig
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.assist.AssistActivity
+import io.hivebit.companion.android.authenticator.Authenticator
+import io.hivebit.companion.android.barcode.BarcodeScannerActivity
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.keychain.KeyChainRepository
+import io.hivebit.companion.android.common.data.keychain.NamedKeyChain
+import io.hivebit.companion.android.common.data.prefs.NightModeTheme
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.AppVersionProvider
+import io.hivebit.companion.android.common.util.DisabledLocationHandler
+import io.hivebit.companion.android.common.util.FailFast
+import io.hivebit.companion.android.common.util.GestureAction
+import io.hivebit.companion.android.common.util.GestureDirection
+import io.hivebit.companion.android.common.util.getBooleanOrElse
+import io.hivebit.companion.android.common.util.getBooleanOrNull
+import io.hivebit.companion.android.common.util.getIntOrElse
+import io.hivebit.companion.android.common.util.getIntOrNull
+import io.hivebit.companion.android.common.util.getStringOrElse
+import io.hivebit.companion.android.common.util.getStringOrNull
+import io.hivebit.companion.android.common.util.isAutomotive
+import io.hivebit.companion.android.common.util.jsonObjectOrNull
+import io.hivebit.companion.android.common.util.toJsonObject
+import io.hivebit.companion.android.common.util.toJsonObjectOrNull
+import io.hivebit.companion.android.database.authentication.Authentication
+import io.hivebit.companion.android.database.authentication.AuthenticationDao
+import io.hivebit.companion.android.databinding.DialogAuthenticationBinding
+import io.hivebit.companion.android.improv.ui.ImprovPermissionDialog
+import io.hivebit.companion.android.improv.ui.ImprovSetupDialog
+import io.hivebit.companion.android.launch.LaunchActivity
+import io.hivebit.companion.android.nfc.WriteNfcTag
+import io.hivebit.companion.android.sensors.SensorReceiver
+import io.hivebit.companion.android.sensors.SensorWorker
+import io.hivebit.companion.android.settings.SettingsActivity
+import io.hivebit.companion.android.settings.server.ServerChooserFragment
+import io.hivebit.companion.android.themes.NightModeManager
+import io.hivebit.companion.android.util.ChangeLog
+import io.hivebit.companion.android.util.DataUriDownloadManager
+import io.hivebit.companion.android.util.LifecycleHandler
+import io.hivebit.companion.android.util.OnSwipeListener
+import io.hivebit.companion.android.util.TLSWebViewClient
+import io.hivebit.companion.android.util.compose.initializePlayer
+import io.hivebit.companion.android.util.isStarted
+import io.hivebit.companion.android.websocket.WebsocketManager
+import io.hivebit.companion.android.webview.WebView.ErrorType
+import io.hivebit.companion.android.webview.addto.EntityAddToHandler
+import io.hivebit.companion.android.webview.externalbus.EntityAddToActionsResponse
+import io.hivebit.companion.android.webview.externalbus.ExternalBusMessage
+import io.hivebit.companion.android.webview.externalbus.ExternalConfigResponse
+import io.hivebit.companion.android.webview.externalbus.ExternalEntityAddToAction
+import io.hivebit.companion.android.webview.externalbus.NavigateTo
+import io.hivebit.companion.android.webview.externalbus.ShowSidebar
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -146,7 +146,7 @@ import timber.log.Timber
 @AndroidEntryPoint
 class WebViewActivity :
     BaseActivity(),
-    io.homeassistant.companion.android.webview.WebView {
+    io.hivebit.companion.android.webview.WebView {
 
     companion object {
         const val EXTRA_PATH = "path"

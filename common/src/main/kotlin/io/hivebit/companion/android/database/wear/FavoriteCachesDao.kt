@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.database.wear
+package io.hivebit.companion.android.database.wear
 
 import androidx.room.Dao
 import androidx.room.Insert

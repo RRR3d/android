@@ -1,6 +1,6 @@
-package io.homeassistant.companion.android.common.data.integration
+package io.hivebit.companion.android.common.data.integration
 
-import io.homeassistant.companion.android.common.util.AnySerializer
+import io.hivebit.companion.android.common.util.AnySerializer
 import kotlinx.serialization.Serializable
 
 @Serializable

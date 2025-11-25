@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.vehicle
+package io.hivebit.companion.android.vehicle
 
 import androidx.car.app.CarContext
 import androidx.car.app.Screen
@@ -6,7 +6,7 @@ import androidx.car.app.model.Action
 import androidx.car.app.model.CarIcon
 import androidx.car.app.model.MessageTemplate
 import androidx.car.app.model.Template
-import io.homeassistant.companion.android.common.R
+import io.hivebit.companion.android.common.R
 
 class SwitchToDrivingOptimizedScreen(carContext: CarContext) : Screen(carContext) {
 

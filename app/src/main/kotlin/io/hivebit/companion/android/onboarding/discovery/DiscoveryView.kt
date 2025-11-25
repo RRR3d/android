@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.discovery
+package io.hivebit.companion.android.onboarding.discovery
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.clickable
@@ -39,19 +39,19 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.onboarding.OnboardingHeaderView
-import io.homeassistant.companion.android.onboarding.OnboardingScreen
-import io.homeassistant.companion.android.util.homeAssistantInstance1
-import io.homeassistant.companion.android.util.homeAssistantInstance2
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.onboarding.OnboardingHeaderView
+import io.hivebit.companion.android.onboarding.OnboardingScreen
+import io.hivebit.companion.android.util.homeAssistantInstance1
+import io.hivebit.companion.android.util.homeAssistantInstance2
 import kotlinx.coroutines.delay
 
 @Composable
 fun DiscoveryView(
     discoveryActive: Boolean,
-    foundInstances: SnapshotStateList<HomeAssistantInstance>,
+    foundInstances: SnapshotStateList<HivebitInstance>,
     manualSetupClicked: () -> Unit,
-    instanceClicked: (instance: HomeAssistantInstance) -> Unit,
+    instanceClicked: (instance: HivebitInstance) -> Unit,
 ) {
     var discoveryTimeout by remember { mutableStateOf(false) }
     LaunchedEffect("discoveryTimeout") {
@@ -129,7 +129,7 @@ fun DiscoveryView(
 }
 
 @Composable
-private fun DiscoveredInstanceRow(instance: HomeAssistantInstance, onClick: () -> Unit) {
+private fun DiscoveredInstanceRow(instance: HivebitInstance, onClick: () -> Unit) {
     Row(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceBetween,

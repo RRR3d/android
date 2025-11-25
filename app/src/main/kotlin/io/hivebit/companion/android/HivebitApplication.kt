@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android
+package io.hivebit.companion.android
 
 import android.app.Application
 import android.app.NotificationManager
@@ -19,29 +19,29 @@ import coil3.PlatformContext
 import coil3.SingletonImageLoader
 import coil3.network.okhttp.OkHttpNetworkFetcherFactory
 import dagger.hilt.android.HiltAndroidApp
-import io.homeassistant.companion.android.common.data.keychain.KeyChainRepository
-import io.homeassistant.companion.android.common.data.keychain.NamedKeyChain
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.common.sensors.AudioSensorManager
-import io.homeassistant.companion.android.common.sensors.LastUpdateManager
-import io.homeassistant.companion.android.common.util.HAStrictMode
-import io.homeassistant.companion.android.common.util.isAutomotive
-import io.homeassistant.companion.android.database.AppDatabase
-import io.homeassistant.companion.android.database.settings.SensorUpdateFrequencySetting
-import io.homeassistant.companion.android.sensors.SensorReceiver
-import io.homeassistant.companion.android.settings.language.LanguagesManager
-import io.homeassistant.companion.android.themes.NightModeManager
-import io.homeassistant.companion.android.util.LifecycleHandler
-import io.homeassistant.companion.android.util.QuestUtil
-import io.homeassistant.companion.android.util.initCrashSaving
-import io.homeassistant.companion.android.util.threadPolicyIgnoredViolationRules
-import io.homeassistant.companion.android.util.vmPolicyIgnoredViolationRules
-import io.homeassistant.companion.android.websocket.WebsocketBroadcastReceiver
-import io.homeassistant.companion.android.widgets.button.ButtonWidget
-import io.homeassistant.companion.android.widgets.entity.EntityWidget
-import io.homeassistant.companion.android.widgets.mediaplayer.MediaPlayerControlsWidget
-import io.homeassistant.companion.android.widgets.template.TemplateWidget
-import io.homeassistant.companion.android.widgets.todo.TodoWidget
+import io.hivebit.companion.android.common.data.keychain.KeyChainRepository
+import io.hivebit.companion.android.common.data.keychain.NamedKeyChain
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.common.sensors.AudioSensorManager
+import io.hivebit.companion.android.common.sensors.LastUpdateManager
+import io.hivebit.companion.android.common.util.HAStrictMode
+import io.hivebit.companion.android.common.util.isAutomotive
+import io.hivebit.companion.android.database.AppDatabase
+import io.hivebit.companion.android.database.settings.SensorUpdateFrequencySetting
+import io.hivebit.companion.android.sensors.SensorReceiver
+import io.hivebit.companion.android.settings.language.LanguagesManager
+import io.hivebit.companion.android.themes.NightModeManager
+import io.hivebit.companion.android.util.LifecycleHandler
+import io.hivebit.companion.android.util.QuestUtil
+import io.hivebit.companion.android.util.initCrashSaving
+import io.hivebit.companion.android.util.threadPolicyIgnoredViolationRules
+import io.hivebit.companion.android.util.vmPolicyIgnoredViolationRules
+import io.hivebit.companion.android.websocket.WebsocketBroadcastReceiver
+import io.hivebit.companion.android.widgets.button.ButtonWidget
+import io.hivebit.companion.android.widgets.entity.EntityWidget
+import io.hivebit.companion.android.widgets.mediaplayer.MediaPlayerControlsWidget
+import io.hivebit.companion.android.widgets.template.TemplateWidget
+import io.hivebit.companion.android.widgets.todo.TodoWidget
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -51,7 +51,7 @@ import okhttp3.OkHttpClient
 import timber.log.Timber
 
 @HiltAndroidApp
-open class HomeAssistantApplication :
+open class HivebitApplication :
     Application(),
     SingletonImageLoader.Factory {
 
@@ -276,7 +276,7 @@ open class HomeAssistantApplication :
                 if (setting.value != "" && setting.value != "SensorWorker") {
                     val settingSplit = setting.value.split(',')
                     ContextCompat.registerReceiver(
-                        this@HomeAssistantApplication,
+                        this@HivebitApplication,
                         sensorReceiver,
                         IntentFilter().apply {
                             addAction(settingSplit[0])
@@ -316,7 +316,7 @@ open class HomeAssistantApplication :
                     )
             ) {
                 ContextCompat.registerReceiver(
-                    this@HomeAssistantApplication,
+                    this@HivebitApplication,
                     sensorReceiver,
                     IntentFilter(Intent.ACTION_TIME_TICK),
                     ContextCompat.RECEIVER_EXPORTED,

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.home.views
+package io.hivebit.companion.android.home.views
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -12,14 +12,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.wear.compose.material.CircularProgressIndicator
 import androidx.wear.tooling.preview.devices.WearDevices
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.sensors.SensorManager
-import io.homeassistant.companion.android.database.sensor.Sensor
-import io.homeassistant.companion.android.theme.WearAppTheme
-import io.homeassistant.companion.android.util.batterySensorManager
-import io.homeassistant.companion.android.util.sensorList
-import io.homeassistant.companion.android.views.ListHeader
-import io.homeassistant.companion.android.views.ThemeLazyColumn
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.sensors.SensorManager
+import io.hivebit.companion.android.database.sensor.Sensor
+import io.hivebit.companion.android.theme.WearAppTheme
+import io.hivebit.companion.android.util.batterySensorManager
+import io.hivebit.companion.android.util.sensorList
+import io.hivebit.companion.android.views.ListHeader
+import io.hivebit.companion.android.views.ThemeLazyColumn
 
 @Composable
 fun SensorManagerUi(

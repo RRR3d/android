@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.tiles
+package io.hivebit.companion.android.tiles
 
 import androidx.core.content.ContextCompat
 import androidx.wear.protolayout.ActionBuilders
@@ -18,10 +18,10 @@ import androidx.wear.tiles.TileBuilders.Tile
 import androidx.wear.tiles.TileService
 import com.google.common.util.concurrent.ListenableFuture
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.conversation.ConversationActivity
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.conversation.ConversationActivity
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -63,7 +63,7 @@ class ConversationTile : TileService() {
                         .setAndroidResourceByResId(
                             ResourceBuilders.AndroidImageResourceByResId.Builder()
                                 .setResourceId(
-                                    io.homeassistant.companion.android.R.drawable.ic_comment_processing_outline,
+                                    io.hivebit.companion.android.R.drawable.ic_comment_processing_outline,
                                 )
                                 .build(),
                         )

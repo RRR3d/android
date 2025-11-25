@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.sethomenetwork
+package io.hivebit.companion.android.onboarding.sethomenetwork
 
 import androidx.annotation.VisibleForTesting
 import androidx.compose.foundation.Image
@@ -34,19 +34,19 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.compose.composable.HAAccentButton
-import io.homeassistant.companion.android.common.compose.composable.HAHint
-import io.homeassistant.companion.android.common.compose.composable.HASwitch
-import io.homeassistant.companion.android.common.compose.composable.HATextField
-import io.homeassistant.companion.android.common.compose.theme.HADimens
-import io.homeassistant.companion.android.common.compose.theme.HATextStyle
-import io.homeassistant.companion.android.common.compose.theme.HAThemeForPreview
-import io.homeassistant.companion.android.common.compose.theme.LocalHAColorScheme
-import io.homeassistant.companion.android.common.compose.theme.MaxButtonWidth
-import io.homeassistant.companion.android.compose.HAPreviews
-import io.homeassistant.companion.android.compose.composable.HATopBar
-import io.homeassistant.companion.android.onboarding.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.compose.composable.HAAccentButton
+import io.hivebit.companion.android.common.compose.composable.HAHint
+import io.hivebit.companion.android.common.compose.composable.HASwitch
+import io.hivebit.companion.android.common.compose.composable.HATextField
+import io.hivebit.companion.android.common.compose.theme.HADimens
+import io.hivebit.companion.android.common.compose.theme.HATextStyle
+import io.hivebit.companion.android.common.compose.theme.HAThemeForPreview
+import io.hivebit.companion.android.common.compose.theme.LocalHAColorScheme
+import io.hivebit.companion.android.common.compose.theme.MaxButtonWidth
+import io.hivebit.companion.android.compose.HAPreviews
+import io.hivebit.companion.android.compose.composable.HATopBar
+import io.hivebit.companion.android.onboarding.R
 
 private val MaxContentWidth = MaxButtonWidth
 

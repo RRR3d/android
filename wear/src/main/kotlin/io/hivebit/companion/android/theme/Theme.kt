@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.theme
+package io.hivebit.companion.android.theme
 
 import androidx.compose.runtime.Composable
 import androidx.wear.compose.material3.MaterialTheme

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.sensors
+package io.hivebit.companion.android.common.sensors
 
 import android.content.Context
 import android.content.pm.PackageManager
@@ -7,7 +7,7 @@ import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager.SENSOR_DELAY_NORMAL
 import androidx.core.content.getSystemService
-import io.homeassistant.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.R as commonR
 import java.math.RoundingMode
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

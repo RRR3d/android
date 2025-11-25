@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.sensors
+package io.hivebit.companion.android.common.sensors
 
 import android.content.Context
 import android.content.Intent
@@ -7,9 +7,9 @@ import android.os.BatteryManager
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.util.STATE_UNAVAILABLE
-import io.homeassistant.companion.android.common.util.STATE_UNKNOWN
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.util.STATE_UNAVAILABLE
+import io.hivebit.companion.android.common.util.STATE_UNKNOWN
 import java.math.RoundingMode
 import kotlin.math.floor
 import timber.log.Timber

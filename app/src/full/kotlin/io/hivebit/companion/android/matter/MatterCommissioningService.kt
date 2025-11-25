@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.matter
+package io.hivebit.companion.android.matter
 
 import android.app.Service
 import android.content.Intent
@@ -8,7 +8,7 @@ import com.google.android.gms.home.matter.commissioning.CommissioningRequestMeta
 import com.google.android.gms.home.matter.commissioning.CommissioningService
 import com.google.android.gms.home.matter.commissioning.CommissioningService.CommissioningError
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.servers.ServerManager
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

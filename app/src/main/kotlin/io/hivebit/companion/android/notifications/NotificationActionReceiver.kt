@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.notifications
+package io.hivebit.companion.android.notifications
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -9,11 +9,11 @@ import androidx.core.app.NotificationManagerCompat
 import androidx.core.app.RemoteInput
 import androidx.core.content.IntentCompat
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.cancel
-import io.homeassistant.companion.android.database.notification.NotificationDao
-import io.homeassistant.companion.android.notifications.MessagingManager.Companion.KEY_TEXT_REPLY
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.cancel
+import io.hivebit.companion.android.database.notification.NotificationDao
+import io.hivebit.companion.android.notifications.MessagingManager.Companion.KEY_TEXT_REPLY
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

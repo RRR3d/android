@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets.todo
+package io.hivebit.companion.android.widgets.todo
 
 import android.content.Context
 import androidx.annotation.VisibleForTesting
@@ -42,13 +42,13 @@ import dagger.hilt.EntryPoint
 import dagger.hilt.EntryPoints
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.database.widget.WidgetBackgroundType
-import io.homeassistant.companion.android.util.compose.HomeAssistantGlanceTheme
-import io.homeassistant.companion.android.util.compose.HomeAssistantGlanceTypography
-import io.homeassistant.companion.android.util.compose.glanceStringResource
-import io.homeassistant.companion.android.widgets.todo.TodoState.Companion.getColors
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.database.widget.WidgetBackgroundType
+import io.hivebit.companion.android.util.compose.HivebitGlanceTheme
+import io.hivebit.companion.android.util.compose.HivebitGlanceTypography
+import io.hivebit.companion.android.util.compose.glanceStringResource
+import io.hivebit.companion.android.widgets.todo.TodoState.Companion.getColors
 
 /**
  * Glance widget for managing and displaying a Todo List.
@@ -83,7 +83,7 @@ class TodoGlanceAppWidget : GlanceAppWidget() {
 
             val state by flow.collectAsState(LoadingTodoState)
 
-            HomeAssistantGlanceTheme(
+            HivebitGlanceTheme(
                 colors = state.getColors(),
             ) {
                 ScreenForState(state)
@@ -119,7 +119,7 @@ private fun LoadingScreen() {
     ) {
         CircularProgressIndicator(
             color = GlanceTheme.colors.primary,
-            modifier = GlanceModifier.size(HomeAssistantGlanceTheme.dimensions.iconSize),
+            modifier = GlanceModifier.size(HivebitGlanceTheme.dimensions.iconSize),
         )
     }
 }
@@ -134,11 +134,11 @@ private fun EmptyScreen() {
         Image(
             provider = ImageProvider(R.drawable.app_icon_launch),
             contentDescription = null,
-            modifier = GlanceModifier.padding(bottom = 8.dp).size(HomeAssistantGlanceTheme.dimensions.iconSize),
+            modifier = GlanceModifier.padding(bottom = 8.dp).size(HivebitGlanceTheme.dimensions.iconSize),
         )
         Text(
             text = glanceStringResource(commonR.string.widget_no_configuration),
-            style = HomeAssistantGlanceTypography.titleSmall.copy(textAlign = TextAlign.Center),
+            style = HivebitGlanceTypography.titleSmall.copy(textAlign = TextAlign.Center),
             modifier = GlanceModifier.padding(horizontal = 8.dp),
         )
     }
@@ -172,7 +172,7 @@ private fun Screen(state: TodoStateWithData) {
 private fun EmptyContent() {
     Text(
         text = glanceStringResource(commonR.string.widget_todo_empty),
-        style = HomeAssistantGlanceTypography.bodyMedium,
+        style = HivebitGlanceTypography.bodyMedium,
         modifier = GlanceModifier.padding(all = 16.dp),
     )
 }
@@ -202,12 +202,12 @@ private fun TitleBar(listName: String?, serverId: Int, listEntityId: String, out
     ) {
         Text(
             text = listName ?: glanceStringResource(commonR.string.widget_todo_label),
-            style = HomeAssistantGlanceTypography.titleLarge,
+            style = HivebitGlanceTypography.titleLarge,
             maxLines = 1,
             modifier = GlanceModifier.padding(end = 4.dp).defaultWeight(),
         )
         CircleIconButton(
-            modifier = GlanceModifier.size(HomeAssistantGlanceTheme.dimensions.iconSize).semantics {
+            modifier = GlanceModifier.size(HivebitGlanceTheme.dimensions.iconSize).semantics {
                 testTag = "Refresh"
             },
             contentColor = GlanceTheme.colors.primary,
@@ -223,7 +223,7 @@ private fun TitleBar(listName: String?, serverId: Int, listEntityId: String, out
             onClick = actionRefreshTodo(),
         )
         SquareIconButton(
-            modifier = GlanceModifier.size(HomeAssistantGlanceTheme.dimensions.iconSize).semantics { testTag = "Add" },
+            modifier = GlanceModifier.size(HivebitGlanceTheme.dimensions.iconSize).semantics { testTag = "Add" },
             imageProvider = ImageProvider(R.drawable.ic_plus),
             contentDescription = LocalContext.current.getString(commonR.string.widget_todo_add),
             backgroundColor = GlanceTheme.colors.primary,
@@ -234,7 +234,7 @@ private fun TitleBar(listName: String?, serverId: Int, listEntityId: String, out
 
 @Composable
 private fun TodoItem(todoItem: TodoItemState) {
-    var textStyle = HomeAssistantGlanceTypography.bodySmall
+    var textStyle = HivebitGlanceTypography.bodySmall
     if (todoItem.done) textStyle = textStyle.copy(textDecoration = TextDecoration.LineThrough)
     CheckBox(
         checked = todoItem.done,
@@ -251,7 +251,7 @@ private fun TodoItem(todoItem: TodoItemState) {
 @Preview(250, 320)
 @Composable
 private fun ScreenPreview() {
-    HomeAssistantGlanceTheme {
+    HivebitGlanceTheme {
         ScreenForState(
             TodoStateWithData(
                 backgroundType = WidgetBackgroundType.DYNAMICCOLOR,
@@ -275,7 +275,7 @@ private fun ScreenPreview() {
 @Preview
 @Composable
 private fun ScreenPreviewEmptyItems() {
-    HomeAssistantGlanceTheme {
+    HivebitGlanceTheme {
         ScreenForState(
             TodoStateWithData(
                 backgroundType = WidgetBackgroundType.DYNAMICCOLOR,
@@ -295,7 +295,7 @@ private fun ScreenPreviewEmptyItems() {
 @Preview
 @Composable
 private fun ScreenPreviewOutOfSync() {
-    HomeAssistantGlanceTheme {
+    HivebitGlanceTheme {
         ScreenForState(
             TodoStateWithData(
                 backgroundType = WidgetBackgroundType.DYNAMICCOLOR,
@@ -315,7 +315,7 @@ private fun ScreenPreviewOutOfSync() {
 @Preview
 @Composable
 private fun ScreenPreviewEmpty() {
-    HomeAssistantGlanceTheme {
+    HivebitGlanceTheme {
         ScreenForState(EmptyTodoState)
     }
 }
@@ -324,7 +324,7 @@ private fun ScreenPreviewEmpty() {
 @Preview
 @Composable
 private fun ScreenPreviewLoading() {
-    HomeAssistantGlanceTheme {
+    HivebitGlanceTheme {
         ScreenForState(LoadingTodoState)
     }
 }

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.wear
+package io.hivebit.companion.android.settings.wear
 
 import android.content.Context
 import android.content.Intent
@@ -18,12 +18,12 @@ import com.google.android.gms.wearable.CapabilityInfo
 import com.google.android.gms.wearable.NodeClient
 import com.google.android.gms.wearable.Wearable
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.settings.wear.SettingsWearViewModel.Companion.CAPABILITY_WEAR_APP
-import io.homeassistant.companion.android.settings.wear.views.SettingsWearMainView
-import io.homeassistant.companion.android.settings.wear.views.SettingsWearOnboardingView
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
-import io.homeassistant.companion.android.util.enableEdgeToEdgeCompat
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.settings.wear.SettingsWearViewModel.Companion.CAPABILITY_WEAR_APP
+import io.hivebit.companion.android.settings.wear.views.SettingsWearMainView
+import io.hivebit.companion.android.settings.wear.views.SettingsWearOnboardingView
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.util.enableEdgeToEdgeCompat
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -178,7 +178,7 @@ class SettingsWearActivity :
 
     companion object {
         private const val PLAY_STORE_APP_URI =
-            "market://details?id=io.homeassistant.companion.android"
+            "market://details?id=io.hivebit.companion.android"
 
         fun newInstance(context: Context): Intent {
             return Intent(context, SettingsWearActivity::class.java)

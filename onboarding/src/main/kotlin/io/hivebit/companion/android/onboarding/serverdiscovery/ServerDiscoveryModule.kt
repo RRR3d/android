@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.serverdiscovery
+package io.hivebit.companion.android.onboarding.serverdiscovery
 
 import android.content.Context
 import android.net.nsd.NsdManager
@@ -23,5 +23,5 @@ internal interface ServerDiscoveryModule {
 
     @Binds
     @Singleton
-    fun bindsHomeAssistantSearcher(impl: HomeAssistantSearcherImpl): HomeAssistantSearcher
+    fun bindsHivebitSearcher(impl: HivebitSearcherImpl): HivebitSearcher
 }

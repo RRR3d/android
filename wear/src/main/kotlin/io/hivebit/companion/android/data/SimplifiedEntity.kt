@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.data
+package io.hivebit.companion.android.data
 
 data class SimplifiedEntity(val entityId: String, val friendlyName: String = entityId, val icon: String = "") {
     constructor(entityString: String) : this(

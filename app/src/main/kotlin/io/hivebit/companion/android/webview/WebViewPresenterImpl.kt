@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.webview
+package io.hivebit.companion.android.webview
 
 import android.Manifest
 import android.app.Activity
@@ -11,21 +11,21 @@ import androidx.core.content.ContextCompat
 import androidx.core.graphics.toColorInt
 import androidx.core.net.toUri
 import dagger.hilt.android.qualifiers.ActivityContext
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.authentication.SessionState
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.DisabledLocationHandler
-import io.homeassistant.companion.android.common.util.GestureAction
-import io.homeassistant.companion.android.common.util.GestureDirection
-import io.homeassistant.companion.android.common.util.HAGesture
-import io.homeassistant.companion.android.improv.ImprovRepository
-import io.homeassistant.companion.android.matter.MatterManager
-import io.homeassistant.companion.android.thread.ThreadManager
-import io.homeassistant.companion.android.util.UrlUtil
-import io.homeassistant.companion.android.util.UrlUtil.baseIsEqual
-import io.homeassistant.companion.android.webview.externalbus.ExternalBusMessage
-import io.homeassistant.companion.android.webview.externalbus.ExternalBusRepository
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.authentication.SessionState
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.DisabledLocationHandler
+import io.hivebit.companion.android.common.util.GestureAction
+import io.hivebit.companion.android.common.util.GestureDirection
+import io.hivebit.companion.android.common.util.HAGesture
+import io.hivebit.companion.android.improv.ImprovRepository
+import io.hivebit.companion.android.matter.MatterManager
+import io.hivebit.companion.android.thread.ThreadManager
+import io.hivebit.companion.android.util.UrlUtil
+import io.hivebit.companion.android.util.UrlUtil.baseIsEqual
+import io.hivebit.companion.android.webview.externalbus.ExternalBusMessage
+import io.hivebit.companion.android.webview.externalbus.ExternalBusRepository
 import java.net.SocketTimeoutException
 import java.net.URL
 import java.util.regex.Matcher
@@ -200,7 +200,7 @@ class WebViewPresenterImpl @Inject constructor(
     override fun checkSecurityVersion() {
         mainScope.launch {
             try {
-                if (!serverManager.integrationRepository(serverId).isHomeAssistantVersionAtLeast(2021, 1, 5)) {
+                if (!serverManager.integrationRepository(serverId).isHivebitVersionAtLeast(2021, 1, 5)) {
                     if (serverManager.integrationRepository(serverId).shouldNotifySecurityWarning()) {
                         view.showError(WebView.ErrorType.SECURITY_WARNING)
                     } else {

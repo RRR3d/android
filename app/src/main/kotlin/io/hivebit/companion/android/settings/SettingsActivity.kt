@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings
+package io.hivebit.companion.android.settings
 
 import android.content.Context
 import android.content.Intent
@@ -17,18 +17,18 @@ import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.EntryPointAccessors
 import dagger.hilt.android.components.ActivityComponent
 import eightbitlab.com.blurview.BlurView
-import io.homeassistant.companion.android.BaseActivity
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.authenticator.Authenticator
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.settings.developer.DeveloperSettingsFragment
-import io.homeassistant.companion.android.settings.notification.NotificationHistoryFragment
-import io.homeassistant.companion.android.settings.qs.ManageTilesFragment
-import io.homeassistant.companion.android.settings.sensor.SensorDetailFragment
-import io.homeassistant.companion.android.settings.server.ServerSettingsFragment
-import io.homeassistant.companion.android.settings.websocket.WebsocketSettingFragment
-import io.homeassistant.companion.android.util.applySafeDrawingInsets
+import io.hivebit.companion.android.BaseActivity
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.authenticator.Authenticator
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.settings.developer.DeveloperSettingsFragment
+import io.hivebit.companion.android.settings.notification.NotificationHistoryFragment
+import io.hivebit.companion.android.settings.qs.ManageTilesFragment
+import io.hivebit.companion.android.settings.sensor.SensorDetailFragment
+import io.hivebit.companion.android.settings.server.ServerSettingsFragment
+import io.hivebit.companion.android.settings.websocket.WebsocketSettingFragment
+import io.hivebit.companion.android.util.applySafeDrawingInsets
 import javax.inject.Inject
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking

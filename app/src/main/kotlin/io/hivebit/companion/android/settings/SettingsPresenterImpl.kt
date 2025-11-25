@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings
+package io.hivebit.companion.android.settings
 
 import android.app.role.RoleManager
 import android.content.ComponentName
@@ -9,33 +9,33 @@ import android.provider.Settings
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.getSystemService
 import androidx.preference.PreferenceDataStore
-import io.homeassistant.companion.android.BuildConfig
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.DeviceRegistration
-import io.homeassistant.companion.android.common.data.integration.impl.entities.RateLimitResponse
-import io.homeassistant.companion.android.common.data.prefs.NightModeTheme
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.AppVersion
-import io.homeassistant.companion.android.common.util.MessagingTokenProvider
-import io.homeassistant.companion.android.common.util.isAutomotive
-import io.homeassistant.companion.android.database.sensor.SensorDao
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.database.server.ServerConnectionInfo
-import io.homeassistant.companion.android.database.server.ServerSessionInfo
-import io.homeassistant.companion.android.database.server.ServerType
-import io.homeassistant.companion.android.database.server.ServerUserInfo
-import io.homeassistant.companion.android.database.settings.SensorUpdateFrequencySetting
-import io.homeassistant.companion.android.database.settings.Setting
-import io.homeassistant.companion.android.database.settings.SettingsDao
-import io.homeassistant.companion.android.database.settings.WebsocketSetting
-import io.homeassistant.companion.android.onboarding.OnboardApp
-import io.homeassistant.companion.android.sensors.LocationSensorManager
-import io.homeassistant.companion.android.settings.language.LanguagesManager
-import io.homeassistant.companion.android.themes.NightModeManager
-import io.homeassistant.companion.android.util.ChangeLog
-import io.homeassistant.companion.android.util.UrlUtil
+import io.hivebit.companion.android.BuildConfig
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.DeviceRegistration
+import io.hivebit.companion.android.common.data.integration.impl.entities.RateLimitResponse
+import io.hivebit.companion.android.common.data.prefs.NightModeTheme
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.AppVersion
+import io.hivebit.companion.android.common.util.MessagingTokenProvider
+import io.hivebit.companion.android.common.util.isAutomotive
+import io.hivebit.companion.android.database.sensor.SensorDao
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.database.server.ServerConnectionInfo
+import io.hivebit.companion.android.database.server.ServerSessionInfo
+import io.hivebit.companion.android.database.server.ServerType
+import io.hivebit.companion.android.database.server.ServerUserInfo
+import io.hivebit.companion.android.database.settings.SensorUpdateFrequencySetting
+import io.hivebit.companion.android.database.settings.Setting
+import io.hivebit.companion.android.database.settings.SettingsDao
+import io.hivebit.companion.android.database.settings.WebsocketSetting
+import io.hivebit.companion.android.onboarding.OnboardApp
+import io.hivebit.companion.android.sensors.LocationSensorManager
+import io.hivebit.companion.android.settings.language.LanguagesManager
+import io.hivebit.companion.android.themes.NightModeManager
+import io.hivebit.companion.android.util.ChangeLog
+import io.hivebit.companion.android.util.UrlUtil
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -66,12 +66,12 @@ class SettingsPresenterImpl @Inject constructor(
 
     private val voiceCommandAppComponent = ComponentName(
         BuildConfig.APPLICATION_ID,
-        "io.homeassistant.companion.android.assist.VoiceCommandIntentActivity",
+        "io.hivebit.companion.android.assist.VoiceCommandIntentActivity",
     )
 
     private val launcherAliasComponent = ComponentName(
         BuildConfig.APPLICATION_ID,
-        "io.homeassistant.companion.android.launch.LauncherAlias",
+        "io.hivebit.companion.android.launch.LauncherAlias",
     )
 
     private var suggestionFlow = MutableStateFlow<SettingsHomeSuggestion?>(null)

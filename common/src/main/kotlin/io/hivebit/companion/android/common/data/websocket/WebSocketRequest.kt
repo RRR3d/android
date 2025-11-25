@@ -1,6 +1,6 @@
-package io.homeassistant.companion.android.common.data.websocket
+package io.hivebit.companion.android.common.data.websocket
 
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.RawMessageSocketResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.RawMessageSocketResponse
 import java.util.concurrent.atomic.AtomicBoolean
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.seconds

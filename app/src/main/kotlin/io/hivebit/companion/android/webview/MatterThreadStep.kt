@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.webview
+package io.hivebit.companion.android.webview
 
 enum class MatterThreadStep {
     NOT_STARTED,

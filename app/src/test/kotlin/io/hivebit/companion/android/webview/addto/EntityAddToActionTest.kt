@@ -1,8 +1,8 @@
-package io.homeassistant.companion.android.webview.addto
+package io.hivebit.companion.android.webview.addto
 
 import android.content.Context
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.util.isAutomotive
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.util.isAutomotive
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.mockkStatic
@@ -19,12 +19,12 @@ class EntityAddToActionTest {
     @BeforeEach
     fun setUp() {
         context = mockk(relaxed = true)
-        mockkStatic("io.homeassistant.companion.android.common.util.ContextExtKt")
+        mockkStatic("io.hivebit.companion.android.common.util.ContextExtKt")
     }
 
     @AfterEach
     fun tearDown() {
-        unmockkStatic("io.homeassistant.companion.android.common.util.ContextExtKt")
+        unmockkStatic("io.hivebit.companion.android.common.util.ContextExtKt")
     }
 
     @Test

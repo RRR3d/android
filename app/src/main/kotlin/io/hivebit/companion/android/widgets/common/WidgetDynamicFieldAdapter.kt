@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets.common
+package io.hivebit.companion.android.widgets.common
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,10 +7,10 @@ import android.widget.AutoCompleteTextView
 import android.widget.MultiAutoCompleteTextView.CommaTokenizer
 import androidx.core.widget.doAfterTextChanged
 import androidx.recyclerview.widget.RecyclerView
-import io.homeassistant.companion.android.common.data.integration.Action
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.util.capitalize
-import io.homeassistant.companion.android.databinding.WidgetButtonConfigureDynamicFieldBinding
+import io.hivebit.companion.android.common.data.integration.Action
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.util.capitalize
+import io.hivebit.companion.android.databinding.WidgetButtonConfigureDynamicFieldBinding
 import java.util.Locale
 import kotlin.Exception
 import timber.log.Timber

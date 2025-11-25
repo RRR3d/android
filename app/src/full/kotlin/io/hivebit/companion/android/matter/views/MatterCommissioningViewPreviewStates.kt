@@ -1,7 +1,7 @@
-package io.homeassistant.companion.android.matter.views
+package io.hivebit.companion.android.matter.views
 
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
-import io.homeassistant.companion.android.matter.MatterCommissioningViewModel
+import io.hivebit.companion.android.matter.MatterCommissioningViewModel
 
 class MatterCommissioningViewPreviewStates :
     PreviewParameterProvider<MatterCommissioningViewModel.CommissioningFlowStep> {

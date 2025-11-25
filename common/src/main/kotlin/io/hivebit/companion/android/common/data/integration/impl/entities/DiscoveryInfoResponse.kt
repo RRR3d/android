@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.data.integration.impl.entities
+package io.hivebit.companion.android.common.data.integration.impl.entities
 
 data class DiscoveryInfoResponse(
     val baseUrl: String,

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding
+package io.hivebit.companion.android.onboarding
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -25,9 +25,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.mikepenz.iconics.compose.Image
 import com.mikepenz.iconics.typeface.IIcon
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.util.compose.STEP_SCREEN_MAX_WIDTH_DP
-import io.homeassistant.companion.android.util.compose.screenWidth
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.util.compose.STEP_SCREEN_MAX_WIDTH_DP
+import io.hivebit.companion.android.util.compose.screenWidth
 import kotlin.math.min
 
 /**

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.nfc
+package io.hivebit.companion.android.nfc
 
 import android.content.Intent
 import android.net.Uri
@@ -8,12 +8,12 @@ import android.widget.Toast
 import androidx.activity.compose.setContent
 import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.BaseActivity
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.nfc.views.TagReaderView
-import io.homeassistant.companion.android.util.UrlUtil
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.BaseActivity
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.nfc.views.TagReaderView
+import io.hivebit.companion.android.util.UrlUtil
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
 import javax.inject.Inject
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll

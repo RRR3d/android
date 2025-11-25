@@ -1,15 +1,15 @@
-package io.homeassistant.companion.android.launch
+package io.hivebit.companion.android.launch
 
 import android.content.Context
 import androidx.work.WorkManager
 import dagger.hilt.android.qualifiers.ActivityContext
 import dagger.hilt.android.scopes.ActivityScoped
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.data.authentication.SessionState
-import io.homeassistant.companion.android.common.data.network.NetworkState
-import io.homeassistant.companion.android.common.data.network.NetworkStatusMonitor
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.ResyncRegistrationWorker.Companion.enqueueResyncRegistration
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.data.authentication.SessionState
+import io.hivebit.companion.android.common.data.network.NetworkState
+import io.hivebit.companion.android.common.data.network.NetworkStatusMonitor
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.ResyncRegistrationWorker.Companion.enqueueResyncRegistration
 import javax.inject.Inject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collect

@@ -1,10 +1,10 @@
-package io.homeassistant.companion.android.common.data.servers
+package io.hivebit.companion.android.common.data.servers
 
-import io.homeassistant.companion.android.common.data.authentication.AuthenticationRepository
-import io.homeassistant.companion.android.common.data.integration.IntegrationRepository
-import io.homeassistant.companion.android.common.data.websocket.WebSocketRepository
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.database.server.ServerType
+import io.hivebit.companion.android.common.data.authentication.AuthenticationRepository
+import io.hivebit.companion.android.common.data.integration.IntegrationRepository
+import io.hivebit.companion.android.common.data.websocket.WebSocketRepository
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.database.server.ServerType
 import kotlinx.coroutines.flow.StateFlow
 
 interface ServerManager {

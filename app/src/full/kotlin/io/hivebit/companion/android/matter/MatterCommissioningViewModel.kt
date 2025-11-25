@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.matter
+package io.hivebit.companion.android.matter
 
 import android.app.Application
 import android.content.IntentSender
@@ -10,8 +10,8 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.thread.ThreadManager
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.thread.ThreadManager
 import javax.inject.Inject
 import kotlinx.coroutines.launch
 

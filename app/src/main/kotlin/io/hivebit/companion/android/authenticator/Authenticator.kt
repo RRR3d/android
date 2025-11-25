@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.authenticator
+package io.hivebit.companion.android.authenticator
 
 import android.content.Context
 import androidx.biometric.BiometricManager.Authenticators

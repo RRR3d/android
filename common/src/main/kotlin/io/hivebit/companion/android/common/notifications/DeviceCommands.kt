@@ -1,9 +1,9 @@
-package io.homeassistant.companion.android.common.notifications
+package io.hivebit.companion.android.common.notifications
 
 import android.content.Context
-import io.homeassistant.companion.android.common.sensors.BluetoothSensorManager
-import io.homeassistant.companion.android.common.sensors.SensorUpdateReceiver
-import io.homeassistant.companion.android.database.sensor.SensorDao
+import io.hivebit.companion.android.common.sensors.BluetoothSensorManager
+import io.hivebit.companion.android.common.sensors.SensorUpdateReceiver
+import io.hivebit.companion.android.database.sensor.SensorDao
 import java.util.UUID
 import timber.log.Timber
 

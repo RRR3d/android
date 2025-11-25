@@ -1,14 +1,14 @@
-package io.homeassistant.companion.android.onboarding.nameyourdevice
+package io.hivebit.companion.android.onboarding.nameyourdevice
 
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication
-import io.homeassistant.companion.android.HiltComponentActivity
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.onboarding.nameyourdevice.navigation.HandleNameYourDeviceNavigationEvents
-import io.homeassistant.companion.android.testing.unit.ConsoleLogRule
-import io.homeassistant.companion.android.testing.unit.MainDispatcherJUnit4Rule
+import io.hivebit.companion.android.HiltComponentActivity
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.onboarding.nameyourdevice.navigation.HandleNameYourDeviceNavigationEvents
+import io.hivebit.companion.android.testing.unit.ConsoleLogRule
+import io.hivebit.companion.android.testing.unit.MainDispatcherJUnit4Rule
 import io.mockk.every
 import io.mockk.mockk
 import kotlinx.coroutines.flow.MutableSharedFlow

@@ -1,11 +1,11 @@
-package io.homeassistant.companion.android.onboarding.manualserver.navigation
+package io.hivebit.companion.android.onboarding.manualserver.navigation
 
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavOptions
 import androidx.navigation.compose.composable
-import io.homeassistant.companion.android.onboarding.manualserver.ManualServerScreen
+import io.hivebit.companion.android.onboarding.manualserver.ManualServerScreen
 import java.net.URL
 import kotlinx.serialization.Serializable
 

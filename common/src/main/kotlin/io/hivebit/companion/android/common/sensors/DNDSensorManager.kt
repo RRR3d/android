@@ -1,11 +1,11 @@
-package io.homeassistant.companion.android.common.sensors
+package io.hivebit.companion.android.common.sensors
 
 import android.app.NotificationManager
 import android.content.Context
 import androidx.core.content.getSystemService
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.util.STATE_UNKNOWN
-import io.homeassistant.companion.android.common.util.isAutomotive
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.util.STATE_UNKNOWN
+import io.hivebit.companion.android.common.util.isAutomotive
 
 class DNDSensorManager : SensorManager {
     companion object {

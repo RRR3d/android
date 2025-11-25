@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.home.views
+package io.hivebit.companion.android.home.views
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider

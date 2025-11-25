@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.sensor
+package io.hivebit.companion.android.settings.sensor
 
 import android.app.Application
 import androidx.annotation.IdRes
@@ -8,11 +8,11 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.sensors.SensorManager
-import io.homeassistant.companion.android.database.sensor.Sensor
-import io.homeassistant.companion.android.database.sensor.SensorDao
-import io.homeassistant.companion.android.sensors.SensorReceiver
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.sensors.SensorManager
+import io.hivebit.companion.android.database.sensor.Sensor
+import io.hivebit.companion.android.database.sensor.SensorDao
+import io.hivebit.companion.android.sensors.SensorReceiver
 import javax.inject.Inject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

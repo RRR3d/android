@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.conversation.views
+package io.hivebit.companion.android.conversation.views
 
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.RepeatMode
@@ -52,16 +52,16 @@ import androidx.wear.compose.navigation.rememberSwipeDismissableNavController
 import androidx.wear.tooling.preview.devices.WearDevices
 import com.mikepenz.iconics.compose.Image
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.assist.AssistViewModelBase
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AssistPipelineResponse
-import io.homeassistant.companion.android.conversation.ConversationViewModel
-import io.homeassistant.companion.android.theme.WearAppTheme
-import io.homeassistant.companion.android.theme.getFilledTonalButtonColors
-import io.homeassistant.companion.android.theme.wearColorScheme
-import io.homeassistant.companion.android.util.KeepScreenOn
-import io.homeassistant.companion.android.views.ListHeader
-import io.homeassistant.companion.android.views.ThemeLazyColumn
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.assist.AssistViewModelBase
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AssistPipelineResponse
+import io.hivebit.companion.android.conversation.ConversationViewModel
+import io.hivebit.companion.android.theme.WearAppTheme
+import io.hivebit.companion.android.theme.getFilledTonalButtonColors
+import io.hivebit.companion.android.theme.wearColorScheme
+import io.hivebit.companion.android.util.KeepScreenOn
+import io.hivebit.companion.android.views.ListHeader
+import io.hivebit.companion.android.views.ThemeLazyColumn
 
 private const val SCREEN_CONVERSATION = "conversation"
 private const val SCREEN_PIPELINES = "pipelines"

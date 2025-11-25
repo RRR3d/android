@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.nameyourdevice
+package io.hivebit.companion.android.onboarding.nameyourdevice
 
 import android.os.Build
 import androidx.annotation.StringRes
@@ -8,18 +8,18 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.DeviceRegistration
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.AppVersionProvider
-import io.homeassistant.companion.android.common.util.MessagingTokenProvider
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.database.server.ServerConnectionInfo
-import io.homeassistant.companion.android.database.server.ServerSessionInfo
-import io.homeassistant.companion.android.database.server.ServerType
-import io.homeassistant.companion.android.database.server.ServerUserInfo
-import io.homeassistant.companion.android.onboarding.nameyourdevice.navigation.NameYourDeviceRoute
-import io.homeassistant.companion.android.util.isPubliclyAccessible
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.DeviceRegistration
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.AppVersionProvider
+import io.hivebit.companion.android.common.util.MessagingTokenProvider
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.database.server.ServerConnectionInfo
+import io.hivebit.companion.android.database.server.ServerSessionInfo
+import io.hivebit.companion.android.database.server.ServerType
+import io.hivebit.companion.android.database.server.ServerUserInfo
+import io.hivebit.companion.android.onboarding.nameyourdevice.navigation.NameYourDeviceRoute
+import io.hivebit.companion.android.util.isPubliclyAccessible
 import java.net.URL
 import javax.inject.Inject
 import javax.net.ssl.SSLException

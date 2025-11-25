@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.connection
+package io.hivebit.companion.android.onboarding.connection
 
 import android.net.Uri
 import android.net.http.SslError
@@ -14,11 +14,11 @@ import android.webkit.WebViewClient.ERROR_UNSUPPORTED_AUTH_SCHEME
 import androidx.annotation.StringRes
 import app.cash.turbine.ReceiveTurbine
 import app.cash.turbine.turbineScope
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.authentication.impl.AuthenticationService
-import io.homeassistant.companion.android.common.data.keychain.KeyChainRepository
-import io.homeassistant.companion.android.testing.unit.ConsoleLogExtension
-import io.homeassistant.companion.android.testing.unit.MainDispatcherJUnit5Extension
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.authentication.impl.AuthenticationService
+import io.hivebit.companion.android.common.data.keychain.KeyChainRepository
+import io.hivebit.companion.android.testing.unit.ConsoleLogExtension
+import io.hivebit.companion.android.testing.unit.MainDispatcherJUnit5Extension
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.mockkStatic

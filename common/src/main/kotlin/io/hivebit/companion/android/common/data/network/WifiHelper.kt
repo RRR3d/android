@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.data.network
+package io.hivebit.companion.android.common.data.network
 
 interface WifiHelper {
 

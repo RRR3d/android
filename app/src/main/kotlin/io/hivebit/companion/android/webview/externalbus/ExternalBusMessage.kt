@@ -1,11 +1,11 @@
-package io.homeassistant.companion.android.webview.externalbus
+package io.hivebit.companion.android.webview.externalbus
 
 import android.content.Context
 import android.webkit.ValueCallback
-import io.homeassistant.companion.android.common.util.AppVersion
-import io.homeassistant.companion.android.common.util.kotlinJsonMapper
-import io.homeassistant.companion.android.common.util.toJsonObject
-import io.homeassistant.companion.android.webview.addto.EntityAddToAction
+import io.hivebit.companion.android.common.util.AppVersion
+import io.hivebit.companion.android.common.util.kotlinJsonMapper
+import io.hivebit.companion.android.common.util.toJsonObject
+import io.hivebit.companion.android.webview.addto.EntityAddToAction
 import kotlin.io.encoding.Base64
 import kotlinx.serialization.Serializable
 import timber.log.Timber

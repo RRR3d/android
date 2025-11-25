@@ -7,7 +7,7 @@
         errorLine1="class SplashActivity : AppCompatActivity() {"
         errorLine2="      ~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/splash/SplashActivity.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/splash/SplashActivity.kt"
             line="8"
             column="7"/>
     </issue>
@@ -62,7 +62,7 @@
         errorLine1="    val builder = PrimaryLayout.Builder(requestParams.deviceConfiguration)"
         errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/tiles/TileViews.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/tiles/TileViews.kt"
             line="94"
             column="19"/>
     </issue>
@@ -95,7 +95,7 @@
         errorLine1="            adapter.notifyDataSetChanged()"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/onboarding/OnboardingActivity.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/onboarding/OnboardingActivity.kt"
             line="181"
             column="13"/>
     </issue>
@@ -106,7 +106,7 @@
         errorLine1="            adapter.notifyDataSetChanged()"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/onboarding/OnboardingActivity.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/onboarding/OnboardingActivity.kt"
             line="189"
             column="13"/>
     </issue>
@@ -504,7 +504,7 @@
         errorLine1="        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK"
         errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/onboarding/integration/MobileAppIntegrationActivity.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/onboarding/integration/MobileAppIntegrationActivity.kt"
             line="63"
             column="31"/>
     </issue>
@@ -515,7 +515,7 @@
         errorLine1="        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK"
         errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/onboarding/integration/MobileAppIntegrationActivity.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/onboarding/integration/MobileAppIntegrationActivity.kt"
             line="63"
             column="31"/>
     </issue>
@@ -526,7 +526,7 @@
         errorLine1="            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK"
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/phone/PhoneSettingsListener.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/phone/PhoneSettingsListener.kt"
             line="224"
             column="35"/>
     </issue>
@@ -537,7 +537,7 @@
         errorLine1="            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK"
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/io/homeassistant/companion/android/phone/PhoneSettingsListener.kt"
+            file="src/main/kotlin/io.hivebit.companion.android/phone/PhoneSettingsListener.kt"
             line="224"
             column="35"/>
     </issue>

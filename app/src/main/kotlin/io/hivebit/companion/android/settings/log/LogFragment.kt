@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.log
+package io.hivebit.companion.android.settings.log
 
 import android.content.ComponentName
 import android.content.Intent
@@ -27,12 +27,12 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.tabs.TabLayout
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.util.LogcatReader
-import io.homeassistant.companion.android.util.applyBottomSafeDrawingInsets
-import io.homeassistant.companion.android.util.getLatestFatalCrash
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.util.LogcatReader
+import io.hivebit.companion.android.util.applyBottomSafeDrawingInsets
+import io.hivebit.companion.android.util.getLatestFatalCrash
 import java.io.File
 import java.util.Calendar
 import javax.inject.Inject

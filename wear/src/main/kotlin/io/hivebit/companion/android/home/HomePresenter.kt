@@ -1,15 +1,15 @@
-package io.homeassistant.companion.android.home
+package io.hivebit.companion.android.home
 
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.prefs.impl.entities.TemplateTileConfig
-import io.homeassistant.companion.android.common.data.websocket.WebSocketState
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AreaRegistryResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AreaRegistryUpdatedEvent
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.DeviceRegistryResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.DeviceRegistryUpdatedEvent
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.EntityRegistryResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.EntityRegistryUpdatedEvent
-import io.homeassistant.companion.android.data.SimplifiedEntity
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.prefs.impl.entities.TemplateTileConfig
+import io.hivebit.companion.android.common.data.websocket.WebSocketState
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AreaRegistryResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AreaRegistryUpdatedEvent
+import io.hivebit.companion.android.common.data.websocket.impl.entities.DeviceRegistryResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.DeviceRegistryUpdatedEvent
+import io.hivebit.companion.android.common.data.websocket.impl.entities.EntityRegistryResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.EntityRegistryUpdatedEvent
+import io.hivebit.companion.android.data.SimplifiedEntity
 import kotlinx.coroutines.flow.Flow
 
 interface HomePresenter {

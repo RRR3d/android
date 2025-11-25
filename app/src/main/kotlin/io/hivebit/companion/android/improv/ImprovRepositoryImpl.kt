@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.improv
+package io.hivebit.companion.android.improv
 
 import android.Manifest
 import android.content.Context

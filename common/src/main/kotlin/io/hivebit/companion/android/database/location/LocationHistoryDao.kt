@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.database.location
+package io.hivebit.companion.android.database.location
 
 import androidx.paging.PagingSource
 import androidx.room.Dao

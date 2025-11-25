@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.database.server
+package io.hivebit.companion.android.database.server
 
 import androidx.room.ColumnInfo
 import androidx.room.Embedded
@@ -6,7 +6,7 @@ import androidx.room.Entity
 import androidx.room.Ignore
 import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
-import io.homeassistant.companion.android.common.data.HomeAssistantVersion
+import io.hivebit.companion.android.common.data.HivebitVersion
 
 @Entity(tableName = "servers")
 @TypeConverters(InternalSsidTypeConverter::class)
@@ -60,8 +60,8 @@ data class Server(
     val friendlyName: String
         get() = nameOverride ?: _name.ifBlank { connection.externalUrl }
 
-    val version: HomeAssistantVersion?
-        get() = _version?.let { HomeAssistantVersion.fromString(_version) }
+    val version: HivebitVersion?
+        get() = _version?.let { HivebitVersion.fromString(_version) }
 }
 
 enum class ServerType {

@@ -1,9 +1,9 @@
-package io.homeassistant.companion.android.settings
+package io.hivebit.companion.android.settings
 
 import android.annotation.SuppressLint
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
-import io.homeassistant.companion.android.settings.language.LanguagesProvider
+import io.hivebit.companion.android.settings.language.LanguagesProvider
 import javax.inject.Inject
 
 class SettingsFragmentFactory @Inject constructor(

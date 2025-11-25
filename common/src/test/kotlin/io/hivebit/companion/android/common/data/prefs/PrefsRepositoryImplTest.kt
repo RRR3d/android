@@ -1,8 +1,8 @@
-package io.homeassistant.companion.android.common.data.prefs
+package io.hivebit.companion.android.common.data.prefs
 
-import io.homeassistant.companion.android.common.data.LocalStorage
-import io.homeassistant.companion.android.common.util.GestureAction
-import io.homeassistant.companion.android.common.util.HAGesture
+import io.hivebit.companion.android.common.data.LocalStorage
+import io.hivebit.companion.android.common.util.GestureAction
+import io.hivebit.companion.android.common.util.HAGesture
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk

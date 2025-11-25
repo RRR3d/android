@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.data
+package io.hivebit.companion.android.data
 
 import android.content.Context
 import com.google.android.gms.wearable.CapabilityClient
@@ -10,7 +10,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import dagger.multibindings.IntoSet
-import io.homeassistant.companion.android.di.OkHttpConfigurator
+import io.hivebit.companion.android.di.OkHttpConfigurator
 import javax.inject.Singleton
 import okhttp3.OkHttpClient
 

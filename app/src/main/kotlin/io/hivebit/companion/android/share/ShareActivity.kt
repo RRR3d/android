@@ -1,13 +1,13 @@
-package io.homeassistant.companion.android.share
+package io.hivebit.companion.android.share
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.BaseActivity
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.BaseActivity
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.servers.ServerManager
 import javax.inject.Inject
 import kotlinx.coroutines.runBlocking
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull

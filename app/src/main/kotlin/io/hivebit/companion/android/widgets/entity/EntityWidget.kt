@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets.entity
+package io.hivebit.companion.android.widgets.entity
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -14,18 +14,18 @@ import androidx.core.content.ContextCompat
 import androidx.core.graphics.toColorInt
 import com.google.android.material.color.DynamicColors
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.canSupportPrecision
-import io.homeassistant.companion.android.common.data.integration.friendlyState
-import io.homeassistant.companion.android.common.data.integration.onEntityPressedWithoutState
-import io.homeassistant.companion.android.database.widget.StaticWidgetDao
-import io.homeassistant.companion.android.database.widget.StaticWidgetEntity
-import io.homeassistant.companion.android.database.widget.WidgetBackgroundType
-import io.homeassistant.companion.android.database.widget.WidgetTapAction
-import io.homeassistant.companion.android.util.getAttribute
-import io.homeassistant.companion.android.widgets.BaseWidgetProvider
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.canSupportPrecision
+import io.hivebit.companion.android.common.data.integration.friendlyState
+import io.hivebit.companion.android.common.data.integration.onEntityPressedWithoutState
+import io.hivebit.companion.android.database.widget.StaticWidgetDao
+import io.hivebit.companion.android.database.widget.StaticWidgetEntity
+import io.hivebit.companion.android.database.widget.WidgetBackgroundType
+import io.hivebit.companion.android.database.widget.WidgetTapAction
+import io.hivebit.companion.android.util.getAttribute
+import io.hivebit.companion.android.widgets.BaseWidgetProvider
 import kotlinx.coroutines.launch
 import timber.log.Timber
 
@@ -34,7 +34,7 @@ class EntityWidget : BaseWidgetProvider<StaticWidgetEntity, StaticWidgetDao>() {
 
     companion object {
         internal const val TOGGLE_ENTITY =
-            "io.homeassistant.companion.android.widgets.entity.EntityWidget.TOGGLE_ENTITY"
+            "io.hivebit.companion.android.widgets.entity.EntityWidget.TOGGLE_ENTITY"
 
         private data class ResolvedText(val text: CharSequence?, val exception: Boolean = false)
     }

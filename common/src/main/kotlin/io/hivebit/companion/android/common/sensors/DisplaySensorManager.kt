@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.sensors
+package io.hivebit.companion.android.common.sensors
 
 import android.content.Context
 import android.content.res.Configuration
@@ -6,8 +6,8 @@ import android.hardware.display.DisplayManager
 import android.provider.Settings
 import android.view.Display
 import android.view.Surface
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.util.STATE_UNKNOWN
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.util.STATE_UNKNOWN
 import timber.log.Timber
 
 class DisplaySensorManager : SensorManager {

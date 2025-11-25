@@ -1,9 +1,9 @@
-package io.homeassistant.companion.android.launch.link
+package io.hivebit.companion.android.launch.link
 
 import android.net.Uri
 import androidx.core.net.toUri
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.FailFast
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.FailFast
 import javax.inject.Inject
 import timber.log.Timber
 

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.vehicle
+package io.hivebit.companion.android.settings.vehicle
 
 import android.app.Application
 import android.os.Build
@@ -12,11 +12,11 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.prefs.AutoFavorite
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.util.vehicle.isVehicleDomain
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.prefs.AutoFavorite
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.util.vehicle.isVehicleDomain
 import javax.inject.Inject
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll

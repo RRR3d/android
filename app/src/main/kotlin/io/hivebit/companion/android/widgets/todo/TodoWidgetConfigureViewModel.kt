@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.widgets.todo
+package io.hivebit.companion.android.widgets.todo
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -17,16 +17,16 @@ import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.TODO_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.domain
-import io.homeassistant.companion.android.common.data.integration.friendlyName
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.database.widget.TodoWidgetDao
-import io.homeassistant.companion.android.database.widget.TodoWidgetEntity
-import io.homeassistant.companion.android.database.widget.WidgetBackgroundType
-import io.homeassistant.companion.android.widgets.ACTION_APPWIDGET_CREATED
-import io.homeassistant.companion.android.widgets.EXTRA_WIDGET_ENTITY
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.TODO_DOMAIN
+import io.hivebit.companion.android.common.data.integration.domain
+import io.hivebit.companion.android.common.data.integration.friendlyName
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.database.widget.TodoWidgetDao
+import io.hivebit.companion.android.database.widget.TodoWidgetEntity
+import io.hivebit.companion.android.database.widget.WidgetBackgroundType
+import io.hivebit.companion.android.widgets.ACTION_APPWIDGET_CREATED
+import io.hivebit.companion.android.widgets.EXTRA_WIDGET_ENTITY
 import kotlin.time.Duration.Companion.milliseconds
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.SharingStarted

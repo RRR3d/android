@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.sensors
+package io.hivebit.companion.android.sensors
 
 import android.content.Context
 import android.content.Intent
@@ -41,10 +41,10 @@ import androidx.health.connect.client.request.AggregateRequest
 import androidx.health.connect.client.request.ReadRecordsRequest
 import androidx.health.connect.client.response.ReadRecordsResponse
 import androidx.health.connect.client.time.TimeRangeFilter
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.sensors.SensorManager
-import io.homeassistant.companion.android.common.util.FailFast
-import io.homeassistant.companion.android.common.util.STATE_UNKNOWN
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.sensors.SensorManager
+import io.hivebit.companion.android.common.util.FailFast
+import io.hivebit.companion.android.common.util.STATE_UNKNOWN
 import java.math.BigDecimal
 import java.math.RoundingMode
 import java.time.Instant

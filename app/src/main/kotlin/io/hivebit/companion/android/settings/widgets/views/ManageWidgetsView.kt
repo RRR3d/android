@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.widgets.views
+package io.hivebit.companion.android.settings.widgets.views
 
 import android.appwidget.AppWidgetManager
 import android.content.Intent
@@ -34,19 +34,19 @@ import androidx.compose.ui.unit.dp
 import com.mikepenz.iconics.compose.Image
 import com.mikepenz.iconics.typeface.IIcon
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.database.widget.WidgetEntity
-import io.homeassistant.companion.android.settings.views.EmptyState
-import io.homeassistant.companion.android.settings.widgets.ManageWidgetsViewModel
-import io.homeassistant.companion.android.util.compose.MdcAlertDialog
-import io.homeassistant.companion.android.util.plus
-import io.homeassistant.companion.android.util.safeBottomPaddingValues
-import io.homeassistant.companion.android.widgets.button.ButtonWidgetConfigureActivity
-import io.homeassistant.companion.android.widgets.camera.CameraWidgetConfigureActivity
-import io.homeassistant.companion.android.widgets.entity.EntityWidgetConfigureActivity
-import io.homeassistant.companion.android.widgets.mediaplayer.MediaPlayerControlsWidgetConfigureActivity
-import io.homeassistant.companion.android.widgets.template.TemplateWidgetConfigureActivity
-import io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureActivity
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.database.widget.WidgetEntity
+import io.hivebit.companion.android.settings.views.EmptyState
+import io.hivebit.companion.android.settings.widgets.ManageWidgetsViewModel
+import io.hivebit.companion.android.util.compose.MdcAlertDialog
+import io.hivebit.companion.android.util.plus
+import io.hivebit.companion.android.util.safeBottomPaddingValues
+import io.hivebit.companion.android.widgets.button.ButtonWidgetConfigureActivity
+import io.hivebit.companion.android.widgets.camera.CameraWidgetConfigureActivity
+import io.hivebit.companion.android.widgets.entity.EntityWidgetConfigureActivity
+import io.hivebit.companion.android.widgets.mediaplayer.MediaPlayerControlsWidgetConfigureActivity
+import io.hivebit.companion.android.widgets.template.TemplateWidgetConfigureActivity
+import io.hivebit.companion.android.widgets.todo.TodoWidgetConfigureActivity
 
 enum class WidgetType(val widgetIcon: IIcon) {
     BUTTON(CommunityMaterial.Icon2.cmd_gesture_tap),

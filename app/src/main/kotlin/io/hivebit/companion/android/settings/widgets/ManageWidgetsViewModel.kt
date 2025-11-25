@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.widgets
+package io.hivebit.companion.android.settings.widgets
 
 import android.app.Application
 import android.appwidget.AppWidgetManager
@@ -10,12 +10,12 @@ import androidx.core.content.getSystemService
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.database.widget.ButtonWidgetDao
-import io.homeassistant.companion.android.database.widget.CameraWidgetDao
-import io.homeassistant.companion.android.database.widget.MediaPlayerControlsWidgetDao
-import io.homeassistant.companion.android.database.widget.StaticWidgetDao
-import io.homeassistant.companion.android.database.widget.TemplateWidgetDao
-import io.homeassistant.companion.android.database.widget.TodoWidgetDao
+import io.hivebit.companion.android.database.widget.ButtonWidgetDao
+import io.hivebit.companion.android.database.widget.CameraWidgetDao
+import io.hivebit.companion.android.database.widget.MediaPlayerControlsWidgetDao
+import io.hivebit.companion.android.database.widget.StaticWidgetDao
+import io.hivebit.companion.android.database.widget.TemplateWidgetDao
+import io.hivebit.companion.android.database.widget.TodoWidgetDao
 import javax.inject.Inject
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
@@ -33,7 +33,7 @@ class ManageWidgetsViewModel @Inject constructor(
 ) : AndroidViewModel(application) {
     companion object {
         const val CONFIGURE_REQUEST_LAUNCHER =
-            "io.homeassistant.companion.android.settings.widgets.ManageWidgetsViewModel.CONFIGURE_REQUEST_LAUNCHER"
+            "io.hivebit.companion.android.settings.widgets.ManageWidgetsViewModel.CONFIGURE_REQUEST_LAUNCHER"
     }
 
     val buttonWidgetList = buttonWidgetDao.getAllFlow().collectAsState()

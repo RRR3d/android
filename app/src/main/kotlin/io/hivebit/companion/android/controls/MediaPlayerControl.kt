@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.controls
+package io.hivebit.companion.android.controls
 
 import android.content.Context
 import android.os.Build
@@ -12,13 +12,13 @@ import android.service.controls.templates.RangeTemplate
 import android.service.controls.templates.ToggleRangeTemplate
 import android.service.controls.templates.ToggleTemplate
 import androidx.annotation.RequiresApi
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.IntegrationRepository
-import io.homeassistant.companion.android.common.data.integration.getVolumeLevel
-import io.homeassistant.companion.android.common.data.integration.getVolumeStep
-import io.homeassistant.companion.android.common.data.integration.isActive
-import io.homeassistant.companion.android.common.data.integration.supportsVolumeSet
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.IntegrationRepository
+import io.hivebit.companion.android.common.data.integration.getVolumeLevel
+import io.hivebit.companion.android.common.data.integration.getVolumeStep
+import io.hivebit.companion.android.common.data.integration.isActive
+import io.hivebit.companion.android.common.data.integration.supportsVolumeSet
 import java.math.BigDecimal
 import java.math.RoundingMode
 

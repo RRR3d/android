@@ -1,8 +1,8 @@
-package io.homeassistant.companion.android.util
+package io.hivebit.companion.android.util
 
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.AreaRegistryResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.DeviceRegistryResponse
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.EntityRegistryResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.AreaRegistryResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.DeviceRegistryResponse
+import io.hivebit.companion.android.common.data.websocket.impl.entities.EntityRegistryResponse
 
 object RegistriesDataHandler {
     fun getAreaForEntity(

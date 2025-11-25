@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.developer.catalog
+package io.hivebit.companion.android.developer.catalog
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.clickable
@@ -18,14 +18,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Devices.TABLET
 import androidx.compose.ui.tooling.preview.Preview
-import io.homeassistant.companion.android.common.compose.composable.HABanner
-import io.homeassistant.companion.android.common.compose.composable.HADetails
-import io.homeassistant.companion.android.common.compose.composable.HAHint
-import io.homeassistant.companion.android.common.compose.composable.HALoading
-import io.homeassistant.companion.android.common.compose.composable.HAProgress
-import io.homeassistant.companion.android.common.compose.theme.HASize
-import io.homeassistant.companion.android.common.compose.theme.HATextStyle
-import io.homeassistant.companion.android.common.compose.theme.HAThemeForPreview
+import io.hivebit.companion.android.common.compose.composable.HABanner
+import io.hivebit.companion.android.common.compose.composable.HADetails
+import io.hivebit.companion.android.common.compose.composable.HAHint
+import io.hivebit.companion.android.common.compose.composable.HALoading
+import io.hivebit.companion.android.common.compose.composable.HAProgress
+import io.hivebit.companion.android.common.compose.theme.HASize
+import io.hivebit.companion.android.common.compose.theme.HATextStyle
+import io.hivebit.companion.android.common.compose.theme.HAThemeForPreview
 
 fun LazyListScope.catalogTextAndBannersSection() {
     textStyles()

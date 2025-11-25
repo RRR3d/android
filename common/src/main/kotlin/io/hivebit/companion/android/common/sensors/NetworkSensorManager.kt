@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.sensors
+package io.hivebit.companion.android.common.sensors
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -10,14 +10,14 @@ import android.net.wifi.WifiInfo
 import android.net.wifi.WifiManager
 import android.os.Build
 import androidx.core.content.getSystemService
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.util.STATE_UNAVAILABLE
-import io.homeassistant.companion.android.common.util.STATE_UNKNOWN
-import io.homeassistant.companion.android.common.util.getStringOrElse
-import io.homeassistant.companion.android.common.util.toJsonObjectOrNull
-import io.homeassistant.companion.android.database.AppDatabase
-import io.homeassistant.companion.android.database.sensor.SensorSetting
-import io.homeassistant.companion.android.database.sensor.SensorSettingType
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.util.STATE_UNAVAILABLE
+import io.hivebit.companion.android.common.util.STATE_UNKNOWN
+import io.hivebit.companion.android.common.util.getStringOrElse
+import io.hivebit.companion.android.common.util.toJsonObjectOrNull
+import io.hivebit.companion.android.database.AppDatabase
+import io.hivebit.companion.android.database.sensor.SensorSetting
+import io.hivebit.companion.android.database.sensor.SensorSettingType
 import java.lang.reflect.Method
 import java.net.Inet6Address
 import kotlinx.coroutines.suspendCancellableCoroutine

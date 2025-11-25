@@ -1,14 +1,14 @@
-package io.homeassistant.companion.android.util
+package io.hivebit.companion.android.util
 
 import android.content.Context
 import android.content.res.Configuration
 import android.view.ContextThemeWrapper
 import androidx.annotation.VisibleForTesting
 import info.hannes.changelog.ChangeLog
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.data.prefs.NightModeTheme
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.themes.NightModeManager
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.data.prefs.NightModeTheme
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.themes.NightModeManager
 import javax.inject.Inject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

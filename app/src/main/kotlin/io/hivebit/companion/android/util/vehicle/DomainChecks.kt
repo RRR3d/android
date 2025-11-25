@@ -1,9 +1,9 @@
-package io.homeassistant.companion.android.util.vehicle
+package io.hivebit.companion.android.util.vehicle
 
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.domain
-import io.homeassistant.companion.android.common.data.integration.supportsAlarmControlPanelArmAway
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.domain
+import io.hivebit.companion.android.common.data.integration.supportsAlarmControlPanelArmAway
 
 val SUPPORTED_DOMAINS_WITH_STRING = mapOf(
     "alarm_control_panel" to R.string.alarm_control_panels,

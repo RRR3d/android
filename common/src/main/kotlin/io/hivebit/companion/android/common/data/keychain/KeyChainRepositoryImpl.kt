@@ -1,8 +1,8 @@
-package io.homeassistant.companion.android.common.data.keychain
+package io.hivebit.companion.android.common.data.keychain
 
 import android.content.Context
 import android.security.KeyChain
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
 import java.lang.UnsupportedOperationException
 import java.security.PrivateKey
 import java.security.cert.X509Certificate

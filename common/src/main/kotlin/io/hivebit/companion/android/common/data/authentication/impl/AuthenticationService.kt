@@ -1,6 +1,6 @@
-package io.homeassistant.companion.android.common.data.authentication.impl
+package io.hivebit.companion.android.common.data.authentication.impl
 
-import io.homeassistant.companion.android.common.data.authentication.impl.entities.Token
+import io.hivebit.companion.android.common.data.authentication.impl.entities.Token
 import okhttp3.HttpUrl
 import retrofit2.Response
 import retrofit2.http.Field

@@ -1,12 +1,12 @@
-package io.homeassistant.companion.android.onboarding.sethomenetwork
+package io.hivebit.companion.android.onboarding.sethomenetwork
 
 import app.cash.turbine.test
-import io.homeassistant.companion.android.common.data.network.NetworkHelper
-import io.homeassistant.companion.android.common.data.network.WifiHelper
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.database.server.ServerConnectionInfo
-import io.homeassistant.companion.android.testing.unit.MainDispatcherJUnit5Extension
+import io.hivebit.companion.android.common.data.network.NetworkHelper
+import io.hivebit.companion.android.common.data.network.WifiHelper
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.database.server.ServerConnectionInfo
+import io.hivebit.companion.android.testing.unit.MainDispatcherJUnit5Extension
 import io.mockk.Runs
 import io.mockk.coEvery
 import io.mockk.coVerify

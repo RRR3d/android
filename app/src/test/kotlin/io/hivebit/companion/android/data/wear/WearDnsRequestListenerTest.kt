@@ -1,8 +1,8 @@
-package io.homeassistant.companion.android.data.wear
+package io.hivebit.companion.android.data.wear
 
-import io.homeassistant.companion.android.common.util.WearDataMessages.DnsLookup.PATH_DNS_LOOKUP
-import io.homeassistant.companion.android.common.util.WearDataMessages.DnsLookup.decodeDNSResult
-import io.homeassistant.companion.android.common.util.WearDataMessages.DnsLookup.encodeDNSRequest
+import io.hivebit.companion.android.common.util.WearDataMessages.DnsLookup.PATH_DNS_LOOKUP
+import io.hivebit.companion.android.common.util.WearDataMessages.DnsLookup.decodeDNSResult
+import io.hivebit.companion.android.common.util.WearDataMessages.DnsLookup.encodeDNSRequest
 import java.net.InetAddress
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.tasks.await

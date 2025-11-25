@@ -1,8 +1,8 @@
-package io.homeassistant.companion.android.database.sensor
+package io.hivebit.companion.android.database.sensor
 
-import io.homeassistant.companion.android.common.data.integration.SensorRegistration
-import io.homeassistant.companion.android.common.sensors.SensorManager
-import io.homeassistant.companion.android.common.util.kotlinJsonMapper
+import io.hivebit.companion.android.common.data.integration.SensorRegistration
+import io.hivebit.companion.android.common.sensors.SensorManager
+import io.hivebit.companion.android.common.util.kotlinJsonMapper
 
 data class SensorWithAttributes(val sensor: Sensor, val attributes: List<Attribute>) {
     fun toSensorRegistration(basicSensor: SensorManager.BasicSensor): SensorRegistration<Any> {

@@ -1,6 +1,6 @@
-package io.homeassistant.companion.android.common.data.websocket.impl.entities
+package io.hivebit.companion.android.common.data.websocket.impl.entities
 
-import io.homeassistant.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.Entity
 import kotlinx.serialization.Serializable
 
 @Serializable

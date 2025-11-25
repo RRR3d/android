@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.wear.views
+package io.hivebit.companion.android.settings.wear.views
 
 import android.content.Context
 import android.content.Intent
@@ -9,10 +9,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.google.android.gms.wearable.Node
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.HomeAssistantApplication
-import io.homeassistant.companion.android.onboarding.OnboardApp
-import io.homeassistant.companion.android.settings.wear.SettingsWearViewModel
-import io.homeassistant.companion.android.util.enableEdgeToEdgeCompat
+import io.hivebit.companion.android.HivebitApplication
+import io.hivebit.companion.android.onboarding.OnboardApp
+import io.hivebit.companion.android.settings.wear.SettingsWearViewModel
+import io.hivebit.companion.android.util.enableEdgeToEdgeCompat
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -78,7 +78,7 @@ class SettingsWearMainView : AppCompatActivity() {
                 isWatch = true,
                 discoveryOptions = OnboardApp.DiscoveryOptions.ADD_EXISTING_EXTERNAL,
                 mayRequireTlsClientCertificate =
-                (application as HomeAssistantApplication).keyChainRepository.getPrivateKey() != null,
+                (application as HivebitApplication).keyChainRepository.getPrivateKey() != null,
             ),
         )
     }

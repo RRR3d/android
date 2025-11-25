@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.controls
+package io.hivebit.companion.android.settings.controls
 
 import android.os.Build
 import android.os.Bundle
@@ -10,11 +10,11 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.ControlsAuthRequiredSetting
-import io.homeassistant.companion.android.settings.addHelpMenuProvider
-import io.homeassistant.companion.android.settings.controls.views.ManageControlsView
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.ControlsAuthRequiredSetting
+import io.hivebit.companion.android.settings.addHelpMenuProvider
+import io.hivebit.companion.android.settings.controls.views.ManageControlsView
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
 
 @RequiresApi(Build.VERSION_CODES.TIRAMISU)
 @AndroidEntryPoint

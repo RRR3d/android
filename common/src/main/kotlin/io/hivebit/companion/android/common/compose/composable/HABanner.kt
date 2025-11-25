@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.compose.composable
+package io.hivebit.companion.android.common.compose.composable
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -20,18 +20,18 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.PreviewLightDark
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.compose.theme.HABrandColors
-import io.homeassistant.companion.android.common.compose.theme.HADimens
-import io.homeassistant.companion.android.common.compose.theme.HARadius
-import io.homeassistant.companion.android.common.compose.theme.HATextStyle
-import io.homeassistant.companion.android.common.compose.theme.HAThemeForPreview
-import io.homeassistant.companion.android.common.compose.theme.LocalHAColorScheme
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.compose.theme.HABrandColors
+import io.hivebit.companion.android.common.compose.theme.HADimens
+import io.hivebit.companion.android.common.compose.theme.HARadius
+import io.hivebit.companion.android.common.compose.theme.HATextStyle
+import io.hivebit.companion.android.common.compose.theme.HAThemeForPreview
+import io.hivebit.companion.android.common.compose.theme.LocalHAColorScheme
 
 /**
  * Displays a horizontal banner component with rounded corners and neutral background
  * This composable provides a container for informational content with consistent styling
- * using [io.homeassistant.companion.android.common.compose.theme.HAColorScheme].
+ * using [io.hivebit.companion.android.common.compose.theme.HAColorScheme].
  *
  * @param modifier Optional [androidx.compose.ui.Modifier] to be applied to the banner.
  * @param content The composable content to be displayed inside the banner, provided as a [RowScope] lambda.

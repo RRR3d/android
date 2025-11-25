@@ -1,12 +1,12 @@
-package io.homeassistant.companion.android.onboarding.serverdiscovery
+package io.hivebit.companion.android.onboarding.serverdiscovery
 
 import app.cash.turbine.test
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.onboarding.serverdiscovery.navigation.ServerDiscoveryMode
-import io.homeassistant.companion.android.testing.unit.ConsoleLogExtension
-import io.homeassistant.companion.android.testing.unit.MainDispatcherJUnit5Extension
-import io.homeassistant.companion.android.utils.mockServer
-import io.homeassistant.companion.android.utils.testHAVersion
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.onboarding.serverdiscovery.navigation.ServerDiscoveryMode
+import io.hivebit.companion.android.testing.unit.ConsoleLogExtension
+import io.hivebit.companion.android.testing.unit.MainDispatcherJUnit5Extension
+import io.hivebit.companion.android.utils.mockServer
+import io.hivebit.companion.android.utils.testHAVersion
 import io.mockk.every
 import io.mockk.mockk
 import java.net.URL
@@ -31,11 +31,11 @@ private class ServerDiscoveryViewModelTest {
     @RegisterExtension
     val mainDispatcherExtension = MainDispatcherJUnit5Extension(UnconfinedTestDispatcher())
 
-    private val searcher: HomeAssistantSearcher = mockk()
+    private val searcher: HivebitSearcher = mockk()
     private val serverManager: ServerManager = mockk()
     private lateinit var viewModel: ServerDiscoveryViewModel
 
-    private val discoveredInstanceFlow = MutableSharedFlow<HomeAssistantInstance>()
+    private val discoveredInstanceFlow = MutableSharedFlow<HivebitInstance>()
 
     @BeforeEach
     fun setUp() {
@@ -117,7 +117,7 @@ private class ServerDiscoveryViewModelTest {
     @Test
     fun `Given TIMEOUT_NO_SERVER_FOUND occurs without discoveries when a server is found later then discoveryFlow emits Started then NoServerFound then ServerDiscovered`() = runTest {
         createViewModel()
-        val instance = HomeAssistantInstance("Server 1", URL("http://server1.local:8123"), testHAVersion)
+        val instance = HivebitInstance("Server 1", URL("http://server1.local:8123"), testHAVersion)
 
         viewModel.discoveryFlow.test {
             assertEquals(Started, awaitItem())
@@ -140,8 +140,8 @@ private class ServerDiscoveryViewModelTest {
     @Test
     fun `Given multiple servers discovered before delay when collecting from discoveryFlow then discoveryFlow emits only ServersDiscovered after delay`() = runTest {
         createViewModel()
-        val instance1 = HomeAssistantInstance("Server 1", URL("http://server1.local:8123"), testHAVersion)
-        val instance2 = HomeAssistantInstance("Server 2", URL("http://server2.local:8123"), testHAVersion)
+        val instance1 = HivebitInstance("Server 1", URL("http://server1.local:8123"), testHAVersion)
+        val instance2 = HivebitInstance("Server 2", URL("http://server2.local:8123"), testHAVersion)
 
         viewModel.discoveryFlow.test {
             // Both instances discovered before delay
@@ -168,8 +168,8 @@ private class ServerDiscoveryViewModelTest {
     @Test
     fun `Given servers discovered after delay when collecting from discoveryFlow then discoveryFlow emits Started then ServerDiscovered then ServersDiscovered`() = runTest {
         createViewModel()
-        val instance1 = HomeAssistantInstance("Server 1", URL("http://server1.local:8123"), testHAVersion)
-        val instance2 = HomeAssistantInstance("Server 2", URL("http://server2.local:8123"), testHAVersion)
+        val instance1 = HivebitInstance("Server 1", URL("http://server1.local:8123"), testHAVersion)
+        val instance2 = HivebitInstance("Server 2", URL("http://server2.local:8123"), testHAVersion)
 
         viewModel.discoveryFlow.test {
             assertEquals(Started, awaitItem())
@@ -198,8 +198,8 @@ private class ServerDiscoveryViewModelTest {
     @Test
     fun `Given multiple servers discovered multiple times when collecting from discoveryFlow then discoveryFlow emits ServersDiscovered without duplicates and only once`() = runTest {
         createViewModel()
-        val instance1 = HomeAssistantInstance("Server 1", URL("http://server1.local:8123"), testHAVersion)
-        val instance2 = HomeAssistantInstance("Server 2", URL("http://server2.local:8123"), testHAVersion)
+        val instance1 = HivebitInstance("Server 1", URL("http://server1.local:8123"), testHAVersion)
+        val instance2 = HivebitInstance("Server 2", URL("http://server2.local:8123"), testHAVersion)
 
         viewModel.discoveryFlow.test {
             assertEquals(Started, awaitItem())
@@ -231,7 +231,7 @@ private class ServerDiscoveryViewModelTest {
     @Test
     fun `Given discoveryFlow emitted Started then ServerDiscovered when onDismissOneServerFound is invoked then discoveryFlow emits ServersDiscovered`() = runTest {
         createViewModel()
-        val instance = HomeAssistantInstance("Test Server", URL("http://test.local:8123"), testHAVersion)
+        val instance = HivebitInstance("Test Server", URL("http://test.local:8123"), testHAVersion)
 
         viewModel.discoveryFlow.test {
             assertEquals(Started, awaitItem())
@@ -276,10 +276,10 @@ private class ServerDiscoveryViewModelTest {
 
         createViewModel(ServerDiscoveryMode.HIDE_EXISTING)
 
-        val matchingInstance = HomeAssistantInstance("Server 1", URL(existingServerUrl), testHAVersion)
-        val differentInstance = HomeAssistantInstance("Server 2", URL("http://server2.local:8123"), testHAVersion)
-        val differentProtocolInstance = HomeAssistantInstance("Server HTTPS", URL(existingServerUrl.replace("http", "https")), testHAVersion)
-        val differentPortInstance = HomeAssistantInstance("Server 8124", URL(existingServerUrl.replace("8123", "8124")), testHAVersion)
+        val matchingInstance = HivebitInstance("Server 1", URL(existingServerUrl), testHAVersion)
+        val differentInstance = HivebitInstance("Server 2", URL("http://server2.local:8123"), testHAVersion)
+        val differentProtocolInstance = HivebitInstance("Server HTTPS", URL(existingServerUrl.replace("http", "https")), testHAVersion)
+        val differentPortInstance = HivebitInstance("Server 8124", URL(existingServerUrl.replace("8123", "8124")), testHAVersion)
 
         viewModel.discoveryFlow.test {
             advanceTimeBy(DELAY_BEFORE_DISPLAY_DISCOVERY)

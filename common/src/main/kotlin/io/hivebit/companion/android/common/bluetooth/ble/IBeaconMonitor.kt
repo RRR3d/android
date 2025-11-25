@@ -1,8 +1,8 @@
-package io.homeassistant.companion.android.common.bluetooth.ble
+package io.hivebit.companion.android.common.bluetooth.ble
 
 import android.content.Context
-import io.homeassistant.companion.android.common.sensors.BluetoothSensorManager
-import io.homeassistant.companion.android.common.sensors.SensorUpdateReceiver
+import io.hivebit.companion.android.common.sensors.BluetoothSensorManager
+import io.hivebit.companion.android.common.sensors.SensorUpdateReceiver
 import kotlin.math.abs
 import kotlin.math.round
 import org.altbeacon.beacon.Beacon

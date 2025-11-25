@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding
+package io.hivebit.companion.android.onboarding
 
 import android.app.Application
 import android.net.Uri
@@ -11,10 +11,10 @@ import androidx.core.content.getSystemService
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LifecycleObserver
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.database.server.ServerConnectionInfo
-import io.homeassistant.companion.android.onboarding.discovery.HomeAssistantInstance
-import io.homeassistant.companion.android.onboarding.discovery.HomeAssistantSearcher
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.database.server.ServerConnectionInfo
+import io.hivebit.companion.android.onboarding.discovery.HivebitInstance
+import io.hivebit.companion.android.onboarding.discovery.HivebitSearcher
 import java.net.URL
 import javax.inject.Inject
 import timber.log.Timber
@@ -23,7 +23,7 @@ import timber.log.Timber
 class OnboardingViewModel @Inject constructor(val serverManager: ServerManager, app: Application) :
     AndroidViewModel(app) {
 
-    private val _homeAssistantSearcher = HomeAssistantSearcher(
+    private val _homeAssistantSearcher = HivebitSearcher(
         nsdManager = app.getSystemService()!!,
         wifiManager = app.getSystemService(),
         onStart = { discoveryActive = true },
@@ -32,7 +32,7 @@ class OnboardingViewModel @Inject constructor(val serverManager: ServerManager, 
     )
     val homeAssistantSearcher: LifecycleObserver = _homeAssistantSearcher
 
-    val foundInstances = mutableStateListOf<HomeAssistantInstance>()
+    val foundInstances = mutableStateListOf<HivebitInstance>()
     var discoveryActive by mutableStateOf(true)
         private set
     val manualUrl = mutableStateOf("")
@@ -91,7 +91,7 @@ class OnboardingViewModel @Inject constructor(val serverManager: ServerManager, 
             val url = it.connection.getUrl(isInternal = false) ?: return@forEach
             val version = it.version ?: return@forEach
             foundInstances.add(
-                HomeAssistantInstance(
+                HivebitInstance(
                     name = it.friendlyName,
                     url = url,
                     version = version,
@@ -100,7 +100,7 @@ class OnboardingViewModel @Inject constructor(val serverManager: ServerManager, 
         }
     }
 
-    private fun onInstanceFound(instance: HomeAssistantInstance) {
+    private fun onInstanceFound(instance: HivebitInstance) {
         if (
             (
                 discoveryOptions == OnboardApp.DiscoveryOptions.ADD_EXISTING_EXTERNAL ||

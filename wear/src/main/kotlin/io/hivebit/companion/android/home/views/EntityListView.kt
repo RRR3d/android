@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.home.views
+package io.hivebit.companion.android.home.views
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
@@ -9,19 +9,19 @@ import androidx.wear.compose.foundation.lazy.items
 import androidx.wear.compose.material3.Button
 import androidx.wear.compose.material3.Text
 import androidx.wear.tooling.preview.devices.WearDevices
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.theme.WearAppTheme
-import io.homeassistant.companion.android.theme.getPrimaryButtonColors
-import io.homeassistant.companion.android.util.playPreviewEntityScene1
-import io.homeassistant.companion.android.util.playPreviewEntityScene2
-import io.homeassistant.companion.android.util.playPreviewEntityScene3
-import io.homeassistant.companion.android.util.previewEntity1
-import io.homeassistant.companion.android.util.previewEntity2
-import io.homeassistant.companion.android.views.ExpandableListHeader
-import io.homeassistant.companion.android.views.ListHeader
-import io.homeassistant.companion.android.views.ThemeLazyColumn
-import io.homeassistant.companion.android.views.rememberExpandedStates
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.theme.WearAppTheme
+import io.hivebit.companion.android.theme.getPrimaryButtonColors
+import io.hivebit.companion.android.util.playPreviewEntityScene1
+import io.hivebit.companion.android.util.playPreviewEntityScene2
+import io.hivebit.companion.android.util.playPreviewEntityScene3
+import io.hivebit.companion.android.util.previewEntity1
+import io.hivebit.companion.android.util.previewEntity2
+import io.hivebit.companion.android.views.ExpandableListHeader
+import io.hivebit.companion.android.views.ListHeader
+import io.hivebit.companion.android.views.ThemeLazyColumn
+import io.hivebit.companion.android.views.rememberExpandedStates
 
 @Composable
 fun EntityViewList(

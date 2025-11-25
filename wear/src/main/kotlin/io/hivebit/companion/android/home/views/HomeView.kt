@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.home.views
+package io.hivebit.companion.android.home.views
 
 import android.content.Intent
 import android.provider.Settings
@@ -16,15 +16,15 @@ import androidx.wear.compose.navigation.SwipeDismissableNavHost
 import androidx.wear.compose.navigation.composable
 import androidx.wear.compose.navigation.rememberSwipeDismissableNavController
 import androidx.wear.tiles.TileService
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.CAMERA_DOMAIN
-import io.homeassistant.companion.android.common.sensors.id
-import io.homeassistant.companion.android.home.MainViewModel
-import io.homeassistant.companion.android.theme.WearAppTheme
-import io.homeassistant.companion.android.tiles.CameraTile
-import io.homeassistant.companion.android.tiles.ShortcutsTile
-import io.homeassistant.companion.android.tiles.TemplateTile
-import io.homeassistant.companion.android.tiles.ThermostatTile
-import io.homeassistant.companion.android.views.ChooseEntityView
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.CAMERA_DOMAIN
+import io.hivebit.companion.android.common.sensors.id
+import io.hivebit.companion.android.home.MainViewModel
+import io.hivebit.companion.android.theme.WearAppTheme
+import io.hivebit.companion.android.tiles.CameraTile
+import io.hivebit.companion.android.tiles.ShortcutsTile
+import io.hivebit.companion.android.tiles.TemplateTile
+import io.hivebit.companion.android.tiles.ThermostatTile
+import io.hivebit.companion.android.views.ChooseEntityView
 
 private const val ARG_SCREEN_SENSOR_MANAGER_ID = "sensorManagerId"
 private const val ARG_SCREEN_CAMERA_TILE_ID = "cameraTileId"

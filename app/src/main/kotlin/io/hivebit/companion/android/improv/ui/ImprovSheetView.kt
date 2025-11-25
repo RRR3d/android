@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.improv.ui
+package io.hivebit.companion.android.improv.ui
 
 import android.net.wifi.WifiManager
 import android.os.Build
@@ -49,8 +49,8 @@ import com.mikepenz.iconics.typeface.library.community.material.CommunityMateria
 import com.wifi.improv.DeviceState
 import com.wifi.improv.ErrorState
 import com.wifi.improv.ImprovDevice
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.util.compose.ModalBottomSheet
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.util.compose.ModalBottomSheet
 
 @Composable
 fun ImprovSheetView(

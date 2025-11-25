@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.data.integration
+package io.hivebit.companion.android.common.data.integration
 
 import android.content.Context
 import android.graphics.Color
@@ -9,13 +9,13 @@ import com.mikepenz.iconics.typeface.IIcon
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial.Icon
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial.Icon2
 import com.mikepenz.iconics.typeface.library.community.material.CommunityMaterial.Icon3
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.CAMERA_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.MEDIA_PLAYER_DOMAIN
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.CompressedStateDiff
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.EntityRegistryOptions
-import io.homeassistant.companion.android.common.util.LocalDateTimeSerializer
-import io.homeassistant.companion.android.common.util.MapAnySerializer
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.CAMERA_DOMAIN
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.MEDIA_PLAYER_DOMAIN
+import io.hivebit.companion.android.common.data.websocket.impl.entities.CompressedStateDiff
+import io.hivebit.companion.android.common.data.websocket.impl.entities.EntityRegistryOptions
+import io.hivebit.companion.android.common.util.LocalDateTimeSerializer
+import io.hivebit.companion.android.common.util.MapAnySerializer
 import java.time.LocalDateTime
 import java.time.ZoneOffset
 import java.time.ZonedDateTime

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.common.sensors
+package io.hivebit.companion.android.common.sensors
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -12,20 +12,20 @@ import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.getSystemService
-import io.homeassistant.companion.android.common.R
-import io.homeassistant.companion.android.common.data.integration.IntegrationException
-import io.homeassistant.companion.android.common.data.integration.IntegrationRepository
-import io.homeassistant.companion.android.common.data.integration.SensorRegistration
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.data.websocket.impl.entities.GetConfigResponse
-import io.homeassistant.companion.android.common.util.CHANNEL_SENSOR_SYNC
-import io.homeassistant.companion.android.database.AppDatabase
-import io.homeassistant.companion.android.database.sensor.SensorDao
-import io.homeassistant.companion.android.database.sensor.SensorWithAttributes
-import io.homeassistant.companion.android.database.sensor.toSensorWithAttributes
-import io.homeassistant.companion.android.database.sensor.toSensorsWithAttributes
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.database.settings.SensorUpdateFrequencySetting
+import io.hivebit.companion.android.common.R
+import io.hivebit.companion.android.common.data.integration.IntegrationException
+import io.hivebit.companion.android.common.data.integration.IntegrationRepository
+import io.hivebit.companion.android.common.data.integration.SensorRegistration
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.data.websocket.impl.entities.GetConfigResponse
+import io.hivebit.companion.android.common.util.CHANNEL_SENSOR_SYNC
+import io.hivebit.companion.android.database.AppDatabase
+import io.hivebit.companion.android.database.sensor.SensorDao
+import io.hivebit.companion.android.database.sensor.SensorWithAttributes
+import io.hivebit.companion.android.database.sensor.toSensorWithAttributes
+import io.hivebit.companion.android.database.sensor.toSensorsWithAttributes
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.database.settings.SensorUpdateFrequencySetting
 import java.io.IOException
 import java.net.ConnectException
 import java.net.SocketTimeoutException
@@ -43,9 +43,9 @@ import timber.log.Timber
 
 abstract class SensorReceiverBase : BroadcastReceiver() {
     companion object {
-        const val ACTION_UPDATE_SENSOR = "io.homeassistant.companion.android.UPDATE_SENSOR"
-        const val ACTION_UPDATE_SENSORS = "io.homeassistant.companion.android.UPDATE_SENSORS"
-        const val ACTION_STOP_BEACON_SCANNING = "io.homeassistant.companion.android.STOP_BEACON_SCANNING"
+        const val ACTION_UPDATE_SENSOR = "io.hivebit.companion.android.UPDATE_SENSOR"
+        const val ACTION_UPDATE_SENSORS = "io.hivebit.companion.android.UPDATE_SENSORS"
+        const val ACTION_STOP_BEACON_SCANNING = "io.hivebit.companion.android.STOP_BEACON_SCANNING"
         const val EXTRA_SENSOR_ID = "sensorId"
 
         suspend fun shouldDoFastUpdates(context: Context): Boolean {
@@ -215,8 +215,8 @@ abstract class SensorReceiverBase : BroadcastReceiver() {
             return false
         }
 
-        val currentHAversion = integrationRepository.getHomeAssistantVersion()
-        val supportsDisabledSensors = integrationRepository.isHomeAssistantVersionAtLeast(2022, 6, 0)
+        val currentHAversion = integrationRepository.getHivebitVersion()
+        val supportsDisabledSensors = integrationRepository.isHivebitVersionAtLeast(2022, 6, 0)
         val serverIsTrusted = integrationRepository.isTrusted()
         val coreSensorStatus: Map<String, Boolean>? =
             if (supportsDisabledSensors && (serverIsTrusted || (sensorDao.getEnabledCount() ?: 0) > 0)) {

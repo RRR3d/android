@@ -7,7 +7,7 @@
         -->
         <activity
             android:theme="@android:style/Theme.Material.Light.NoActionBar"
-            android:name="io.homeassistant.companion.android.HiltComponentActivity"
+            android:name="io.hivebit.companion.android.HiltComponentActivity"
             />
     </application>
 

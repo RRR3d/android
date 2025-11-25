@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.home.views
+package io.hivebit.companion.android.home.views
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
@@ -10,17 +10,17 @@ import androidx.wear.compose.foundation.lazy.items
 import androidx.wear.compose.material3.SwitchButton
 import androidx.wear.compose.material3.Text
 import com.mikepenz.iconics.compose.Image
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.getIcon
-import io.homeassistant.companion.android.home.MainViewModel
-import io.homeassistant.companion.android.theme.WearAppTheme
-import io.homeassistant.companion.android.theme.getSwitchButtonColors
-import io.homeassistant.companion.android.theme.wearColorScheme
-import io.homeassistant.companion.android.views.ExpandableListHeader
-import io.homeassistant.companion.android.views.ListHeader
-import io.homeassistant.companion.android.views.ThemeLazyColumn
-import io.homeassistant.companion.android.views.rememberExpandedStates
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.getIcon
+import io.hivebit.companion.android.home.MainViewModel
+import io.hivebit.companion.android.theme.WearAppTheme
+import io.hivebit.companion.android.theme.getSwitchButtonColors
+import io.hivebit.companion.android.theme.wearColorScheme
+import io.hivebit.companion.android.views.ExpandableListHeader
+import io.hivebit.companion.android.views.ListHeader
+import io.hivebit.companion.android.views.ThemeLazyColumn
+import io.hivebit.companion.android.views.rememberExpandedStates
 
 @Composable
 fun SetFavoritesView(

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.frontend.navigation
+package io.hivebit.companion.android.frontend.navigation
 
 import android.content.ComponentName
 import androidx.activity.compose.LocalActivity
@@ -10,8 +10,8 @@ import androidx.navigation.NavOptions
 import androidx.navigation.compose.composable
 import androidx.navigation.get
 import androidx.navigation.toRoute
-import io.homeassistant.companion.android.HAStartDestinationRoute
-import io.homeassistant.companion.android.common.data.servers.ServerManager.Companion.SERVER_ID_ACTIVE
+import io.hivebit.companion.android.HAStartDestinationRoute
+import io.hivebit.companion.android.common.data.servers.ServerManager.Companion.SERVER_ID_ACTIVE
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
@@ -62,7 +62,7 @@ internal fun NavGraphBuilder.frontendScreen(navController: NavController) {
     ).build().setComponentName(
         ComponentName(
             navController.context,
-            "io.homeassistant.companion.android.webview.WebViewActivity",
+            "io.hivebit.companion.android.webview.WebViewActivity",
         ),
     )
 

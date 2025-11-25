@@ -1,15 +1,15 @@
 plugins {
     alias(libs.plugins.android.library)
-    alias(libs.plugins.homeassistant.android.common)
-    alias(libs.plugins.homeassistant.android.compose)
+    alias(libs.plugins.hivebit.android.common)
+    alias(libs.plugins.hivebit.android.compose)
     alias(libs.plugins.kotlin.parcelize)
 }
 
 android {
-    namespace = "io.homeassistant.companion.android.onboarding"
+    namespace = "io.hivebit.companion.android.onboarding"
 
     defaultConfig {
-        testInstrumentationRunner = "io.homeassistant.companion.android.CustomTestRunner"
+        testInstrumentationRunner = "io.hivebit.companion.android.CustomTestRunner"
     }
     testOptions {
         // This is needed otherwise we are not able to run instrumentation test in :onboarding

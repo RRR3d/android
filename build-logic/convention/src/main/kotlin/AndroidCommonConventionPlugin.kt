@@ -1,6 +1,6 @@
 import com.android.build.api.dsl.ApplicationExtension
-import io.homeassistant.companion.android.androidConfig
-import io.homeassistant.companion.android.getPluginId
+import io.hivebit.companion.android.androidConfig
+import io.hivebit.companion.android.getPluginId
 import java.io.File
 import org.gradle.api.Plugin
 import org.gradle.api.Project

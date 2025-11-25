@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.controls
+package io.hivebit.companion.android.controls
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -10,11 +10,11 @@ import android.service.controls.DeviceTypes
 import android.service.controls.actions.ControlAction
 import android.service.controls.templates.ThumbnailTemplate
 import androidx.annotation.RequiresApi
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.IntegrationRepository
-import io.homeassistant.companion.android.common.util.STATE_UNAVAILABLE
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.IntegrationRepository
+import io.hivebit.companion.android.common.util.STATE_UNAVAILABLE
 import java.net.URL
 import java.util.concurrent.TimeUnit
 import kotlinx.coroutines.Dispatchers

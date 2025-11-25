@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.thread
+package io.hivebit.companion.android.thread
 
 import dagger.Binds
 import dagger.Module

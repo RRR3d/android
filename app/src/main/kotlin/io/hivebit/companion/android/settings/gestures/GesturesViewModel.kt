@@ -1,12 +1,12 @@
-package io.homeassistant.companion.android.settings.gestures
+package io.hivebit.companion.android.settings.gestures
 
 import androidx.compose.runtime.mutableStateMapOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.common.util.GestureAction
-import io.homeassistant.companion.android.common.util.HAGesture
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.common.util.GestureAction
+import io.hivebit.companion.android.common.util.HAGesture
 import javax.inject.Inject
 import kotlinx.coroutines.launch
 

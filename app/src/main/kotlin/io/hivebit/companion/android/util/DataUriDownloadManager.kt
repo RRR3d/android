@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.util
+package io.hivebit.companion.android.util
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -15,8 +15,8 @@ import android.util.Base64
 import android.webkit.MimeTypeMap
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.util.CHANNEL_DOWNLOADS
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.util.CHANNEL_DOWNLOADS
 import java.io.File
 import java.io.FileOutputStream
 import java.text.SimpleDateFormat

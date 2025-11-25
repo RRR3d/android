@@ -1,23 +1,23 @@
-package io.homeassistant.companion.android.webview.addto
+package io.hivebit.companion.android.webview.addto
 
 import android.content.Context
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.common.data.integration.Entity
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.CAMERA_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.IMAGE_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.MEDIA_PLAYER_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.IntegrationDomains.TODO_DOMAIN
-import io.homeassistant.companion.android.common.data.integration.IntegrationRepository
-import io.homeassistant.companion.android.common.data.prefs.AutoFavorite
-import io.homeassistant.companion.android.common.data.prefs.PrefsRepository
-import io.homeassistant.companion.android.common.data.servers.ServerManager
-import io.homeassistant.companion.android.common.util.FailFast
-import io.homeassistant.companion.android.database.server.Server
-import io.homeassistant.companion.android.testing.unit.ConsoleLogExtension
-import io.homeassistant.companion.android.widgets.camera.CameraWidgetConfigureActivity
-import io.homeassistant.companion.android.widgets.entity.EntityWidgetConfigureActivity
-import io.homeassistant.companion.android.widgets.mediaplayer.MediaPlayerControlsWidgetConfigureActivity
-import io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureActivity
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.common.data.integration.Entity
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.CAMERA_DOMAIN
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.IMAGE_DOMAIN
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.MEDIA_PLAYER_DOMAIN
+import io.hivebit.companion.android.common.data.integration.IntegrationDomains.TODO_DOMAIN
+import io.hivebit.companion.android.common.data.integration.IntegrationRepository
+import io.hivebit.companion.android.common.data.prefs.AutoFavorite
+import io.hivebit.companion.android.common.data.prefs.PrefsRepository
+import io.hivebit.companion.android.common.data.servers.ServerManager
+import io.hivebit.companion.android.common.util.FailFast
+import io.hivebit.companion.android.database.server.Server
+import io.hivebit.companion.android.testing.unit.ConsoleLogExtension
+import io.hivebit.companion.android.widgets.camera.CameraWidgetConfigureActivity
+import io.hivebit.companion.android.widgets.entity.EntityWidgetConfigureActivity
+import io.hivebit.companion.android.widgets.mediaplayer.MediaPlayerControlsWidgetConfigureActivity
+import io.hivebit.companion.android.widgets.todo.TodoWidgetConfigureActivity
 import io.mockk.coEvery
 import io.mockk.coJustRun
 import io.mockk.coVerify

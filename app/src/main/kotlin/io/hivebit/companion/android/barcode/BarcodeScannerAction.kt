@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.barcode
+package io.hivebit.companion.android.barcode
 
 data class BarcodeScannerAction(val type: BarcodeActionType, val message: String? = null)
 

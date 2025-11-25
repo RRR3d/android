@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.settings.notification
+package io.hivebit.companion.android.settings.notification
 
 import android.os.Build
 import android.os.Bundle
@@ -10,10 +10,10 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.common.R as commonR
-import io.homeassistant.companion.android.settings.addHelpMenuProvider
-import io.homeassistant.companion.android.settings.notification.views.NotificationChannelView
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.common.R as commonR
+import io.hivebit.companion.android.settings.addHelpMenuProvider
+import io.hivebit.companion.android.settings.notification.views.NotificationChannelView
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
 
 @AndroidEntryPoint
 class NotificationChannelFragment : Fragment() {

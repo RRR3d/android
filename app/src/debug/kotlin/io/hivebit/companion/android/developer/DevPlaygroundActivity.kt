@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.developer
+package io.hivebit.companion.android.developer
 
 import android.content.Context
 import android.content.Intent
@@ -18,12 +18,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import io.homeassistant.companion.android.barcode.BarcodeScannerActivity
-import io.homeassistant.companion.android.common.util.FailFast
-import io.homeassistant.companion.android.developer.catalog.HAComposeCatalogActivity
-import io.homeassistant.companion.android.settings.SettingsActivity
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
-import io.homeassistant.companion.android.util.enableEdgeToEdgeCompat
+import io.hivebit.companion.android.barcode.BarcodeScannerActivity
+import io.hivebit.companion.android.common.util.FailFast
+import io.hivebit.companion.android.developer.catalog.HAComposeCatalogActivity
+import io.hivebit.companion.android.settings.SettingsActivity
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.util.enableEdgeToEdgeCompat
 
 /**
  * This activity is meant to host a playground for development purposes.

@@ -1,4 +1,4 @@
-package io.homeassistant.companion.android.onboarding.manual
+package io.hivebit.companion.android.onboarding.manual
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,10 +8,10 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import dagger.hilt.android.AndroidEntryPoint
-import io.homeassistant.companion.android.R
-import io.homeassistant.companion.android.onboarding.OnboardingViewModel
-import io.homeassistant.companion.android.onboarding.authentication.AuthenticationFragment
-import io.homeassistant.companion.android.util.compose.HomeAssistantAppTheme
+import io.hivebit.companion.android.R
+import io.hivebit.companion.android.onboarding.OnboardingViewModel
+import io.hivebit.companion.android.onboarding.authentication.AuthenticationFragment
+import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
 
 @AndroidEntryPoint
 class ManualSetupFragment : Fragment() {
