@@ -22,38 +22,39 @@ import io.hivebit.companion.android.common.compose.theme.DarkHAColorScheme
 import io.hivebit.companion.android.common.compose.theme.LightHAColorScheme
 import io.hivebit.companion.android.common.compose.theme.LocalHAColorScheme
 
-val colorPrimary = Color(0xFF03A9F4)
-val colorPrimaryDark = Color(0xFF0288D1)
-val darkColorBackground = Color(0xFF1C1C1C)
+// Hivebit Brand Colors
+val colorPrimary = Color(0xFFC7B19A)  // Hivebit Primary - Warm Beige
+val colorPrimaryDark = Color(0xFF232323)  // Hivebit Accent - Dark
+val darkColorBackground = Color(0xFF1A1A1A)  // Hivebit Dark Background
 
 const val STEP_SCREEN_MAX_WIDTH_DP = 600.0f
 
-private val haLightColors = lightColors(
+private val hivebitLightColors = lightColors(
     primary = colorPrimary,
-    primaryVariant = colorPrimaryDark,
+    primaryVariant = Color(0xFFB79D87),  // Hivebit Primary Variant
     secondary = colorPrimary,
     secondaryVariant = colorPrimary,
-    onPrimary = Color.White,
-    onSecondary = Color.White,
+    onPrimary = Color(0xFF1E1E1E),  // Charcoal on primary
+    onSecondary = Color(0xFF1E1E1E),  // Charcoal on secondary
 )
-private val haDarkColors = darkColors(
+private val hivebitDarkColors = darkColors(
     primary = colorPrimary,
-    primaryVariant = colorPrimaryDark,
+    primaryVariant = Color(0xFFB79D87),  // Hivebit Primary Variant
     secondary = colorPrimary,
     secondaryVariant = colorPrimary,
     background = darkColorBackground,
-    onPrimary = Color.White,
-    onSecondary = Color.White,
+    onPrimary = Color(0xFF1E1E1E),  // Charcoal on primary
+    onSecondary = Color(0xFF1E1E1E),  // Charcoal on secondary
 )
 
 /**
- * A Compose [MaterialTheme] version of the app's XML theme. This achieves the same goal as the
- * (now deprecated) [com.google.accompanist.themeadapter.material.MdcTheme].
+ * A Compose [MaterialTheme] version of the Hivebit app theme.
+ * Uses Hivebit brand colors (Warm Beige primary, Dark accent).
  */
 @Composable
-fun HomeAssistantAppTheme(content: @Composable () -> Unit) {
+fun HivebitAppTheme(content: @Composable () -> Unit) {
     MaterialTheme(
-        colors = if (isSystemInDarkTheme()) haDarkColors else haLightColors,
+        colors = if (isSystemInDarkTheme()) hivebitDarkColors else hivebitLightColors,
     ) {
         // Copied from MdcTheme:
         CompositionLocalProvider(
@@ -64,6 +65,14 @@ fun HomeAssistantAppTheme(content: @Composable () -> Unit) {
         )
     }
 }
+
+/**
+ * Backwards compatibility alias for HomeAssistant theme.
+ * @deprecated Use HivebitAppTheme instead.
+ */
+@Deprecated("Use HivebitAppTheme", ReplaceWith("HivebitAppTheme(content)"))
+@Composable
+fun HomeAssistantAppTheme(content: @Composable () -> Unit) = HivebitAppTheme(content)
 
 @Composable
 fun HivebitGlanceTheme(

@@ -10,26 +10,32 @@
         <item name="alertDialogTheme">@style/Theme.HomeAssistant.Dialog.Alert.Launch</item>
     </style>
 
-    <style name="Theme.HomeAssistant" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="colorSecondary">@color/colorAccent</item>
-        <item name="colorSecondaryVariant">@color/colorAccent</item>
-        <item name="colorButtonNormal">@color/colorPrimary</item>
+    <style name="Theme.Hivebit" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/hivebit_primary</item>
+        <item name="colorPrimaryDark">@color/hivebit_accent</item>
+        <item name="colorAccent">@color/hivebit_primary</item>
+        <item name="colorSecondary">@color/hivebit_primary</item>
+        <item name="colorSecondaryVariant">@color/hivebit_primary_variant</item>
+        <item name="colorButtonNormal">@color/hivebit_primary</item>
         <item name="android:colorBackground">@color/colorBackground</item>
-        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
-        <item name="alertDialogTheme">@style/Theme.HomeAssistant.Dialog.Alert</item>
+        <item name="android:navigationBarColor">@color/hivebit_accent</item>
+        <item name="alertDialogTheme">@style/Theme.Hivebit.Dialog.Alert</item>
         <item name="actionBarPopupTheme">@style/ThemeOverlay.MaterialComponents.Dark</item>
-        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.HomeAssistant.BottomSheetDialog</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.Hivebit.BottomSheetDialog</item>
     </style>
+    
+    <!-- Backwards compatibility alias -->
+    <style name="Theme.HomeAssistant" parent="Theme.Hivebit" />
 
-    <style name="Theme.HomeAssistant.Config" parent="Theme.HomeAssistant">
+    <style name="Theme.Hivebit.Config" parent="Theme.Hivebit">
         <item name="android:statusBarColor">@color/colorBackground</item>
         <item name="android:windowLightStatusBar">@bool/isLightMode</item>
     </style>
+    
+    <!-- Backwards compatibility alias -->
+    <style name="Theme.HomeAssistant.Config" parent="Theme.Hivebit.Config" />
 
-    <style name="Theme.HomeAssistant.Assist" parent="Theme.HomeAssistant" >
+    <style name="Theme.Hivebit.Assist" parent="Theme.Hivebit" >
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -37,11 +43,17 @@
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:backgroundDimAmount">0.1</item>
     </style>
+    
+    <!-- Backwards compatibility alias -->
+    <style name="Theme.HomeAssistant.Assist" parent="Theme.Hivebit.Assist" />
 
-    <style name="TextAppearance.HomeAssistant.Headline" parent="TextAppearance.MaterialComponents.Headline1">
+    <style name="TextAppearance.Hivebit.Headline" parent="TextAppearance.MaterialComponents.Headline1">
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/colorHeadline1</item>
     </style>
+    
+    <!-- Backwards compatibility alias -->
+    <style name="TextAppearance.HomeAssistant.Headline" parent="TextAppearance.Hivebit.Headline" />
 
     <style name="TextAppearance.HomeAssistant.Title" parent="TextAppearance.MaterialComponents.Headline2">
         <item name="android:textSize">18sp</item>
@@ -71,11 +83,17 @@
         <item name="popupTheme">@style/Theme.HomeAssistant.PopupTheme</item>
     </style>
 
-    <style name="ThemeOverlay.HomeAssistant.BottomSheetDialog" parent="ThemeOverlay.HomeAssistant.BottomSheetDialog.Base"/>
+    <style name="ThemeOverlay.Hivebit.BottomSheetDialog" parent="ThemeOverlay.Hivebit.BottomSheetDialog.Base"/>
+    
+    <!-- Backwards compatibility alias -->
+    <style name="ThemeOverlay.HomeAssistant.BottomSheetDialog" parent="ThemeOverlay.Hivebit.BottomSheetDialog" />
 
-    <style name="ThemeOverlay.HomeAssistant.BottomSheetDialog.Base" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+    <style name="ThemeOverlay.Hivebit.BottomSheetDialog.Base" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
         <item name="android:backgroundTint">@android:color/transparent</item>
     </style>
+    
+    <!-- Backwards compatibility alias -->
+    <style name="ThemeOverlay.HomeAssistant.BottomSheetDialog.Base" parent="ThemeOverlay.Hivebit.BottomSheetDialog.Base" />
 
     <style name="ThemeOverlay.HomeAssistant.ConfigActionBar" parent="ThemeOverlay.MaterialComponents.ActionBar">
         <item name="android:background">@color/colorBackground</item>
@@ -88,16 +106,19 @@
         <item name="android:background">@null</item>
     </style>
 
-    <style name="Theme.HomeAssistant.Dialog.Alert" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+    <style name="Theme.Hivebit.Dialog.Alert" parent="Theme.MaterialComponents.Light.Dialog.Alert">
         <item name="android:textColor">@color/colorDialogTitle</item>
         <item name="buttonBarPositiveButtonStyle">@style/Alert.Button.Positive</item>
         <item name="buttonBarNegativeButtonStyle">@style/Alert.Button.Negative</item>
         <item name="buttonBarNeutralButtonStyle">@style/Alert.Button.Neutral</item>
         <item name="android:textColorPrimary">@color/colorDialogMessage</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/hivebit_primary</item>
         <item name="textColorAlertDialogListItem">@color/colorDialogMessage</item>
         <item name="colorControlNormal">@color/colorDialogMessage</item>
     </style>
+    
+    <!-- Backwards compatibility alias -->
+    <style name="Theme.HomeAssistant.Dialog.Alert" parent="Theme.Hivebit.Dialog.Alert" />
 
     <style name="Theme.HomeAssistant.Widget">
         <item name="colorWidgetPrimary">@color/colorWidgetButtonLabel</item>

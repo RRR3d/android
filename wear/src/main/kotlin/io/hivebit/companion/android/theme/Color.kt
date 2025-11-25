@@ -7,24 +7,25 @@ import androidx.wear.compose.material3.ColorScheme
 import androidx.wear.compose.material3.SliderDefaults
 import androidx.wear.compose.material3.SwitchButtonDefaults
 
-val md_theme_dark_primary = Color(0xFF03A9F4)
-val md_theme_dark_onPrimary = Color(0xFF00344F)
-val md_theme_dark_primaryContainer = Color(0xFF004B70)
-val md_theme_dark_onPrimaryContainer = Color(0xFFCAE6FF)
-val md_theme_dark_secondary = Color(0xFF96CCFF)
-val md_theme_dark_onSecondary = Color(0xFF003353)
-val md_theme_dark_secondaryContainer = Color(0xFF004A75)
-val md_theme_dark_onSecondaryContainer = Color(0xFFCEE5FF)
-val md_theme_dark_tertiary = Color(0xFFF6C344)
-val md_theme_dark_onTertiary = Color(0xFF3F2E00)
-val md_theme_dark_tertiaryContainer = Color(0xFF5B4300)
-val md_theme_dark_onTertiaryContainer = Color(0xFFFFDF9B)
-val md_theme_dark_error = Color(0xFFFFB4AB)
-val md_theme_dark_onError = Color(0xFF690005)
-val md_theme_dark_onBackground = Color(0xFFA6EEFF)
-val md_theme_dark_onSurfaceVariant = Color(0xFFC1C7CE)
-val md_theme_dark_outline = Color(0xFF8B9198)
-val md_theme_dark_outlineVariant = Color(0xFF41474D)
+// Hivebit Brand Colors - Warm Beige Primary
+val md_theme_dark_primary = Color(0xFFC7B19A)  // Hivebit Primary
+val md_theme_dark_onPrimary = Color(0xFF1E1E1E)  // Charcoal Black
+val md_theme_dark_primaryContainer = Color(0xFFB79D87)  // Hivebit Primary Variant
+val md_theme_dark_onPrimaryContainer = Color(0xFF1E1E1E)  // Charcoal on container
+val md_theme_dark_secondary = Color(0xFFB79D87)  // Hivebit Secondary
+val md_theme_dark_onSecondary = Color(0xFF1E1E1E)  // Charcoal
+val md_theme_dark_secondaryContainer = Color(0xFF2E2E2E)  // Dark Surface
+val md_theme_dark_onSecondaryContainer = Color(0xFFC7B19A)  // Hivebit Primary
+val md_theme_dark_tertiary = Color(0xFFC7B19A)  // Hivebit Primary for accents
+val md_theme_dark_onTertiary = Color(0xFF1E1E1E)  // Charcoal
+val md_theme_dark_tertiaryContainer = Color(0xFFB79D87)  // Hivebit Variant
+val md_theme_dark_onTertiaryContainer = Color(0xFF1E1E1E)  // Charcoal
+val md_theme_dark_error = Color(0xFFE57373)  // Hivebit Error - Soft Red
+val md_theme_dark_onError = Color(0xFF1E1E1E)  // Charcoal
+val md_theme_dark_onBackground = Color(0xFFA19C96)  // Hivebit Dark Text Secondary
+val md_theme_dark_onSurfaceVariant = Color(0xFFA19C96)  // Hivebit Dark Text Secondary
+val md_theme_dark_outline = Color(0xFF7A756F)  // Muted text
+val md_theme_dark_outlineVariant = Color(0xFF2E2E2E)  // Dark surface variant
 
 internal val wearColorScheme: ColorScheme = ColorScheme(
     primary = md_theme_dark_primary,

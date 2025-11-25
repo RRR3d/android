@@ -1,4 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="ic_launcher_foreground">#FFF2F2F2</color>
+    <!-- Hivebit Brand Colors -->
+    <color name="ic_launcher_foreground">#C7B19A</color>
+    <color name="ic_launcher_background">#232323</color>
+    
+    <!-- HiveBit Primary Brand Colors -->
+    <color name="hivebit_primary">#C7B19A</color>
+    <color name="hivebit_primary_variant">#B79D87</color>
+    <color name="hivebit_on_primary">#1E1E1E</color>
+    
+    <!-- HiveBit Accent Brand Colors -->
+    <color name="hivebit_accent">#232323</color>
+    <color name="hivebit_accent_variant">#2E2E2E</color>
+    <color name="hivebit_on_accent">#FFFFFF</color>
+    
+    <!-- Light Mode Colors -->
+    <color name="hivebit_light_background">#F9F7F4</color>
+    <color name="hivebit_light_surface">#FFFFFF</color>
+    <color name="hivebit_light_divider">#D8D3CD</color>
+    <color name="hivebit_light_text_primary">#1C1C1C</color>
+    <color name="hivebit_light_text_secondary">#7A756F</color>
+    
+    <!-- Dark Mode Colors -->
+    <color name="hivebit_dark_background">#1A1A1A</color>
+    <color name="hivebit_dark_surface">#242424</color>
+    <color name="hivebit_dark_surface_variant">#2E2E2E</color>
+    <color name="hivebit_dark_text_primary">#FFFFFF</color>
+    <color name="hivebit_dark_text_secondary">#A19C96</color>
+    
+    <!-- Status Colors -->
+    <color name="hivebit_status_online">#4CAF50</color>
+    <color name="hivebit_status_offline">#B0ADA9</color>
+    <color name="hivebit_status_error">#E57373</color>
+    <color name="hivebit_status_active">#C7B19A</color>
+    <color name="hivebit_status_standby">#6D6A65</color>
 </resources>
