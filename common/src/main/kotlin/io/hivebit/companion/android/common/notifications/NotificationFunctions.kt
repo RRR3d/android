@@ -245,7 +245,9 @@ fun prepareText(text: String): Spanned {
 
 fun handleColor(context: Context, builder: NotificationCompat.Builder, data: Map<String, String>) {
     val colorString = data["color"]
-    val color = parseColor(context, colorString, R.color.colorPrimary)
+    // Use dark accent color (#232323) for notifications to ensure proper text visibility
+    // This prevents white-on-white text issues in dark mode
+    val color = parseColor(context, colorString, R.color.colorActionBar)
     builder.color = color
 }
 
