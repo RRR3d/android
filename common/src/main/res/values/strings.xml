@@ -495,7 +495,7 @@ Continue granting location access?</string>
     <string name="manage_wear_device">Manage device %1$s</string>
     <string name="manage_widgets_summary">Edit your widgets. Adding/deleting can only be done from the home screen.</string>
     <string name="manage_widgets">Manage widgets</string>
-    <string name="manual_desc">Enter the URL of your Hivebit server. Make sure it includes the protocol and port. For example:\n\nhttp://homeassistant.local:8123 or \nhttps://example.duckdns.org.</string>
+    <string name="manual_desc">Enter the URL of your Hivebit server. Make sure it includes the protocol and port. For example:\n\nhttp://hivebit.local:8123 or \nhttps://example.hivebitaccess.com.</string>
     <string name="manual_setup">Enter address manually</string>
     <string name="manual_setup_hint">Not finding your server?</string>
     <string name="manual_title">What is your Hivebit address?</string>

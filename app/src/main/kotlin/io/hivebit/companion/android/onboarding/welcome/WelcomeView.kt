@@ -40,8 +40,8 @@ fun WelcomeView(onContinue: () -> Unit) {
                 id = commonR.string.app_name,
             ),
             modifier = Modifier
-                .size(width = 380.dp, height = 162.dp)
-                .padding(bottom = 48.dp),
+                .size(width = 450.dp, height = 192.dp)
+                .padding(bottom = 56.dp),
         )
         Text(
             fontSize = 30.sp,
