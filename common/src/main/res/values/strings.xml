@@ -444,7 +444,13 @@
     <string name="location_history_skipped_not_latest">Old location</string>
     <string name="location_history_skipped_old">Very old location</string>
     <string name="location_history_use">Use location history</string>
-    <string name="location_perm_info_message">Android set up restrictions for apps which want to use your Wi-Fi, because Wi-Fi can be theoretically used to determine your location.\n\nTo ensure the app can access Wi-Fi in background (URL decision making, sensors), you must allow location access all the time.\n\nTherefore, to use this option location access all the time is needed.\n\nContinue granting location access?</string>
+    <string name="location_perm_info_message">Android set up restrictions for apps which want to use your Wi-Fi, because Wi-Fi can be theoretically used to determine your location.
+
+To ensure the app can access Wi-Fi in background (URL decision making, sensors), you must allow location access all the time.
+
+Therefore, to use this option location access all the time is needed.
+
+Continue granting location access?</string>
     <string name="location_perm_info_title">Location access</string>
     <string name="location_tracking">Location tracking</string>
     <string name="location_tracking_summary">View a history of location tracking updates to troubleshoot the device tracker</string>
@@ -649,8 +655,33 @@
     <string name="sensor_description_battery_level">The current battery level of the device</string>
     <string name="sensor_description_battery_state">The current charging state of the battery</string>
     <string name="sensor_description_battery_temperature">The current battery temperature</string>
-    <string name="sensor_description_bluetooth_ble_emitter">Send BLE iBeacon with configured interval, used to track presence around house, e.g. together with roomassistant, esp32–mqtt–room or espresence projects.\n\nWarning: this can affect battery life, particularly if the \"Transmitter power\" setting is set to High or \"Advertise Mode\" is set to Low latency.\n\nSettings allow for specifying:\n– \"UUID\" (standard UUID format), \"Major\" and \"Minor\" (should be 0 – 65535), to tailor identifiers and groups. The default Minor value 40004 has the special meaning of forcing the beacon to be recognized by the iBeacon Tracker integration\n- \"Transmitter Power\" and \"Advertise Mode\" to help to preserve battery life (use lowest values if possible)\n - \"Measured Power\" to specify power measured at 1m (initial default -59)\n\nIt is also possible to set beacons to only be transmitted when connected to a Home network, which may be desirable for privacy and battery life.\n\nNote:\nAdditionally a separate setting exists (\"Enable Transmitter\") to stop or start transmitting.</string>
-    <string name="sensor_description_bluetooth_ble_beacon_monitor">Scans for iBeacons and shows the IDs of nearby beacons and their distance in meters. A notification will be shown on the device when scanning is actively running.\n\nWarning: this can affect battery life, especially with a short \"Scan Interval\".\n\nSettings allow for specifying:\n– \"Filter Iterations\" (should be 1 – 100, default: 10), higher values will result in more stable measurements but also less responsiveness.\n– \"Filter RSSI Multiplier\" (should be 1.0 – 2.0, default: 1.05), can be used to achieve more stable measurements when beacons are farther away. This will also affect responsiveness.\n- \"Scan Interval\" (default: 500) milliseconds between scans. Shorter intervals will drain the battery more quickly.\n- \"Scan Period\" (default: 1100) milliseconds to scan for beacons. Most beacons will send a signal every second so this value should be at least 1100ms.\n- \"UUID Filter\" allows to restrict the reported beacons by including (or excluding) those with the selected UUIDs.\n- \"Exclude selected UUIDs\", if false (default) only the beacons with the selected UUIDs are reported. If true all beacons except the selected ones are reported. Not available when \"UUID Filter\" is empty.\n\nNote:\nAdditionally a separate setting exists (\"Enable Beacon Monitor\") to stop or start scanning.</string>
+    <string name="sensor_description_bluetooth_ble_emitter">Send BLE iBeacon with configured interval, used to track presence around house, e.g. together with roomassistant, esp32–mqtt–room or espresence projects.
+
+Warning: this can affect battery life, particularly if the \"Transmitter power\" setting is set to High or \"Advertise Mode\" is set to Low latency.
+
+Settings allow for specifying:
+– \"UUID\" (standard UUID format), \"Major\" and \"Minor\" (should be 0 – 65535), to tailor identifiers and groups. The default Minor value 40004 has the special meaning of forcing the beacon to be recognized by the iBeacon Tracker integration
+- \"Transmitter Power\" and \"Advertise Mode\" to help to preserve battery life (use lowest values if possible)
+ - \"Measured Power\" to specify power measured at 1m (initial default -59)
+
+It is also possible to set beacons to only be transmitted when connected to a Home network, which may be desirable for privacy and battery life.
+
+Note:
+Additionally a separate setting exists (\"Enable Transmitter\") to stop or start transmitting.</string>
+    <string name="sensor_description_bluetooth_ble_beacon_monitor">Scans for iBeacons and shows the IDs of nearby beacons and their distance in meters. A notification will be shown on the device when scanning is actively running.
+
+Warning: this can affect battery life, especially with a short \"Scan Interval\".
+
+Settings allow for specifying:
+– \"Filter Iterations\" (should be 1 – 100, default: 10), higher values will result in more stable measurements but also less responsiveness.
+– \"Filter RSSI Multiplier\" (should be 1.0 – 2.0, default: 1.05), can be used to achieve more stable measurements when beacons are farther away. This will also affect responsiveness.
+- \"Scan Interval\" (default: 500) milliseconds between scans. Shorter intervals will drain the battery more quickly.
+- \"Scan Period\" (default: 1100) milliseconds to scan for beacons. Most beacons will send a signal every second so this value should be at least 1100ms.
+- \"UUID Filter\" allows to restrict the reported beacons by including (or excluding) those with the selected UUIDs.
+- \"Exclude selected UUIDs\", if false (default) only the beacons with the selected UUIDs are reported. If true all beacons except the selected ones are reported. Not available when \"UUID Filter\" is empty.
+
+Note:
+Additionally a separate setting exists (\"Enable Beacon Monitor\") to stop or start scanning.</string>
     <string name="sensor_description_bluetooth_connection">Information about currently connected Bluetooth devices</string>
     <string name="sensor_description_bluetooth_state">Whether Bluetooth is enabled on the device</string>
     <string name="sensor_description_car_battery">Remaining car battery percentage</string>
@@ -681,9 +712,19 @@
     <string name="sensor_description_last_notification">The details of the last notification. You must set up an allow list or explicitly allow all notifications to be sent.\n\nNote: Sending all notification data will result in heavy battery usage.</string>
     <string name="sensor_description_last_reboot">The date and time of the device\'s last reboot.\n\nThe \"Deadband\" setting allows you to adjust the deadband in milliseconds, if you find the value to jump incorrectly. The default value is 60000 (1 minute).</string>
     <string name="sensor_description_last_removed_notification">The details of the last removed notification. This can be any notification either cleared by the user or removed by an application. You must set up an allow list or explicitly allow all notifications to be sent.\n\nNote: Sending all notification data will result in heavy battery usage.</string>
-    <string name="sensor_description_last_update">The intent action for the last update that was sent, periodic updates will show as \"SensorWorker\".\n\nEnabling the \"Add New Intent\" toggle will create 1 setting to allow you to register for a intent action. The toggle will switch back to off once a new setting is created so you will need to turn it back on to save more intent actions. You can also clear out the setting value to remove the setting in the next update.\n\nIf you are not receiving all intents then you will need to add categories that the intent expects. To do this you will need to add each category after the intent separated by a \",\" repeating until there are no more categories. For example an intent with 2 categories will be: \"intent,category1,category2\" as the setting value.\n\nYou must restart the application after making changes to these settings to take effect.</string>
+    <string name="sensor_description_last_update">The intent action for the last update that was sent, periodic updates will show as \"SensorWorker\".
+
+Enabling the \"Add New Intent\" toggle will create 1 setting to allow you to register for a intent action. The toggle will switch back to off once a new setting is created so you will need to turn it back on to save more intent actions. You can also clear out the setting value to remove the setting in the next update.
+
+If you are not receiving all intents then you will need to add categories that the intent expects. To do this you will need to add each category after the intent separated by a \",\" repeating until there are no more categories. For example an intent with 2 categories will be: \"intent,category1,category2\" as the setting value.
+
+You must restart the application after making changes to these settings to take effect.</string>
     <string name="sensor_description_light_sensor">The current level of illuminance</string>
-    <string name="sensor_description_location_accurate">Allow a forced, accurate location update for the device. Review the documentation for options to force a location update.\n\nThe \"Minimum accuracy\" setting allows you to decide how accurate the device location (in meters) has to be to send it to Hivebit.\nThe \"Minimum time between updates\" setting (in milliseconds) keeps the device from sending the accurate location too often.\nThe \"Include in sensor update\" setting will make a location request with each sensor update.</string>
+    <string name="sensor_description_location_accurate">Allow a forced, accurate location update for the device. Review the documentation for options to force a location update.
+
+The \"Minimum accuracy\" setting allows you to decide how accurate the device location (in meters) has to be to send it to Hivebit.
+The \"Minimum time between updates\" setting (in milliseconds) keeps the device from sending the accurate location too often.
+The \"Include in sensor update\" setting will make a location request with each sensor update.</string>
     <string name="sensor_description_location_background">Update your location behind the scenes, periodically.\n\nThe \"Minimum accuracy\" setting allows you to decide how accurate the device location (in meters) has to be to send it to Hivebit.\nThe "Location sent" setting allows you to change how detailed the location information is that is sent to your server.</string>
     <string name="sensor_description_location_zone">Use existing Hivebit zones as geofences for zone based tracking.\n\nThe \"Minimum accuracy\" setting allows you to decide how accurate the device location (in meters) has to be to send it to Hivebit.</string>
     <string name="sensor_description_lullaby">If a lullaby is playing</string>
@@ -1050,8 +1091,8 @@
     <string name="webview_error_SSL_NOTYETVALID">The Hivebit certificate is not yet valid, please review the Hivebit certificate or the connection settings and try again.</string>
     <string name="webview_error_SSL_UNTRUSTED">The Hivebit certificate authority is not trusted, please review the Hivebit certificate or the connection settings and try again.</string>
     <string name="webview_error">There was an error loading Hivebit, please review the connection settings and try again. We will attempt to try another provided URL when you select Refresh.</string>
-    <string name="welcome_hass_desc">This app connects to your Hivebit server and allows integrating data about you and your phone.\n\nHivebit is free and open source home automation software with a focus on local control and privacy.</string>
-    <string name="welcome_hass">Welcome to Hivebit Companion!</string>
+    <string name="welcome_hass_desc">Smart living starts here.\nMake your home more connected, more secure, and more comfortable.</string>
+    <string name="welcome_hass">Welcome to HiveBit</string>
     <string name="what_is_this_crash">Unable to load Hivebit home page, do you have a browser installed?</string>
     <string name="widget_attribute_separator_label">Separator between attributes:</string>
     <string name="widget_background_type_title">Select widget theme</string>
@@ -1153,7 +1194,11 @@
     <string name="websocket_setting_home_wifi">On home network only\n\nNotifications will be delivered by Google only when not on home network.</string>
     <string name="websocket_setting_home_wifi_minimal">On home network only\n\nNotifications will only be received when on home network.</string>
     <string name="sensor_update_frequency">Sensor update frequency</string>
-    <string name="sensor_update_frequency_description">Sensors will update either instantly or on a defined interval. If the sensor supports instant updates then it will always receive instant updates. View the sensor details to learn which sensors update instantly. Location sensors are not part of the update frequency setting as they have their own interval, consider using High Accuracy mode if you need to adjust the update interval.\n\nIf the sensor does not support instant updates then it will update based on one of the below selected options.\n\nYou must restart the application when you make any changes to this setting.</string>
+    <string name="sensor_update_frequency_description">Sensors will update either instantly or on a defined interval. If the sensor supports instant updates then it will always receive instant updates. View the sensor details to learn which sensors update instantly. Location sensors are not part of the update frequency setting as they have their own interval, consider using High Accuracy mode if you need to adjust the update interval.
+
+If the sensor does not support instant updates then it will update based on one of the below selected options.
+
+You must restart the application when you make any changes to this setting.</string>
     <string name="sensor_update_frequency_normal">Normal\n\nSensors will update on a 15 minute interval.</string>
     <string name="sensor_update_frequency_fast_charging">Fast while charging\n\nSensors will update every minute while the device is charging. When not charging sensors will update every 15 minutes.</string>
     <string name="sensor_update_frequency_fast_always">Fast always\n\nSensors will update every minute, always.</string>
@@ -1210,7 +1255,11 @@
     <string name="basic_sensor_name_battery_power">Battery power</string>
     <string name="widget_checkbox_require_authentication">Require authentication</string>
     <string name="widget_error_authenticating">Error authenticating - is an authentication method configured?</string>
-    <string name="sensor_description_battery_power">The current wattage of the device. To get the most out of this sensor consider using the \"Fast while charging\" sensor update frequency setting.\n\nIf the sensor\'s state or attributes are not as expected, you may need to adjust the current or voltage divisor to get a correct value. Some devices report these values in a different unit.\n- The "Battery current divisor" will convert from microamperes to amperes by default.\n- The "Battery voltage divisor" will convert from millivolts to volts by default.</string>
+    <string name="sensor_description_battery_power">The current wattage of the device. To get the most out of this sensor consider using the \"Fast while charging\" sensor update frequency setting.
+
+If the sensor\'s state or attributes are not as expected, you may need to adjust the current or voltage divisor to get a correct value. Some devices report these values in a different unit.
+- The "Battery current divisor" will convert from microamperes to amperes by default.
+- The "Battery voltage divisor" will convert from millivolts to volts by default.</string>
     <string name="sensor_name_accent_color_sensor">Accent color</string>
     <string name="sensor_description_accent_color_sensor">A hexadecimal color value for the dynamic accent color used in the device theme</string>
     <string name="sensor_name_dynamic_color">Dynamic color</string>

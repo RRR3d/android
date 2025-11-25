@@ -61,17 +61,18 @@ private val hivebitDarkColors = darkColors(
 /**
  * A Compose [MaterialTheme] version of the Hivebit app theme.
  * Uses Hivebit brand colors (Warm Beige primary, Dark accent).
+ * Defaults to dark mode for the Hivebit experience.
  */
 @Composable
 fun HivebitAppTheme(content: @Composable () -> Unit) {
     MaterialTheme(
-        colors = if (isSystemInDarkTheme()) hivebitDarkColors else hivebitLightColors,
+        colors = hivebitDarkColors,  // Default to dark mode
     ) {
         // Copied from MdcTheme:
         CompositionLocalProvider(
             LocalContentColor provides MaterialTheme.colors.onBackground,
             // To be able to use HA composable in old theme
-            LocalHAColorScheme provides if (isSystemInDarkTheme()) DarkHAColorScheme else LightHAColorScheme,
+            LocalHAColorScheme provides DarkHAColorScheme,  // Always use dark scheme
             content = content,
         )
     }

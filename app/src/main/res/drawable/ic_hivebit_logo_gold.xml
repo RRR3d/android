@@ -1,0 +1,46 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="80dp"
+    android:viewportWidth="200"
+    android:viewportHeight="80">
+    
+    <!-- Hivebit Gold Logo - Transparent background -->
+    <!-- Color: #C7B19A (Hivebit Gold) -->
+    
+    <group>
+        <!-- H -->
+        <path
+            android:fillColor="#C7B19A"
+            android:pathData="M20,15 L28,15 L28,35 L42,35 L42,15 L50,15 L50,65 L42,65 L42,43 L28,43 L28,65 L20,65 Z"/>
+        
+        <!-- I -->
+        <path
+            android:fillColor="#C7B19A"
+            android:pathData="M60,15 L68,15 L68,65 L60,65 Z"/>
+        
+        <!-- V -->
+        <path
+            android:fillColor="#C7B19A"
+            android:pathData="M78,15 L86,15 L93,50 L100,15 L108,15 L98,65 L88,65 Z"/>
+        
+        <!-- E (with horizontal lines) -->
+        <path
+            android:fillColor="#C7B19A"
+            android:pathData="M118,15 L148,15 L148,23 L126,23 L126,35 L145,35 L145,43 L126,43 L126,57 L148,57 L148,65 L118,65 Z"/>
+        
+        <!-- B -->
+        <path
+            android:fillColor="#C7B19A"
+            android:pathData="M158,15 L180,15 Q188,15 188,23 Q188,31 182,33 Q188,35 188,43 Q188,51 180,51 L166,51 L166,65 L158,65 Z M166,23 L166,35 L178,35 Q180,35 180,29 Q180,23 178,23 Z M166,43 L166,51 L178,51 Q180,51 180,47 Q180,43 178,43 Z"/>
+        
+        <!-- I -->
+        <path
+            android:fillColor="#C7B19A"
+            android:pathData="M198,15 L206,15 L206,65 L198,65 Z"/>
+        
+        <!-- T -->
+        <path
+            android:fillColor="#C7B19A"
+            android:pathData="M216,15 L258,15 L258,23 L241,23 L241,65 L233,65 L233,23 L216,23 Z"/>
+    </group>
+</vector>

@@ -34,16 +34,16 @@ import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
 fun WelcomeView(onContinue: () -> Unit) {
     OnboardingScreen(Modifier.verticalScroll(rememberScrollState())) {
         Image(
-            painter = painterResource(id = R.drawable.ic_launcher_foreground),
+            painter = painterResource(id = R.drawable.ic_hivebit_logo_gold),
             contentDescription = stringResource(
                 id = commonR.string.app_name,
             ),
             modifier = Modifier
-                .size(width = 112.dp, height = 148.dp)
+                .size(width = 200.dp, height = 80.dp)
                 .padding(bottom = 32.dp),
         )
         Text(
-            fontSize = 19.sp,
+            fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center,
             text = stringResource(commonR.string.welcome_hass),
@@ -53,25 +53,6 @@ fun WelcomeView(onContinue: () -> Unit) {
             textAlign = TextAlign.Center,
             text = stringResource(commonR.string.welcome_hass_desc),
             modifier = Modifier.fillMaxWidth().padding(vertical = 16.dp),
-        )
-        val annotatedString = buildAnnotatedString {
-            withLink(
-                LinkAnnotation.Url(
-                    url = "https://www.home-assistant.io",
-                    styles = TextLinkStyles(
-                        SpanStyle(
-                            color = MaterialTheme.colors.primary,
-                            textDecoration = TextDecoration.Underline,
-                        ),
-                    ),
-                ),
-            ) {
-                append(stringResource(id = commonR.string.learn_more))
-            }
-        }
-        Text(
-            text = annotatedString,
-            modifier = Modifier.padding(bottom = 16.dp),
         )
 
         Button(
