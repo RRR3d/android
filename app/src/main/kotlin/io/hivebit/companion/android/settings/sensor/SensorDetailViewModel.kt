@@ -415,15 +415,18 @@ class SensorDetailViewModel @Inject constructor(
                 }
             }
         } else {
-            val appInfo = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                packageManager?.getInstalledApplications(
-                    PackageManager.ApplicationInfoFlags.of(PackageManager.GET_META_DATA.toLong()),
-                )
-            } else {
-                @Suppress("DEPRECATION")
-                packageManager?.getInstalledApplications(PackageManager.GET_META_DATA)
-            }
-            appInfo.orEmpty()
+            // Commented out to comply with Google Play policy - QUERY_ALL_PACKAGES not allowed
+            // Use policy-compliant alternatives like queryIntentActivities for launchable apps
+            // val appInfo = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            //     packageManager?.getInstalledApplications(
+            //         PackageManager.ApplicationInfoFlags.of(PackageManager.GET_META_DATA.toLong()),
+            //     )
+            // } else {
+            //     @Suppress("DEPRECATION")
+            //     packageManager?.getInstalledApplications(PackageManager.GET_META_DATA)
+            // }
+            // appInfo.orEmpty()
+            emptyList() // Return empty list - app filtering features will be limited
         }
     }
 

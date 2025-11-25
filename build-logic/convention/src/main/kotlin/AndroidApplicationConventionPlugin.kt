@@ -44,9 +44,9 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                     applicationId = APPLICATION_ID
                     targetSdk = libs.versions.androidSdk.target.get().toInt()
 
-                    // Force Hivebit version to 1.0.0
-                    versionName = "1.0.0"
-                    versionCode = System.getenv("VERSION_CODE")?.toIntOrNull() ?: 1
+                    // Force Hivebit version to 2.2.0
+                    versionName = "2.2.0"
+                    versionCode = System.getenv("VERSION_CODE")?.toIntOrNull() ?: 4
 
                     val noStrictMode = project.findProperty("noStrictMode")?.toString()?.ifEmpty { "true" }
                         ?.toBoolean() ?: false
