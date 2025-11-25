@@ -370,7 +370,7 @@ class SettingsFragment(private val presenter: SettingsPresenter, private val lan
         }
 
         findPreference<Preference>("privacy")?.let {
-            it.summary = "https://www.home-assistant.io/privacy/"
+            it.summary = "https://hivebitaccess.com/privacy"
             it.intent = Intent(Intent.ACTION_VIEW, it.summary.toString().toUri())
         }
 
