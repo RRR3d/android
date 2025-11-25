@@ -34,7 +34,7 @@ import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
 fun WelcomeView(onContinue: () -> Unit) {
     OnboardingScreen(Modifier.verticalScroll(rememberScrollState())) {
         Image(
-            painter = painterResource(id = R.drawable.app_icon_launch),
+            painter = painterResource(id = R.drawable.ic_launcher_foreground),
             contentDescription = stringResource(
                 id = commonR.string.app_name,
             ),
