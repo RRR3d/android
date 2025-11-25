@@ -2,7 +2,7 @@
 <changelog xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="MissingDefaultResource">
     <release version="2025.11.5 - Main" versioncode="3">
-        <change>Easily add entities to widgets or favorites from the more info dialog (requires Home Assistant 2025.12 or newer)</change>
+        <change>Easily add entities to widgets or favorites from the more info dialog (requires Hivebit 2025.12 or newer)</change>
         <change>Health Connect sensors are now available for in the minimal version of the app</change>
         <change>Bug fixes and dependency updates</change>
     </release>
