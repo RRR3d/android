@@ -59,10 +59,10 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
 
                 signingConfigs {
                     create("release") {
-                        storeFile = file(System.getenv("KEYSTORE_PATH") ?: "release_keystore.keystore")
-                        storePassword = System.getenv("KEYSTORE_PASSWORD") ?: ""
-                        keyAlias = System.getenv("KEYSTORE_ALIAS") ?: ""
-                        keyPassword = System.getenv("KEYSTORE_ALIAS_PASSWORD") ?: ""
+                        storeFile = file(System.getenv("KEYSTORE_PATH") ?: "${rootDir}/hivebit-release.jks")
+                        storePassword = System.getenv("KEYSTORE_PASSWORD") ?: "hivebit2024"
+                        keyAlias = System.getenv("KEYSTORE_ALIAS") ?: "hivebit"
+                        keyPassword = System.getenv("KEYSTORE_ALIAS_PASSWORD") ?: "hivebit2024"
                         enableV1Signing = true
                         enableV2Signing = true
                     }
