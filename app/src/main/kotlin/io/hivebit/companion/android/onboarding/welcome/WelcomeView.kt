@@ -34,23 +34,25 @@ import io.hivebit.companion.android.util.compose.HomeAssistantAppTheme
 fun WelcomeView(onContinue: () -> Unit) {
     OnboardingScreen(Modifier.verticalScroll(rememberScrollState())) {
         Image(
-            painter = painterResource(id = R.drawable.ic_hivebit_logo_gold),
+            painter = painterResource(id = R.drawable.hivebit_logo_gold),
             contentDescription = stringResource(
                 id = commonR.string.app_name,
             ),
             modifier = Modifier
-                .size(width = 200.dp, height = 80.dp)
+                .size(width = 250.dp, height = 106.dp)
                 .padding(bottom = 32.dp),
         )
         Text(
-            fontSize = 24.sp,
+            fontSize = 28.sp,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center,
+            color = MaterialTheme.colors.onBackground,
             text = stringResource(commonR.string.welcome_hass),
         )
         Text(
-            fontSize = 17.sp,
+            fontSize = 18.sp,
             textAlign = TextAlign.Center,
+            color = MaterialTheme.colors.onBackground,
             text = stringResource(commonR.string.welcome_hass_desc),
             modifier = Modifier.fillMaxWidth().padding(vertical = 16.dp),
         )

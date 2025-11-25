@@ -10,15 +10,21 @@
         <item name="alertDialogTheme">@style/Theme.HomeAssistant.Dialog.Alert.Launch</item>
     </style>
 
-    <style name="Theme.Hivebit" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Hivebit" parent="Theme.MaterialComponents.NoActionBar">
         <item name="colorPrimary">@color/hivebit_primary</item>
         <item name="colorPrimaryDark">@color/hivebit_accent</item>
         <item name="colorAccent">@color/hivebit_primary</item>
         <item name="colorSecondary">@color/hivebit_primary</item>
         <item name="colorSecondaryVariant">@color/hivebit_primary_variant</item>
         <item name="colorButtonNormal">@color/hivebit_primary</item>
-        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:colorBackground">@color/hivebit_dark_background</item>
         <item name="android:navigationBarColor">@color/hivebit_accent</item>
+        <item name="android:statusBarColor">@color/hivebit_dark_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/hivebit_dark_background</item>
+        <item name="colorSurface">@color/hivebit_dark_surface</item>
+        <item name="colorOnBackground">@color/hivebit_dark_text_primary</item>
+        <item name="colorOnSurface">@color/hivebit_dark_text_primary</item>
         <item name="alertDialogTheme">@style/Theme.Hivebit.Dialog.Alert</item>
         <item name="actionBarPopupTheme">@style/ThemeOverlay.MaterialComponents.Dark</item>
         <item name="bottomSheetDialogTheme">@style/ThemeOverlay.Hivebit.BottomSheetDialog</item>
