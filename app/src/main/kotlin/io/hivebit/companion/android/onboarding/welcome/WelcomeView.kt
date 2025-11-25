@@ -12,6 +12,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.LinkAnnotation
@@ -39,22 +40,22 @@ fun WelcomeView(onContinue: () -> Unit) {
                 id = commonR.string.app_name,
             ),
             modifier = Modifier
-                .size(width = 320.dp, height = 136.dp)
-                .padding(bottom = 40.dp),
+                .size(width = 380.dp, height = 162.dp)
+                .padding(bottom = 48.dp),
         )
         Text(
-            fontSize = 28.sp,
+            fontSize = 30.sp,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center,
-            color = MaterialTheme.colors.onBackground,
+            color = Color(0xFFFFFFFF),  // Pure White from HivebitColors.md On Accent
             text = stringResource(commonR.string.welcome_hass),
         )
         Text(
-            fontSize = 18.sp,
+            fontSize = 19.sp,
             textAlign = TextAlign.Center,
-            color = MaterialTheme.colors.onBackground,
+            color = Color(0xFFFFFFFF),  // Pure White from HivebitColors.md Text Primary Dark Mode
             text = stringResource(commonR.string.welcome_hass_desc),
-            modifier = Modifier.fillMaxWidth().padding(vertical = 16.dp),
+            modifier = Modifier.fillMaxWidth().padding(vertical = 18.dp),
         )
 
         Button(
