@@ -78,8 +78,8 @@
 
     <style name="ThemeOverlay.HomeAssistant.ActionBar" parent="ThemeOverlay.MaterialComponents.ActionBar">
         <item name="android:background">@color/colorActionBar</item>
-        <item name="android:textColorPrimary">@color/colorOnPrimary</item>
-        <item name="colorControlNormal">@color/colorOnPrimary</item>
+        <item name="android:textColorPrimary">#FFFFFF</item> <!-- Pure White on Hivebit Black -->
+        <item name="colorControlNormal">#FFFFFF</item> <!-- Pure White icons -->
         <item name="popupTheme">@style/Theme.HomeAssistant.PopupTheme</item>
     </style>
 

@@ -30,21 +30,32 @@ val darkColorBackground = Color(0xFF1A1A1A)  // Hivebit Dark Background
 const val STEP_SCREEN_MAX_WIDTH_DP = 600.0f
 
 private val hivebitLightColors = lightColors(
-    primary = colorPrimary,
-    primaryVariant = Color(0xFFB79D87),  // Hivebit Primary Variant
+    primary = colorPrimary,  // #C7B19A - Hivebit Gold
+    primaryVariant = Color(0xFFB79D87),  // Deep Gold
     secondary = colorPrimary,
     secondaryVariant = colorPrimary,
+    background = Color(0xFFF9F7F4),  // Off-White background
+    surface = Color(0xFFFFFFFF),  // White surface
+    error = Color(0xFFE57373),  // Soft red error
     onPrimary = Color(0xFF1E1E1E),  // Charcoal on primary
     onSecondary = Color(0xFF1E1E1E),  // Charcoal on secondary
+    onBackground = Color(0xFF1C1C1C),  // Text primary
+    onSurface = Color(0xFF1C1C1C),  // Text primary
+    onError = Color(0xFFFFFFFF),  // White on error
 )
 private val hivebitDarkColors = darkColors(
-    primary = colorPrimary,
-    primaryVariant = Color(0xFFB79D87),  // Hivebit Primary Variant
+    primary = colorPrimary,  // #C7B19A - Hivebit Gold
+    primaryVariant = Color(0xFFB79D87),  // Deep Gold
     secondary = colorPrimary,
     secondaryVariant = colorPrimary,
-    background = darkColorBackground,
+    background = darkColorBackground,  // #1A1A1A - Ultra-dark grey
+    surface = Color(0xFF242424),  // Graphite surface
+    error = Color(0xFFE57373),  // Soft red error
     onPrimary = Color(0xFF1E1E1E),  // Charcoal on primary
     onSecondary = Color(0xFF1E1E1E),  // Charcoal on secondary
+    onBackground = Color(0xFFFFFFFF),  // White text
+    onSurface = Color(0xFFFFFFFF),  // White text
+    onError = Color(0xFFFFFFFF),  // White on error
 )
 
 /**
@@ -138,23 +149,28 @@ object HivebitGlanceDimensions {
 }
 
 val glanceHaLightColors = lightColors(
-    primary = colorPrimary,
-    primaryVariant = colorPrimaryDark,
+    primary = colorPrimary,  // #C7B19A - Hivebit Gold
+    primaryVariant = colorPrimaryDark,  // #232323 - Hivebit Black
     secondary = colorPrimary,
     secondaryVariant = colorPrimary,
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onSurface = darkColorBackground,
+    background = Color(0xFFF9F7F4),  // Off-White
+    surface = Color(0xFFFFFFFF),  // White
+    onPrimary = Color(0xFF1E1E1E),  // Charcoal
+    onSecondary = Color(0xFF1E1E1E),  // Charcoal
+    onBackground = Color(0xFF1C1C1C),  // Text primary
+    onSurface = Color(0xFF1C1C1C),  // Text primary
 )
 
 val glanceHaDarkColors = darkColors(
-    primary = colorPrimary,
-    primaryVariant = colorPrimaryDark,
+    primary = colorPrimary,  // #C7B19A - Hivebit Gold
+    primaryVariant = colorPrimaryDark,  // #232323 - Hivebit Black
     secondary = colorPrimary,
     secondaryVariant = colorPrimary,
-    background = darkColorBackground,
-    onPrimary = Color.White,
-    onSecondary = Color.White,
+    background = darkColorBackground,  // #1A1A1A
+    surface = Color(0xFF242424),  // Graphite
+    onPrimary = Color(0xFF1E1E1E),  // Charcoal
+    onSecondary = Color(0xFF1E1E1E),  // Charcoal
+    onBackground = Color.White,
     onSurface = Color.White,
 )
 
